@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:epxheader.4,0:sprite;/Areas/Epx/Themes/VStudio/Content:0&amp;amp;v=7F1C8C260E7627E6F91773CF761A01D5" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:epxfooter.4,0:sprite;/Areas/Epx/Themes/VStudio/Content:0&amp;amp;v=17BA22659B3207636CA1B095207F8C4A" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>How detaching or attaching tab in tab control. How to add a tab ...</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/a8537aa3-a5cb-4b22-8517-c56c1ed425eeBrand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/vstudio/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/vstudio/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>How detaching or attaching tab in tab control. How to add a tab ...</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, WPF, XAML/C#
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            WPF, Windows Processes, DllImport(&quot;user<wbr />32.dll&quot;)
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Phone, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">2/27/2017</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/vstudio/How-to-detached-or-8507eb06">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p><span>From <span style="background-color:#ffff99"><strong>Visual Studio, please RUN in Debug
+</strong></span><span><span style="background-color:#ffff99"><strong>Mode </strong>
+</span>or</span> you may comment out some code which <span>identifies the</span> <span>
+existing</span> instance of this process.&nbsp; If you run the <span>second</span> process you recieve some messeges (just click OK). You will be able to comment out messeges yourself. It is very helpful for a
+<span>debugin porpuse which</span> <span>includes</span> multiply window. </span>
+</p>
+<p><span>The second</span><span> process <span>sends</span> messege to the <span>
+first</span> process to open new Window and after that kill itself.</span></p>
+<p><em>&nbsp;</em></p>
+<p>How to detached or attached tab in the tab control. &nbsp;How to add a tab from the different window (in the same process).</p>
+<p>How to identify that this application already run.</p>
+<p>How to send the message to existing process to open a new window.</p>
+<p>How to rearrange (order) tab items in the&nbsp;tab control by mouse</p>
+<p><img id="169816" src="https://code.msdn.microsoft.com/windowsapps/site/view/file/169816/1/636228678985602758.gif" alt=""></p>
+<p><span>This example just for fun, we do it without &nbsp;&ldquo;DragDrop.DoDragDrop&rdquo;</span></p>
+<p><span>See comments in the project.</span></p>
+<p><span>It extended project my previous project where we can shift tab by mouse.</span></p>
+<p><span>See &nbsp;<a href="https://code.msdn.microsoft.com/vstudio/How-to-detached-or-8507eb06/https://code.msdn.microsoft.com/windowsapps/How-to-rearrange-order-tab-813079ec?redir=0">https://code.msdn.microsoft.com/vstudio/How-to-detached-or-8507eb06/https://code.msdn.microsoft.com/windowsapps/How-to-rearrange-order-tab-813079ec?redir=0</a>
+</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size:2em">Building the Sample</span></p>
+<p><em>It is WPF application which was created by VS 2015.</em></p>
+<p>&nbsp;</p>
+<h1>More Information</h1>
+<p><em>&nbsp;http://stackoverflow.com/questions/7182949/how-to-check-if-a-wpf-application-is-already-running</em></p>
+<p><em>&nbsp;http://stackoverflow.com/questions/10738161/is-it-possible-to-rearrange-tab-items-in-tab-control-in-wpf&nbsp;</em></p>
+<p><em>https://msdn.microsoft.com/en-us/library/system.windows.dragdrop.dodragdrop(v=vs.100).aspx?cs-save-lang=1&amp;cs-lang=csharp#code-snippet-1&nbsp;</em></p>
+<p><em>https://blogs.msdn.microsoft.com/jaimer/2007/07/12/drag-amp-drop-in-wpf-explained-end-to-end/</em></p>
+<p><em>https://msdn.microsoft.com/en-us/library/aa289508(vs.71).aspx<br>
+</em></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
