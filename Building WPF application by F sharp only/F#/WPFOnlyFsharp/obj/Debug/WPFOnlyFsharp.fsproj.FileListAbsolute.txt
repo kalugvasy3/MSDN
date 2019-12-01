@@ -1,0 +1,9 @@
+D:\Azure\Workspaces\AnotherPart\WPFOnlyFsharp\WPFOnlyFsharp\bin\Debug\WPFOnlyFsharp.exe.config
+D:\Azure\Workspaces\AnotherPart\WPFOnlyFsharp\WPFOnlyFsharp\bin\Debug\WPFOnlyFsharp.XML
+D:\Azure\Workspaces\AnotherPart\WPFOnlyFsharp\WPFOnlyFsharp\bin\Debug\WPFOnlyFsharp.exe
+D:\Azure\Workspaces\AnotherPart\WPFOnlyFsharp\WPFOnlyFsharp\bin\Debug\WPFOnlyFsharp.pdb
+D:\Azure\Workspaces\AnotherPart\WPFOnlyFsharp\WPFOnlyFsharp\bin\Debug\FSharp.Core.dll
+D:\Azure\Workspaces\AnotherPart\WPFOnlyFsharp\WPFOnlyFsharp\bin\Debug\FSharp.Core.xml
+D:\Azure\Workspaces\AnotherPart\WPFOnlyFsharp\WPFOnlyFsharp\obj\Debug\WPFOnlyFsharp.exe
+D:\Azure\Workspaces\AnotherPart\WPFOnlyFsharp\WPFOnlyFsharp\obj\Debug\WPFOnlyFsharp.pdb
+D:\Azure\Workspaces\AnotherPart\WPFOnlyFsharp\WPFOnlyFsharp\obj\Debug\WPFOnlyFsharp.g.resources

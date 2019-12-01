@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Header,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;v=6A843E98DB5AEC74CF385ACE5E94CB36" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Footer,0:HeaderFooterSprite,0:Footer.NonMtps,1:FooterSock,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;v=7B1318331AB587926159A23CD37DE62D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Building WPF application by F sharp (F#) only …</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Building WPF application by F sharp (F#) only …</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Windows Forms, WPF, F#, .NET 4.5
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            F sharp WPF application - first step ...
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">4/4/2015</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/Building-WPF-application-09b8fb8c">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<p><span style="font-size:small">Building WPF application by F sharp (F#) only &hellip;</span></p>
+<p><span style="font-size:small">It is just first step for building WPF application from &ldquo;Console Application&rdquo; &hellip;</span></p>
+<p><span style="font-size:small"><strong>WPF Only F# - Application &ndash; How To &hellip; &nbsp;&nbsp;t</strong>emplate does not exist &ndash; we need to do it manually &hellip;<strong>&nbsp;</strong></span></p>
+<p><span style="font-size:small">Create New F# <strong>- Console Application</strong> &hellip;&nbsp;</span></p>
+<h1><img id="135841" src="description/1.png" alt="" width="986" height="560"></h1>
+<p><span style="font-size:small">Change Properties for project <strong>WPFOnlyFsharp</strong> from &ldquo;<strong>Console Application</strong>&rdquo; to &ldquo;<strong>Window Application</strong>&rdquo;</span></p>
+<p>&nbsp;</p>
+<p><img id="135843" src="description/2.png" alt="" width="1162" height="663"></p>
+<p><span style="font-size:small"><strong>Add new references:&nbsp;</strong></span></p>
+<p>&nbsp;</p>
+<p><img id="135845" src="description/3.png" alt="" width="697" height="343"></p>
+<p>&nbsp;</p>
+<p><img id="135846" src="description/4.png" alt="" width="673" height="632"></p>
+<p><span style="font-size:small; color:#000000; background-color:#ffff00">And will not forget&nbsp; add also
+<strong>System.Xaml.dll</strong> &nbsp;</span></p>
+<p><img id="135847" src="description/5.png" alt="" width="713" height="92"></p>
+<p>&nbsp;</p>
+<p><span style="font-size:small">Rename &ldquo;<strong>Program.fs</strong>&rdquo; &nbsp;to &ldquo;<strong>MainWindow.fs</strong>&rdquo; &nbsp; &nbsp;- it will be using inside code ...</span></p>
+<p><img id="135850" src="description/6.png" alt="" width="307" height="195"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size:small">Add new item &ndash; use &ldquo;Source File&rdquo; &ndash; add it &hellip;&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><img id="135851" src="description/7.png" alt="" width="665" height="263"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size:small"><strong>Rename it</strong> to &ldquo;<strong>MainWindow.fs.xaml</strong>&rdquo;</span></p>
+<p>&nbsp;</p>
+<p><img id="135852" src="description/8.png" alt="" width="495" height="348"></p>
+<p>&nbsp;</p>
+<p><span style="font-size:small">Now change properties for this file &hellip;</span></p>
+<p><span style="font-size:small"><br>
+</span></p>
+<p><img id="135853" src="description/9.png" alt="" width="598" height="696"></p>
+<p><span style="font-size:small">Go to Properties and change &ldquo;<strong>Build Action</strong>&rdquo; to &ldquo;<strong>Resource</strong>&rdquo; and &ldquo;<strong>copy always</strong>&rdquo;</span></p>
+<p><img id="135854" src="description/10.png" alt="" width="1056" height="780"></p>
+<p>&nbsp;</p>
+<p><img id="135857" src="description/11.png" alt="" width="594" height="200"></p>
+<p><span style="font-size:small"><strong>Now You can see in XAML design view &ndash; &ldquo;Invalid Markup&rdquo;, &nbsp;so you need to enter valid code &hellip;&nbsp;</strong></span></p>
+<p>&nbsp;</p>
+<p><img id="135858" src="description/12.png" alt="" width="353" height="132"></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size:small">Insert this code &hellip;</span></strong></p>
+<p><span style="font-size:small; background-color:#ffff00">&lt;Window</span></p>
+<p><span style="font-size:small; background-color:#ffff00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span></p>
+<p><span style="font-size:small; background-color:#ffff00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span></p>
+<p><span style="font-size:small; background-color:#ffff00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Title=&quot;MainWindow&quot; Height=&quot;350&quot; Width=&quot;525&quot;&gt;</span></p>
+<p><span style="font-size:small; background-color:#ffff00">&nbsp;&nbsp;&nbsp; &lt;Grid&gt;</span></p>
+<p><span style="font-size:small; background-color:#ffff00">&nbsp; &nbsp; &nbsp;&lt;/Grid&gt;</span></p>
+<p><span style="font-size:small; background-color:#ffff00">&lt;/Window&gt;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size:small"><strong>Now mostly done</strong> and you will be able to Use standard &ldquo;XAML&rdquo; editor &hellip; for edit your project &hellip;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size:small">Add &nbsp;new items -&gt; &nbsp; &nbsp; &nbsp; <strong>
+TextBlock </strong>&ndash; x:Name=&quot;txtHello&quot;</span></p>
+<p><span style="font-size:small">and &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>Button</strong> - x:Name=&quot;btnHello&quot;</span>&nbsp;&nbsp;</p>
+<p><span style="background-color:#ffff00"><br>
+</span></p>
+<p><img id="135859" src="description/13.png" alt="" width="547" height="359"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size:small">Before add code to <strong>MainWindow.fs</strong> &nbsp;&nbsp;add new class
+<strong>&ldquo;</strong><strong>Utilities</strong><strong>&rdquo;</strong> and move it to the top of the project &hellip;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size:small">module WPFOnlyFsharp.Utilities</span></p>
+<p><span style="font-size:small">open System</span></p>
+<p><span style="font-size:small">open <a class="libraryLink" href="https://code.msdn.microsoft.com/Building-WPF-application-09b8fb8c/https://code.msdn.microsoft.com/Building-WPF-application-09b8fb8c/https://msdn.microsoft.com/en-US/library/System.Windows.aspx"  title="Auto generated link to System.Windows">System.Windows</a></span></p>
+<p><span style="font-size:small">open <a class="libraryLink" href="https://code.msdn.microsoft.com/Building-WPF-application-09b8fb8c/https://code.msdn.microsoft.com/Building-WPF-application-09b8fb8c/https://msdn.microsoft.com/en-US/library/System.Windows.Controls.aspx"  title="Auto generated link to System.Windows.Controls">System.Windows.Controls</a></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size:small">&nbsp;&nbsp;&nbsp; /// Use this implementation of the dynamic binding operator</span></p>
+<p><span style="font-size:small">&nbsp;&nbsp;&nbsp; /// to bind to Xaml components in code-behind, see example below</span></p>
+<p><span style="font-size:small">&nbsp;&nbsp;&nbsp; let (?) (c:obj) (s:string) =</span></p>
+<p><span style="font-size:small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; match c with</span></p>
+<p><span style="font-size:small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | :? ResourceDictionary as r -&gt;&nbsp; r.[s] :?&gt; 'T</span></p>
+<p><span style="font-size:small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | :? Control as c -&gt; c.FindName(s) :?&gt; 'T</span></p>
+<p><span style="font-size:small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | _ -&gt; failwith &quot;dynamic lookup failed&quot;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size:small">This class includes function (?) for find object in the window &hellip; &nbsp;</span></p>
+<p><span style="font-size:small">Or you will be able to do it yourself by using&nbsp; *.FindName &nbsp;:?&gt; Button (Cast to ) &nbsp;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size:small">(Right click on the file and use [<strong>Move Up</strong>]/[<strong>Move Down</strong>] ) move it to the TOP</span></p>
+<p>&nbsp;</p>
+<p><img id="135860" src="description/14.png" alt="" width="235" height="159"></p>
+<p><strong><span style="font-size:small">Now we can ready add code to main page &hellip;&nbsp;</span></strong></p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>XAML</span><span>F#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">xaml</span><span class="hidden">fsharp</span>
+<pre class="hidden">&lt;Window 
+        xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+        xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+        Title=&quot;MainWindow&quot; Height=&quot;350&quot; Width=&quot;525&quot;&gt;
+    &lt;Grid&gt;
+        &lt;Button x:Name=&quot;btnHello&quot; Content=&quot;HELLO&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;200,152,0,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;75&quot;/&gt;
+        &lt;TextBlock x:Name=&quot;txtHello&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;200,83,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;***&quot; VerticalAlignment=&quot;Top&quot; RenderTransformOrigin=&quot;-0.16,0.812&quot; Width=&quot;75&quot;/&gt;
+    &lt;/Grid&gt;
+&lt;/Window&gt;</pre>
+<pre class="hidden">open System
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Building-WPF-application-09b8fb8c/https://code.msdn.microsoft.com/Building-WPF-application-09b8fb8c/https://msdn.microsoft.com/en-US/library/System.Windows.aspx"  title="Auto generated link to System.Windows">System.Windows</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Building-WPF-application-09b8fb8c/https://code.msdn.microsoft.com/Building-WPF-application-09b8fb8c/https://msdn.microsoft.com/en-US/library/System.Windows.Controls.aspx"  title="Auto generated link to System.Windows.Controls">System.Windows.Controls</a>
+open WPFOnlyFsharp.Utilities
+
+// Very simple WPF ...
+//let a = Application()
+//let w = Window()
+//
+//[&lt;STAThread&gt;]
+//do a.Run(w) |&gt; ignore
+
+
+let runWPFOnlyFsharp() =
+    let resource = new Uri(&quot;/WPFOnlyFsharp;component/MainWindow.fs.xaml&quot;,System.UriKind.Relative)
+    let runWindow = Application.LoadComponent(resource) :?&gt; Window   
+    let txtHello : TextBlock = runWindow?    
+    let btnHello : Button = runWindow?
+    do btnHello.Click.Add(fun _ -&gt; do if txtHello.Text = &quot;***&quot; then txtHello.Text &lt;- &quot;Hello!&quot; else txtHello.Text &lt;- &quot;***&quot; )
+
+    runWindow   
+
+[&lt;STAThread&gt;]
+(new Application()).Run(runWPFOnlyFsharp()) |&gt; ignore
+
+
+That&rsquo;s All &hellip; Thanks&hellip;
+</pre>
+<div class="preview">
+<pre class="xaml"><span class="xaml__tag_start">&lt;Window</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__attr_name">xmlns</span>=<span class="xaml__attr_value">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__keyword">xmlns</span>:<span class="xaml__attr_name">x</span>=<span class="xaml__attr_value">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__attr_name">Title</span>=<span class="xaml__attr_value">&quot;MainWindow&quot;</span>&nbsp;<span class="xaml__attr_name">Height</span>=<span class="xaml__attr_value">&quot;350&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;525&quot;</span><span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Grid</span><span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Button</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;btnHello&quot;</span>&nbsp;<span class="xaml__attr_name">Content</span>=<span class="xaml__attr_value">&quot;HELLO&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Left&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;200,152,0,0&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Top&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;75&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;TextBlock</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;txtHello&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Left&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;200,83,0,0&quot;</span>&nbsp;<span class="xaml__attr_name">TextWrapping</span>=<span class="xaml__attr_value">&quot;Wrap&quot;</span>&nbsp;<span class="xaml__attr_name">Text</span>=<span class="xaml__attr_value">&quot;***&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Top&quot;</span>&nbsp;<span class="xaml__attr_name">RenderTransformOrigin</span>=<span class="xaml__attr_value">&quot;-0.16,0.812&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;75&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_end">&lt;/Grid&gt;</span>&nbsp;
+<span class="xaml__tag_end">&lt;/Window&gt;</span></pre>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
