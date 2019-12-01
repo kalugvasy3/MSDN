@@ -1,0 +1,10 @@
+C:\Users\Vasily\Desktop\C#\MyUserControl\bin\Debug\MyUserControl.dll
+C:\Users\Vasily\Desktop\C#\MyUserControl\bin\Debug\MyUserControl.pdb
+C:\Users\Vasily\Desktop\C#\MyUserControl\obj\Debug\MyUserControl.csprojResolveAssemblyReference.cache
+C:\Users\Vasily\Desktop\C#\MyUserControl\obj\Debug\ShowImage.g.cs
+C:\Users\Vasily\Desktop\C#\MyUserControl\obj\Debug\MyUserControl_MarkupCompile.cache
+C:\Users\Vasily\Desktop\C#\MyUserControl\obj\Debug\MyUserControl_MarkupCompile.lref
+C:\Users\Vasily\Desktop\C#\MyUserControl\obj\Debug\ShowImage.baml
+C:\Users\Vasily\Desktop\C#\MyUserControl\obj\Debug\MyUserControl.g.resources
+C:\Users\Vasily\Desktop\C#\MyUserControl\obj\Debug\MyUserControl.dll
+C:\Users\Vasily\Desktop\C#\MyUserControl\obj\Debug\MyUserControl.pdb

@@ -1,0 +1,16 @@
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\bin\Debug\AllPictureImageViewer.exe.config
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\bin\Debug\AllPictureImageViewer.exe
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\bin\Debug\AllPictureImageViewer.pdb
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\bin\Debug\MyUserControl.dll
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\bin\Debug\MyUserControl.pdb
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\obj\Debug\AllPictureImageViewer.csprojResolveAssemblyReference.cache
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\obj\Debug\MainWindow.g.cs
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\obj\Debug\App.g.cs
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\obj\Debug\AllPictureImageViewer_MarkupCompile.cache
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\obj\Debug\AllPictureImageViewer_MarkupCompile.lref
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\obj\Debug\MainWindow.baml
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\obj\Debug\AllPictureImageViewer.g.resources
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\obj\Debug\AllPictureImageViewer.Properties.Resources.resources
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\obj\Debug\AllPictureImageViewer.csproj.GenerateResource.Cache
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\obj\Debug\AllPictureImageViewer.exe
+C:\Users\Vasily\Desktop\C#\AllPictureImageViewer\obj\Debug\AllPictureImageViewer.pdb
