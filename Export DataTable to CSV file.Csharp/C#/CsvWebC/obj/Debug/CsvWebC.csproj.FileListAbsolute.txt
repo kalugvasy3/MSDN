@@ -1,0 +1,11 @@
+D:\Azure\MyMSDN\CsvWebC\CsvWebC\bin\CsvWebC.dll.config
+D:\Azure\MyMSDN\CsvWebC\CsvWebC\bin\CsvWebC.dll
+D:\Azure\MyMSDN\CsvWebC\CsvWebC\bin\CsvWebC.pdb
+D:\Azure\MyMSDN\CsvWebC\CsvWebC\obj\Debug\CsvWebC.dll
+D:\Azure\MyMSDN\CsvWebC\CsvWebC\obj\Debug\CsvWebC.pdb
+C:\Users\Vasily\Desktop\CsvWebC\CsvWebC\bin\CsvWebC.dll.config
+C:\Users\Vasily\Desktop\CsvWebC\CsvWebC\bin\CsvWebC.dll
+C:\Users\Vasily\Desktop\CsvWebC\CsvWebC\bin\CsvWebC.pdb
+C:\Users\Vasily\Desktop\CsvWebC\CsvWebC\obj\Debug\CsvWebC.csprojResolveAssemblyReference.cache
+C:\Users\Vasily\Desktop\CsvWebC\CsvWebC\obj\Debug\CsvWebC.dll
+C:\Users\Vasily\Desktop\CsvWebC\CsvWebC\obj\Debug\CsvWebC.pdb
