@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/Header.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/sprite.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/UhfHeader.css" data-do-not-move="true" />
+<link rel="stylesheet" href="https://statics-uhf-eas.akamaized.net/west-european/shell/_scrf/css/themes=default.device=uplevel_web_pc/48-4569b5/3c-162243/ea-687fe8/2b-450314/42-bd6a69/d1-038968/3c-12a025?ver=2.0" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=F777B0330CBFBF895FD5417FA9223CC7" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfFooter.css?v=636555437049355063" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SQL Calendar for  Holiday&#39;s (Any Years)  base on MO Holiday&#39;s.</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/97a45dcf-cc5b-40a0-ac82-c5ccdb711a85Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SQL Calendar for  Holiday&#39;s (Any Years)  base on MO Holiday&#39;s.</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, Calendar, MS SQL, Holidays, DB2 SQL
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            C#, SQL, WPF, DB2 SQL
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Cloud, Phone, Data, Xbox, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">3/15/2018</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/SQL-Calendar-for-Holidays-51ba5e66">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>For share SQL code for calculating Holiday&rsquo;s (base on business rules, see below) I wrapped code with the&nbsp;project: &nbsp;&nbsp;&nbsp;</p>
+<p><a href="https://code.msdn.microsoft.com/windowsapps/SQL-Calendar-for-Holidays-51ba5e66/https://code.msdn.microsoft.com/windowsapps/SQL-Calendar-for-Holidays-51ba5e66/https://code.msdn.microsoft.com/windowsapps/Access-to-ANY-Data-Base-by-8a3c163b">https://code.msdn.microsoft.com/windowsapps/SQL-Calendar-for-Holidays-51ba5e66/https://code.msdn.microsoft.com/windowsapps/SQL-Calendar-for-Holidays-51ba5e66/https://code.msdn.microsoft.com/windowsapps/Access-to-ANY-Data-Base-by-8a3c163b</a></p>
+<p>Inside project you also find code for DB2 SQL</p>
+<p>&nbsp;</p>
+<p><img id="192716" src="https://i1.code.msdn.s-msft.com/windowsapps/sql-calendar-for-holidays-51ba5e66/image/file/192716/1/db2%20calendar.png" alt="" width="646" height="83"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Full working application.</p>
+<p>You need to choose SQL Client provider and use correct connection string.</p>
+<p>This example using connection string which pointed to Expression DB.</p>
+<p>&nbsp;</p>
+<p><strong>Holidays</strong></p>
+<p>The following are paid holidays:</p>
+<ul>
+<li>first day of January, New Year&rsquo;s Day </li><li>third Monday in January, Martin Luther King Jr. Day </li><li>twelfth day of February, Lincoln&rsquo;s Birthday </li><li>third Monday in February, Washington&rsquo;s Birthday </li><li>eighth day of May, Truman Birthday </li><li>last Monday in May, Memorial Day </li><li>fourth day of July, Independence Day </li><li>first Monday in September, Labor Day </li><li>second Monday in October, Columbus Day </li><li>eleventh day of November, Veteran&rsquo;s Day </li><li>fourth Thursday in November, Thanksgiving Day </li><li>twenty-fifth day of December, Christmas Day </li><li>&nbsp; </li></ul>
+<p>When any of the specified holidays above fall on Sunday, those holidays will be observed on the following Monday.&nbsp; When any of the specified holidays above fall on a Saturday, those holidays will be observed on the preceding Friday.</p>
+<p>Holidays are considered as a period of eight hours.</p>
+<p>Employees who work on a holiday will be granted equal time compensatory time off from work at the time(s) the agency appointing authority designates.</p>
+<p><img id="192713" src="https://i1.code.msdn.s-msft.com/windowsapps/sql-calendar-for-holidays-51ba5e66/image/file/192713/1/calendar.png" alt="" width="1119" height="532"></p>
+<p>&nbsp;</p>
+<p><span style="font-size:2em">Building the Sample</span></p>
+<p><em>Bring application. Run. Choose SQL Client Provider. Connection string pointed to Express DB.
+</em></p>
+<p><em>It will be working wit any MS SQL DB</em></p>
+<p>&nbsp;</p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p><em>Major goal to share SQL code for holiday's. How work application itself please see&nbsp;
+<a href="https://code.msdn.microsoft.com/windowsapps/SQL-Calendar-for-Holidays-51ba5e66/https://code.msdn.microsoft.com/windowsapps/SQL-Calendar-for-Holidays-51ba5e66/https://code.msdn.microsoft.com/windowsapps/Access-to-ANY-Data-Base-by-8a3c163b">
+https://code.msdn.microsoft.com/windowsapps/SQL-Calendar-for-Holidays-51ba5e66/https://code.msdn.microsoft.com/windowsapps/SQL-Calendar-for-Holidays-51ba5e66/https://code.msdn.microsoft.com/windowsapps/Access-to-ANY-Data-Base-by-8a3c163b</a>&nbsp;</em></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>SQL</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">mysql</span>
+<pre class="hidden">SET DATEFIRST 7;
+
+DECLARE @firstDayYear AS DATE = '01/01/2021';
+
+ WITH DATERANGE(DT) AS (
+
+  --SELECT DISTINCT CONVERT(DATE, CAST(MONTH(GETDATE()) AS CHAR(2) ) &#43; '/01/' &#43; CAST(YEAR(GETDATE()) AS CHAR(4)), 101) 
+  SELECT DISTINCT @firstDayYear 
+
+  UNION ALL 
+
+    SELECT  DATEADD(DAY, 1, DT)
+    FROM DATERANGE
+    WHERE -- MONTH(DT) = MONTH(GETDATE()) AND
+       YEAR(DT) = YEAR(@firstDayYear) 
+ )
+
+
+ SELECT * FROM
+ (
+
+	SELECT DT            As &quot;&quot;Date&quot;&quot;,
+           MONTH(DT)     AS &quot;&quot;Month&quot;&quot;,
+           DAY(DT)       AS &quot;&quot;Day&quot;&quot;,
+           DATEPART (dw,DT) AS &quot;&quot;DayOfWeek&quot;&quot;,
+
+        CASE   
+-- NEW YEAR ------------------------------------------------------------------------------------------------------------
+          WHEN MONTH(DT) = 1  AND DAY(DT) = 1  THEN 'NEW YEAR'
+          WHEN MONTH(DT) = 12 AND DAY(DATEADD(DAY, 1, DT)) = 1 
+                              AND DATEPART (dw, DATEADD(DAY, 1, DT)) = 7 THEN 'OBSERVED -  BEFORE NEW YEAR  (IF SATURDAY))'
+          WHEN MONTH(DT) = 1  AND DAY(DATEADD(DAY, -1, DT)) = 1 
+                              AND DATEPART (dw, DATEADD(DAY, -1, DT)) = 1 THEN 'OBSERVED -  AFTER NEW YEAR  (IF SUNDAY)'
+-----------------------------------------------------------------------------------------------------------------------
+-- MARTIN LUTHER KING DAY - 3d MONDAY----------------------------------------------------------------------------------       
+          WHEN MONTH(DT) = 1  AND DATEPART (dw, DT) = 2 AND MONTH(DATEADD(DAY, -21, DT)) = 12 AND MONTH(DATEADD(DAY, -14, DT)) = 1  THEN 'MARTIN LUTHER KING DAY - 3d MONDAY'   
+-----------------------------------------------------------------------------------------------------------------------
+-- LINCOLN DAY'S DAY ---------------------------------------------------------------------------------------------------
+          WHEN MONTH(DT) = 2  AND DAY(DT) = 12   THEN 'LINCOLN DAY''S DAY'           
+          WHEN MONTH(DT) = 2  AND DAY(DATEADD(DAY, 1, DT)) = 12 
+                             AND DATEPART (dw,DATEADD(DAY, 1, DT)) = 7 THEN 'OBSERVED -  BRFORE LINCOLN DAY''S DAY  (IF SATURDAY))'
+          WHEN MONTH(DT) = 2  AND DAY(DATEADD(DAY, -1, DT)) = 12 
+                             AND DATEPART (dw,DATEADD(DAY, -1, DT)) = 1 THEN 'OBSERVED -  AFTER LINCOLN DAY''S DAY  (IF SUNDAY)'
+------------------------------------------------------------------------------------------------------------------------
+-- WASHINGTON'S DAY       - 3d MONDAY ----------------------------------------------------------------------------------
+          WHEN MONTH(DT) = 2  AND DATEPART (dw,DT) = 2 AND MONTH(DATEADD(DAY, -21, DT)) = 1 AND MONTH(DATEADD(DAY, -14, DT)) = 2      THEN 'WASHINGTON''S DAY'   
+-----------------------------------------------------------------------------------------------------------------------
+-- TRUMAN DAY DAY'S DAY ------------------------------------------------------------------------------------------------
+          WHEN MONTH(DT) = 5  AND DAY(DT) = 8   THEN 'TRUMAN DAY DAY''S DAY'  
+          WHEN MONTH(DT) = 5  AND DAY(DATEADD(DAY, 1, DT)) = 8 
+                             AND DATEPART (dw,DATEADD(DAY, 1, DT)) = 7 THEN 'OBSERVED -  BEFORE TRUMAN DAY DAY''S DAY  (IF SATURDAY))'
+          WHEN MONTH(DT) = 5  AND DAY(DATEADD(DAY, -1, DT)) = 8 
+                             AND DATEPART (dw,DATEADD(DAY, -1, DT)) = 1 THEN 'OBSERVED -  AFTER TRUMAN DAY DAY''S DAY  (IF SUNDAY)'
+------------------------------------------------------------------------------------------------------------------------ 
+-- MEMORIAL DAY -- LAST MONDAY -----------------------------------------------------------------------------------------  
+          WHEN MONTH(DT) = 5  AND DATEPART (dw,DT) = 2 AND MONTH(DATEADD(DAY, 7, DT)) = 6 THEN 'MEMORIAL DAY -- LAST MONDAY'    
+-----------------------------------------------------------------------------------------------------------------------  
+-- INDEPENDENCE DAY ----------------------------------------------------------------------------------------------------
+          WHEN MONTH(DT) = 7  AND DAY(DT) = 4                THEN 'INDEPENDENCE DAY'
+          WHEN MONTH(DT) = 7  AND DAY(DATEADD(DAY, 1, DT)) = 4 
+                             AND DATEPART (dw,DATEADD(DAY, 1, DT)) = 7 THEN 'OBSERVED -  BEFORE INDEPENDENCE DAY (IF SATURDAY))'
+          WHEN MONTH(DT) = 7  AND DAY(DATEADD(DAY, -1, DT)) = 4 
+                             AND DATEPART (dw,DATEADD(DAY, -1, DT)) = 1 THEN 'OBSERVED -  AFTER INDEPENDENCE DAY (IF SUNDAY)'
+-----------------------------------------------------------------------------------------------------------------------
+-- LABOR DAY ----------------------------------------------------------------------------------------------------------
+          WHEN MONTH(DT) = 9  AND DATEPART (dw,DT) = 2 AND MONTH(DATEADD(DAY, -7, DT)) = 8 THEN 'LABOR DAY (FIRST MONDAY OF SEPTEMBER)' 
+----------------------------------------------------------------------------------------------------------------------- 
+-- COLUMBUS DAY -------------------------------------------------------------------------------------------------------
+          WHEN MONTH(DT) = 10 AND DATEPART (dw,DT) = 2 AND  MONTH(DATEADD(DAY, -14, DT)) = 9 AND MONTH(DATEADD(DAY, -7, DT)) = 10  THEN 'COLUMBUS DAY'    
+-----------------------------------------------------------------------------------------------------------------------      
+-- VETERANS DAY ------------------------------------------------------------------------------------------------------
+          WHEN MONTH(DT) = 11 AND DAY(DT) = 11 THEN 'VETERANS DAY'
+          WHEN MONTH(DT) = 11 AND DAY(DATEADD(DAY, 1, DT)) = 11 
+                             AND DATEPART (dw,DATEADD(DAY, 1, DT)) = 7 THEN 'OBSERVED -  BEFORE VETERANS DAY'
+          WHEN MONTH(DT) = 11 AND DAY(DATEADD(DAY, -1, DT)) = 11 
+                             AND DATEPART (dw,DATEADD(DAY, -1, DT)) = 1 THEN 'OBSERVED -  AFTER VETERANS DAY'
+-----------------------------------------------------------------------------------------------------------------------   
+-- THANKS GIVING ----------------------------------------------------------------------------------------------------- 
+          WHEN MONTH(DT) = 11 AND DATEPART (dw,DT) = 5 AND MONTH(DATEADD(DAY, -21, DT)) = 11 AND MONTH(DATEADD(DAY, -28, DT)) = 10   THEN 'THANKS GIVING - 4th Thursday   '  
+          WHEN MONTH(DT) = 11 AND DATEPART (dw,DT) = 6 AND MONTH(DATEADD(DAY, -22, DT)) = 11 AND MONTH(DATEADD(DAY, -29, DT)) = 10   THEN 'GRANTED DAY AFTER THANKS GIVING' 
+ 
+-- X'MAS --------------------------------------------------------------------------------------------------------------
+          WHEN MONTH(DT) = 12 AND DAY(DT) = 25               THEN 'X''MAS'
+          WHEN MONTH(DT) = 12 AND DAY(DATEADD(DAY, 1, DT)) = 25 
+                             AND DATEPART (dw,DATEADD(DAY, 1, DT)) = 7 THEN 'OBSERVED -  BEFORE X''MAS' 
+          WHEN MONTH(DT) = 12 AND DAY(DATEADD(DAY, -1, DT)) = 25 
+                             AND DATEPART (dw,DATEADD(DAY, -1, DT)) = 1 THEN 'OBSERVED -  AFTER  X''MAS' 
+-----------------------------------------------------------------------------------------------------------------------
+        
+          ELSE ''
+        END AS &quot;&quot;IsUSPublicHoliday&quot;&quot;,
+
+        CASE 
+          WHEN DATEPART (dw,DT) = 1 THEN 1
+          WHEN DATEPART (dw,DT) = 7 THEN 1
+          ELSE 0
+        END AS &quot;&quot;IsWeekEnd&quot;&quot;  
+
+		FROM
+		(
+           SELECT DT FROM DATERANGE
+           WHERE  YEAR(DT) = YEAR(@firstDayYear) 
+
+		) AS tbl
+
+	) AS tAll
+
+	 WHERE tAll.&quot;&quot;IsUSPublicHoliday&quot;&quot; &lt;&gt; ''
+
+		option (maxrecursion 366);</pre>
+<div class="preview">
+<pre class="mysql"><span class="sql__keyword">SET</span>&nbsp;<span class="sql__id">DATEFIRST</span>&nbsp;<span class="sql__number">7</span>;&nbsp;
+&nbsp;
+<span class="sql__keyword">DECLARE</span>&nbsp;<span class="sql__keyword">@</span><span class="sql__variable">firstDayYear</span>&nbsp;<span class="sql__keyword">AS</span>&nbsp;<span class="sql__keyword">DATE</span>&nbsp;=&nbsp;<span class="sql__string">'01/01/2021'</span>;&nbsp;
+&nbsp;
+&nbsp;<span class="sql__keyword">WITH</span>&nbsp;<span class="sql__id">DATERANGE</span>(<span class="sql__id">DT</span>)&nbsp;<span class="sql__keyword">AS</span>&nbsp;(&nbsp;
+&nbsp;
+&nbsp;&nbsp;--<span class="sql__keyword">SELECT</span>&nbsp;<span class="sql__keyword">DISTINCT</span>&nbsp;<span class="sql__keyword">CONVERT</span>(<span class="sql__keyword">DATE</span>,&nbsp;<span class="sql__function">CAST</span>(<span class="sql__keyword">MONTH</span>(<span class="sql__id">GETDATE</span>())&nbsp;<span class="sql__keyword">AS</span>&nbsp;<span class="sql__keyword">CHAR</span>(<span class="sql__number">2</span>)&nbsp;)&nbsp;&#43;&nbsp;<span class="sql__string">'/01/'</span>&nbsp;&#43;&nbsp;<span class="sql__function">CAST</span>(<span class="sql__keyword">YEAR</span>(<span class="sql__id">GETDATE</span>())&nbsp;<span class="sql__keyword">AS</span>&nbsp;<span class="sql__keyword">CHAR</span>(<span class="sql__number">4</span>)),&nbsp;<span class="sql__number">101</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;<span class="sql__keyword">SELECT</span>&nbsp;<span class="sql__keyword">DISTINCT</span>&nbsp;<span class="sql__keyword">@</span><span class="sql__variable">firstDayYear</span>&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;<span class="sql__keyword">UNION</span>&nbsp;<span class="sql__keyword">ALL</span>&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">SELECT</span>&nbsp;&nbsp;<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">FROM</span>&nbsp;<span class="sql__id">DATERANGE</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHERE</span>&nbsp;<span class="sql__com">--&nbsp;MONTH(DT)&nbsp;=&nbsp;MONTH(GETDATE())&nbsp;AND</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">YEAR</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__keyword">YEAR</span>(<span class="sql__keyword">@</span><span class="sql__variable">firstDayYear</span>)&nbsp;&nbsp;
+&nbsp;)&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;<span class="sql__keyword">SELECT</span>&nbsp;*&nbsp;<span class="sql__keyword">FROM</span>&nbsp;
+&nbsp;(&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">SELECT</span>&nbsp;<span class="sql__id">DT</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">As</span>&nbsp;<span class="sql__string">&quot;&quot;</span><span class="sql__keyword">Date</span><span class="sql__string">&quot;&quot;</span>,&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AS</span>&nbsp;<span class="sql__string">&quot;&quot;</span><span class="sql__keyword">Month</span><span class="sql__string">&quot;&quot;</span>,&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DT</span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AS</span>&nbsp;<span class="sql__string">&quot;&quot;</span><span class="sql__keyword">Day</span><span class="sql__string">&quot;&quot;</span>,&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DT</span>)&nbsp;<span class="sql__keyword">AS</span>&nbsp;<span class="sql__string">&quot;&quot;</span><span class="sql__id">DayOfWeek</span><span class="sql__string">&quot;&quot;</span>,&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">CASE</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="sql__com">--&nbsp;NEW&nbsp;YEAR&nbsp;------------------------------------------------------------------------------------------------------------</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'NEW&nbsp;YEAR'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">12</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,&nbsp;<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">7</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'OBSERVED&nbsp;-&nbsp;&nbsp;BEFORE&nbsp;NEW&nbsp;YEAR&nbsp;&nbsp;(IF&nbsp;SATURDAY))'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,&nbsp;<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'OBSERVED&nbsp;-&nbsp;&nbsp;AFTER&nbsp;NEW&nbsp;YEAR&nbsp;&nbsp;(IF&nbsp;SUNDAY)'</span>&nbsp;
+---------------------------------------------------------------------------------------------------------------------<span class="sql__com">--&nbsp;
+--&nbsp;MARTIN&nbsp;LUTHER&nbsp;KING&nbsp;DAY&nbsp;-&nbsp;3d&nbsp;MONDAY----------------------------------------------------------------------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,&nbsp;<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">2</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">21</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">12</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">14</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'MARTIN&nbsp;LUTHER&nbsp;KING&nbsp;DAY&nbsp;-&nbsp;3d&nbsp;MONDAY'</span>&nbsp;&nbsp;&nbsp;&nbsp;
+---------------------------------------------------------------------------------------------------------------------<span class="sql__com">--&nbsp;
+--&nbsp;LINCOLN&nbsp;DAY'S&nbsp;DAY&nbsp;---------------------------------------------------------------------------------------------------</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">2</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">12</span>&nbsp;&nbsp;&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'LINCOLN&nbsp;DAY''S&nbsp;DAY'</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">2</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">12</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">7</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'OBSERVED&nbsp;-&nbsp;&nbsp;BRFORE&nbsp;LINCOLN&nbsp;DAY''S&nbsp;DAY&nbsp;&nbsp;(IF&nbsp;SATURDAY))'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">2</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">12</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'OBSERVED&nbsp;-&nbsp;&nbsp;AFTER&nbsp;LINCOLN&nbsp;DAY''S&nbsp;DAY&nbsp;&nbsp;(IF&nbsp;SUNDAY)'</span>&nbsp;
+----------------------------------------------------------------------------------------------------------------------<span class="sql__com">--&nbsp;
+--&nbsp;WASHINGTON'S&nbsp;DAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;3d&nbsp;MONDAY&nbsp;----------------------------------------------------------------------------------</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">2</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">2</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">21</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">14</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'WASHINGTON''S&nbsp;DAY'</span>&nbsp;&nbsp;&nbsp;&nbsp;
+---------------------------------------------------------------------------------------------------------------------<span class="sql__com">--&nbsp;
+--&nbsp;TRUMAN&nbsp;DAY&nbsp;DAY'S&nbsp;DAY&nbsp;------------------------------------------------------------------------------------------------</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">5</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">8</span>&nbsp;&nbsp;&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'TRUMAN&nbsp;DAY&nbsp;DAY''S&nbsp;DAY'</span>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">5</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">8</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">7</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'OBSERVED&nbsp;-&nbsp;&nbsp;BEFORE&nbsp;TRUMAN&nbsp;DAY&nbsp;DAY''S&nbsp;DAY&nbsp;&nbsp;(IF&nbsp;SATURDAY))'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">5</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">8</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'OBSERVED&nbsp;-&nbsp;&nbsp;AFTER&nbsp;TRUMAN&nbsp;DAY&nbsp;DAY''S&nbsp;DAY&nbsp;&nbsp;(IF&nbsp;SUNDAY)'</span>&nbsp;
+----------------------------------------------------------------------------------------------------------------------<span class="sql__com">--&nbsp;&nbsp;
+--&nbsp;MEMORIAL&nbsp;DAY&nbsp;--&nbsp;LAST&nbsp;MONDAY&nbsp;-----------------------------------------------------------------------------------------&nbsp;&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">5</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">2</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">7</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">6</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'MEMORIAL&nbsp;DAY&nbsp;--&nbsp;LAST&nbsp;MONDAY'</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+---------------------------------------------------------------------------------------------------------------------<span class="sql__com">--&nbsp;&nbsp;&nbsp;
+--&nbsp;INDEPENDENCE&nbsp;DAY&nbsp;----------------------------------------------------------------------------------------------------</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">7</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'INDEPENDENCE&nbsp;DAY'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">7</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">4</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">7</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'OBSERVED&nbsp;-&nbsp;&nbsp;BEFORE&nbsp;INDEPENDENCE&nbsp;DAY&nbsp;(IF&nbsp;SATURDAY))'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">7</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">4</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'OBSERVED&nbsp;-&nbsp;&nbsp;AFTER&nbsp;INDEPENDENCE&nbsp;DAY&nbsp;(IF&nbsp;SUNDAY)'</span>&nbsp;
+---------------------------------------------------------------------------------------------------------------------<span class="sql__com">--&nbsp;
+--&nbsp;LABOR&nbsp;DAY&nbsp;----------------------------------------------------------------------------------------------------------</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">9</span>&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">2</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">7</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">8</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'LABOR&nbsp;DAY&nbsp;(FIRST&nbsp;MONDAY&nbsp;OF&nbsp;SEPTEMBER)'</span>&nbsp;&nbsp;
+---------------------------------------------------------------------------------------------------------------------<span class="sql__com">--&nbsp;&nbsp;
+--&nbsp;COLUMBUS&nbsp;DAY&nbsp;-------------------------------------------------------------------------------------------------------</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">10</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">2</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">14</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">9</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">7</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">10</span>&nbsp;&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'COLUMBUS&nbsp;DAY'</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+---------------------------------------------------------------------------------------------------------------------<span class="sql__com">--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+--&nbsp;VETERANS&nbsp;DAY&nbsp;------------------------------------------------------------------------------------------------------</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">11</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">11</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'VETERANS&nbsp;DAY'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">11</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">11</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">7</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'OBSERVED&nbsp;-&nbsp;&nbsp;BEFORE&nbsp;VETERANS&nbsp;DAY'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">11</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">11</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'OBSERVED&nbsp;-&nbsp;&nbsp;AFTER&nbsp;VETERANS&nbsp;DAY'</span>&nbsp;
+---------------------------------------------------------------------------------------------------------------------<span class="sql__com">--&nbsp;&nbsp;&nbsp;&nbsp;
+--&nbsp;THANKS&nbsp;GIVING&nbsp;-----------------------------------------------------------------------------------------------------&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">11</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">5</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">21</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">11</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">28</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">10</span>&nbsp;&nbsp;&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'THANKS&nbsp;GIVING&nbsp;-&nbsp;4th&nbsp;Thursday&nbsp;&nbsp;&nbsp;'</span>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">11</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">6</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">22</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">11</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">29</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">10</span>&nbsp;&nbsp;&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'GRANTED&nbsp;DAY&nbsp;AFTER&nbsp;THANKS&nbsp;GIVING'</span>&nbsp;&nbsp;
+&nbsp;&nbsp;
+<span class="sql__com">--&nbsp;X'MAS&nbsp;--------------------------------------------------------------------------------------------------------------</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">12</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">25</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'X''MAS'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">12</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">25</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">7</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'OBSERVED&nbsp;-&nbsp;&nbsp;BEFORE&nbsp;X''MAS'</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__keyword">MONTH</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">12</span>&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__keyword">DAY</span>(<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">25</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">AND</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DATEADD</span>(<span class="sql__keyword">DAY</span>,&nbsp;-<span class="sql__number">1</span>,&nbsp;<span class="sql__id">DT</span>))&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__string">'OBSERVED&nbsp;-&nbsp;&nbsp;AFTER&nbsp;&nbsp;X''MAS'</span>&nbsp;&nbsp;
+---------------------------------------------------------------------------------------------------------------------<span class="sql__com">--&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ELSE&nbsp;''</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">END</span>&nbsp;<span class="sql__keyword">AS</span>&nbsp;<span class="sql__string">&quot;&quot;</span><span class="sql__id">IsUSPublicHoliday</span><span class="sql__string">&quot;&quot;</span>,&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">CASE</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">1</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__number">1</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHEN</span>&nbsp;<span class="sql__id">DATEPART</span>&nbsp;(<span class="sql__id">dw</span>,<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__number">7</span>&nbsp;<span class="sql__keyword">THEN</span>&nbsp;<span class="sql__number">1</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">ELSE</span>&nbsp;<span class="sql__number">0</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">END</span>&nbsp;<span class="sql__keyword">AS</span>&nbsp;<span class="sql__string">&quot;&quot;</span><span class="sql__id">IsWeekEnd</span><span class="sql__string">&quot;&quot;</span>&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">FROM</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">SELECT</span>&nbsp;<span class="sql__id">DT</span>&nbsp;<span class="sql__keyword">FROM</span>&nbsp;<span class="sql__id">DATERANGE</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHERE</span>&nbsp;&nbsp;<span class="sql__keyword">YEAR</span>(<span class="sql__id">DT</span>)&nbsp;=&nbsp;<span class="sql__keyword">YEAR</span>(<span class="sql__keyword">@</span><span class="sql__variable">firstDayYear</span>)&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)&nbsp;<span class="sql__keyword">AS</span>&nbsp;<span class="sql__id">tbl</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;)&nbsp;<span class="sql__keyword">AS</span>&nbsp;<span class="sql__id">tAll</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">WHERE</span>&nbsp;<span class="sql__id">tAll</span>.<span class="sql__string">&quot;&quot;</span><span class="sql__id">IsUSPublicHoliday</span><span class="sql__string">&quot;&quot;</span>&nbsp;&lt;&gt;&nbsp;<span class="sql__string">''</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sql__keyword">option</span>&nbsp;(<span class="sql__id">maxrecursion</span>&nbsp;<span class="sql__number">366</span>);</pre>
+</div>
+</div>
+</div>
+<h1>More Information</h1>
+<p><em>ALSO exist same code for DB2 SQL. Use QA for requeste.&nbsp;</em></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

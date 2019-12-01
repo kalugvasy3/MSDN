@@ -1,0 +1,92 @@
+  WITH DATERANGE(DT) AS (
+  SELECT DISTINCT TO_DATE('01/01/' || TO_CHAR(YEAR('01/01/2017')), 'MM/DD/YYYY') 
+  FROM  SYSIBM.SYSDUMMY1
+  UNION ALL 
+    SELECT  DT + 1 DAY
+    FROM DATERANGE
+    WHERE  YEAR(DT) = YEAR('01/01/2017') 
+)
+
+SELECT * FROM
+(
+    SELECT  DT            As "Date",
+            MONTH(DT)     AS "Month",
+            DAY(DT)       AS "Day",
+            DAYOFWEEK(DT) AS "DayOfWeek", 
+    
+            CASE
+    -- NEW YEAR ------------------------------------------------------------------------------------------------------------
+              WHEN MONTH(DT) = 1   AND DAY(DT) = 1  THEN 'NEW YEAR'
+              WHEN MONTH(DT) = 12  AND DAY(DT + 1 DAYS) = 1 
+                                  AND DAYOFWEEK(DT + 1 DAYS) = 7 THEN 'OBSERVED -  BEFORE NEW YEAR' --  (IF SATURDAY))
+              WHEN MONTH(DT) = 1   AND DAY(DT - 1 DAYS) = 1 
+                                  AND DAYOFWEEK(DT - 1 DAYS) = 1 THEN 'OBSERVED -  AFTER NEW YEAR' --  (IF SUNDAY)
+    -----------------------------------------------------------------------------------------------------------------------
+    -- MARTIN LUTHER KING DAY - 3d MONDAY----------------------------------------------------------------------------------       
+              WHEN MONTH(DT) = 1  AND DAYOFWEEK(DT) = 2 AND MONTH(DT - 21 DAYS) = 12 AND MONTH(DT - 14 DAYS) = 1     THEN 'MARTIN LUTHER KING'   
+    -----------------------------------------------------------------------------------------------------------------------
+    -- LINCOLN DAY'S DAY ---------------------------------------------------------------------------------------------------
+              WHEN MONTH(DT) = 2  AND DAY(DT) = 12   THEN 'LINCOLN DAY''S'           
+              WHEN MONTH(DT) = 2  AND DAY(DT + 1 DAYS) = 12 
+                                 AND DAYOFWEEK(DT + 1 DAYS) = 7 THEN 'OBSERVED -  BRFORE LINCOLN DAY''S' -- DAY  (IF SATURDAY))
+              WHEN MONTH(DT) = 2  AND DAY(DT - 1 DAYS) = 12 
+                                 AND DAYOFWEEK(DT - 1 DAYS) = 1 THEN 'OBSERVED -  AFTER LINCOLN DAY''S'  -- DAY  (IF SUNDAY)
+    ------------------------------------------------------------------------------------------------------------------------
+    -- WASHINGTON'S DAY       - 3d MONDAY ----------------------------------------------------------------------------------
+              WHEN MONTH(DT) = 2  AND DAYOFWEEK(DT) = 2 AND MONTH(DT - 21 DAYS) = 1 AND MONTH(DT - 14 DAYS) = 2   THEN 'WASHINGTON''S DAY' 
+    -----------------------------------------------------------------------------------------------------------------------
+    -- TRUMAN DAY DAY'S DAY ------------------------------------------------------------------------------------------------
+              WHEN MONTH(DT) = 5  AND DAY(DT) = 8   THEN 'TRUMAN DAY' -- DAY'S DAY  
+              WHEN MONTH(DT) = 5  AND DAY(DT + 1 DAYS) = 8 
+                                 AND DAYOFWEEK(DT + 1 DAYS) = 7 THEN 'OBSERVED -  BEFORE TRUMAN DAY' -- DAY'S DAY  (IF SATURDAY))
+              WHEN MONTH(DT) = 5  AND DAY(DT - 1 DAYS) = 8 
+                                 AND DAYOFWEEK(DT - 1 DAYS) = 1 THEN 'OBSERVED -  AFTER TRUMAN DAY' -- DAY'S DAY  (IF SUNDAY)
+    ------------------------------------------------------------------------------------------------------------------------ 
+    -- MEMORIAL DAY -- LAST MONDAY -----------------------------------------------------------------------------------------  
+              WHEN MONTH(DT) = 5  AND DAYOFWEEK(DT) = 2 AND MONTH(DT + 7 DAYS) = 6 THEN 'MEMORIAL DAY' -- LAST MONDAY    
+    -----------------------------------------------------------------------------------------------------------------------  
+    -- INDEPENDENCE DAY ----------------------------------------------------------------------------------------------------
+              WHEN MONTH(DT) = 7  AND DAY(DT) = 4                THEN 'INDEPENDENCE DAY'
+              WHEN MONTH(DT) = 7  AND DAY(DT + 1 DAYS) = 4 
+                                 AND DAYOFWEEK(DT + 1 DAYS) = 7 THEN 'OBSERVED -  BEFORE INDEPENDENCE' -- DAY (IF SATURDAY))
+              WHEN MONTH(DT) = 7  AND DAY(DT - 1 DAYS) = 4 
+                                 AND DAYOFWEEK(DT - 1 DAYS) = 1 THEN 'OBSERVED -  AFTER INDEPENDENCE' -- DAY (IF SUNDAY)
+    -----------------------------------------------------------------------------------------------------------------------
+    -- LABOR DAY ----------------------------------------------------------------------------------------------------------
+              WHEN MONTH(DT) = 9  AND DAYOFWEEK(DT) = 2 AND MONTH(DT - 7 DAYS) = 8 THEN 'LABOR DAY'
+    ----------------------------------------------------------------------------------------------------------------------- 
+    -- COLUMBUS DAY -------------------------------------------------------------------------------------------------------
+              WHEN MONTH(DT) = 10 AND DAYOFWEEK(DT) = 2 AND  MONTH(DT - 14 DAYS) = 9 AND MONTH(DT - 7 DAYS) = 10  THEN 'COLUMBUS DAY'    
+    -----------------------------------------------------------------------------------------------------------------------      
+    -- VETERANS DAY ------------------------------------------------------------------------------------------------------
+              WHEN MONTH(DT) = 11 AND DAY(DT) = 11 THEN   'VETERANS DAY'
+              WHEN MONTH(DT) = 11 AND DAY(DT + 1 DAYS) = 11 
+                                 AND DAYOFWEEK(DT + 1 DAYS) = 7 THEN 'OBSERVED -  BEFORE VETERANS DAY'
+              WHEN MONTH(DT) = 11 AND DAY(DT - 1 DAYS) = 11 
+                                 AND DAYOFWEEK(DT - 1 DAYS) = 1 THEN 'OBSERVED - AFTER VETERANS DAY'
+    -----------------------------------------------------------------------------------------------------------------------   
+    -- THANKS GIVING ----------------------------------------------------------------------------------------------------- 
+              WHEN MONTH(DT) = 11 AND DAYOFWEEK(DT) = 5 AND MONTH(DT - 21 DAYS) = 11 AND MONTH(DT - 28 DAYS) = 10  THEN 'THANKS GIVING' --  (BOTH DAYS MUST BE IN NOVEMBER) 
+              WHEN MONTH(DT) = 11 AND DAYOFWEEK(DT) = 6 AND MONTH(DT - 22 DAYS) = 11 AND MONTH(DT - 29 DAYS) = 10  THEN 'GRANTED DAY AFTER THANKS GIVING' 
+     
+    -- X'MAS --------------------------------------------------------------------------------------------------------------
+              WHEN MONTH(DT) = 12 AND DAY(DT) = 25               THEN 'X''MAS'
+              WHEN MONTH(DT) = 12 AND DAY(DT + 1 DAYS) = 25 
+                                 AND DAYOFWEEK(DT + 1 DAYS) = 7 THEN 'OBSERVED - BEFORE X''MAS' 
+              WHEN MONTH(DT) = 12 AND DAY(DT - 1 DAYS) = 25 
+                                 AND DAYOFWEEK(DT - 1 DAYS) = 1 THEN 'OBSERVED - AFTER  X''MAS' 
+    -----------------------------------------------------------------------------------------------------------------------
+            
+              ELSE ''
+            END AS "IsUSPublicHoliday",
+    
+            CASE 
+              WHEN DAYOFWEEK(DT) = 1 THEN 'Sunday'
+              WHEN DAYOFWEEK(DT) = 7 THEN 'Saturday'
+              ELSE ''
+            END AS "IsWeekEnd"  
+    
+      FROM  DATERANGE
+      WHERE YEAR(DT) = YEAR('01/01/2017')
+) AS tbl
+WHERE tbl."IsUSPublicHoliday" <> ''
