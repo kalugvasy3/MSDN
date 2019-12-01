@@ -1,0 +1,10 @@
+D:\Azure\MyMSDN\CsvWeb\CsvWeb\bin\CsvWeb.dll.config
+D:\Azure\MyMSDN\CsvWeb\CsvWeb\bin\CsvWeb.dll
+D:\Azure\MyMSDN\CsvWeb\CsvWeb\bin\CsvWeb.pdb
+D:\Azure\MyMSDN\CsvWeb\CsvWeb\bin\CsvWeb.xml
+D:\Azure\MyMSDN\CsvWeb\CsvWeb\obj\Debug\CsvWeb.vbprojResolveAssemblyReference.cache
+D:\Azure\MyMSDN\CsvWeb\CsvWeb\obj\Debug\CsvWeb.Resources.resources
+D:\Azure\MyMSDN\CsvWeb\CsvWeb\obj\Debug\CsvWeb.vbproj.GenerateResource.Cache
+D:\Azure\MyMSDN\CsvWeb\CsvWeb\obj\Debug\CsvWeb.dll
+D:\Azure\MyMSDN\CsvWeb\CsvWeb\obj\Debug\CsvWeb.xml
+D:\Azure\MyMSDN\CsvWeb\CsvWeb\obj\Debug\CsvWeb.pdb

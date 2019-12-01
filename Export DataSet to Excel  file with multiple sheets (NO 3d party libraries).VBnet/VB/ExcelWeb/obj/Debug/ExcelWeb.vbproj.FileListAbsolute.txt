@@ -1,0 +1,10 @@
+C:\Users\kalugv\Desktop\VB\ExcelWeb\bin\CsvWeb.dll.config
+C:\Users\kalugv\Desktop\VB\ExcelWeb\bin\CsvWeb.dll
+C:\Users\kalugv\Desktop\VB\ExcelWeb\bin\CsvWeb.pdb
+C:\Users\kalugv\Desktop\VB\ExcelWeb\bin\CsvWeb.xml
+C:\Users\kalugv\Desktop\VB\ExcelWeb\obj\Debug\ExcelWeb.vbprojResolveAssemblyReference.cache
+C:\Users\kalugv\Desktop\VB\ExcelWeb\obj\Debug\CsvWeb.Resources.resources
+C:\Users\kalugv\Desktop\VB\ExcelWeb\obj\Debug\ExcelWeb.vbproj.GenerateResource.Cache
+C:\Users\kalugv\Desktop\VB\ExcelWeb\obj\Debug\CsvWeb.dll
+C:\Users\kalugv\Desktop\VB\ExcelWeb\obj\Debug\CsvWeb.xml
+C:\Users\kalugv\Desktop\VB\ExcelWeb\obj\Debug\CsvWeb.pdb
