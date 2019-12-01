@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P5TypeScript", "P5TypeScript\P5TypeScript.csproj", "{B3916D39-9409-4AC3-B051-C8FB278402AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3916D39-9409-4AC3-B051-C8FB278402AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3916D39-9409-4AC3-B051-C8FB278402AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3916D39-9409-4AC3-B051-C8FB278402AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3916D39-9409-4AC3-B051-C8FB278402AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E40118D4-0A43-407C-A46C-6B19BE79FC7E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://anotherpart.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = P5TypeScript\\P5TypeScript.csproj
+		SccProjectName1 = P5TypeScript
+		SccLocalPath1 = P5TypeScript
+	EndGlobalSection
+EndGlobal
