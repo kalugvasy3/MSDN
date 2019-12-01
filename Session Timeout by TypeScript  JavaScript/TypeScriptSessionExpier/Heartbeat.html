@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="datetime"></div>
+    <!--Response.Write(DateTime.Now.ToLongTimeString() !!! .ASPX  Response does not work with IE11-->
+    <script>
+        var d = new Date().toLocaleTimeString();
+        document.getElementById("datetime").innerHTML = d;
+    </script>
+</body>
+</html>

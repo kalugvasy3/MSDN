@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TypeScriptSessionExpier.Site" %>
+
+<!DOCTYPE html>
+
+<%--https://dev.vast.com/jquery-popup-overlay/--%>
+<%--https://tympanus.net/codrops/2013/11/07/css-overlay-techniques/--%>
+
+<html>
+
+<head runat="server">
+    <title>Session-Timeout</title>
+    <link rel="stylesheet" href="css/modal.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server" class="page">
+        <asp:Label ID="lblMasterPage" runat="server" Text="Master Page" Font-Bold="True" Font-Size="X-Large"></asp:Label>
+
+        <!--Creates the popup body-->
+        <div class="popup-overlay">
+            <div>
+                <h2></h2>
+                    <p>
+                   For security purposes, login sessions are automatically timed out after <span id="session-timeout-minute"></span> minutes of inactivity.
+                   The current login session has been inactive for <span id="session-timeout-current-inactivity"></span> minutes 
+                   and will time out in <span id="session-timeout-countdown"></span> seconds.
+                    </p>
+
+                <!--popup's close button-->
+                <button id="continue" class="button">Continue</button>
+                <button id="logout" class="button">Log Out</button>
+
+            </div>
+        </div>
+
+        <div class="main-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <br />
+        
+    <span id="session-server-response" style="font-size: x-small" />
+    <script type="text/javascript" src="../main.js"></script>
+
+    </form>
+</body>
+</html>
