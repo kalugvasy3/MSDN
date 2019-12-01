@@ -1,0 +1,26 @@
+C:\AspNetSandBox\WindowsFormsMouse\WindowsFormsMouse\bin\Debug\WindowsFormsMouse.exe.config
+C:\AspNetSandBox\WindowsFormsMouse\WindowsFormsMouse\bin\Debug\WindowsFormsMouse.exe
+C:\AspNetSandBox\WindowsFormsMouse\WindowsFormsMouse\bin\Debug\WindowsFormsMouse.pdb
+C:\AspNetSandBox\WindowsFormsMouse\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.formMouse.resources
+C:\AspNetSandBox\WindowsFormsMouse\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.Properties.Resources.resources
+C:\AspNetSandBox\WindowsFormsMouse\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.csproj.GenerateResource.Cache
+C:\AspNetSandBox\WindowsFormsMouse\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.exe
+C:\AspNetSandBox\WindowsFormsMouse\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.pdb
+D:\Azure\MyMSDN\WindowsFormsMouse\WindowsFormsMouse\bin\Debug\WindowsFormsMouse.exe.config
+D:\Azure\MyMSDN\WindowsFormsMouse\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.exe
+D:\Azure\MyMSDN\WindowsFormsMouse\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.pdb
+D:\Azure\MyMSDN\WindowsFormsMouse\WindowsFormsMouse\bin\Debug\WindowsFormsMouse.exe
+D:\Azure\MyMSDN\WindowsFormsMouse\WindowsFormsMouse\bin\Debug\WindowsFormsMouse.pdb
+D:\Azure\MyMSDN\WindowsFormsMouse\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.formMouse.resources
+D:\Azure\MyMSDN\WindowsFormsMouse\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.Properties.Resources.resources
+D:\Azure\MyMSDN\WindowsFormsMouse\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.csproj.GenerateResource.Cache
+C:\Users\kalugv\Desktop\Mouse Move\WindowsFormsMouse\bin\Debug\WindowsFormsMouse.exe.config
+C:\Users\kalugv\Desktop\Mouse Move\WindowsFormsMouse\bin\Debug\WindowsFormsMouse.exe
+C:\Users\kalugv\Desktop\Mouse Move\WindowsFormsMouse\bin\Debug\WindowsFormsMouse.pdb
+C:\Users\kalugv\Desktop\Mouse Move\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.csprojAssemblyReference.cache
+C:\Users\kalugv\Desktop\Mouse Move\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.formMouse.resources
+C:\Users\kalugv\Desktop\Mouse Move\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.Properties.Resources.resources
+C:\Users\kalugv\Desktop\Mouse Move\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.csproj.GenerateResource.cache
+C:\Users\kalugv\Desktop\Mouse Move\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.csproj.CoreCompileInputs.cache
+C:\Users\kalugv\Desktop\Mouse Move\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.exe
+C:\Users\kalugv\Desktop\Mouse Move\WindowsFormsMouse\obj\Debug\WindowsFormsMouse.pdb
