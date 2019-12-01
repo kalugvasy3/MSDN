@@ -1,0 +1,13 @@
+﻿<Window x:Class="SqLiteEditor.resultInGrid"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Choose TabItem and click &lt;CTRL&gt; S   for save DATA in CSV file" Height="400" Width="600"
+        Name="MainWindow" Unloaded="MainWindow_Unloaded" xmlns:my="clr-namespace:SqLiteEditor" >
+
+    <Grid Name="gridResult" RenderTransformOrigin="0.5,0.5">
+      
+
+        <my:userClock Height="200" HorizontalAlignment="Left" Margin="27,25,0,0" x:Name="userClk" VerticalAlignment="Top" Width="200" />
+    </Grid>
+
+</Window>

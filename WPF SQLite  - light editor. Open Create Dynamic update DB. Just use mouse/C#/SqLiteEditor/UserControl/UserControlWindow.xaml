@@ -1,0 +1,244 @@
+﻿<UserControl x:Class="SqLiteEditor.UserControlWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:SqLiteEditor"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Name="userMainControl"
+             MinWidth="440"
+             MinHeight="410"
+             mc:Ignorable="d" Unloaded="userMainControl_Unloaded">
+
+    <Grid x:Name="gridMain"
+          MinWidth="420"
+          MinHeight="370"
+          Margin="0"
+          RenderTransformOrigin="0.025,0.029">
+
+
+
+
+        <Grid x:Name="gridCode"
+              Margin="33,29,0,30"
+              IsEnabled="False"
+              ToolTip="" RenderTransformOrigin="-0.052,-0.048">
+
+
+            <TabControl x:Name="tabPlaceHolder"
+                        Margin="137,0,106,0"
+                        Background="#FFFAFCFD" />
+
+            <ListBox x:Name="listOfTables"
+                     MinWidth="100"
+                     Margin="0,39,131,79"
+                     HorizontalAlignment="Right"
+                     Opacity="0.75"
+                     SelectionChanged="listOfTables_SelectionChanged" KeyUp="listOfTables_KeyUp" IsVisibleChanged="listOfTables_IsVisibleChanged" MouseEnter="listOfTables_MouseEnter">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding tbl_name}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.Effect>
+                    <DropShadowEffect Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}" />
+                </ListBox.Effect>
+            </ListBox>
+            <Button x:Name="btnSelect"
+                    Width="100"
+                    Height="23"
+                    Margin="0,83,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="btnSelect_Click"
+                    Content="Select"
+                    ToolTip="Select * FROM ..." />
+            <Button x:Name="btnDelete"
+                    Width="100"
+                    Height="23"
+                    Margin="0,112,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="btnDelete_Click"
+                    Content="Delete"
+                    ToolTip="Delete..." />
+            <Button x:Name="btnInsert"
+                    Width="100"
+                    Height="23"
+                    Margin="0,140,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="btnInsert_Click"
+                    Content="Insert"
+                    ToolTip="Insert..." />
+            <Button x:Name="btnUpdate"
+                    Width="100"
+                    Height="23"
+                    Margin="0,168,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="btnUpdate_Click"
+                    Content="Update"
+                    ToolTip="Update..." />
+            <Button x:Name="btnSchema"
+                    Width="100"
+                    Height="23"
+                    Margin="0,83,0,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Click="btnSchema_Click"
+                    Content="SCHEMA"
+                    ToolTip="Schema of opened DB ..." />
+
+            <Button x:Name="btnRunTop"
+                    Width="100"
+                    Height="25"
+                    Margin="0,2,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="btnRun_Click"
+                    Content="Run"
+                    FontWeight="Bold"
+                    Foreground="#FFC948E6"
+                    ToolTip="Run - If Selected - Run Selected ..." />
+            <Button x:Name="btnCreate"
+                    Width="100"
+                    Height="23"
+                    Margin="0,112,0,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Click="btnCreate_Click"
+                    Content="CREATE"
+                    ToolTip="Create Table/View sample ... Better Use Alter and Correct existing Code ..." />
+            <Button x:Name="btnDrop"
+                    Width="100"
+                    Height="23"
+                    Margin="0,140,0,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Click="btnDrop_Click"
+                    Content="DROP"
+                    ToolTip="Drop Table/View ..." />
+            <Button x:Name="btnAlter"
+                    Width="100"
+                    Height="23"
+                    Margin="0,168,0,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Click="btnAlter_Click"
+                    Content="ALTER"
+                    ToolTip="Alter Table/View ..." />
+            <Button x:Name="btnAddNewSql"
+                    Width="25"
+                    Height="25"
+                    Margin="107,2,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="btnAddNewSql_Click"
+                    Content="+"
+                    ToolTip="Add New SQL code to the Tab ..." />
+            <Button x:Name="btnRunRight"
+                    Width="100"
+                    Height="25"
+                    Margin="0,2,0,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Click="btnRunRight_Click"
+                    Content="Run"
+                    FontWeight="Bold"
+                    Foreground="#FFC948E6"
+                    ToolTip="Run - If Selected - Run Selected ..." />
+            <Button x:Name="btnImport"
+                    Width="100"
+                    Height="23"
+                    Margin="0,196,0,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Click="btnImport_Click"
+                    Content="IMPORT"
+                    IsEnabled="True"
+                    ToolTip="Import CSV, XML ... Create Table (SQL) ... Insert Data (SQL) ..."  />
+            <Button x:Name="btnRunRightBottom"
+                    Width="100"
+                    Height="25"
+                    Margin="0,326,0,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Click="btnRunRightBottom_Click"
+                    Content="Run"
+                    FontWeight="Bold"
+                    Foreground="#FFC948E6"
+                    ToolTip="Run - If Selected - Run Selected ..." />
+            <Button x:Name="btnRunLeftBottom_Copy"
+                    Width="100"
+                    Height="25"
+                    Margin="0,0,307,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Bottom"
+                    Click="btnRunLeftBottom_Copy_Click"
+                    Content="Run"
+                    FontWeight="Bold"
+                    Foreground="#FFC948E6"
+                    ToolTip="Run - If Selected - Run Selected ..." />
+            <Button x:Name="btnMinusCurrentSql"
+                    Width="25"
+                    Height="25"
+                    Margin="107,32,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="btnMinusCurrentSql_Click"
+                    Content="-"
+                    ToolTip="Remove Selected Tab ..." />
+
+
+
+
+
+        </Grid>
+
+
+        <TextBox x:Name="txtConnectionString"
+                 Height="25"
+                 Margin="139,0,0,0"
+                 VerticalAlignment="Top"
+                 Text="Data Source=Northwind.sl3; "
+                 TextChanged="txtConnectionString_TextChanged"
+                 TextWrapping="NoWrap"
+                 ToolTip="Please Insert Valid Connection String ...and Connect ..." />
+        <Button x:Name="btnConnect"
+                Width="101"
+                Height="25"
+                Margin="33,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="btnConnect_Click"
+                Content="Connect"
+                ToolTip="Please connect first to DB file ..." />
+
+        <Button x:Name="btnStyle"
+                Width="25"
+                Height="25"
+                Margin="0,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                AllowDrop="True"
+                Click="btnStyle_Click"
+                Content="ÿ"
+                FontFamily="Wingdings"
+                MouseEnter="btnStyle_MouseEnter"
+                MouseLeave="btnStyle_MouseLeave"
+                MouseWheel="btnStyle_MouseWheel"
+                ToolTip="Click For Change Style ... Use Wheel For Change Size ... Double Click - 100% ..." MouseRightButtonUp="btnStyle_MouseRightButtonUp" />
+        <StatusBar Height="23"
+                   Margin="0,352,0,0"
+                   VerticalAlignment="Bottom" />
+        <Slider x:Name="sliderSc" HorizontalAlignment="Left" Margin="0,30,0,28" ValueChanged="sliderSc_ValueChanged" Orientation="Vertical" LargeChange="0.1" Maximum="1.7" Minimum="0.7" ToolTip="Application's scale..." Value="1"/>
+
+    </Grid>
+
+    <UserControl.LayoutTransform>
+        <ScaleTransform x:Name="ucScale"
+                        ScaleX="1.0"
+                        ScaleY="1.0" />
+    </UserControl.LayoutTransform>
+
+</UserControl>
