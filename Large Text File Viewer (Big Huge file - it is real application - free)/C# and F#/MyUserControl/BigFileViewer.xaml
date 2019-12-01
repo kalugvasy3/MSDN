@@ -1,0 +1,23 @@
+﻿<UserControl 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+
+        xmlns:CommonClassLibrary="clr-namespace:CommonClassLibrary;assembly=CommonClassLibrary" 
+        xmlns:FsharpXAMLLibrary="clr-namespace:FsharpXAMLLibrary;assembly=FsharpXAMLLibrary" 
+        x:Name="ucShowText" MinHeight="110" MinWidth="130" FontWeight="Bold">
+
+    <Grid x:Name="bigGrid" >
+        <CommonClassLibrary:StatusBarSystem x:Name="statusBar" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" />
+        <FsharpXAMLLibrary:MyTextBox x:Name="myTextBox"  Margin="0,0,0,22"/>
+    </Grid>
+
+    <UserControl.LayoutTransform>
+        <ScaleTransform x:Name="allScale" 
+                        ScaleX="1.0" 
+                        ScaleY="1.0" />
+    </UserControl.LayoutTransform>
+    
+</UserControl>
+
+
+

@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/Header.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/sprite.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/UhfHeader.css" data-do-not-move="true" />
+<link rel="stylesheet" href="https://statics-uhf-eus.akamaized.net/west-european/shell/_scrf/css/themes=default.device=uplevel_web_pc/95-bebd50/fa-931df9/52-018a9f/1c-69bb10/e5-670c61/ce-1c4cee/34-6b9bf8/a6-1fffa6?ver=2.0" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=555137F9779EE46BCBD466C317BA2BCC" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfFooter.css?v=636674821112704322" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Large Text File Viewer (Big Huge file - it is real application - free)</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/6ad5ae67-3bd3-444e-bb6a-0da5026ab78dBrand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Large Text File Viewer (Big Huge file - it is real application - free)</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            WPF, F#, MMF, Large Text File
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            WPF, F#, Large Text File
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Phone, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">11/9/2018</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction&nbsp; &nbsp;</h1>
+<p><span style="background-color:#ffff99">Updated - swithch F# to version 4.0.&nbsp;</span></p>
+<p>Lager Text File Viewer -&nbsp;Big Huge file viewer - Some gigabytes file is not a problem - opennign during some seconds.</p>
+<p>It is a real application which allows to re-view big file.</p>
+<p><strong>This not a sample</strong>, it is a fully working application for view big/huge size file.</p>
+<p>Bring Application and goto&nbsp; &hellip;\BigFileViewerModule\BigFileViewer\bin and RUN
+<strong>BigFileViewer.exe</strong></p>
+<p><strong>Or bring, compile and RUN<br>
+</strong></p>
+<p>It works with any size of the file(s).&nbsp;</p>
+<h1><span>Building the Sample</span></h1>
+<p>It was tested with the 0.3G, 1G, 4G, 8G and 16G files.</p>
+<p>See GIF file for performance &ndash; example for opening &nbsp;1G file (each line in this file about 1M)</p>
+<p>&nbsp;</p>
+<p>One restriction &ndash; each line must be less than 4M (or &nbsp;you need to use PRO version which will be published in Microsoft Store)</p>
+<p>It will be working on any PC with dot.Net 7.0</p>
+<p>(It successfully work on ten years &nbsp;old PC with few gigabytes of memory)</p>
+<p>See gif-file - an example <span style="background-color:#ffff00"><strong>of the 1G file .</strong></span>..&nbsp;</p>
+<p>&nbsp;<img id="184329" src="description/MyHugeFileViewer.gif" alt="" width="482" height="215"></p>
+<p>Any file will be ready to view during 5..15 sec.</p>
+<p>Some seconds need to spend on MAP file &ndash; progress bar will show staus (it is background process - &nbsp;8G file MAPED during 40 sec &nbsp;(it depends on your hardware)</p>
+<p>&nbsp;</p>
+<p>Application using &ldquo;Memory Mapped File&rdquo; &ndash; you can see detail example here &nbsp;<a href="https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-huge-file-viewer-62a903f2">https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-huge-file-viewer-62a903f2</a></p>
+<p>&nbsp;</p>
+<p><img id="184330" src="description/HowItWorks.gif" alt="" width="487" height="218"></p>
+<p>&nbsp;</p>
+<p>For &ldquo;Open&rdquo; file just drop it on Application (NOT ADMIN mode) or use mouse right click&nbsp;&ndash; Open.</p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p>For &ldquo;<strong>Open&rdquo;</strong> file just <strong>drop</strong> it on Application (NOT ADMIN mode) or use
+<strong>mouse right click&nbsp;</strong>&ndash; Open.</p>
+<p>&nbsp;</p>
+<p><strong>Mouse Right Click </strong>-&nbsp; Menu (Open file/Find/GoTo/Exit)</p>
+<p>&ldquo;<strong>GoTo</strong>&rdquo; &ndash; just Number (GoTo line)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Comma &#43; Number (GoTo char position)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number &#43; Comma &#43; Number (Go To specific X,Y position)</p>
+<p>For adjust size of application&nbsp;use [Ctrl] &#43; Mouse Wheel - for scaling this application (75%...200%)</p>
+<p><strong>[Double Click] </strong>on SlideBar X or Y&nbsp;- jump to new position&nbsp; (use for fast moving to new position)</p>
+<p><strong>[Shift] &#43; mouse wheel </strong>&ndash; horizontal scrolling</p>
+<p><strong>[Shift] &#43; &nbsp;[Tab]&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shift &nbsp;&nbsp;left on 4 position</p>
+<p><strong>[Shift] &#43; [PageUp]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scroll Y&nbsp;&nbsp;&nbsp; scroll Up&nbsp; 100 pages</p>
+<p><strong>[Shift] &#43; [PageDown]</strong>&nbsp;&nbsp;&nbsp;Scroll Y&nbsp;&nbsp;&nbsp; scroll Down&nbsp; 100 pages</p>
+<p>&nbsp;</p>
+<p>[<strong>Ctrl] &#43; Mouse Wheel&nbsp;&nbsp; </strong>&nbsp;application scale 75%...200%.</p>
+<p><strong>[Ctrl] &#43; [Home]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp; X=0, Y=0</p>
+<p><strong>[Ctrl] &#43; [End]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to X=0, Y=Last line</p>
+<p><strong>[Ctrl] &#43; [PageUp]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scroll Y&nbsp;&nbsp;&nbsp; scroll Up&nbsp; 10 pages</p>
+<p><strong>[Ctrl] &#43; [PageDown]</strong>&nbsp; &nbsp;&nbsp;Scroll Y&nbsp;&nbsp;&nbsp; scroll Down&nbsp; 10 pages</p>
+<p><strong>[Ctrl] &#43; [O]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open Menu</p>
+<p><strong>[Ctrl] &#43; [F]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Find Next</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>[Esc]</strong> &nbsp;&nbsp;Escape form Search&nbsp; (also double click on X/Y Scroll bars)</p>
+<p><strong>[PageUp]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; page up</p>
+<p><strong>[PageDown]</strong>&nbsp;&nbsp;&nbsp; page down</p>
+<p><strong>[Home]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X = 0</p>
+<p><strong>[End]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X &nbsp;max chars in line&nbsp; (<strong>it is not End to particular line</strong>)</p>
+<p><strong>[Left]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; left on one position</p>
+<p><strong>[Right]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; right one position</p>
+<p><strong>[Up]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up to one line</p>
+<p><strong>[Down]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; down to one line</p>
+<p><strong>[Tab]</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; shift right on 4 position</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Also use M<strong>ouse Wheel&nbsp; </strong>on text area &ndash; scroll&nbsp;&nbsp;&nbsp; down/up&nbsp;&nbsp;</p>
+<p>Iif hold <strong>[shift] &#43; Mouse Wheel</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp; scroll&nbsp;&nbsp; &nbsp;left/right&nbsp; &nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>F#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">fsharp</span>
+<pre class="hidden">module MainWindow
+
+open System 
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://msdn.microsoft.com/en-US/library/System.Windows.aspx"  title="Auto generated link to System.Windows">System.Windows</a> 
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://msdn.microsoft.com/en-US/library/System.IO.aspx"  title="Auto generated link to System.IO">System.IO</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://msdn.microsoft.com/en-US/library/System.Windows.Markup.aspx"  title="Auto generated link to System.Windows.Markup">System.Windows.Markup</a>
+
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://msdn.microsoft.com/en-US/library/System.Windows.Controls.aspx"  title="Auto generated link to System.Windows.Controls">System.Windows.Controls</a> 
+
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://msdn.microsoft.com/en-US/library/System.Reflection.aspx"  title="Auto generated link to System.Reflection">System.Reflection</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://msdn.microsoft.com/en-US/library/System.Windows.Media.Imaging.aspx"  title="Auto generated link to System.Windows.Media.Imaging">System.Windows.Media.Imaging</a>
+
+// init Main Window
+let mutable this : Window = new Window()
+do this.ResizeMode &lt;- ResizeMode.CanResizeWithGrip
+do this.SizeToContent &lt;-SizeToContent.WidthAndHeight 
+do this.Title &lt;- &quot;Big File Viewer&quot;
+do this.MinHeight &lt;- 256.0
+do this.MinWidth &lt;- 512.0
+do this.MaxHeight &lt;- 2160.0   // limit lines per screen 200 lines
+do this.MaxWidth &lt;- 3000.0
+
+do this.SizeToContent &lt;- SizeToContent.WidthAndHeight
+
+let iconUri = new Uri(&quot;pack://application:,,,/AP.ico&quot;, UriKind.RelativeOrAbsolute);
+do this.Icon &lt;-  BitmapFrame.Create(iconUri)
+do this.Name &lt;- &quot;MainWindow&quot; 
+
+
+let mutable  ucMainWindow = new MyUserControl.BigFileViewer()
+do this.Content &lt;- ucMainWindow
+
+do this.Loaded.Add(fun _ -&gt;  ucMainWindow.WinHolder &lt;- this)
+do this.Unloaded.Add(fun _ -&gt; this &lt;- null 
+                              GC.Collect())   //Environment.Exit(0)
+
+do this.SizeChanged.Add(fun _ -&gt;  ucMainWindow.WinHolder &lt;- this)
+
+[&lt;STAThread&gt;] 
+[&lt;EntryPoint&gt;]
+
+do (new Application()).Run(this) |&gt; ignore</pre>
+<div class="preview">
+<pre class="fsharp"><span class="fs__keyword">module</span>&nbsp;MainWindow&nbsp;
+&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System&nbsp;&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.Windows&nbsp;&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.IO&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.Windows.Markup&nbsp;
+&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.Windows.Controls&nbsp;&nbsp;
+&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.Reflection&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.Windows.Media.Imaging&nbsp;
+&nbsp;
+<span class="fs__com">//&nbsp;init&nbsp;Main&nbsp;Window</span>&nbsp;
+<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;this&nbsp;:&nbsp;Window&nbsp;=&nbsp;<span class="fs__keyword">new</span>&nbsp;Window()&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.ResizeMode&nbsp;&lt;-&nbsp;ResizeMode.CanResizeWithGrip&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.SizeToContent&nbsp;&lt;-SizeToContent.WidthAndHeight&nbsp;&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.Title&nbsp;&lt;-&nbsp;<span class="fs__string2">&quot;Big&nbsp;File&nbsp;Viewer&quot;</span>&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.MinHeight&nbsp;&lt;-&nbsp;<span class="fs__number">256.0</span>&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.MinWidth&nbsp;&lt;-&nbsp;<span class="fs__number">512.0</span>&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.MaxHeight&nbsp;&lt;-&nbsp;<span class="fs__number">2160.0</span>&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;limit&nbsp;lines&nbsp;per&nbsp;screen&nbsp;200&nbsp;lines</span>&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.MaxWidth&nbsp;&lt;-&nbsp;<span class="fs__number">3000.0</span>&nbsp;
+&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.SizeToContent&nbsp;&lt;-&nbsp;SizeToContent.WidthAndHeight&nbsp;
+&nbsp;
+<span class="fs__keyword">let</span>&nbsp;iconUri&nbsp;=&nbsp;<span class="fs__keyword">new</span>&nbsp;Uri(<span class="fs__string2">&quot;pack://application:,,,/AP.ico&quot;</span>,&nbsp;UriKind.RelativeOrAbsolute);&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.Icon&nbsp;&lt;-&nbsp;&nbsp;BitmapFrame.Create(iconUri)&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.Name&nbsp;&lt;-&nbsp;<span class="fs__string2">&quot;MainWindow&quot;</span>&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;&nbsp;ucMainWindow&nbsp;=&nbsp;<span class="fs__keyword">new</span>&nbsp;MyUserControl.BigFileViewer()&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.Content&nbsp;&lt;-&nbsp;ucMainWindow&nbsp;
+&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.Loaded.Add(<span class="fs__keyword">fun</span>&nbsp;_&nbsp;-&gt;&nbsp;&nbsp;ucMainWindow.WinHolder&nbsp;&lt;-&nbsp;this)&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.Unloaded.Add(<span class="fs__keyword">fun</span>&nbsp;_&nbsp;-&gt;&nbsp;this&nbsp;&lt;-&nbsp;<span class="fs__keyword">null</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GC.Collect())&nbsp;&nbsp;&nbsp;<span class="fs__com">//Environment.Exit(0)</span>&nbsp;
+&nbsp;
+<span class="fs__keyword">do</span>&nbsp;this.SizeChanged.Add(<span class="fs__keyword">fun</span>&nbsp;_&nbsp;-&gt;&nbsp;&nbsp;ucMainWindow.WinHolder&nbsp;&lt;-&nbsp;this)&nbsp;
+&nbsp;
+[&lt;STAThread&gt;]&nbsp;&nbsp;
+[&lt;EntryPoint&gt;]&nbsp;
+&nbsp;
+<span class="fs__keyword">do</span>&nbsp;(<span class="fs__keyword">new</span>&nbsp;Application()).Run(this)&nbsp;|&gt;&nbsp;ignore</pre>
+</div>
+</div>
+</div>
+<h1><span>Source Code Files</span></h1>
+<ul>
+<li><a href="https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-huge-file-viewer-62a903f2">https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-huge-file-viewer-62a903f2</a>
+</li></ul>
+<h1>More Information</h1>
+<p><em><a href="https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-huge-file-viewer-62a903f2">https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227/https://code.msdn.microsoft.com/windowsapps/Big-huge-file-viewer-62a903f2</a></em></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
