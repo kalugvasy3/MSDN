@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/Header.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/sprite.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/UhfHeader.css" data-do-not-move="true" />
+<link rel="stylesheet" href="https://statics-uhf-eas.akamaized.net/west-european/shell/_scrf/css/themes=default.device=uplevel_web_pc/ec-f8ec33/b7-01890e/67-f66a05/bb-33df2f/d6-3f8236/1c-14fb9c/8e-0f0147/17-1042c1?ver=2.0" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=AE7376403751B6DAA8B4EFF9E1CAE467" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfFooter.css?v=636674569112704322" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Building WPF application by F# (F sharp only ). WPF + F#  UserControl.</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/6fdd8397-82da-4dbc-9def-6790e7bcabedBrand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Building WPF application by F# (F sharp only ). WPF + F#  UserControl.</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            WPF, F#, UI Design, Windows XAML Forms
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            WPF, XAML, F#, User Control, F sharp
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">9/4/2018</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p><span style="background-color:transparent; color:#000000; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; font-style:normal; font-variant:normal; font-weight:400; letter-spacing:normal; orphans:2; text-align:left; text-decoration:none; text-indent:0px; text-transform:none; white-space:normal; word-spacing:0px; margin:0px">Install
+ dot.Net 4.7.2 &nbsp;<a href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://www.microsoft.com/net/download/thank-you/net472-developer-pack">https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://www.microsoft.com/net/download/thank-you/net472-developer-pack&nbsp;</a><strong>&nbsp;</strong><em>&nbsp;</em></span><em style="background-color:transparent; color:#000000; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; font-style:italic; font-variant:normal; font-weight:400; letter-spacing:normal; orphans:2; text-align:left; text-decoration:none; text-indent:0px; text-transform:none; white-space:normal; word-spacing:0px; margin:0px">&nbsp;</em></p>
+<p><strong><span style="color:#ff0000">Built base on new F# NuGet approaches.</span></strong></p>
+<p><strong><span style="color:#ff0000">When a new version of the F# language ships, the major and minor versions will be updated appropriately.</span></strong><span>&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><em>WPF F# (F sharp only ) complex solution with MAIN project and USER library. All only F# &#43; XAML (no partition class,
+<strong>No third party DLL's)</strong>. The example shows how to use User Control inside another User Control. How to build Window Application...</em></p>
+<p><em><span style="background-color:#ffff99"><strong>Updated base on new paradigm using F# from NuGet
+</strong>-</span> 08/30/2018&nbsp;</em></p>
+<p><strong><em>How to Events,member,RenderTransform.Transform,TranslateTransform, Drag, Move Object, WPF F# only...&nbsp; &nbsp;</em></strong></p>
+<p>&nbsp;</p>
+<h1>Build the Application&nbsp;</h1>
+<p><em>Bring solution it includes Main Project and UseControl project ... It should work without any additional manipulation ...</em></p>
+<p><em><span>ALL&nbsp;XAML</span>&nbsp;file (with this approaches) MUST have Properties&nbsp;<span>Build Action - EmbeddedResource</span></em></p>
+<h1>If need to Create the Application&nbsp;</h1>
+<p><span>Create ConsoleApplication (dot.Net Framework), add needed assemblies</span><strong>&nbsp;</strong><em>&nbsp;</em></p>
+<p><img id="207797" src="https://i1.code.msdn.s-msft.com/windowsapps/wpf-f-f-sharp-only-complex-c4391bfb/image/file/207797/1/fsharpconsolapp600.png" alt="" width="600" height="510"></p>
+<p>&nbsp;</p>
+<p><span><img id="207798" src="https://i1.code.msdn.s-msft.com/windowsapps/wpf-f-f-sharp-only-complex-c4391bfb/image/file/207798/1/assembies.png" alt="" width="401" height="554"><br>
+</span></p>
+<p>F# now downloaded from NuGet, for example, &quot;<span>Install-Package FSharp.Core -Version 4.5.2</span><em>&quot;</em></p>
+<p>Change to &quot;<strong>Windows Application&quot;</strong></p>
+<p>Repeat same for next project - change type to &quot;<strong>Class Library</strong>&quot;</p>
+<p>Add files - change the type to XAML, Make sure Build Action - EmbeddedResource</p>
+<p><img id="137234" src="https://i1.code.msdn.s-msft.com/wpf-f-f-sharp-only-complex-c4391bfb/image/file/137234/1/embeddedresource.png" alt="" width="438" height="207"></p>
+<p><em><span style="background-color:#ffff00"><br>
+</span></em></p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p><em>&nbsp;</em></p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder">
+<div class="title"><span>XAML</span><span>F#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">xaml</span><span class="hidden">fsharp</span>
+<pre class="hidden">&lt;UserControl
+        xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot; 
+        xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot; 
+ 
+         
+        xmlns:RectModul=&quot;clr-namespace:MyUserControl.RectModul;assembly=MyUserControl&quot; x:Name=&quot;MainWindow&quot; 
+        
+       &gt;
+
+
+
+    &lt;Grid x:Name=&quot;gridAll&quot; Margin=&quot;0,0,0,0&quot; Background=&quot;#FFABE2E2&quot; RenderTransformOrigin=&quot;0.5,0.5&quot; MinHeight=&quot;300&quot; MinWidth=&quot;600&quot;&gt;
+
+        &lt;Button x:Name=&quot;btnHello&quot; Content=&quot;HELLO&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;28,29,0,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;75&quot;/&gt;
+        &lt;TextBlock x:Name=&quot;txtHello&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;187,36,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;***&quot; VerticalAlignment=&quot;Top&quot; RenderTransformOrigin=&quot;-0.16,0.812&quot; Width=&quot;75&quot;/&gt;
+        &lt;RectModul:Rect x:Name=&quot;recRed&quot;  HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Center&quot; RenderTransformOrigin=&quot;0.5,0.207&quot; /&gt;
+
+
+    &lt;/Grid&gt;
+&lt;/UserControl&gt;
+</pre>
+<pre class="hidden">// This sample was built 05/03/2015 by Vasily Kalugin 
+// This example was built base on my different example - https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://code.msdn.microsoft.com/windowsapps/Building-WPF-application-09b8fb8c 
+// License - MIT 
+// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+// INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+// IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
+// TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+module MainWindow
+
+open System 
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://msdn.microsoft.com/en-US/library/System.Windows.aspx"  title="Auto generated link to System.Windows">System.Windows</a> 
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://msdn.microsoft.com/en-US/library/System.Windows.Input.aspx"  title="Auto generated link to System.Windows.Input">System.Windows.Input</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://msdn.microsoft.com/en-US/library/System.Windows.Controls.aspx"  title="Auto generated link to System.Windows.Controls">System.Windows.Controls</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://msdn.microsoft.com/en-US/library/System.IO.aspx"  title="Auto generated link to System.IO">System.IO</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://msdn.microsoft.com/en-US/library/System.Xml.aspx"  title="Auto generated link to System.Xml">System.Xml</a> 
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://msdn.microsoft.com/en-US/library/System.Xaml.aspx"  title="Auto generated link to System.Xaml">System.Xaml</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://msdn.microsoft.com/en-US/library/System.Windows.Markup.aspx"  title="Auto generated link to System.Windows.Markup">System.Windows.Markup</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://msdn.microsoft.com/en-US/library/System.Text.aspx"  title="Auto generated link to System.Text">System.Text</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://msdn.microsoft.com/en-US/library/System.Reflection.aspx"  title="Auto generated link to System.Reflection">System.Reflection</a>
+open Utilities
+open MyUserControl.RectModul
+
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://msdn.microsoft.com/en-US/library/System.Windows.Media.aspx"  title="Auto generated link to System.Windows.Media">System.Windows.Media</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://msdn.microsoft.com/en-US/library/System.Windows.Shapes.aspx"  title="Auto generated link to System.Windows.Shapes">System.Windows.Shapes</a>
+
+
+type MainWindow() as this  = 
+     inherit UserControl() 
+     let mySr = new StreamReader(Assembly.Load(&quot;MainFsharp&quot;).GetManifestResourceStream(&quot;MainWindow.xaml&quot;))   // XAML - MUST be Embedded Resource 
+     do this.Content &lt;- XamlReader.Load(mySr.BaseStream):?&gt; UserControl  // Load XAML
+
+    // Find Control on MainWindow     
+     let uc = this.Content :?&gt; UserControl
+
+     let txtHello : TextBlock = uc?txtHello  // Find txtHello name in runWindow and Cast to TextBlock     
+     let btnHello : Button = uc?btnHello       // Find btnHelp name in runWindow and cast to Button   
+     let gridAll  : Grid   = uc?gridAll  
+
+     do btnHello.Click.Add(fun _ -&gt; do if txtHello.Text = &quot;***&quot; then txtHello.Text &lt;- &quot;Hello!&quot; else txtHello.Text &lt;- &quot;***&quot; ) 
+
+     // Example for adding behavior for UserControl ... External UserControl from Library added to &quot;MainWindow&quot; user control (see MainWindow.XAML file) ....
+     
+     let myRec : Rect  = uc?recRed           
+     do myRec.recBrush &lt;- new SolidColorBrush(Colors.Blue)   // Change Red color (see type) to Blue ...just example ...
+ 
+
+     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+     //Uncomment below - logic for drag rectangle ...
+
+     let mutable tr = new TranslateTransform() 
+     
+     do tr.X &lt;- 100.0
+     do tr.Y &lt;- 100.0
+
+     do myRec.RenderTransform &lt;- tr   // added for drag object to  myRec ...    
+    
+     do myRec.recLblX &lt;- &quot;X = &quot; &#43; tr.X.ToString()
+     do myRec.recLblY &lt;- &quot;Y = &quot; &#43; tr.Y.ToString()
+    
+     let mutable blnOn : bool = false
+
+     do myRec.MouseLeftButtonDown.Add(fun _  -&gt; do blnOn &lt;- true)  //if press left button and move -&gt; drag object MyUserControl.RectModul.Rect
+     do myRec.MouseLeftButtonUp.Add(fun _ -&gt; do blnOn &lt;- false)
+
+     let mouseMove(e : MouseEventArgs) =
+        
+         let mousePos = e.GetPosition(gridAll) 
+         let mutable rectPos = myRec.RenderTransform.Transform
+
+         let sender = e.OriginalSource
+         match sender with
+         | :? Rectangle -&gt;  
+                        try                 
+                            if myRec.IsMouseOver &amp;&amp; blnOn then
+
+                                  do tr.X  &lt;-  mousePos.X - gridAll.ActualWidth  / 2.0 
+                                  do tr.Y  &lt;-  mousePos.Y - gridAll.ActualHeight / 2.0 
+                                  do myRec.recLblX &lt;- &quot;X -&gt; &quot; &#43; tr.X.ToString()
+                                  do myRec.recLblY &lt;- &quot;Y -&gt; &quot; &#43; tr.Y.ToString()
+
+                        with ex -&gt; () 
+                                |&gt; ignore
+   
+         | _ -&gt; do blnOn &lt;- false 
+   
+     do myRec.recMoveEvent.Add(fun  e -&gt; mouseMove(e))  
+     // End ----- Example for moving User Control By Mouse
+
+
+     
+
+
+type AAA() as this =
+     inherit Window()
+     do this.Content &lt;- new MainWindow()    // add User Control &quot;MainWindow&quot; to Window()
+
+     // Add here any logic for Window() ...
+     // Load...Start...Exit...Exception...etc..
+
+     do this.Width &lt;- 600.0
+     do this.Height &lt;- 400.0
+
+
+[&lt;STAThread&gt;] 
+[&lt;EntryPoint&gt;]
+
+do (new Application()).Run(new AAA()) |&gt; ignore</pre>
+<div class="preview">
+<pre class="xaml"><span class="xaml__tag_start">&lt;UserControl</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__attr_name">xmlns</span>=<span class="xaml__attr_value">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__keyword">xmlns</span>:<span class="xaml__attr_name">x</span>=<span class="xaml__attr_value">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__keyword">xmlns</span>:<span class="xaml__attr_name">RectModul</span>=<span class="xaml__attr_value">&quot;clr-namespace:MyUserControl.RectModul;assembly=MyUserControl&quot;</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;MainWindow&quot;</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Grid</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;gridAll&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;0,0,0,0&quot;</span>&nbsp;<span class="xaml__attr_name">Background</span>=<span class="xaml__attr_value">&quot;#FFABE2E2&quot;</span>&nbsp;<span class="xaml__attr_name">RenderTransformOrigin</span>=<span class="xaml__attr_value">&quot;0.5,0.5&quot;</span>&nbsp;<span class="xaml__attr_name">MinHeight</span>=<span class="xaml__attr_value">&quot;300&quot;</span>&nbsp;<span class="xaml__attr_name">MinWidth</span>=<span class="xaml__attr_value">&quot;600&quot;</span><span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Button</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;btnHello&quot;</span>&nbsp;<span class="xaml__attr_name">Content</span>=<span class="xaml__attr_value">&quot;HELLO&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Left&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;28,29,0,0&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Top&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;75&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;TextBlock</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;txtHello&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Left&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;187,36,0,0&quot;</span>&nbsp;<span class="xaml__attr_name">TextWrapping</span>=<span class="xaml__attr_value">&quot;Wrap&quot;</span>&nbsp;<span class="xaml__attr_name">Text</span>=<span class="xaml__attr_value">&quot;***&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Top&quot;</span>&nbsp;<span class="xaml__attr_name">RenderTransformOrigin</span>=<span class="xaml__attr_value">&quot;-0.16,0.812&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;75&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;RectModul</span>:Rect&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;recRed&quot;</span>&nbsp;&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Center&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Center&quot;</span>&nbsp;<span class="xaml__attr_name">RenderTransformOrigin</span>=<span class="xaml__attr_value">&quot;0.5,0.207&quot;</span>&nbsp;<span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_end">&lt;/Grid&gt;</span>&nbsp;
+<span class="xaml__tag_end">&lt;/UserControl&gt;</span>&nbsp;
+</pre>
+</div>
+</div>
+</div>
+<p><strong><em>This example was built the base on different my example (but here absolutely different approach load all components) &nbsp;<a href="https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://code.msdn.microsoft.com/windowsapps/Building-WPF-application-09b8fb8c">https://code.msdn.microsoft.com/windowsapps/WPF-F-F-sharp-only-complex-c4391bfb/https://code.msdn.microsoft.com/windowsapps/Building-WPF-application-09b8fb8c</a>
+ . &nbsp;</em></strong></p>
+<p><strong><em>License - MIT .</em></strong><strong>&nbsp;</strong></p>
+<p>&nbsp;</p>
+<ul>
+</ul>
+<h1>More Information</h1>
+<p>&nbsp;</p>
+<p>I have not found the solution (except MVVM approach) &ndash; but here absolutely different approaches &hellip;</p>
+<p>This method helps you using your XAML knowledge like you using it with C# &hellip;</p>
+<p>&nbsp;</p>
+<p>This solution help you build WPF application with any complexity without &nbsp;using partition class (like in C#)</p>
+<p>&nbsp;</p>
+<p><img id="137229" src="https://code.msdn.microsoft.com/site/view/file/137229/1/UserContrlol.png" alt="" width="552" height="314"></p>
+<p>Do not need to use third party dll like FSharpx.&nbsp;</p>
+<p><a href="http://www.mindscapehq.com/blog/index.php/2012/04/29/using-wpf-elements-from-f/">http://www.mindscapehq.com/blog/index.php/2012/04/29/using-wpf-elements-from-f/</a>&nbsp;</p>
+<p>&nbsp;</p>
+<p>In this example, you find the solution how to build WPF with F# only... Console Application -&gt; Change to Windows Application -&gt; Build XAML -&gt; changed to&nbsp;ResourceEmbedded&nbsp;resource, Load Assembly and Find XAML resource ...</p>
+<p>&nbsp;</p>
+<p><img id="137232" src="https://i1.code.msdn.s-msft.com/wpf-f-f-sharp-only-complex-c4391bfb/image/file/137232/1/mainfsharp.png" alt="" width="650" height="454"></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

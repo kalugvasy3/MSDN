@@ -1,0 +1,21 @@
+﻿<UserControl
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:MyUserControl="clr-namespace:MyUserControl;assembly=MyUserControl" 
+        xmlns:Rect="clr-namespace:MyUserControl;assembly=MyUserControl" 
+        x:Name="MainWindow" 
+    >
+
+
+
+    <Grid x:Name="gridAll" Margin="0,0,0,0" Background="#FFABE2E2" RenderTransformOrigin="0.5,0.5" MinHeight="300" MinWidth="600">
+
+        <Button x:Name="btnHello" Content="HELLO" HorizontalAlignment="Left" Margin="28,29,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock x:Name="txtHello" HorizontalAlignment="Left" Margin="187,36,0,0" TextWrapping="Wrap" Text="***" VerticalAlignment="Top" RenderTransformOrigin="-0.16,0.812" Width="75"/>
+
+        <Rect:Rect x:Name="recRed"  HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.207" />
+
+
+    </Grid>
+</UserControl>
+
