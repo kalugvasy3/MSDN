@@ -1,0 +1,33 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WpfHelperCopyData" x:Name="Main" x:Class="WpfHelperCopyData.MainHelperWindow"
+        Title="Select Data From [A]  -&gt;   Insert to [B]"  Width="1078.415" MinHeight="350" MaxHeight="250" MinWidth="1000" Closing="Window_Closing" Icon="AP.ico" Height="350">
+
+    <Grid  >
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFC3C3C3" Offset="0.009"/>
+                <GradientStop Color="White" Offset="0.982"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="txtConnA" Height="23" Margin="203,60,60,0" TextWrapping="Wrap" Text="Connection String A - insert here please" VerticalAlignment="Top"  ToolTip="You can copy form any DataBase ...." TextChanged="txtConnA_TextChanged"  >
+        </TextBox>
+        <TextBox x:Name="txtConnB" Height="23" Margin="203,134,60,0" TextWrapping="Wrap" Text="Connection String B - insert here please" VerticalAlignment="Top" ToolTip="You will be able insert data to the DEV/Test only..." TextChanged="txtConnB_TextChanged"  >
+        </TextBox>
+        <TextBlock x:Name="connA" HorizontalAlignment="Left" Margin="10,63,0,0" TextWrapping="Wrap" Text="Connection String [A] (From)" VerticalAlignment="Top" Width="188" IsEnabled="False"/>
+        <TextBlock x:Name="connB" HorizontalAlignment="Left" Margin="10,137,0,0" TextWrapping="Wrap" Text="Connection String [B] (To)" VerticalAlignment="Top" Width="188" IsEnabled="False"/>
+
+        <Label Content="Please Use  DB Connection String According with Selected Data Provider." HorizontalAlignment="Center" Margin="432,0,159,0" VerticalAlignment="Top" Width="479" IsEnabled="False"/>
+        <TextBlock Margin="0,178,214,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="90" RenderTransformOrigin="0.494,1.042" HorizontalAlignment="Right" Width="478"><Run Text="You can use this process for copy/scramble  data.   "/><LineBreak/><Run Text="A and B can be same if needed  (Application save data in DataSet)."/><LineBreak/><Run Text="(Integrity data is your Responsibility)"/><LineBreak/><Run Text="Use below button multiply times for work with multiplies tables or SET of tables."/><LineBreak/><Run Text="Use &quot;;&quot; for divide SQL  Select statements... "/></TextBlock>
+
+        <Button x:Name="btnTestA" Content="Test A" Margin="0,38,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="45" IsCancel="True" Click="btnTestA_Click" Height="45"/>
+        <Button x:Name="btnTestB" Content="Test B" Margin="0,112,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="45" IsCancel="True" Click="btnTestB_Click" Height="46"/>
+
+        <Button x:Name="btnBringFromA" Content="[Select] SQL Script For A" Margin="0,273,435,0" ToolTip="Will Open additional window ... Only SELECT ..." HorizontalAlignment="Right" Width="159" Height="22" VerticalAlignment="Top" Click="btnBringFromA_Click"/>
+        <ComboBox x:Name="comboProvidersA" Margin="203,38,60,0" VerticalAlignment="Top" ToolTip="Db Providers Name installed on your PC..." SelectionChanged="comboProvidersA_SelectionChanged"/>
+        <ComboBox x:Name="comboProvidersB" Margin="203,112,60,0" VerticalAlignment="Top" ToolTip="Db Providers Name installed on your PC..." SelectionChanged="comboProvidersB_SelectionChanged"/>
+        <TextBlock x:Name="txtStatus" TextWrapping="Wrap" Text="Status" Height="23" VerticalAlignment="Bottom" Margin="10,0"/>
+
+    </Grid>
+</Window>

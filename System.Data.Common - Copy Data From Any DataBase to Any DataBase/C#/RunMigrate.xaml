@@ -1,0 +1,18 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WpfHelperCopyData" x:Name="RunInsert1" x:Class="WpfHelperCopyData.RunInsert"
+        Title="Run Delete/Insert SQL code - connection  string [B]... " Height="141.176" Width="608.235" ToolTip="Windows Allow You Run SQL CODE." Closing="RunInsert_Closing" Icon="AP.ico">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFC7C7C7" Offset="0.005"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="btnRun" Content="RUN SQL" Margin="0,17,44,0" VerticalAlignment="Top" IsCancel="True" IsEnabled="False" Click="btnRun_Click" Height="25" HorizontalAlignment="Right" Width="130"/>
+        <CheckBox x:Name="chkBoxUnblock" Content="UnBlock RUN SQL button..." HorizontalAlignment="Right" Margin="0,20,200,0" VerticalAlignment="Top" ToolTip="Unblock" Click="chkBoxUnblock_Click"/>
+        <ProgressBar x:Name="prgResult" Margin="0,0,1,0" Height="13" VerticalAlignment="Bottom" />
+        <Button x:Name="btnSave" Content="Save &quot;Migrate SQL&quot;  If Needed" HorizontalAlignment="Left" Margin="20,17,0,0" VerticalAlignment="Top" Width="185" Height="25" ToolTip="You do not need to save SQL code ..." Click="btnSave_Click" IsDefault="True"/>
+    </Grid>
+</Window>

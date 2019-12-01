@@ -1,0 +1,13 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WpfHelperCopyData" xmlns:AnotherPartUserLibrary="clr-namespace:WpfHelperCopyData" x:Class="WpfHelperCopyData.DataSetResult"
+        Title="Choose TabItem and click &lt;CTRL&gt; S   for save DATA in CSV file" Height="300" Width="479" Topmost="True" Closing="Window_Closing" Icon="AP.ico">
+
+
+
+
+    <Grid x:Name="gridResult">
+        <local:ClockWindow x:Name="userClk" Margin="10,10,214,194"></local:ClockWindow>
+    </Grid>
+</Window>
