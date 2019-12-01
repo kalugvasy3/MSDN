@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WPFScreenCapture", "WPFScreenCapture\WPFScreenCapture.fsproj", "{C43A3BC4-6ACB-4B0A-B465-13D0F52D7C34}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MyUserControl", "MyUserControl\MyUserControl.fsproj", "{755811E9-6E21-4FF2-B733-93EAC1DAB2F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C43A3BC4-6ACB-4B0A-B465-13D0F52D7C34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C43A3BC4-6ACB-4B0A-B465-13D0F52D7C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C43A3BC4-6ACB-4B0A-B465-13D0F52D7C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C43A3BC4-6ACB-4B0A-B465-13D0F52D7C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{755811E9-6E21-4FF2-B733-93EAC1DAB2F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{755811E9-6E21-4FF2-B733-93EAC1DAB2F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{755811E9-6E21-4FF2-B733-93EAC1DAB2F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{755811E9-6E21-4FF2-B733-93EAC1DAB2F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62B0DC5A-0CDC-4EAE-9019-17B27473BC7B}
+	EndGlobalSection
+EndGlobal

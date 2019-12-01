@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/Header.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/sprite.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/UhfHeader.css" data-do-not-move="true" />
+<link rel="stylesheet" href="https://statics-uhf-eas.akamaized.net/west-european/shell/_scrf/css/themes=default.device=uplevel_web_pc/ec-f8ec33/b7-01890e/67-f66a05/bb-33df2f/d6-3f8236/1c-14fb9c/8e-0f0147/17-1042c1?ver=2.0" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=AE7376403751B6DAA8B4EFF9E1CAE467" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfFooter.css?v=636674569112704322" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Screen Capture, Create Animated GIF  file from screen from files...</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/e2b088d8-b87f-4687-a3be-eb991ae668b3Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Screen Capture, Create Animated GIF  file from screen from files...</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            WPF, GIF, animated gif, F sharp, Capture image
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            WPF, How to create GIF file, How to capture screen, How to F# WPF
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Phone, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">9/4/2018</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p><span style="background-color:transparent; color:#000000; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; font-style:normal; font-variant:normal; font-weight:400; letter-spacing:normal; orphans:2; text-align:left; text-decoration:none; text-indent:0px; text-transform:none; white-space:normal; word-spacing:0px; margin:0px">Install
+ first dot.Net 4.7.2 &nbsp;</span><a href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://www.microsoft.com/net/download/dotnet-framework-runtime" style="background-color:transparent; color:#0066cc; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; font-style:normal; font-variant:normal; font-weight:400; letter-spacing:normal; orphans:2; text-align:left; text-decoration:underline; text-indent:0px; text-transform:none; white-space:normal; word-spacing:0px; margin:0px">https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://www.microsoft.com/net/download/dotnet-framework-runtime</a><span style="background-color:transparent; color:#000000; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; font-style:normal; font-variant:normal; font-weight:400; letter-spacing:normal; orphans:2; text-align:left; text-decoration:none; text-indent:0px; text-transform:none; white-space:normal; word-spacing:0px; margin:0px">&nbsp;</span><strong style="background-color:transparent; color:#000000; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; font-style:normal; font-variant:normal; font-weight:bold; letter-spacing:normal; orphans:2; text-align:left; text-decoration:none; text-indent:0px; text-transform:none; white-space:normal; word-spacing:0px; margin:0px">&nbsp;</strong><em style="background-color:transparent; color:#000000; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; font-style:italic; font-variant:normal; font-weight:400; letter-spacing:normal; orphans:2; text-align:left; text-decoration:none; text-indent:0px; text-transform:none; white-space:normal; word-spacing:0px; margin:0px">&nbsp;</em></p>
+<p style="font-family:&quot;Segoe UI&quot;,&quot;Lucida Grande&quot;,Verdana,Arial,Helvetica,sans-serif; font-size:13.008px">
+<span style="color:#ff0000">Built base on new F# NuGet approaches.</span></p>
+<p style="font-family:&quot;Segoe UI&quot;,&quot;Lucida Grande&quot;,Verdana,Arial,Helvetica,sans-serif; font-size:13.008px">
+<span style="color:#ff0000">When a new version of the F# language ships, the major and minor versions will be updated appropriately.</span></p>
+<p><span style="font-family:Times New Roman; font-size:small">&nbsp;</span></p>
+<pre><span style="font-size:xx-small"><span style="font-family:Calibri"><span style="font-size:small"><strong>Updated</strong>: simplify logic &ndash; now you can change all <span>control while</span></span><span style="font-size:small"> </span><span><span style="font-size:small">capturing</span></span><span style="font-size:small">/building
+GIF file. </span></span></span><span style="font-size:xx-small"><span style="font-family:Calibri"><span style="font-size:small">For build GIF file you can drop image, use transparency and <span>white</span></span><span style="font-size:small"> capture area in same time &hellip; </span><span><span style="font-size:small">even</span></span><span style="font-size:small"> change the </span><span><span style="font-size:small">size</span></span><span style="font-size:small">
+and uniform check box &hellip; </span></span></span></pre>
+<p><span style="font-family:Times New Roman; font-size:small">&nbsp;</span><span style="font-family:Calibri; font-size:small">Animated Gif.&nbsp;&nbsp;
+</span><span style="font-family:Calibri; font-size:small">The Program Capture Screen and convert it to Animated Gif image.</span></p>
+<p><span><span style="font-family:Calibri; font-size:small">The program</span></span><span style="font-family:Calibri; font-size:small"> can convert any sequences of images (any format) to Gif file just drop images to the white screen (image by image, program
+ does not allow drop multiple files in the same time)</span></p>
+<p><strong>&nbsp;</strong><em>&nbsp;</em></p>
+<p>If you select [Save] all individual images will be saved in the working directory.</p>
+<p>For creating GIF file select [create].&nbsp;&nbsp;</p>
+<p><img id="170282" src="https://i1.code.msdn.s-msft.com/screen-capture-animated-a916875b/image/file/170282/1/gif_636235653373881487.gif" alt="" width="315" height="125"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span>How was built above Gif file?</span></p>
+<p><span>I did run two version of this program and run second inside first. I made background transparency ...</span></p>
+<p><span>1.&nbsp; Select &quot;New Job&quot; - it allows you to select work folder.</span></p>
+<p><span>2.&nbsp; Choose &quot;Delay&quot; -in milliseconds - between images.</span></p>
+<p><span>3. Run.</span></p>
+<p><span>4. After &quot;Stop/Pause Run&quot; switch to the&nbsp;white screen (uncheck the&nbsp;checkbox&nbsp;&quot;Transp,&quot; after that try to use mouse wheel), change size window, change &quot;Fill&quot; option ...</span></p>
+<p><span>5. Create GIF ...</span></p>
+<p><span>6. You will be able&nbsp;to drop your files, &nbsp;change screen size (test with the&nbsp;mouse-wheel, try to use different &quot;Fill&quot;) and &quot;GIF.&quot;</span></p>
+<p><span><br>
+</span></p>
+<p><span>- If you want white background -&nbsp; it will capture everything above the white
+<span>window ...</span> or you can drop multiple image (on white screen)&nbsp;files (any format) and create GIF from your pictures ...</span></p>
+<p><span>You can stop at any time and create GIF file from current images...</span></p>
+<p><span>If you use scaling screen (monitor)&nbsp;125% , 150%, 200% ... by windows display setting - program will not determinate correctly capture area ... Please use native resolution or use the advance setting for adjusts display ...<br>
+</span></p>
+<p><img id="170284" src="https://i1.code.msdn.s-msft.com/screen-capture-animated-a916875b/image/file/170284/1/gif_636235654365058638.gif" alt="" width="477" height="264"></p>
+<p><span>I made restriction - 100 frames</span></p>
+<p><span><br>
+</span></p>
+<p>&nbsp;</p>
+<h1><span>Building the Sample</span></h1>
+<p><em>The application was built with VS 2015, F# 4.0</em></p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p><span style="font-size:20px; font-weight:bold">&nbsp;</span><span style="font-size:20px; font-weight:bold"><span style="font-size:x-small">https://en.wikipedia.org/wiki/GIF</span><br>
+</span></p>
+<p>The <strong>Graphics Interchange Format</strong> (better known by its acronym <strong>
+GIF</strong> <span class="nowrap"><span class="IPA nopopups"><a title="Help:IPA for English" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://en.wikipedia.org/wiki/Help:IPA_for_English">/<span><span title="/ˈ/ primary stress follows">ˈ</span><span title="/dʒ/ 'j' in 'jam'">dʒ</span><span title="/ɪ/ short 'i' in 'bid'">ɪ</span><span title="'f' in 'find'">f</span></span>/</a></span></span>
+<span title="English pronunciation respelling"><a title="Help:Pronunciation respelling key" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key"><em><strong><span class="smallcaps"><span>JIF</span></span></strong></em></a></span> or
+<span class="nowrap"><span class="IPA nopopups"><a title="Help:IPA for English" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://en.wikipedia.org/wiki/Help:IPA_for_English">/<span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'g' in 'guy'">ɡ</span><span title="/ɪ/ short 'i' in 'bid'">ɪ</span><span title="'f' in 'find'">f</span></span>/</a></span></span>
+<span title="English pronunciation respelling"><a title="Help:Pronunciation respelling key" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key"><em><strong><span class="smallcaps"><span>GHIF</span></span></strong></em></a></span>) is a
+<a title="Raster graphics" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://en.wikipedia.org/wiki/Raster_graphics">bitmap</a>
+<a title="Image file formats" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://en.wikipedia.org/wiki/Image_file_formats">
+image format</a> that was developed by US-based software writer <a title="Steve Wilhite" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://en.wikipedia.org/wiki/Steve_Wilhite">
+Steve Wilhite</a> while working at the Internet service provider <a title="CompuServe" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://en.wikipedia.org/wiki/CompuServe">
+CompuServe</a> in 1987<sup id="cite_ref-87aSpec_1-1" class="reference"><a href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://en.wikipedia.org/wiki/GIF#cite_note-87aSpec-1"><span style="font-size:x-small">[1]</span></a></sup> and has since come into widespread usage on the
+<a title="World Wide Web" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://en.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a> due to its wide support and portability...<span style="background-color:#ffff00">
+<strong>By 2004 all the relevant patents had expired.</strong><em>&nbsp;</em><strong>&nbsp;</strong><em>&nbsp;</em></span></p>
+<p><em>Recommend to see this solution - it works - </em></p>
+<p><em>https://social.msdn.microsoft.com/Forums/office/en-US/d208a9c9-9299-4912-b35e-1c36d6c7ba84/animated-gif-encoder-net?forum=vbgeneral</em></p>
+<p><em>You can include <em><strong>code snippets,&nbsp;</strong></em><strong>images</strong>,
+<strong>videos</strong>. &nbsp;&nbsp;</em></p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder">
+<div class="title"><span>F#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">fsharp</span>
+<pre class="hidden">namespace ImageNameSpace
+
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://msdn.microsoft.com/en-US/library/System.Windows.Media.Imaging.aspx"  title="Auto generated link to System.Windows.Media.Imaging">System.Windows.Media.Imaging</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://msdn.microsoft.com/en-US/library/System.Drawing.aspx"  title="Auto generated link to System.Drawing">System.Drawing</a>
+open System
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://msdn.microsoft.com/en-US/library/System.Text.aspx"  title="Auto generated link to System.Text">System.Text</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://msdn.microsoft.com/en-US/library/System.IO.aspx"  title="Auto generated link to System.IO">System.IO</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://msdn.microsoft.com/en-US/library/System.Drawing.Imaging.aspx"  title="Auto generated link to System.Drawing.Imaging">System.Drawing.Imaging</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://msdn.microsoft.com/en-US/library/System.Windows.aspx"  title="Auto generated link to System.Windows">System.Windows</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://msdn.microsoft.com/en-US/library/System.Windows.Media.aspx"  title="Auto generated link to System.Windows.Media">System.Windows.Media</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://msdn.microsoft.com/en-US/library/System.Windows.Interop.aspx"  title="Auto generated link to System.Windows.Interop">System.Windows.Interop</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://msdn.microsoft.com/en-US/library/System.Runtime.InteropServices.aspx"  title="Auto generated link to System.Runtime.InteropServices">System.Runtime.InteropServices</a>
+
+// Base on solution - https://social.msdn.microsoft.com/Forums/office/en-US/d208a9c9-9299-4912-b35e-1c36d6c7ba84/animated-gif-encoder-net?forum=vbgeneral
+// https://en.wikipedia.org/wiki/GIF
+
+type AnimatedGIFencoder (this : Window)  =       
+    let gifEncoder = new <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://msdn.microsoft.com/en-US/library/System.Windows.Media.Imaging.GifBitmapEncoder.aspx"  title="Auto generated link to System.Windows.Media.Imaging.GifBitmapEncoder">System.Windows.Media.Imaging.GifBitmapEncoder</a>()       
+    let encoderVersion = &quot;GIF89a&quot;                    // format encoder GIF89a
+    let mutable repeat = true                        // true - default
+    let mutable metadataString : List&lt;String&gt; = []   // metadataString - nothing - default
+    let mutable frameDelay : int = 200               // 200 milliseconds - default
+    let mutable packedFields : byte = 0x08uy;        // 3 bits - Reserved , 3 bits - Disposal Method, 1 - bit User Input Flag , 1 - Transparent Color Flag  
+    let mutable transparenColorIndex : byte = 0x00uy;    
+
+    let mutable actualCurrentFrames = 0
+    // Add fame to Encoder
+    let addFrame(frame : Bitmap) = 
+        actualCurrentFrames &lt;- actualCurrentFrames  &#43; 1
+        match isNull(frame) with
+        | false -&gt; this.Dispatcher.Invoke(fun _ -&gt;
+                   let bmpSource = Imaging.CreateBitmapSourceFromHBitmap(frame.GetHbitmap(), IntPtr.Zero, Windows.Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions())
+                   let mutable bmf = BitmapFrame.Create(bmpSource)
+                   
+                   do this.Dispatcher.Invoke(fun _ -&gt; gifEncoder.Frames.Add(bmf) ))
+                   
+        | true -&gt; ignore()
+
+
+    let arrayInsert (index : int , input : byte[], insert : byte[]) =
+       let array1 = [| for i : int in 0 .. index - 1 -&gt; input.[i] |] 
+       let array2 = [| for i : int in index .. input.Length - 1  -&gt; input.[i] |]
+       Array.concat [| array1 ;  insert; array2 |] 
+
+//    let arrayReplace (index : int , input : byte[], replace : byte[]) =
+//       let array1 = [| for i in 0 .. index - 1 -&gt; input.[i] |] 
+//       let array2 = [| for i in index &#43; replace.Length .. input.Length - 1  -&gt; input.[i] |]
+//       Array.concat [| array1 ;  replace; array2 |] 
+
+    let arrayReplace (index : int , input : byte[], replace : byte[]) =
+      do for i in index  .. index &#43; replace.Length - 1 do input.[i] &lt;- replace.[i - index] 
+      input
+
+    let arraySearch (startIndex : int , input : byte[], search : byte[]) =
+       let mutable stopIndex = input.Length-1
+       let mutable blnDone = false
+       for i = startIndex to stopIndex do
+           let mutable j = 0
+           while input.[i &#43; j] = search.[j] &amp;&amp; not blnDone do
+              if j &lt; search.Length - 1 then j &lt;- j &#43; 1 
+              else stopIndex &lt;- i              
+                   blnDone &lt;- true
+       if stopIndex = input.Length-1 then -1 else stopIndex
+         
+
+    // The stream where the binary is to be output.
+    let save(stream : IO.FileStream) = 
+            if gifEncoder.Frames.Count = 0 
+            then  ignore()
+            else  let mutable gifData : byte[] = [||]  
+                  let mStream = new IO.MemoryStream()
+                  do gifEncoder.Save(mStream)
+                  do gifData &lt;- mStream.ToArray()
+                  // Locate the right location where to insert the meta-data in the binary
+                  // This will be just before the first label &amp;H0021F9 (Graphic Control Extension)          
+                  let searchPTR = [|0x21uy; 0xF9uy|]   // Extension Block  (21 F9) - Graphic Control Extension for Frame # 1,2,3,...N 
+              
+                  let mutable metadataPTR = arraySearch(0, gifData ,searchPTR)   
+                            
+                  // SET METADATA Repeat
+                  // This add an Application Extension Netscape2.0
+                  // {&amp;H21, &amp;HFF, &amp;HB, &amp;H4E, &amp;H45, &amp;H54, &amp;H53, &amp;H43, &amp;H41, &amp;H50, &amp;H45, &amp;H32, &amp;H2E, &amp;H30, &amp;H3, &amp;H1, &amp;H0, &amp;H0, &amp;H0}
+                  if repeat then
+                      let applicationExtension : Byte[] = [|0x21uy; 0xFFuy; 0xBuy; 0x4Euy; 0x45uy; 0x54uy; 0x53uy; 0x43uy; 0x41uy; 0x50uy; 0x45uy; 0x32uy; 0x2Euy; 0x30uy; 0x3uy; 0x1uy; 0xFFuy; 0xFFuy; 0x0uy|]    
+                      gifData &lt;- arrayInsert(metadataPTR, gifData , applicationExtension)              
+            
+                  // gifEncoder.Metadata.Comment
+                  // SET METADATA Comments
+                  // This add a Comment Extension for each string
+
+                  if metadataString.Length &gt; 0 then
+                      for comm in metadataString do
+                          let mutable byteCom : byte[] = [||]
+                          if comm.Length &gt; 254 then byteCom &lt;- System.Text.UTF7Encoding.UTF7.GetBytes(comm.Substring(0,254))
+                                               else  byteCom &lt;- System.Text.UTF7Encoding.UTF7.GetBytes(comm)
+                          let dataComments =Array.concat [| [|0x21uy; 0xFEuy|]; byteCom; [|0x00uy|] |] 
+                          gifData &lt;- arrayInsert(metadataPTR, gifData , dataComments)              
+                
+                  // SET METADATA frameRate
+                  // Sets each Graphic Control Extension (5 bytes from each label 0x0021F9)
+              
+                  let bte : Byte[] = BitConverter.GetBytes(frameDelay / 10)
+
+                  let search : Byte[] = [|0x21uy;0xF9uy;0x04uy|]  // 21 F9 Graphic Extension ... 
+              
+                  let replaceSetOfParameters = [|0x21uy; 0xF9uy; 0x04uy; packedFields ; bte.[0]; bte.[1] ; transparenColorIndex; 0x00uy |]   // 0x00uy - block termination
+             
+                  // function for searching position from special place            
+                  let currentRatePosition (from : int) = arraySearch(from, gifData ,search)
+
+                  let mutable current = currentRatePosition (0)
+                  while current &gt;= 0 do
+                      gifData &lt;- arrayReplace (current, gifData, replaceSetOfParameters )
+                      current &lt;- currentRatePosition (current &#43; 7)
+              
+                  do stream.Write(gifData, 0, gifData.Length)
+                  do stream.Flush()           
+
+    //Return the GIF specification version. This always returns &quot;GIF89a&quot;
+    // https://en.wikipedia.org/wiki/GIF
+
+    member x.EncoderVersion with get() = encoderVersion
+    
+    //Get or set a value that indicate if the GIF will repeat the animation after the last frame is shown
+    member x.Repeat with get() = repeat and set(v) = repeat &lt;- v
+    
+    // Get or set a collection of meta-data string to be embedded in the GIF file. Each string has a max length of 254 
+    // characters (Any character above this limit will be truncated). The string will be encoded UTF-7. 
+    member x.MetadataString with get() = metadataString and set(v) = metadataString &lt;- v
+
+    // 3 bits - Reserved , 3 bits - Disposal Method, 1 - bit User Input Flag , 1 - Transparent Color Flag  
+    member x.PackedFields with get() = packedFields and set(v) =  packedFields &lt;- v
+
+    member x.TransparenColorIndex with get() = transparenColorIndex and set(v) = transparenColorIndex &lt;- v 
+    
+    // Get or set the amount of time each frame will be shown (in milliseconds). The default value is 200ms
+    member x.FrameDelay with get() = frameDelay and set(v) = frameDelay &lt;- v
+
+    // Add a frame to the encoder frame collection
+    member x.AddFrame(frame : Bitmap) = addFrame(frame)
+
+    // Writes the animated GIF binary to a specified IO.Stream
+    // The stream where the binary is to be output. Can be any object type that derives from IO.Stream
+    member x.Save(stream) = save(stream)
+
+
+    // Animated GIF Image
+    // https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k(System.Windows.Media.Imaging.GifBitmapEncoder.%23ctor);k(DevLang-fsharp);k(TargetFrameworkMoniker-.NETFramework,Version%3Dv4.6)&amp;rd=true
+    // http://stackoverflow.com/questions/210922/how-do-i-get-an-animated-gif-to-work-in-wpf
+    // http://stackoverflow.com/questions/30727343/fast-converting-bitmap-to-bitmapsource-wpf
+
+</pre>
+<div class="preview">
+<pre class="fsharp"><span class="fs__keyword">namespace</span>&nbsp;ImageNameSpace&nbsp;
+&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.Windows.Media.Imaging&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.Drawing&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.Text&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.IO&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.Drawing.Imaging&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.Windows&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.Windows.Media&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.Windows.Interop&nbsp;
+<span class="fs__keyword">open</span>&nbsp;System.Runtime.InteropServices&nbsp;
+&nbsp;
+<span class="fs__com">//&nbsp;Base&nbsp;on&nbsp;solution&nbsp;-&nbsp;https://social.msdn.microsoft.com/Forums/office/en-US/d208a9c9-9299-4912-b35e-1c36d6c7ba84/animated-gif-encoder-net?forum=vbgeneral</span>&nbsp;
+<span class="fs__com">//&nbsp;https://en.wikipedia.org/wiki/GIF</span>&nbsp;
+&nbsp;
+<span class="fs__keyword">type</span>&nbsp;AnimatedGIFencoder&nbsp;(this&nbsp;:&nbsp;Window)&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;gifEncoder&nbsp;=&nbsp;<span class="fs__keyword">new</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://code.msdn.microsoft.com/windowsapps/Screen-Capture-Animated-a916875b/https://msdn.microsoft.com/en-US/library/System.Windows.Media.Imaging.GifBitmapEncoder.aspx"  title="Auto generated link to System.Windows.Media.Imaging.GifBitmapEncoder">System.Windows.Media.Imaging.GifBitmapEncoder</a>()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;encoderVersion&nbsp;=&nbsp;<span class="fs__string2">&quot;GIF89a&quot;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;format&nbsp;encoder&nbsp;GIF89a</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;repeat&nbsp;=&nbsp;<span class="fs__keyword">true</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;true&nbsp;-&nbsp;default</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;metadataString&nbsp;:&nbsp;List&lt;String&gt;&nbsp;=&nbsp;[]&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;metadataString&nbsp;-&nbsp;nothing&nbsp;-&nbsp;default</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;frameDelay&nbsp;:&nbsp;int&nbsp;=&nbsp;<span class="fs__number">200</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;200&nbsp;milliseconds&nbsp;-&nbsp;default</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;packedFields&nbsp;:&nbsp;byte&nbsp;=&nbsp;0x08uy;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;3&nbsp;bits&nbsp;-&nbsp;Reserved&nbsp;,&nbsp;3&nbsp;bits&nbsp;-&nbsp;Disposal&nbsp;Method,&nbsp;1&nbsp;-&nbsp;bit&nbsp;User&nbsp;Input&nbsp;Flag&nbsp;,&nbsp;1&nbsp;-&nbsp;Transparent&nbsp;Color&nbsp;Flag&nbsp;&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;transparenColorIndex&nbsp;:&nbsp;byte&nbsp;=&nbsp;0x00uy;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;actualCurrentFrames&nbsp;=&nbsp;<span class="fs__number">0</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;Add&nbsp;fame&nbsp;to&nbsp;Encoder</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;addFrame(frame&nbsp;:&nbsp;Bitmap)&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;actualCurrentFrames&nbsp;&lt;-&nbsp;actualCurrentFrames&nbsp;&nbsp;&#43;&nbsp;<span class="fs__number">1</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">match</span>&nbsp;isNull(frame)&nbsp;<span class="fs__keyword">with</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<span class="fs__keyword">false</span>&nbsp;-&gt;&nbsp;this.Dispatcher.Invoke(<span class="fs__keyword">fun</span>&nbsp;_&nbsp;-&gt;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;bmpSource&nbsp;=&nbsp;Imaging.CreateBitmapSourceFromHBitmap(frame.GetHbitmap(),&nbsp;IntPtr.Zero,&nbsp;Windows.Int32Rect.Empty,&nbsp;BitmapSizeOptions.FromEmptyOptions())&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;bmf&nbsp;=&nbsp;BitmapFrame.Create(bmpSource)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">do</span>&nbsp;this.Dispatcher.Invoke(<span class="fs__keyword">fun</span>&nbsp;_&nbsp;-&gt;&nbsp;gifEncoder.Frames.Add(bmf)&nbsp;))&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<span class="fs__keyword">true</span>&nbsp;-&gt;&nbsp;ignore()&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;arrayInsert&nbsp;(index&nbsp;:&nbsp;int&nbsp;,&nbsp;input&nbsp;:&nbsp;byte[],&nbsp;insert&nbsp;:&nbsp;byte[])&nbsp;=&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;array1&nbsp;=&nbsp;[|&nbsp;<span class="fs__keyword">for</span>&nbsp;i&nbsp;:&nbsp;int&nbsp;<span class="fs__keyword">in</span>&nbsp;<span class="fs__number">0</span>&nbsp;..&nbsp;index&nbsp;-&nbsp;<span class="fs__number">1</span>&nbsp;-&gt;&nbsp;input.[i]&nbsp;|]&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;array2&nbsp;=&nbsp;[|&nbsp;<span class="fs__keyword">for</span>&nbsp;i&nbsp;:&nbsp;int&nbsp;<span class="fs__keyword">in</span>&nbsp;index&nbsp;..&nbsp;input.Length&nbsp;-&nbsp;<span class="fs__number">1</span>&nbsp;&nbsp;-&gt;&nbsp;input.[i]&nbsp;|]&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Array.concat&nbsp;[|&nbsp;array1&nbsp;;&nbsp;&nbsp;insert;&nbsp;array2&nbsp;|]&nbsp;&nbsp;
+&nbsp;
+<span class="fs__com">//&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;arrayReplace&nbsp;(index&nbsp;:&nbsp;int&nbsp;,&nbsp;input&nbsp;:&nbsp;byte[],&nbsp;replace&nbsp;:&nbsp;byte[])&nbsp;=</span>&nbsp;
+<span class="fs__com">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;array1&nbsp;=&nbsp;[|&nbsp;for&nbsp;i&nbsp;in&nbsp;0&nbsp;..&nbsp;index&nbsp;-&nbsp;1&nbsp;-&gt;&nbsp;input.[i]&nbsp;|]&nbsp;</span>&nbsp;
+<span class="fs__com">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;array2&nbsp;=&nbsp;[|&nbsp;for&nbsp;i&nbsp;in&nbsp;index&nbsp;&#43;&nbsp;replace.Length&nbsp;..&nbsp;input.Length&nbsp;-&nbsp;1&nbsp;&nbsp;-&gt;&nbsp;input.[i]&nbsp;|]</span>&nbsp;
+<span class="fs__com">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Array.concat&nbsp;[|&nbsp;array1&nbsp;;&nbsp;&nbsp;replace;&nbsp;array2&nbsp;|]&nbsp;</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;arrayReplace&nbsp;(index&nbsp;:&nbsp;int&nbsp;,&nbsp;input&nbsp;:&nbsp;byte[],&nbsp;replace&nbsp;:&nbsp;byte[])&nbsp;=&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">do</span>&nbsp;<span class="fs__keyword">for</span>&nbsp;i&nbsp;<span class="fs__keyword">in</span>&nbsp;index&nbsp;&nbsp;..&nbsp;index&nbsp;&#43;&nbsp;replace.Length&nbsp;-&nbsp;<span class="fs__number">1</span>&nbsp;<span class="fs__keyword">do</span>&nbsp;input.[i]&nbsp;&lt;-&nbsp;replace.[i&nbsp;-&nbsp;index]&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;arraySearch&nbsp;(startIndex&nbsp;:&nbsp;int&nbsp;,&nbsp;input&nbsp;:&nbsp;byte[],&nbsp;search&nbsp;:&nbsp;byte[])&nbsp;=&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;stopIndex&nbsp;=&nbsp;input.Length<span class="fs__number">-1</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;blnDone&nbsp;=&nbsp;<span class="fs__keyword">false</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">for</span>&nbsp;i&nbsp;=&nbsp;startIndex&nbsp;<span class="fs__keyword">to</span>&nbsp;stopIndex&nbsp;<span class="fs__keyword">do</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;j&nbsp;=&nbsp;<span class="fs__number">0</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">while</span>&nbsp;input.[i&nbsp;&#43;&nbsp;j]&nbsp;=&nbsp;search.[j]&nbsp;&amp;&amp;&nbsp;not&nbsp;blnDone&nbsp;<span class="fs__keyword">do</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">if</span>&nbsp;j&nbsp;&lt;&nbsp;search.Length&nbsp;-&nbsp;<span class="fs__number">1</span>&nbsp;<span class="fs__keyword">then</span>&nbsp;j&nbsp;&lt;-&nbsp;j&nbsp;&#43;&nbsp;<span class="fs__number">1</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">else</span>&nbsp;stopIndex&nbsp;&lt;-&nbsp;i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blnDone&nbsp;&lt;-&nbsp;<span class="fs__keyword">true</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">if</span>&nbsp;stopIndex&nbsp;=&nbsp;input.Length<span class="fs__number">-1</span>&nbsp;<span class="fs__keyword">then</span>&nbsp;-<span class="fs__number">1</span>&nbsp;<span class="fs__keyword">else</span>&nbsp;stopIndex&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;The&nbsp;stream&nbsp;where&nbsp;the&nbsp;binary&nbsp;is&nbsp;to&nbsp;be&nbsp;output.</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;save(stream&nbsp;:&nbsp;IO.FileStream)&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">if</span>&nbsp;gifEncoder.Frames.Count&nbsp;=&nbsp;<span class="fs__number">0</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">then</span>&nbsp;&nbsp;ignore()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">else</span>&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;gifData&nbsp;:&nbsp;byte[]&nbsp;=&nbsp;[||]&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;mStream&nbsp;=&nbsp;<span class="fs__keyword">new</span>&nbsp;IO.MemoryStream()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">do</span>&nbsp;gifEncoder.Save(mStream)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">do</span>&nbsp;gifData&nbsp;&lt;-&nbsp;mStream.ToArray()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;Locate&nbsp;the&nbsp;right&nbsp;location&nbsp;where&nbsp;to&nbsp;insert&nbsp;the&nbsp;meta-data&nbsp;in&nbsp;the&nbsp;binary</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;This&nbsp;will&nbsp;be&nbsp;just&nbsp;before&nbsp;the&nbsp;first&nbsp;label&nbsp;&amp;H0021F9&nbsp;(Graphic&nbsp;Control&nbsp;Extension)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;searchPTR&nbsp;=&nbsp;[|0x21uy;&nbsp;0xF9uy|]&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;Extension&nbsp;Block&nbsp;&nbsp;(21&nbsp;F9)&nbsp;-&nbsp;Graphic&nbsp;Control&nbsp;Extension&nbsp;for&nbsp;Frame&nbsp;#&nbsp;1,2,3,...N&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;metadataPTR&nbsp;=&nbsp;arraySearch(<span class="fs__number">0</span>,&nbsp;gifData&nbsp;,searchPTR)&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;SET&nbsp;METADATA&nbsp;Repeat</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;This&nbsp;add&nbsp;an&nbsp;Application&nbsp;Extension&nbsp;Netscape2.0</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;{&amp;H21,&nbsp;&amp;HFF,&nbsp;&amp;HB,&nbsp;&amp;H4E,&nbsp;&amp;H45,&nbsp;&amp;H54,&nbsp;&amp;H53,&nbsp;&amp;H43,&nbsp;&amp;H41,&nbsp;&amp;H50,&nbsp;&amp;H45,&nbsp;&amp;H32,&nbsp;&amp;H2E,&nbsp;&amp;H30,&nbsp;&amp;H3,&nbsp;&amp;H1,&nbsp;&amp;H0,&nbsp;&amp;H0,&nbsp;&amp;H0}</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">if</span>&nbsp;repeat&nbsp;<span class="fs__keyword">then</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;applicationExtension&nbsp;:&nbsp;Byte[]&nbsp;=&nbsp;[|0x21uy;&nbsp;0xFFuy;&nbsp;0xBuy;&nbsp;0x4Euy;&nbsp;0x45uy;&nbsp;0x54uy;&nbsp;0x53uy;&nbsp;0x43uy;&nbsp;0x41uy;&nbsp;0x50uy;&nbsp;0x45uy;&nbsp;0x32uy;&nbsp;0x2Euy;&nbsp;0x30uy;&nbsp;0x3uy;&nbsp;0x1uy;&nbsp;0xFFuy;&nbsp;0xFFuy;&nbsp;0x0uy|]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gifData&nbsp;&lt;-&nbsp;arrayInsert(metadataPTR,&nbsp;gifData&nbsp;,&nbsp;applicationExtension)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;gifEncoder.Metadata.Comment</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;SET&nbsp;METADATA&nbsp;Comments</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;This&nbsp;add&nbsp;a&nbsp;Comment&nbsp;Extension&nbsp;for&nbsp;each&nbsp;string</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">if</span>&nbsp;metadataString.Length&nbsp;&gt;&nbsp;<span class="fs__number">0</span>&nbsp;<span class="fs__keyword">then</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">for</span>&nbsp;comm&nbsp;<span class="fs__keyword">in</span>&nbsp;metadataString&nbsp;<span class="fs__keyword">do</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;byteCom&nbsp;:&nbsp;byte[]&nbsp;=&nbsp;[||]&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">if</span>&nbsp;comm.Length&nbsp;&gt;&nbsp;<span class="fs__number">254</span>&nbsp;<span class="fs__keyword">then</span>&nbsp;byteCom&nbsp;&lt;-&nbsp;System.Text.UTF7Encoding.UTF7.GetBytes(comm.Substring(<span class="fs__number">0</span>,<span class="fs__number">254</span>))&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">else</span>&nbsp;&nbsp;byteCom&nbsp;&lt;-&nbsp;System.Text.UTF7Encoding.UTF7.GetBytes(comm)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;dataComments&nbsp;=Array.concat&nbsp;[|&nbsp;[|0x21uy;&nbsp;0xFEuy|];&nbsp;byteCom;&nbsp;[|0x00uy|]&nbsp;|]&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gifData&nbsp;&lt;-&nbsp;arrayInsert(metadataPTR,&nbsp;gifData&nbsp;,&nbsp;dataComments)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;SET&nbsp;METADATA&nbsp;frameRate</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;Sets&nbsp;each&nbsp;Graphic&nbsp;Control&nbsp;Extension&nbsp;(5&nbsp;bytes&nbsp;from&nbsp;each&nbsp;label&nbsp;0x0021F9)</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;bte&nbsp;:&nbsp;Byte[]&nbsp;=&nbsp;BitConverter.GetBytes(frameDelay&nbsp;/&nbsp;<span class="fs__number">10</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;search&nbsp;:&nbsp;Byte[]&nbsp;=&nbsp;[|0x21uy;0xF9uy;0x04uy|]&nbsp;&nbsp;<span class="fs__com">//&nbsp;21&nbsp;F9&nbsp;Graphic&nbsp;Extension&nbsp;...&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;replaceSetOfParameters&nbsp;=&nbsp;[|0x21uy;&nbsp;0xF9uy;&nbsp;0x04uy;&nbsp;packedFields&nbsp;;&nbsp;bte.[<span class="fs__number">0</span>];&nbsp;bte.[<span class="fs__number">1</span>]&nbsp;;&nbsp;transparenColorIndex;&nbsp;0x00uy&nbsp;|]&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;0x00uy&nbsp;-&nbsp;block&nbsp;termination</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;function&nbsp;for&nbsp;searching&nbsp;position&nbsp;from&nbsp;special&nbsp;place&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;currentRatePosition&nbsp;(from&nbsp;:&nbsp;int)&nbsp;=&nbsp;arraySearch(from,&nbsp;gifData&nbsp;,search)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">let</span>&nbsp;<span class="fs__keyword">mutable</span>&nbsp;current&nbsp;=&nbsp;currentRatePosition&nbsp;(<span class="fs__number">0</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">while</span>&nbsp;current&nbsp;&gt;=&nbsp;<span class="fs__number">0</span>&nbsp;<span class="fs__keyword">do</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gifData&nbsp;&lt;-&nbsp;arrayReplace&nbsp;(current,&nbsp;gifData,&nbsp;replaceSetOfParameters&nbsp;)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current&nbsp;&lt;-&nbsp;currentRatePosition&nbsp;(current&nbsp;&#43;&nbsp;<span class="fs__number">7</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">do</span>&nbsp;stream.Write(gifData,&nbsp;<span class="fs__number">0</span>,&nbsp;gifData.Length)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">do</span>&nbsp;stream.Flush()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//Return&nbsp;the&nbsp;GIF&nbsp;specification&nbsp;version.&nbsp;This&nbsp;always&nbsp;returns&nbsp;&quot;GIF89a&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;https://en.wikipedia.org/wiki/GIF</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">member</span>&nbsp;x.EncoderVersion&nbsp;<span class="fs__keyword">with</span>&nbsp;get()&nbsp;=&nbsp;encoderVersion&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//Get&nbsp;or&nbsp;set&nbsp;a&nbsp;value&nbsp;that&nbsp;indicate&nbsp;if&nbsp;the&nbsp;GIF&nbsp;will&nbsp;repeat&nbsp;the&nbsp;animation&nbsp;after&nbsp;the&nbsp;last&nbsp;frame&nbsp;is&nbsp;shown</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">member</span>&nbsp;x.Repeat&nbsp;<span class="fs__keyword">with</span>&nbsp;get()&nbsp;=&nbsp;repeat&nbsp;<span class="fs__keyword">and</span>&nbsp;set(v)&nbsp;=&nbsp;repeat&nbsp;&lt;-&nbsp;v&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;Get&nbsp;or&nbsp;set&nbsp;a&nbsp;collection&nbsp;of&nbsp;meta-data&nbsp;string&nbsp;to&nbsp;be&nbsp;embedded&nbsp;in&nbsp;the&nbsp;GIF&nbsp;file.&nbsp;Each&nbsp;string&nbsp;has&nbsp;a&nbsp;max&nbsp;length&nbsp;of&nbsp;254&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;characters&nbsp;(Any&nbsp;character&nbsp;above&nbsp;this&nbsp;limit&nbsp;will&nbsp;be&nbsp;truncated).&nbsp;The&nbsp;string&nbsp;will&nbsp;be&nbsp;encoded&nbsp;UTF-7.&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">member</span>&nbsp;x.MetadataString&nbsp;<span class="fs__keyword">with</span>&nbsp;get()&nbsp;=&nbsp;metadataString&nbsp;<span class="fs__keyword">and</span>&nbsp;set(v)&nbsp;=&nbsp;metadataString&nbsp;&lt;-&nbsp;v&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;3&nbsp;bits&nbsp;-&nbsp;Reserved&nbsp;,&nbsp;3&nbsp;bits&nbsp;-&nbsp;Disposal&nbsp;Method,&nbsp;1&nbsp;-&nbsp;bit&nbsp;User&nbsp;Input&nbsp;Flag&nbsp;,&nbsp;1&nbsp;-&nbsp;Transparent&nbsp;Color&nbsp;Flag&nbsp;&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">member</span>&nbsp;x.PackedFields&nbsp;<span class="fs__keyword">with</span>&nbsp;get()&nbsp;=&nbsp;packedFields&nbsp;<span class="fs__keyword">and</span>&nbsp;set(v)&nbsp;=&nbsp;&nbsp;packedFields&nbsp;&lt;-&nbsp;v&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">member</span>&nbsp;x.TransparenColorIndex&nbsp;<span class="fs__keyword">with</span>&nbsp;get()&nbsp;=&nbsp;transparenColorIndex&nbsp;<span class="fs__keyword">and</span>&nbsp;set(v)&nbsp;=&nbsp;transparenColorIndex&nbsp;&lt;-&nbsp;v&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;Get&nbsp;or&nbsp;set&nbsp;the&nbsp;amount&nbsp;of&nbsp;time&nbsp;each&nbsp;frame&nbsp;will&nbsp;be&nbsp;shown&nbsp;(in&nbsp;milliseconds).&nbsp;The&nbsp;default&nbsp;value&nbsp;is&nbsp;200ms</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">member</span>&nbsp;x.FrameDelay&nbsp;<span class="fs__keyword">with</span>&nbsp;get()&nbsp;=&nbsp;frameDelay&nbsp;<span class="fs__keyword">and</span>&nbsp;set(v)&nbsp;=&nbsp;frameDelay&nbsp;&lt;-&nbsp;v&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;Add&nbsp;a&nbsp;frame&nbsp;to&nbsp;the&nbsp;encoder&nbsp;frame&nbsp;collection</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">member</span>&nbsp;x.AddFrame(frame&nbsp;:&nbsp;Bitmap)&nbsp;=&nbsp;addFrame(frame)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;Writes&nbsp;the&nbsp;animated&nbsp;GIF&nbsp;binary&nbsp;to&nbsp;a&nbsp;specified&nbsp;IO.Stream</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;The&nbsp;stream&nbsp;where&nbsp;the&nbsp;binary&nbsp;is&nbsp;to&nbsp;be&nbsp;output.&nbsp;Can&nbsp;be&nbsp;any&nbsp;object&nbsp;type&nbsp;that&nbsp;derives&nbsp;from&nbsp;IO.Stream</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__keyword">member</span>&nbsp;x.Save(stream)&nbsp;=&nbsp;save(stream)&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;Animated&nbsp;GIF&nbsp;Image</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k(System.Windows.Media.Imaging.GifBitmapEncoder.%23ctor);k(DevLang-fsharp);k(TargetFrameworkMoniker-.NETFramework,Version%3Dv4.6)&amp;rd=true</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;http://stackoverflow.com/questions/210922/how-do-i-get-an-animated-gif-to-work-in-wpf</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs__com">//&nbsp;http://stackoverflow.com/questions/30727343/fast-converting-bitmap-to-bitmapsource-wpf</span>&nbsp;
+</pre>
+</div>
+</div>
+</div>
+<div></div>
+<h1>More Information</h1>
+<p><em>// Base on solution - https://social.msdn.microsoft.com/Forums/office/en-US/d208a9c9-9299-4912-b35e-1c36d6c7ba84/animated-gif-encoder-net?forum=vbgeneral<br>
+// https://en.wikipedia.org/wiki/GIF</em></p>
+<div class="mcePaste" id="_mcePaste" style="left:-10000px; top:0px; width:1px; height:1px; overflow:hidden">
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
