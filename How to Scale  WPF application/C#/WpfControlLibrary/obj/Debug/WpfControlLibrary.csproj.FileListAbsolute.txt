@@ -1,0 +1,12 @@
+C:\AspNetSandBox\wpfScalingEntireApplication\WpfControlLibrary\bin\Debug\WpfControlLibrary.dll
+C:\AspNetSandBox\wpfScalingEntireApplication\WpfControlLibrary\bin\Debug\WpfControlLibrary.pdb
+C:\AspNetSandBox\wpfScalingEntireApplication\WpfControlLibrary\obj\Debug\LeftPanel.baml
+C:\AspNetSandBox\wpfScalingEntireApplication\WpfControlLibrary\obj\Debug\UserControlText.baml
+C:\AspNetSandBox\wpfScalingEntireApplication\WpfControlLibrary\obj\Debug\LeftPanel.g.cs
+C:\AspNetSandBox\wpfScalingEntireApplication\WpfControlLibrary\obj\Debug\UserControlText.g.cs
+C:\AspNetSandBox\wpfScalingEntireApplication\WpfControlLibrary\obj\Debug\WpfControlLibrary_MarkupCompile.cache
+C:\AspNetSandBox\wpfScalingEntireApplication\WpfControlLibrary\obj\Debug\WpfControlLibrary.g.resources
+C:\AspNetSandBox\wpfScalingEntireApplication\WpfControlLibrary\obj\Debug\WpfControlLibrary.Properties.Resources.resources
+C:\AspNetSandBox\wpfScalingEntireApplication\WpfControlLibrary\obj\Debug\WpfControlLibrary.csproj.GenerateResource.Cache
+C:\AspNetSandBox\wpfScalingEntireApplication\WpfControlLibrary\obj\Debug\WpfControlLibrary.dll
+C:\AspNetSandBox\wpfScalingEntireApplication\WpfControlLibrary\obj\Debug\WpfControlLibrary.pdb
