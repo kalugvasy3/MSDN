@@ -1,0 +1,5 @@
+C:\AspNetSandBox\WebDataCommon\WebDataCommon\bin\WebDataCommon.dll.config
+C:\AspNetSandBox\WebDataCommon\WebDataCommon\bin\WebDataCommon.dll
+C:\AspNetSandBox\WebDataCommon\WebDataCommon\bin\WebDataCommon.pdb
+C:\AspNetSandBox\WebDataCommon\WebDataCommon\obj\Debug\WebDataCommon.dll
+C:\AspNetSandBox\WebDataCommon\WebDataCommon\obj\Debug\WebDataCommon.pdb
