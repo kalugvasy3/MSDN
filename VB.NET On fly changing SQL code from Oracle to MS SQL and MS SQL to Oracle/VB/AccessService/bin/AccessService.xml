@@ -1,0 +1,99 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AccessService
+</name>
+</assembly>
+<members>
+<member name="M:AccessService.DataAccessWS.Find(System.String,System.String,System.String)">
+<summary>
+Calls and returns data from the DataAccess class based on the sql passed.
+It connects to the database using a connection id. 
+</summary>
+<returns>
+Returns a DataSet
+</returns>
+<remarks>
+<para>Created By: Liza Merriman</para>
+<para>Last Modified: 1/27/2004</para>
+</remarks>
+ 
+</member>
+<member name="M:AccessService.DataAccessWS.FindScalar(System.String,System.String)">
+<summary>
+Executes a an sql query that returns an integer as a result.
+<para>An example would be using the MAX function to get the last instance id.</para>
+</summary>
+<returns>
+Returns an Integer.  If no result can be found, a 0 is returned.
+</returns>
+<remarks>
+<para>Created By: Brian Stillfield</para>
+<para>Last Modified: 3/16/2005</para>
+</remarks>
+</member>
+<member name="M:AccessService.DataAccessWS.Update(System.String,System.String)">
+<summary>
+Updates data using the DataAccess class based on the sql passed.
+It connects to the database using a connection id. 
+</summary>
+<remarks>
+<para>Created By: Liza Merriman</para>
+<para>Last Modified: 1/27/2004</para>
+</remarks>
+</member>
+<member name="M:AccessService.DataAccessWS.Delete(System.String,System.String)">
+<summary>
+Deletes data using the DataAccess class based on the sql passed.
+It connects to the database using a connection id. 
+</summary>
+<remarks>
+<para>Created By: Liza Merriman</para>
+<para>Last Modified: 1/27/2004</para>
+</remarks>
+</member>
+<member name="M:AccessService.DataAccessWS.Create(System.String,System.String)">
+<summary>
+Creates data using the DataAccess class based on the sql passed.
+It connects to the database using a connection id. 
+</summary>
+<remarks>
+<para>Created By: Liza Merriman</para>
+<para>Last Modified: 1/27/2004</para>
+</remarks>
+</member>
+<member name="M:AccessService.DataAccessWS.ProcessTransaction(System.String,System.String[])">
+<summary>
+Processes multiple transactions based on the array passed.
+It connects to the database using a connection id. 
+</summary>
+<remarks>
+<para>Created By: Liza Merriman</para>
+<para>Last Modified: 8/10/2005</para>
+</remarks>
+</member>
+<member name="M:AccessService.DataAccessWS.GetConnString(System.String)">
+ <summary>
+ Returns the Connection string used to access the database.
+ based on the ConnectID passed in.
+ </summary>
+ <para>Created By: James Reiha</para>
+ <para>Last Modified: 2/18/2010</para>
+</member>
+<member name="M:AccessService.DataException.#ctor(System.String,System.String,System.Exception)">
+<summary>
+Constructer used to create an instance of a DataException.
+All parameters must be passed.
+</summary>
+<remarks>
+<para>Created By: Brian Stillfield - February 28, 2003</para>
+</remarks>
+</member>
+<member name="P:AccessService.DataException.sql">
+<summary>
+Gets the sql statement that was attempted when the exception occurred.
+</summary>
+</member>
+</members>
+</doc>

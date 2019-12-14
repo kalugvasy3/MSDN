@@ -1,0 +1,8 @@
+C:\Users\kalugv\Desktop\MigtateDBtoDB\UpgradeClassLibrary\bin\Debug\UpgradeClassLibrary.dll.config
+C:\Users\kalugv\Desktop\MigtateDBtoDB\UpgradeClassLibrary\bin\Debug\UpgradeClassLibrary.dll
+C:\Users\kalugv\Desktop\MigtateDBtoDB\UpgradeClassLibrary\bin\Debug\UpgradeClassLibrary.pdb
+C:\Users\kalugv\Desktop\MigtateDBtoDB\UpgradeClassLibrary\obj\Debug\UpgradeClassLibrary.vbprojResolveAssemblyReference.cache
+C:\Users\kalugv\Desktop\MigtateDBtoDB\UpgradeClassLibrary\obj\Debug\UpgradeClassLibrary.Resources.resources
+C:\Users\kalugv\Desktop\MigtateDBtoDB\UpgradeClassLibrary\obj\Debug\UpgradeClassLibrary.vbproj.GenerateResource.Cache
+C:\Users\kalugv\Desktop\MigtateDBtoDB\UpgradeClassLibrary\obj\Debug\UpgradeClassLibrary.dll
+C:\Users\kalugv\Desktop\MigtateDBtoDB\UpgradeClassLibrary\obj\Debug\UpgradeClassLibrary.pdb

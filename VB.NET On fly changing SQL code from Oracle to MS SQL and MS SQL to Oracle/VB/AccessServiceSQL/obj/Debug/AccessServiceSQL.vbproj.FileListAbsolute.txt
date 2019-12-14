@@ -1,0 +1,13 @@
+C:\Users\kalugv\Desktop\MigtateDBtoDB\AccessServiceSQL\bin\AccessServiceSQL.dll.config
+C:\Users\kalugv\Desktop\MigtateDBtoDB\AccessServiceSQL\bin\AccessServiceSQL.dll
+C:\Users\kalugv\Desktop\MigtateDBtoDB\AccessServiceSQL\bin\AccessServiceSQL.pdb
+C:\Users\kalugv\Desktop\MigtateDBtoDB\AccessServiceSQL\bin\AccessServiceSQL.xml
+C:\Users\kalugv\Desktop\MigtateDBtoDB\AccessServiceSQL\bin\UpgradeClassLibrary.dll
+C:\Users\kalugv\Desktop\MigtateDBtoDB\AccessServiceSQL\bin\UpgradeClassLibrary.pdb
+C:\Users\kalugv\Desktop\MigtateDBtoDB\AccessServiceSQL\obj\Debug\AccessServiceSQL.vbprojResolveAssemblyReference.cache
+C:\Users\kalugv\Desktop\MigtateDBtoDB\AccessServiceSQL\obj\Debug\AccessServiceSQL.DataAccessWS.resources
+C:\Users\kalugv\Desktop\MigtateDBtoDB\AccessServiceSQL\obj\Debug\AccessServiceSQL.Global.resources
+C:\Users\kalugv\Desktop\MigtateDBtoDB\AccessServiceSQL\obj\Debug\AccessServiceSQL.vbproj.GenerateResource.Cache
+C:\Users\kalugv\Desktop\MigtateDBtoDB\AccessServiceSQL\obj\Debug\AccessServiceSQL.dll
+C:\Users\kalugv\Desktop\MigtateDBtoDB\AccessServiceSQL\obj\Debug\AccessServiceSQL.xml
+C:\Users\kalugv\Desktop\MigtateDBtoDB\AccessServiceSQL\obj\Debug\AccessServiceSQL.pdb

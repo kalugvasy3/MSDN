@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/Header.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/sprite.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/UhfHeader.css" data-do-not-move="true" />
+<link rel="stylesheet" href="https://statics-uhf-wus.akamaized.net/west-european/shell/_scrf/css/themes=default.device=uplevel_web_pc/21-ecd6ef/6a-459940/9d-005998/14-a4dc48/e0-030d39/4b-120352/5a-621a2e?ver=2.0" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=87A5826B6B2FBDD0B40F33292727EB82" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfFooter.css?v=636529352686451906" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>On fly changing SQL code from Oracle to MS SQL and MS SQL to Oracle.</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/473ab604-664a-465d-84bb-c081b030b1c2Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>On fly changing SQL code from Oracle to MS SQL and MS SQL to Oracle.</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Oracle, Migrate data, MS SQL, VB NET
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Oracle, Migrate data, VB.NET Examples, MS SQL
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Phone, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">2/6/2018</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/On-fly-changing-SQL-code-c113eeff">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>The solution did help us to migrate PRODUCTION environment from ORACLE to MS SQL without interruption production process.</p>
+<p>It is working solution AS IS (without any changes).</p>
+<p>On fly changing SQL code from Oracle to MS SQL and MS SQL to Oracle.</p>
+<p>Maybe somebody finds this idea, approach interesting&nbsp; &hellip;.</p>
+<h1><span>Building the Sample</span></h1>
+<p><em>How to migrate an &nbsp;application(s) from one DB to another on production environments ...</em></p>
+<p>&nbsp;</p>
+<p><em><img id="185437" src="description/DB to DB.PNG" alt="" width="280" height="623"><br>
+</em></p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p>In 2009-2010 I had the task create an approach for migrating all (about 200 applications) from Oracle to MS SQL.</p>
+<p>All applications must work without interruption on PROD&nbsp; during this process, (it took about ten months).</p>
+<p>Most applications depend on each other.</p>
+<p>&nbsp;</p>
+<p>For making this task done, I create two Data Services one for Oracle and one for MS SQL which allow INSERT/UPDATE/DELETE same data into both databases.</p>
+<p>&nbsp;</p>
+<p>If application has not converted yet, it used AccessService</p>
+<p>If application has converted &ndash; it used AccessServiceSQL</p>
+<p>&nbsp;</p>
+<p>SQL &ldquo;SELECT&rdquo; statement can be unchanged so as we expect data should be same in both databases.</p>
+<p>We must convert on the fly only &ldquo;UPDATE/DELETE/INSERT&rdquo;&nbsp; SQL statement for both environments.&nbsp;</p>
+<p>Note:&nbsp; probably today I would modify/simplify something using DataCommon approach,&nbsp; but any changes need to test, so again all AS IS and worked before.</p>
+<p>&nbsp;</p>
+<p>For keep working ALL applications each application MUST update/insert/ delete data to both databases without changing existing SQL code.</p>
+<p>I implement dynamical approach for changing SQL code on fly for MS SQL to ORACLE and ORACLE to MS SQL (again only for INSERT/UPDATE/DELETE)</p>
+<p>(looks like it most interesting part of this application &ndash; see UpgradeClassLibrary) .</p>
+<p>&nbsp;</p>
+<p>If the application has been migrated to MS SQL, it still needs to Update Oracle.</p>
+<p>If the application has not been migrated to MS SQL yet,&nbsp; it still needs to Update Oracle and also update MS SQL at the same time.</p>
+<p>&nbsp;</p>
+<p>OLD Data Service has replaced new Data Service&nbsp; - &ldquo;AccessService.&rdquo;</p>
+<p>For converted applications for used new MS SQL Service &ldquo;AccessServiceSQL.&rdquo;</p>
+<p>&nbsp;</p>
+<p>Major idea:</p>
+<p>&nbsp;</p>
+<p>We do not need to change on the fly &ldquo;SELECT&rdquo; statement (data must be same).</p>
+<p>Each &ldquo;SELECT&rdquo; statement uses primary DataBase without any changes.</p>
+<p>&nbsp;</p>
+<p>For UPDATE/DELETE/INSERT</p>
+<p><strong>AccessService</strong> -&nbsp; <strong>Begin Transaction</strong> for Oracle and
+<strong>Begin Transaction</strong> for MS SQL</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<strong>Update/Insert/Delete</strong>&nbsp; Oracle&nbsp; (not modified code) and using on fly logic&nbsp; convert ORACLE to&nbsp; MS SQL and&nbsp; update&nbsp; MS SQL</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If both runs were&nbsp; OK -&gt; &nbsp;Commit both Transactions</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If not OK -&gt; &nbsp;Rollback both transactions ORACLE and MS
+ SQL</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; And save
+<strong>the error</strong> in special TABLE which keeps all errors.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (it was extremely useful to fix new error in real time )</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>AccessServiceSQL doing same (using Transactions) only convert on fly MS SQL&nbsp; (INSERT/UPDATE/DELETE) to ORACLE.</p>
+<p>&nbsp;</p>
+<p>Maybe this OLD project helps somebody with this difficult process migrate production environments (without interruption)&nbsp; from one DB to another&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>Visual Basic</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">vb</span>
+<pre class="hidden">Public Class OraToSql
+
+    Public Function isContinueSql(ByVal aryCommands() As String) As Boolean
+        'EXAMPL
+        Dim i As Integer
+        For i = 0 To aryCommands.Length - 1
+            If InStr(aryCommands(i).ToUpper, &quot;TC_&quot;) &lt;&gt; 0 Or (InStr(aryCommands(i).ToUpper, &quot;DC_&quot;) &lt;&gt; 0 And InStr(aryCommands(i).ToUpper, &quot;DC_CONTACT_CONTACT_TITLE&quot;) = 0) Or InStr(aryCommands(i).ToUpper, &quot;DISTRICT_EMPLOYEE_COUNTS&quot;) &lt;&gt; 0 _
+            Or InStr(aryCommands(i).ToUpper, &quot;EXEC &quot;) &lt;&gt; 0 Then
+
+                Return False
+            End If
+        Next
+
+        Return True
+    End Function
+
+
+    Public Function ConvertToSQL(ByVal strCom As String) As String
+
+        'Dim strCurrDate As String = (&quot;'&quot; &#43; Format(Now(), &quot;dd-MMM-yyyy&quot;) &#43; &quot;'&quot;).ToUpper
+        strCom = strCom.ToUpper
+        'strCom = strCom.Replace(strCurrDate, &quot;GETDATE()&quot;)
+
+        'strCurrDate = &quot;'&quot; &#43; Format(Now(), &quot;dd-MMM-yyyy hh:mm:ss&quot;).ToUpper &#43; &quot;'&quot;
+        'strCom = strCom.Replace(strCurrDate, &quot;GETDATE()&quot;)
+
+        'strCurrDate = &quot;'&quot; &#43; Format(Now().AddSeconds(1), &quot;dd-MMM-yyyy hh:mm:ss&quot;).ToUpper &#43; &quot;'&quot;
+        'strCom = strCom.Replace(strCurrDate, &quot;GETDATE()&quot;)
+
+        'strCurrDate = &quot;'&quot; &#43; Format(Now().AddSeconds(-1), &quot;dd-MMM-yyyy hh:mm:ss&quot;).ToUpper &#43; &quot;'&quot;
+        'strCom = strCom.Replace(strCurrDate, &quot;GETDATE()&quot;)
+
+        strCom = strCom.Replace(&quot;, &quot;, &quot;,&quot;)
+        strCom = strCom.Replace(&quot; , &quot;, &quot;,&quot;)
+        strCom = strCom.Replace(&quot; ,&quot;, &quot;,&quot;)
+
+        strCom = strCom.Replace(&quot;) &quot;, &quot;)&quot;)
+        strCom = strCom.Replace(&quot; ) &quot;, &quot;)&quot;)
+        strCom = strCom.Replace(&quot; )&quot;, &quot;)&quot;)
+        strCom = strCom.Replace(&quot; (&quot;, &quot;(&quot;)
+
+        strCom = strCom.Replace(&quot;||&quot;, &quot; &#43; &quot;)
+        strCom = strCom.Replace(&quot;&#43; BDGT_CYCLE0.SUBMITTED_DATE &#43;&quot;, &quot;&#43; CONVERT(VARCHAR,BDGT_CYCLE0.SUBMITTED_DATE) &#43; &quot;)
+        strCom = strCom.Replace(&quot;SYSDATE&quot;, &quot;GETDATE()&quot;)
+        strCom = strCom.Replace(&quot;SELECT COUNT(*) FROM &quot;, &quot;SELECT COUNT(*) &quot;&quot;COUNT(*)&quot;&quot;  FROM &quot;)
+        strCom = strCom.Replace(&quot;NVL&quot;, &quot;ISNULL&quot;)
+        strCom = strCom.Replace(&quot;TRUNC(&quot;, &quot;CONVERT(DATE,&quot;)
+
+        strCom = strCom.Replace(&quot; PERCENT FROM&quot;, &quot; PERCENT0 FROM&quot;)  ' Payment Manag...
+        strCom = strCom.Replace(&quot;SUSPENSE,&quot;, &quot; &quot;)                 ' DC_CONTACT - SUSPENSE - not exist 
+
+        strCom = strCom.Replace(&quot;''',&quot;, &quot;'' ',&quot;)
+        strCom = strCom.Replace(&quot;'',&quot;, &quot;NULL,&quot;)
+
+        strCom = strCom.Replace(&quot;SUBSTR&quot;, &quot;SUBSTRING&quot;)
+        strCom = strCom.Replace(&quot;TO_DATE(&quot;, &quot;CONVERT(DATETIME,&quot;)
+
+        strCom = strCom.Replace(&quot;TO_NUMBER(&quot;, &quot;CONVERT(INT,&quot;)
+        strCom = strCom.Replace(&quot;TO_CHAR(&quot;, &quot;CONVERT(VARCHAR,&quot;)
+
+        strCom = strCom.Replace(&quot;,'MM/DD/YYYY')&quot;, &quot;,101)&quot;)
+
+        strCom = strCom.Replace(&quot;'DD-MON-YYYY HH24:MI:SS'&quot;, &quot;113&quot;)
+
+        strCom = strCom.Replace(&quot;INITCAP&quot;, &quot;DESEPROC.INITCAP&quot;)
+        'DD-MM-YYYY HH24:MI:SS'
+
+        strCom = strCom.Replace(&quot;'1/1/0001 12:00:00 AM'&quot;, &quot;'01/01/1753 12:00:00 AM'&quot;)
+        strCom = strCom.Replace(&quot;01-JAN-0001&quot;, &quot;01-JAN-1753&quot;)
+        strCom = strCom.Replace(&quot;,'DD-MON-YYYY')&quot;, &quot;,106)&quot;)
+        strCom = strCom.Replace(&quot;,'YYYYMMDD')&quot;, &quot;,112)&quot;)
+        strCom = strCom.Replace(&quot;,'DD/MM/YYYY')&quot;, &quot;103)&quot;)
+
+        strCom = strCom.Replace(&quot;FROM DUAL&quot;, &quot;&quot;)
+
+        strCom = strCom.Replace(&quot;MINUS&quot;, &quot;EXCEPT&quot;)
+
+        strCom = strCom.Replace(&quot;&#43;  DC_EDUCATOR.SOC_SEC_NO&quot;, &quot;&#43;  convert(varchar,DC_EDUCATOR.SOC_SEC_NO) &quot;)
+
+
+        'County Clerk
+        strCom = strCom.Replace(&quot;MAX(SEQUENCE_NO), TYPE_CODE&quot;, &quot; MAX(SEQUENCE_NO) &quot;&quot;MAX(SEQUENCE_NO)&quot;&quot; , TYPE_CODE&quot;)
+
+        ' EpEgs
+
+        strCom = strCom.Replace(&quot; A.YEAR&quot;, &quot; convert(varchar,A.YEAR)&quot;)
+        strCom = strCom.Replace(&quot;(A.YEAR - 1)&quot;, &quot; convert(varchar,(convert(int,A.YEAR) - 1))&quot;)
+        strCom = strCom.Replace(&quot;ORDER BY ADDED_TO_HISTORY_TIMESTAMP DESC) WHERE ROWNUM = 1&quot;, &quot;GROUP BY LAST_MODIFIED_USERID&quot;)
+        strCom = strCom.Replace(&quot;SELECT * FROM (SELECT ADDED_TO_HISTORY_TIMESTAMP,&quot;, &quot;SELECT MAX(ADDED_TO_HISTORY_TIMESTAMP) ADDED_TO_HISTORY_TIMESTAMP,&quot;)
+
+        strCom = strCom.Replace(&quot; ORDER BY CAST(REPLACE(CYCLE_NAME, 'REQUEST ') AS NUMBER) DESC&quot;, &quot;ORDER BY   CONVERT(INT,SUBSTRING(A.CYCLE_NAME,9,2)) DESC&quot;)
+        strCom = strCom.Replace(&quot;SELECT DISTINCT A.CYCLE_NAME, A.STATUS_CODE,&quot;, &quot;SELECT DISTINCT  CONVERT(INT,SUBSTRING(A.CYCLE_NAME,9,2)) NUM,A.CYCLE_NAME, A.STATUS_CODE, &quot;)
+        strCom = strCom.Replace(&quot;FROM DUAL&quot;, &quot;FROM YEAR_TYPE WHERE TYPE=1&quot;)
+
+
+        strCom = strCom.Replace(&quot;DECODE (RTRIM(A.FK_BDGT_CYCLE0_RSP_TYPE_CODE),  'T1',       'T1-ARRA',  'T2D',      'T2D-ARRA',  'TID-LEA',  'TID-LEA-AR',  'SE_PBENT', 'PARTB_ARRA',  A.FK_BDGT_CYCLE0_RSP_TYPE_CODE)&quot;, &quot;case when RTRIM(A.FK_BDGT_CYCLE0_RSP_TYPE_CODE) = 'T1'  then 'T1-ARRA' when RTRIM(A.FK_BDGT_CYCLE0_RSP_TYPE_CODE) = 'T2D' then 'T2D-ARRA' when RTRIM(A.FK_BDGT_CYCLE0_RSP_TYPE_CODE) = 'TID-LEA' then 'TID-LEA-AR' when RTRIM(A.FK_BDGT_CYCLE0_RSP_TYPE_CODE) = 'SE_PBENT' then 'PARTB_ARRA' else  A.FK_BDGT_CYCLE0_RSP_TYPE_CODE end &quot;)
+
+        strCom = strCom.Replace(&quot; &#43;  BDGT_CYCLE0.SUBMITTED_DATE  &#43;&quot;, &quot;&#43;  convert(varchar,BDGT_CYCLE0.SUBMITTED_DATE)  &#43;&quot;)
+        strCom = strCom.Replace(&quot; TRIM(LEASE_PURCHASE)&quot;, &quot; LTRIM(RTRIM(LEASE_PURCHASE))&quot;)
+        strCom = strCom.Replace(&quot; TRIM(TYPE_CODE_3)&quot;, &quot; LTRIM(RTRIM(TYPE_CODE_3))&quot;)
+        strCom = strCom.Replace(&quot; TRIM(TYPE_CODE_2)&quot;, &quot; LTRIM(RTRIM(TYPE_CODE_2))&quot;)
+        strCom = strCom.Replace(&quot; TRIM(TYPE_CODE_1)&quot;, &quot; LTRIM(RTRIM(TYPE_CODE_1))&quot;)
+        strCom = strCom.Replace(&quot; TRIM(BDGT_BUDGET_SUPPORT_DATA.TYPE_CODE_1)&quot;, &quot; LTRIM(RTRIM(BDGT_BUDGET_SUPPORT_DATA.TYPE_CODE_1))&quot;)
+        strCom = strCom.Replace(&quot; TRIM(BDGT_BUDGET_SUPPORT_DATA.TYPE_CODE_2)&quot;, &quot; LTRIM(RTRIM(BDGT_BUDGET_SUPPORT_DATA.TYPE_CODE_2))&quot;)
+        strCom = strCom.Replace(&quot; TRIM(COURSE_ASSIGNMENT.GRADE)&quot;, &quot; LTRIM(RTRIM(COURSE_ASSIGNMENT.GRADE))&quot;)
+        strCom = strCom.Replace(&quot;ORDER BY FK_SEC_OF_BRD_SEQUENCE_NUMBER DESC  ) SUP,&quot;, &quot; ) SUP,&quot;)
+        strCom = strCom.Replace(&quot;, ROWID &quot;, &quot; &quot;)
+        strCom = strCom.Replace(&quot;,ROWID &quot;, &quot; &quot;)
+        strCom = strCom.Replace(&quot; TRIM(COUNT_VALUE)&quot;, &quot; COUNT_VALUE&quot;)
+
+        ConvertToSQL = strCom
+
+    End Function
+End Class
+</pre>
+<div class="preview">
+<pre class="vb"><span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">Class</span>&nbsp;OraToSql&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">Function</span>&nbsp;isContinueSql(<span class="visualBasic__keyword">ByVal</span>&nbsp;aryCommands()&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>)&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">Boolean</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'EXAMPL</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;i&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">Integer</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">For</span>&nbsp;i&nbsp;=&nbsp;<span class="visualBasic__number">0</span>&nbsp;<span class="visualBasic__keyword">To</span>&nbsp;aryCommands.Length&nbsp;-&nbsp;<span class="visualBasic__number">1</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;InStr(aryCommands(i).ToUpper,&nbsp;<span class="visualBasic__string">&quot;TC_&quot;</span>)&nbsp;&lt;&gt;&nbsp;<span class="visualBasic__number">0</span>&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;(InStr(aryCommands(i).ToUpper,&nbsp;<span class="visualBasic__string">&quot;DC_&quot;</span>)&nbsp;&lt;&gt;&nbsp;<span class="visualBasic__number">0</span>&nbsp;<span class="visualBasic__keyword">And</span>&nbsp;InStr(aryCommands(i).ToUpper,&nbsp;<span class="visualBasic__string">&quot;DC_CONTACT_CONTACT_TITLE&quot;</span>)&nbsp;=&nbsp;<span class="visualBasic__number">0</span>)&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;InStr(aryCommands(i).ToUpper,&nbsp;<span class="visualBasic__string">&quot;DISTRICT_EMPLOYEE_COUNTS&quot;</span>)&nbsp;&lt;&gt;&nbsp;<span class="visualBasic__number">0</span>&nbsp;_&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;InStr(aryCommands(i).ToUpper,&nbsp;<span class="visualBasic__string">&quot;EXEC&nbsp;&quot;</span>)&nbsp;&lt;&gt;&nbsp;<span class="visualBasic__number">0</span>&nbsp;<span class="visualBasic__keyword">Then</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Return</span>&nbsp;<span class="visualBasic__keyword">False</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Next</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Return</span>&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Function</span>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">Function</span>&nbsp;ConvertToSQL(<span class="visualBasic__keyword">ByVal</span>&nbsp;strCom&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>)&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'Dim&nbsp;strCurrDate&nbsp;As&nbsp;String&nbsp;=&nbsp;(&quot;'&quot;&nbsp;&#43;&nbsp;Format(Now(),&nbsp;&quot;dd-MMM-yyyy&quot;)&nbsp;&#43;&nbsp;&quot;'&quot;).ToUpper</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.ToUpper&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'strCom&nbsp;=&nbsp;strCom.Replace(strCurrDate,&nbsp;&quot;GETDATE()&quot;)</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'strCurrDate&nbsp;=&nbsp;&quot;'&quot;&nbsp;&#43;&nbsp;Format(Now(),&nbsp;&quot;dd-MMM-yyyy&nbsp;hh:mm:ss&quot;).ToUpper&nbsp;&#43;&nbsp;&quot;'&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'strCom&nbsp;=&nbsp;strCom.Replace(strCurrDate,&nbsp;&quot;GETDATE()&quot;)</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'strCurrDate&nbsp;=&nbsp;&quot;'&quot;&nbsp;&#43;&nbsp;Format(Now().AddSeconds(1),&nbsp;&quot;dd-MMM-yyyy&nbsp;hh:mm:ss&quot;).ToUpper&nbsp;&#43;&nbsp;&quot;'&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'strCom&nbsp;=&nbsp;strCom.Replace(strCurrDate,&nbsp;&quot;GETDATE()&quot;)</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'strCurrDate&nbsp;=&nbsp;&quot;'&quot;&nbsp;&#43;&nbsp;Format(Now().AddSeconds(-1),&nbsp;&quot;dd-MMM-yyyy&nbsp;hh:mm:ss&quot;).ToUpper&nbsp;&#43;&nbsp;&quot;'&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'strCom&nbsp;=&nbsp;strCom.Replace(strCurrDate,&nbsp;&quot;GETDATE()&quot;)</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;,&nbsp;&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;,&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;,&nbsp;&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;,&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;,&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;,&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;)&nbsp;&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;)&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;)&nbsp;&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;)&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;)&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;)&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;(&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;(&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;||&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;&#43;&nbsp;&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&#43;&nbsp;BDGT_CYCLE0.SUBMITTED_DATE&nbsp;&#43;&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&#43;&nbsp;CONVERT(VARCHAR,BDGT_CYCLE0.SUBMITTED_DATE)&nbsp;&#43;&nbsp;&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;SYSDATE&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;GETDATE()&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;SELECT&nbsp;COUNT(*)&nbsp;FROM&nbsp;&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;SELECT&nbsp;COUNT(*)&nbsp;&quot;</span><span class="visualBasic__string">&quot;COUNT(*)&quot;</span><span class="visualBasic__string">&quot;&nbsp;&nbsp;FROM&nbsp;&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;NVL&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;ISNULL&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;TRUNC(&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;CONVERT(DATE,&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;PERCENT&nbsp;FROM&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;PERCENT0&nbsp;FROM&quot;</span>)&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;Payment&nbsp;Manag...</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;SUSPENSE,&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;&quot;</span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;DC_CONTACT&nbsp;-&nbsp;SUSPENSE&nbsp;-&nbsp;not&nbsp;exist&nbsp;</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;''',&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;''&nbsp;',&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;'',&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;NULL,&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;SUBSTR&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;SUBSTRING&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;TO_DATE(&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;CONVERT(DATETIME,&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;TO_NUMBER(&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;CONVERT(INT,&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;TO_CHAR(&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;CONVERT(VARCHAR,&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;,'MM/DD/YYYY')&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;,101)&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;'DD-MON-YYYY&nbsp;HH24:MI:SS'&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;113&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;INITCAP&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;DESEPROC.INITCAP&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'DD-MM-YYYY&nbsp;HH24:MI:SS'</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;'1/1/0001&nbsp;12:00:00&nbsp;AM'&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;'01/01/1753&nbsp;12:00:00&nbsp;AM'&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;01-JAN-0001&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;01-JAN-1753&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;,'DD-MON-YYYY')&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;,106)&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;,'YYYYMMDD')&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;,112)&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;,'DD/MM/YYYY')&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;103)&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;FROM&nbsp;DUAL&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;MINUS&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;EXCEPT&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&#43;&nbsp;&nbsp;DC_EDUCATOR.SOC_SEC_NO&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&#43;&nbsp;&nbsp;convert(varchar,DC_EDUCATOR.SOC_SEC_NO)&nbsp;&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'County&nbsp;Clerk</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;MAX(SEQUENCE_NO),&nbsp;TYPE_CODE&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;MAX(SEQUENCE_NO)&nbsp;&quot;</span><span class="visualBasic__string">&quot;MAX(SEQUENCE_NO)&quot;</span><span class="visualBasic__string">&quot;&nbsp;,&nbsp;TYPE_CODE&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;EpEgs</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;A.YEAR&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;convert(varchar,A.YEAR)&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;(A.YEAR&nbsp;-&nbsp;1)&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;convert(varchar,(convert(int,A.YEAR)&nbsp;-&nbsp;1))&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;ORDER&nbsp;BY&nbsp;ADDED_TO_HISTORY_TIMESTAMP&nbsp;DESC)&nbsp;WHERE&nbsp;ROWNUM&nbsp;=&nbsp;1&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;GROUP&nbsp;BY&nbsp;LAST_MODIFIED_USERID&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;SELECT&nbsp;*&nbsp;FROM&nbsp;(SELECT&nbsp;ADDED_TO_HISTORY_TIMESTAMP,&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;SELECT&nbsp;MAX(ADDED_TO_HISTORY_TIMESTAMP)&nbsp;ADDED_TO_HISTORY_TIMESTAMP,&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;ORDER&nbsp;BY&nbsp;CAST(REPLACE(CYCLE_NAME,&nbsp;'REQUEST&nbsp;')&nbsp;AS&nbsp;NUMBER)&nbsp;DESC&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;ORDER&nbsp;BY&nbsp;&nbsp;&nbsp;CONVERT(INT,SUBSTRING(A.CYCLE_NAME,9,2))&nbsp;DESC&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;SELECT&nbsp;DISTINCT&nbsp;A.CYCLE_NAME,&nbsp;A.STATUS_CODE,&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;SELECT&nbsp;DISTINCT&nbsp;&nbsp;CONVERT(INT,SUBSTRING(A.CYCLE_NAME,9,2))&nbsp;NUM,A.CYCLE_NAME,&nbsp;A.STATUS_CODE,&nbsp;&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;FROM&nbsp;DUAL&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;FROM&nbsp;YEAR_TYPE&nbsp;WHERE&nbsp;TYPE=1&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;DECODE&nbsp;(RTRIM(A.FK_BDGT_CYCLE0_RSP_TYPE_CODE),&nbsp;&nbsp;'T1',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'T1-ARRA',&nbsp;&nbsp;'T2D',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'T2D-ARRA',&nbsp;&nbsp;'TID-LEA',&nbsp;&nbsp;'TID-LEA-AR',&nbsp;&nbsp;'SE_PBENT',&nbsp;'PARTB_ARRA',&nbsp;&nbsp;A.FK_BDGT_CYCLE0_RSP_TYPE_CODE)&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;case&nbsp;when&nbsp;RTRIM(A.FK_BDGT_CYCLE0_RSP_TYPE_CODE)&nbsp;=&nbsp;'T1'&nbsp;&nbsp;then&nbsp;'T1-ARRA'&nbsp;when&nbsp;RTRIM(A.FK_BDGT_CYCLE0_RSP_TYPE_CODE)&nbsp;=&nbsp;'T2D'&nbsp;then&nbsp;'T2D-ARRA'&nbsp;when&nbsp;RTRIM(A.FK_BDGT_CYCLE0_RSP_TYPE_CODE)&nbsp;=&nbsp;'TID-LEA'&nbsp;then&nbsp;'TID-LEA-AR'&nbsp;when&nbsp;RTRIM(A.FK_BDGT_CYCLE0_RSP_TYPE_CODE)&nbsp;=&nbsp;'SE_PBENT'&nbsp;then&nbsp;'PARTB_ARRA'&nbsp;else&nbsp;&nbsp;A.FK_BDGT_CYCLE0_RSP_TYPE_CODE&nbsp;end&nbsp;&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;&#43;&nbsp;&nbsp;BDGT_CYCLE0.SUBMITTED_DATE&nbsp;&nbsp;&#43;&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&#43;&nbsp;&nbsp;convert(varchar,BDGT_CYCLE0.SUBMITTED_DATE)&nbsp;&nbsp;&#43;&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;TRIM(LEASE_PURCHASE)&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;LTRIM(RTRIM(LEASE_PURCHASE))&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;TRIM(TYPE_CODE_3)&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;LTRIM(RTRIM(TYPE_CODE_3))&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;TRIM(TYPE_CODE_2)&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;LTRIM(RTRIM(TYPE_CODE_2))&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;TRIM(TYPE_CODE_1)&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;LTRIM(RTRIM(TYPE_CODE_1))&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;TRIM(BDGT_BUDGET_SUPPORT_DATA.TYPE_CODE_1)&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;LTRIM(RTRIM(BDGT_BUDGET_SUPPORT_DATA.TYPE_CODE_1))&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;TRIM(BDGT_BUDGET_SUPPORT_DATA.TYPE_CODE_2)&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;LTRIM(RTRIM(BDGT_BUDGET_SUPPORT_DATA.TYPE_CODE_2))&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;TRIM(COURSE_ASSIGNMENT.GRADE)&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;LTRIM(RTRIM(COURSE_ASSIGNMENT.GRADE))&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;ORDER&nbsp;BY&nbsp;FK_SEC_OF_BRD_SEQUENCE_NUMBER&nbsp;DESC&nbsp;&nbsp;)&nbsp;SUP,&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;)&nbsp;SUP,&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;,&nbsp;ROWID&nbsp;&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;,ROWID&nbsp;&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strCom&nbsp;=&nbsp;strCom.Replace(<span class="visualBasic__string">&quot;&nbsp;TRIM(COUNT_VALUE)&quot;</span>,&nbsp;<span class="visualBasic__string">&quot;&nbsp;COUNT_VALUE&quot;</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ConvertToSQL&nbsp;=&nbsp;strCom&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Function</span>&nbsp;
+<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Class</span>&nbsp;
+</pre>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

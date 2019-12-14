@@ -1,0 +1,187 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AccessServiceSQL
+</name>
+</assembly>
+<members>
+<member name="T:AccessServiceSQL.DataAccess">
+<summary>
+  DataAccess is the base class for any classes that require access to a database table.  
+  It provides functionality for selecting, updating, inserting, and deleting records
+  from the database.
+</summary>
+</member>
+<member name="M:AccessServiceSQL.DataAccess.getSQLConnection(System.String)">
+<summary>
+  Establishes a SQL Server connection.
+</summary>
+<remarks>
+  <para> Created By: Shirley Fowler </para>
+  <para> Last Modified: 7/14/2007 </para>
+</remarks>
+</member>
+<member name="M:AccessServiceSQL.DataAccess.DetermineConString(System.String)">
+<summary>
+  Determines which connection string.
+</summary>
+<remarks>
+  <para> Created By: Shirley Fowler </para>
+  <para> Last Modified: 8/14/2007 - Shirley Fowler </para>
+  <para> Put connection strings in web.config file</para>
+</remarks>
+</member>
+<member name="M:AccessServiceSQL.DataAccess.ExecuteSqlScalar(System.String,System.String,System.String)">
+<summary>
+  Executes a an sql query that returns an integer as a result.
+  An example would be using the MAX function to get the last instance id.
+</summary>
+<returns>
+  Returns an Integer.  If no result can be found, a 0 is returned.
+</returns>
+<remarks>
+  <para> Created By: Shirley Fowler </para>
+  <para> Last Modified: 8/14/2007</para>
+</remarks>
+</member>
+<member name="M:AccessServiceSQL.DataAccess.GetDataSet(System.String,System.String,System.String,System.String)">
+<summary>
+  Retrieves a DataSet based on the SELECT sql statement and returns a dataset
+  with the query results.
+</summary>
+<returns>
+  Returns a DataSet
+</returns>
+<remarks>
+  <para>Created By: Shirley Fowler</para>
+  <para>Last Modified: 8/14/2007</para>
+</remarks>
+</member>
+<member name="M:AccessServiceSQL.DataAccess.insertSqlException(System.String,System.String,System.String,System.String)">
+<summary>
+  Executes transactions.
+  Used for multiple insert, update, and delete statements.
+</summary>
+<remarks>
+  <para>Created By: Shirley Fowler</para>
+  <para>Last Modified: 8/14/2007</para>
+</remarks>
+</member>
+<member name="M:AccessServiceSQL.DataAccessWS.Find(System.String,System.String,System.String)">
+<summary>
+  Calls and returns data from the DataAccess class based on the sql passed.
+  It connects to the database using a connection id. 
+</summary>
+<returns>
+  Returns a DataSet
+</returns>
+<remarks>
+  <para> Created By: Shirley Fowler </para>
+  <para> Last Modified: 8/14/2007 </para>
+</remarks>
+</member>
+<member name="M:AccessServiceSQL.DataAccessWS.FindScalar(System.String,System.String)">
+<summary>
+  Executes a an sql query that returns an integer as a result.
+  An example would be using the MAX function to get the last instance id.
+</summary>
+<returns>
+  Returns an Integer.  If no result can be found, a 0 is returned.
+</returns>
+<remarks>
+  <para> Created By: Shirley Fowler </para>
+  <para> Last Modified: 8/14/2007 </para>
+</remarks>
+</member>
+<member name="M:AccessServiceSQL.DataAccessWS.Update(System.String,System.String)">
+<summary>
+  Updates data using the DataAccess class based on the sql passed.
+  It connects to the database using a connection id. 
+</summary>
+<remarks>
+  <para> Created By: Shirley Fowler </para>
+  <para> Last Modified: 8/14/2007 </para>
+</remarks>
+</member>
+<member name="M:AccessServiceSQL.DataAccessWS.Delete(System.String,System.String)">
+<summary>
+  Deletes data using the DataAccess class based on the sql passed.
+  It connects to the database using a connection id. 
+</summary>
+<remarks>
+  <para> Created By: Shirley Fowler </para>
+  <para> Last Modified: 8/14/2007 </para>
+</remarks>
+</member>
+<member name="M:AccessServiceSQL.DataAccessWS.Create(System.String,System.String)">
+<summary>
+  Creates data using the DataAccess class based on the sql passed.
+  It connects to the database using a connection id. 
+</summary>
+<remarks>
+  <para> Created By: Shirley Fowler </para>
+  <para> Last Modified: 8/14/2007 </para>
+</remarks>
+</member>
+<member name="M:AccessServiceSQL.DataAccessWS.ProcessTransaction(System.String,System.String[])">
+<summary>
+  Processes multiple transactions based on the array passed.
+  It connects to the database using a connection id. 
+</summary>
+<remarks>
+  <para> Created By: Shirley Fowler </para>
+  <para> Last Modified: 8/14/2007 </para>
+</remarks>
+</member>
+<member name="T:AccessServiceSQL.DataException">
+<summary>
+  DESE Specific Exception Class to be used for handling Errors that occur when accessing 
+  the database.  This class will allow the SQL statement that caused the error to be
+  accessed and displayed from the calling application and allow data access errors to be
+  handled in specific manner.
+</summary>
+</member>
+<member name="M:AccessServiceSQL.DataException.#ctor(System.String,System.String,System.Exception)">
+<summary>
+  Constructer used to create an instance of a DataException.
+  All parameters must be passed.
+</summary>
+<remarks>
+  <para>Created By: Shirley Fowler - August 14, 2007 </para>
+</remarks>
+</member>
+<member name="P:AccessServiceSQL.DataException.sql">
+<summary>
+  Gets the sql statement that was attempted when the exception occurred.
+</summary>
+</member>
+<member name="M:AccessServiceSQL.SQLMethods.Delete(System.String,System.String,System.String)">
+<summary>
+  Deletes data based on the sql that is passed. 
+</summary>
+<remarks>
+  <para> Created By: Shirley Fowler </para>
+  <para> Last Modified: 8/14/2007 </para>
+</remarks>
+</member>
+<member name="M:AccessServiceSQL.SQLMethods.Create(System.String,System.String,System.String)">
+<summary>
+  Creates records based on the sql that is passed. 
+</summary>
+<remarks>
+  <para> Created By: Shirley Fowler </para>
+  <para> Last Modified: 8/14/2007 </para>
+</remarks>
+</member>
+<member name="M:AccessServiceSQL.SQLMethods.ProcessTransaction(System.String,System.String[],System.String)">
+<summary>
+  Processes transactions based on the array passed in. 
+</summary>
+<remarks>
+  <para> Created By: Shirley Fowler </para>
+  <para> Last Modified: 8/14/2007 </para>
+</remarks>
+</member>
+</members>
+</doc>

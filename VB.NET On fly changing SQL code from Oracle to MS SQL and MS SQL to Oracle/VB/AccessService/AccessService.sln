@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AccessService", "AccessService.vbproj", "{B4B44D50-42B7-4398-B3B5-038E32BA1C15}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UpgradeClassLibrary", "..\..\ClassLibrary\UpgradeClassLibrary\UpgradeClassLibrary.vbproj", "{EEC17BE7-329E-4901-8C1C-819654CB5785}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://ed-dese-tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AccessService.vbproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\..\\ClassLibrary\\UpgradeClassLibrary\\UpgradeClassLibrary.vbproj
+		SccProjectName2 = ../../ClassLibrary/UpgradeClassLibrary/UpgradeClassLibrary
+		SccLocalPath2 = ..\\..\\ClassLibrary\\UpgradeClassLibrary
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4B44D50-42B7-4398-B3B5-038E32BA1C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B44D50-42B7-4398-B3B5-038E32BA1C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B44D50-42B7-4398-B3B5-038E32BA1C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B44D50-42B7-4398-B3B5-038E32BA1C15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEC17BE7-329E-4901-8C1C-819654CB5785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC17BE7-329E-4901-8C1C-819654CB5785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC17BE7-329E-4901-8C1C-819654CB5785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC17BE7-329E-4901-8C1C-819654CB5785}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
