@@ -1,0 +1,109 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CommonClassLibrary
+</name>
+</assembly>
+<members>
+<member name="T:CommonClassLibrary.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CommonClassLibrary.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CommonClassLibrary.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:CommonClassLibrary.CommonFunction.loadPanelControls(System.Web.UI.ControlCollection@,System.Data.DataTable@)">
+ <summary>
+ Load All Controls in Panel
+ TextBox, DropDownList, ListBox
+ </summary>
+ <param name="contrCollect"></param>
+ <param name="tbl"></param>
+</member>
+<member name="M:CommonClassLibrary.CommonFunction.convertToXml(System.Web.UI.ControlCollection@,System.String@)">
+ <summary>
+ Convert All Controls to XML
+ One Panel - one table with pnl.ID name
+ each GridView - separate table (do not wrap GridView with Panel) 
+ </summary>
+ <param name="contrCollect"></param>
+ <param name="strError"></param>
+ <returns></returns>
+</member>
+<member name="P:CommonClassLibrary.DataCommon.commandDB">
+ <summary>
+ When you read - you create Connection and Command - return DBCommand (provider will be bring from web.config)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CommonClassLibrary.DataCommon.ExecuteSqlNonQuery(System.Data.Common.DbCommand,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object},System.String@)">
+ <summary>
+  Just send DBCommand, see "ReadOnly Property commandDB As DbCommand" , other optional parameters ....
+ </summary>
+ <param name="cmd"></param>
+ <param name="comType"></param>
+ <param name="parameters"></param>
+ <param name="strError"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CommonClassLibrary.DataCommon.GetDataSet(System.Data.Common.DbCommand,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object},System.String@,System.Int32@)">
+ <summary>
+ Just send DBCommand, see "ReadOnly Property commandDB As DbCommand" , other optional parameters ....
+ </summary>
+ <param name="cmd"></param>
+ <param name="comType"></param>
+ <param name="parameters"></param>
+ <param name="strError"></param>
+ <param name="intEffected"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CommonClassLibrary.XmlConvertReadWrite.GetXMLString(System.Data.DataTable)">
+ <summary>
+ Wrap DataSet to XML tag and convert to XML
+ </summary>
+ <param name="dtTable"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CommonClassLibrary.XmlConvertReadWrite.GetXMLString(System.Data.DataSet)">
+ <summary>
+ Write DataSet to XML string
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CommonClassLibrary.XmlConvertReadWrite.GetDataSetFromXml(System.String)">
+ <summary>
+ XML string to DataSet
+ </summary>
+ <param name="strXml"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:CommonClassLibrary.XmlConvertReadWrite.GetDataSetFromXmlColumn(System.Data.DataTable)">
+ <summary>
+ Automatically Convert Column XML to new DataSet 
+ XML can include multiple tables.
+ Assign fro each table PK_INDEX
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

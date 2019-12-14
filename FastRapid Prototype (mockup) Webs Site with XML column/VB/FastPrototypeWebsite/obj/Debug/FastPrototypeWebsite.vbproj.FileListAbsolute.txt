@@ -1,0 +1,15 @@
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\bin\testMyTestT.db
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\bin\FastPrototypeWebsite.dll.config
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\bin\FastPrototypeWebsite.dll
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\bin\FastPrototypeWebsite.pdb
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\bin\FastPrototypeWebsite.xml
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\bin\CommonClassLibrary.dll
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\bin\CommonClassLibrary.pdb
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\bin\CommonClassLibrary.xml
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\obj\Debug\FastPrototypeWebsite.vbprojResolveAssemblyReference.cache
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\obj\Debug\FastPrototypeWebsite.Resources.resources
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\obj\Debug\FastPrototypeWebsite.vbproj.GenerateResource.Cache
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\obj\Debug\FastPrototypeWebsite.vbproj.CoreCompileInputs.cache
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\obj\Debug\FastPrototypeWebsite.dll
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\obj\Debug\FastPrototypeWebsite.xml
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\FastPrototypeWebsite\obj\Debug\FastPrototypeWebsite.pdb

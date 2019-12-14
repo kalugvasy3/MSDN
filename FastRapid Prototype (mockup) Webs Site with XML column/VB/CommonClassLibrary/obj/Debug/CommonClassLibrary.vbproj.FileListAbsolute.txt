@@ -1,0 +1,10 @@
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\CommonClassLibrary\bin\Debug\CommonClassLibrary.dll
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\CommonClassLibrary\bin\Debug\CommonClassLibrary.pdb
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\CommonClassLibrary\bin\Debug\CommonClassLibrary.xml
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\CommonClassLibrary\obj\Debug\CommonClassLibrary.vbprojResolveAssemblyReference.cache
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\CommonClassLibrary\obj\Debug\CommonClassLibrary.Resources.resources
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\CommonClassLibrary\obj\Debug\CommonClassLibrary.vbproj.GenerateResource.Cache
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\CommonClassLibrary\obj\Debug\CommonClassLibrary.vbproj.CoreCompileInputs.cache
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\CommonClassLibrary\obj\Debug\CommonClassLibrary.dll
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\CommonClassLibrary\obj\Debug\CommonClassLibrary.xml
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\FastPrototypeWebsite\CommonClassLibrary\obj\Debug\CommonClassLibrary.pdb

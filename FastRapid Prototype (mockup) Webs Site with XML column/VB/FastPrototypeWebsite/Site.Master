@@ -1,0 +1,21 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="FastPrototypeWebsite.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    TEST&nbsp;&nbsp;&nbsp;&nbsp; TEST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TEST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TEST</p>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
