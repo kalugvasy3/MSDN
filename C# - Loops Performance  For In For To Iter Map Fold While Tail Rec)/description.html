@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/Header.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/sprite.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/UhfHeader.css" data-do-not-move="true" />
+<link rel="stylesheet" href="https://statics-uhf-wus.akamaized.net/west-european/shell/_scrf/css/themes=default.device=uplevel_web_pc/21-ecd6ef/6a-459940/9d-005998/14-a4dc48/e0-030d39/4b-120352/5a-621a2e?ver=2.0" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=ECB76239448515193309D55B1C860AB7" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfFooter.css?v=636531373177745517" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>F# C# - Loops Performance:  For In, For To, Iter, Map,  Fold, While, Tail Rec</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/88bdb7b3-6111-409b-a6e0-edba40ae7b6cBrand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>F# C# - Loops Performance:  For In, For To, Iter, Map,  Fold, While, Tail Rec</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            F#
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Performance, F#, Loop
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Phone, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">2/13/2018</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>F# - Loops Performance:&nbsp; <strong>For In, For To, Iter, Map, &nbsp;Fold, While, Tail Rec</strong></p>
+<p>This is simple sample allows you to play and understand some Loop performance base on summarizing&nbsp; 1M&nbsp; int64 of the number. Surprized &ldquo;<strong>Fold</strong>&rdquo; &nbsp;and &nbsp;&ldquo;<strong>While</strong>&rdquo;&nbsp; are faster Loops
+ &hellip; faster when &ldquo;<strong>For&rdquo;</strong> &nbsp;about 30%.</p>
+<p>The <code>for...to</code> expression is used to iterate in a loop over a range of values of a loop variable.</p>
+<p>The <code>for...in</code> expression can be compared to the <code>for each</code> statement in other .NET languages because it is used to loop over the values in an enumerable collection.</p>
+<p>The <code>while...do</code> expression is used to perform iterative execution (looping) while a specified test condition is true.</p>
+<p>Also for the same purpose, I used Array function <strong>Iter, Map, &nbsp;Fold.</strong></p>
+<p>A recursive function is a function which calls itself. This sample using tail recursion.</p>
+<p><span style="background-color:#ffff99">Surprized &ldquo;<strong>Fold</strong>&rdquo; &nbsp;and &nbsp;&ldquo;<strong>While</strong>&rdquo;&nbsp; are fastest Loops &hellip; faster when &ldquo;<strong>For&rdquo;</strong> &nbsp;about 30%.</span></p>
+<p>&nbsp;</p>
+<p><span style="background-color:#ffff99">F#<br>
+</span></p>
+<h1><img id="188076" src="description/Loop.PNG" alt="" width="613" height="189"></h1>
+<p>&nbsp;</p>
+<p>C#</p>
+<p><img id="188559" src="https://i1.code.msdn.s-msft.com/windowsapps/f-loops-performance-for-in-926e9753/image/file/188559/1/c%23.png" alt="" width="644" height="123"></p>
+<p>&nbsp;</p>
+<h1><span>Building the Sample</span></h1>
+<p><em>Download project. Run Visual Studio and open solution or project.<br>
+</em></p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p><em>This project was build for understunding performence for some loops.</em></p>
+<p><em>&nbsp; <br>
+</em></p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span><span>F#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span><span class="hidden">fsharp</span>
+<pre class="hidden">using System;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://msdn.microsoft.com/en-US/library/System.Collections.Generic.aspx"  title="Auto generated link to System.Collections.Generic">System.Collections.Generic</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://msdn.microsoft.com/en-US/library/System.Linq.aspx"  title="Auto generated link to System.Linq">System.Linq</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://msdn.microsoft.com/en-US/library/System.Text.aspx"  title="Auto generated link to System.Text">System.Text</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://msdn.microsoft.com/en-US/library/System.Threading.Tasks.aspx"  title="Auto generated link to System.Threading.Tasks">System.Threading.Tasks</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://msdn.microsoft.com/en-US/library/System.Diagnostics.aspx"  title="Auto generated link to System.Diagnostics">System.Diagnostics</a>;
+
+namespace PerformanceOfLoopsCsharp
+{
+    class Program
+    {
+        static Stopwatch sw = new Stopwatch();
+        static long[] testArray = new long[1_000_000];
+        static long result = 0L;
+
+
+        static void testForIn()
+        {
+            result = 0L;
+
+            sw.Reset();
+            sw.Start();
+
+            foreach (long l in testArray)
+            {
+                result = result &#43; l;
+            }
+
+            sw.Stop();
+
+            Console.WriteLine(&quot; &lt;ForIn&gt; - Adding Time - &quot; &#43; sw.ElapsedTicks.ToString(&quot;0,000,000&quot;) &#43; &quot; ticks. (result=&quot; &#43; result.ToString(&quot;0,0&quot;) &#43; &quot;)&quot;);
+            Console.WriteLine();
+        }
+
+
+
+
+        static void testForTo()
+        {
+            result = 0L;
+
+            sw.Reset();
+            sw.Start();
+
+            for (int i = 0; i &lt; testArray.Length; i&#43;&#43;)
+            {
+                result = result &#43; testArray[i];
+            }
+
+            sw.Stop();
+
+            Console.WriteLine(&quot; &lt;ForTo&gt; - Adding Time - &quot; &#43; sw.ElapsedTicks.ToString(&quot;0,000,000&quot;) &#43; &quot; ticks. (result=&quot; &#43; result.ToString(&quot;0,0&quot;) &#43; &quot;)&quot;);
+            Console.WriteLine();
+        }
+
+
+
+
+        static void testDo()
+        {
+            result = 0L;
+
+            sw.Reset();
+            sw.Start();
+
+            int len = testArray.Length;
+            int i = 0;
+            do
+            {
+                result = result &#43; testArray[i];
+                i = i &#43; 1;
+            } while (i &lt; len);
+            sw.Stop();
+
+            Console.WriteLine(&quot; &lt;Do&gt; - Adding Time - &quot; &#43; sw.ElapsedTicks.ToString(&quot;0,000,000&quot;) &#43; &quot; ticks. (result=&quot; &#43; result.ToString(&quot;0,0&quot;) &#43; &quot;)&quot;);
+            Console.WriteLine();
+        }
+
+
+
+        static void testWhile()
+        {
+            result = 0L;
+
+            sw.Reset();
+            sw.Start();
+
+            int len = testArray.Length;
+            int i = 0;
+            while (i &lt; len)
+            {
+                result = result &#43; testArray[i];
+                i = i &#43; 1;
+            }
+            sw.Stop();
+
+            Console.WriteLine(&quot; &lt;While&gt; - Adding Time - &quot; &#43; sw.ElapsedTicks.ToString(&quot;0,000,000&quot;) &#43; &quot; ticks. (result=&quot; &#43; result.ToString(&quot;0,0&quot;) &#43; &quot;)&quot;);
+            Console.WriteLine();
+        }
+
+
+
+        static void runAllTests()
+        {
+            testForIn();
+            testForTo();
+
+            testDo();
+            testWhile();
+
+        }
+
+
+
+        static void Main(string[] args)
+        {
+            for (int i = 0; i &lt; 1_000_000; i&#43;&#43;)
+            {
+                testArray[i] = (long)i * (long)i;
+            }
+
+            runAllTests();
+            Console.ReadLine();
+
+        }
+    }
+}</pre>
+<pre class="hidden">open System
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://msdn.microsoft.com/en-US/library/System.Diagnostics.aspx"  title="Auto generated link to System.Diagnostics">System.Diagnostics</a>
+
+let sw = new Stopwatch()
+let testArray : int64[] = Array.init 1_000_000 (fun i -&gt; int64(i) * int64(i))  
+
+
+let testForIn() =
+    let mutable result = 0L
+
+    do sw.Reset()    
+    do sw.Start()
+    
+    for i in 0 .. testArray.Length - 1 do
+        result &lt;- result &#43; testArray.[i]
+
+    do sw.Stop()  
+
+    do Console.WriteLine(&quot; &lt;ForIn&gt; - Adding Time - &quot; &#43; sw.ElapsedTicks.ToString(&quot;0,000,000&quot;) &#43; &quot; ticks. (result=&quot; &#43; result.ToString(&quot;0,0&quot;) &#43; &quot;)&quot; ) 
+    do Console.WriteLine()
+
+
+
+let testForTo() =
+    let mutable result = 0L
+
+    do sw.Reset()    
+    do sw.Start()
+    
+    for i = 0 to testArray.Length - 1 do
+        result &lt;- result &#43; testArray.[i]
+
+    do sw.Stop()  
+
+    do Console.WriteLine(&quot; &lt;ForTo&gt; - Adding Time - &quot; &#43; sw.ElapsedTicks.ToString(&quot;0,000,000&quot;) &#43; &quot; ticks. (result=&quot; &#43; result.ToString(&quot;0,0&quot;) &#43; &quot;)&quot; ) 
+    do Console.WriteLine()
+
+  
+    
+let testIter() =
+    let mutable result = 0L
+
+    do sw.Reset()    
+    do sw.Start()
+    
+    testArray |&gt; Array.iter (fun x -&gt; result &lt;- result &#43; x)
+
+    do sw.Stop()  
+
+    do Console.WriteLine(&quot; &lt;Iter&gt;  - Adding Time - &quot; &#43; sw.ElapsedTicks.ToString(&quot;0,000,000&quot;) &#43; &quot; ticks. (result=&quot; &#43; result.ToString(&quot;0,0&quot;) &#43; &quot;)&quot; ) 
+    do Console.WriteLine()
+
+
+  
+    
+let testFold() =
+    let mutable result = 0L
+
+    do sw.Reset()    
+    do sw.Start()
+    
+    let sumArray() = Array.fold (fun acc x -&gt; acc &#43; x) 0L  testArray 
+    do result &lt;- sumArray()
+
+    do sw.Stop()  
+
+    do Console.WriteLine(&quot; &lt;Fold&gt;  - Adding Time - &quot; &#43; sw.ElapsedTicks.ToString(&quot;0,000,000&quot;) &#43; &quot; ticks. (result=&quot; &#43; result.ToString(&quot;0,0&quot;) &#43; &quot;)&quot; ) 
+    do Console.WriteLine()
+
+
+    
+let testMap() =
+    let mutable result = 0L
+
+    do sw.Reset()    
+    do sw.Start()
+    
+    do testArray |&gt; Array.map (fun x -&gt; result &lt;- result &#43; x) |&gt; ignore  
+
+    do sw.Stop()  
+
+    do Console.WriteLine(&quot; &lt;Map&gt;  - Adding Time - &quot; &#43; sw.ElapsedTicks.ToString(&quot;0,000,000&quot;) &#43; &quot; ticks. (result=&quot; &#43; result.ToString(&quot;0,0&quot;) &#43; &quot;)&quot; ) 
+    do Console.WriteLine()
+
+
+    
+let testWhile() =
+    let mutable result = 0L
+
+    do sw.Reset()    
+    do sw.Start()
+    
+    let len = testArray.Length
+    let mutable i : int = 0
+    while (i &lt; len) do
+        result &lt;- result &#43; testArray.[i]
+        i &lt;- i &#43; 1
+
+    do sw.Stop()  
+
+    do Console.WriteLine(&quot; &lt;While&gt; - Adding Time - &quot; &#43; sw.ElapsedTicks.ToString(&quot;0,000,000&quot;) &#43; &quot; ticks. (result=&quot; &#43; result.ToString(&quot;0,0&quot;) &#43; &quot;)&quot; ) 
+    do Console.WriteLine()
+
+
+
+    
+let testRecTail() =
+    let mutable result = 0L
+
+    do sw.Reset()    
+    do sw.Start()
+    
+    let len = testArray.Length
+    let mutable i : int = 0
+
+    let sumArray() =
+        let rec sum (l)  =
+            match l with
+            | 0 -&gt; 0L
+            | _ -&gt; result &lt;- result &#43; testArray.[l - 1] 
+                   sum (l - 1)                   
+        sum (len)           
+
+    do sumArray() |&gt; ignore    
+
+    do sw.Stop()  
+
+    do Console.WriteLine(&quot; &lt;Tail&gt;  - Adding Time - &quot; &#43; sw.ElapsedTicks.ToString(&quot;0,000,000&quot;) &#43; &quot; ticks. (result=&quot; &#43; result.ToString(&quot;0,0&quot;) &#43; &quot;)&quot; ) 
+    do Console.WriteLine()
+
+
+
+let runAllTests() =
+    do testForIn()
+    do testForTo()
+    do testIter()
+    do testFold()
+    do testMap() 
+    do testWhile()
+    do testRecTail()
+
+[&lt;EntryPoint&gt;]
+let main argv = 
+    do runAllTests()
+    do Console.ReadLine() |&gt; ignore
+    0 // return an integer exit code
+</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">using</span>&nbsp;System;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://msdn.microsoft.com/en-US/library/System.Collections.Generic.aspx"  title="Auto generated link to System.Collections.Generic">System.Collections.Generic</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://msdn.microsoft.com/en-US/library/System.Linq.aspx"  title="Auto generated link to System.Linq">System.Linq</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://msdn.microsoft.com/en-US/library/System.Text.aspx"  title="Auto generated link to System.Text">System.Text</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://msdn.microsoft.com/en-US/library/System.Threading.Tasks.aspx"  title="Auto generated link to System.Threading.Tasks">System.Threading.Tasks</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://code.msdn.microsoft.com/windowsapps/F-Loops-Performance-For-In-926e9753/https://msdn.microsoft.com/en-US/library/System.Diagnostics.aspx"  title="Auto generated link to System.Diagnostics">System.Diagnostics</a>;&nbsp;
+&nbsp;
+<span class="cs__keyword">namespace</span>&nbsp;PerformanceOfLoopsCsharp&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">class</span>&nbsp;Program&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">static</span>&nbsp;Stopwatch&nbsp;sw&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Stopwatch();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">long</span>[]&nbsp;testArray&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">long</span>[1_000_000];&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">long</span>&nbsp;result&nbsp;=&nbsp;0L;&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">void</span>&nbsp;testForIn()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;0L;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Reset();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Start();&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">foreach</span>&nbsp;(<span class="cs__keyword">long</span>&nbsp;l&nbsp;<span class="cs__keyword">in</span>&nbsp;testArray)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;result&nbsp;&#43;&nbsp;l;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Stop();&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(<span class="cs__string">&quot;&nbsp;&lt;ForIn&gt;&nbsp;-&nbsp;Adding&nbsp;Time&nbsp;-&nbsp;&quot;</span>&nbsp;&#43;&nbsp;sw.ElapsedTicks.ToString(<span class="cs__string">&quot;0,000,000&quot;</span>)&nbsp;&#43;&nbsp;<span class="cs__string">&quot;&nbsp;ticks.&nbsp;(result=&quot;</span>&nbsp;&#43;&nbsp;result.ToString(<span class="cs__string">&quot;0,0&quot;</span>)&nbsp;&#43;&nbsp;<span class="cs__string">&quot;)&quot;</span>);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">void</span>&nbsp;testForTo()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;0L;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Reset();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Start();&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;i&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;i&nbsp;&lt;&nbsp;testArray.Length;&nbsp;i&#43;&#43;)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;result&nbsp;&#43;&nbsp;testArray[i];&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Stop();&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(<span class="cs__string">&quot;&nbsp;&lt;ForTo&gt;&nbsp;-&nbsp;Adding&nbsp;Time&nbsp;-&nbsp;&quot;</span>&nbsp;&#43;&nbsp;sw.ElapsedTicks.ToString(<span class="cs__string">&quot;0,000,000&quot;</span>)&nbsp;&#43;&nbsp;<span class="cs__string">&quot;&nbsp;ticks.&nbsp;(result=&quot;</span>&nbsp;&#43;&nbsp;result.ToString(<span class="cs__string">&quot;0,0&quot;</span>)&nbsp;&#43;&nbsp;<span class="cs__string">&quot;)&quot;</span>);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">void</span>&nbsp;testDo()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;0L;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Reset();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Start();&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;len&nbsp;=&nbsp;testArray.Length;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;i&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">do</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;result&nbsp;&#43;&nbsp;testArray[i];&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;=&nbsp;i&nbsp;&#43;&nbsp;<span class="cs__number">1</span>;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">while</span>&nbsp;(i&nbsp;&lt;&nbsp;len);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Stop();&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(<span class="cs__string">&quot;&nbsp;&lt;Do&gt;&nbsp;-&nbsp;Adding&nbsp;Time&nbsp;-&nbsp;&quot;</span>&nbsp;&#43;&nbsp;sw.ElapsedTicks.ToString(<span class="cs__string">&quot;0,000,000&quot;</span>)&nbsp;&#43;&nbsp;<span class="cs__string">&quot;&nbsp;ticks.&nbsp;(result=&quot;</span>&nbsp;&#43;&nbsp;result.ToString(<span class="cs__string">&quot;0,0&quot;</span>)&nbsp;&#43;&nbsp;<span class="cs__string">&quot;)&quot;</span>);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">void</span>&nbsp;testWhile()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;0L;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Reset();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Start();&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;len&nbsp;=&nbsp;testArray.Length;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;i&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">while</span>&nbsp;(i&nbsp;&lt;&nbsp;len)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;result&nbsp;&#43;&nbsp;testArray[i];&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;=&nbsp;i&nbsp;&#43;&nbsp;<span class="cs__number">1</span>;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Stop();&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(<span class="cs__string">&quot;&nbsp;&lt;While&gt;&nbsp;-&nbsp;Adding&nbsp;Time&nbsp;-&nbsp;&quot;</span>&nbsp;&#43;&nbsp;sw.ElapsedTicks.ToString(<span class="cs__string">&quot;0,000,000&quot;</span>)&nbsp;&#43;&nbsp;<span class="cs__string">&quot;&nbsp;ticks.&nbsp;(result=&quot;</span>&nbsp;&#43;&nbsp;result.ToString(<span class="cs__string">&quot;0,0&quot;</span>)&nbsp;&#43;&nbsp;<span class="cs__string">&quot;)&quot;</span>);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">void</span>&nbsp;runAllTests()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testForIn();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testForTo();&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testDo();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testWhile();&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">void</span>&nbsp;Main(<span class="cs__keyword">string</span>[]&nbsp;args)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;i&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;i&nbsp;&lt;&nbsp;1_000_000;&nbsp;i&#43;&#43;)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testArray[i]&nbsp;=&nbsp;(<span class="cs__keyword">long</span>)i&nbsp;*&nbsp;(<span class="cs__keyword">long</span>)i;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runAllTests();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.ReadLine();&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<h1>More Information</h1>
+<p><em>This is simple sample allows you to play and understand some Loop performance base on summarizing&nbsp; 1M&nbsp; int64 of the number. Surprized &ldquo;<strong>Fold</strong>&rdquo; &nbsp;and &nbsp;&ldquo;<strong>While</strong>&rdquo;&nbsp; are faster
+ Loops &hellip; faster when &ldquo;<strong>For&rdquo;</strong> &nbsp;about 30%.</em></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

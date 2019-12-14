@@ -1,0 +1,7 @@
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\PerformanceOfLoopsCsharp\PerformanceOfLoopsCsharp\bin\Debug\PerformanceOfLoopsCsharp.exe.config
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\PerformanceOfLoopsCsharp\PerformanceOfLoopsCsharp\bin\Debug\PerformanceOfLoopsCsharp.exe
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\PerformanceOfLoopsCsharp\PerformanceOfLoopsCsharp\bin\Debug\PerformanceOfLoopsCsharp.pdb
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\PerformanceOfLoopsCsharp\PerformanceOfLoopsCsharp\obj\Debug\PerformanceOfLoopsCsharp.csprojResolveAssemblyReference.cache
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\PerformanceOfLoopsCsharp\PerformanceOfLoopsCsharp\obj\Debug\PerformanceOfLoopsCsharp.csproj.CoreCompileInputs.cache
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\PerformanceOfLoopsCsharp\PerformanceOfLoopsCsharp\obj\Debug\PerformanceOfLoopsCsharp.exe
+C:\Users\kalugv\Source\Workspaces\Workspace\web-for-you\PerformanceOfLoopsCsharp\PerformanceOfLoopsCsharp\obj\Debug\PerformanceOfLoopsCsharp.pdb
