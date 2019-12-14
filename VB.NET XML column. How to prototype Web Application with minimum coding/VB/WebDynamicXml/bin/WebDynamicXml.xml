@@ -1,0 +1,377 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WebDynamicXml
+</name>
+</assembly>
+<members>
+<member name="F:WebDynamicXml.AddRecord.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.pnlMain">
+	<summary>
+pnlMain control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.rbSeriousInjury">
+	<summary>
+rbSeriousInjury control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.rbMinorInjury">
+	<summary>
+rbMinorInjury control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.Injury">
+	<summary>
+Injury control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblNA">
+	<summary>
+lblNA control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblDateOfIncident">
+	<summary>
+lblDateOfIncident control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblMMDDYYYY_">
+	<summary>
+lblMMDDYYYY_ control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.Date_Of_Incident">
+	<summary>
+Date_Of_Incident control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblTimeOfIncident">
+	<summary>
+lblTimeOfIncident control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblTime">
+	<summary>
+lblTime control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.Time_Of_Incident">
+	<summary>
+Time_Of_Incident control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblNameOfProvider">
+	<summary>
+lblNameOfProvider control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.Name_Of_Provider">
+	<summary>
+Name_Of_Provider control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblPhoneNumber">
+	<summary>
+lblPhoneNumber control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.Phone_Number">
+	<summary>
+Phone_Number control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblAddress">
+	<summary>
+lblAddress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.Address">
+	<summary>
+Address control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblCity">
+	<summary>
+lblCity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.City">
+	<summary>
+City control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblCounty">
+	<summary>
+lblCounty control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.County">
+	<summary>
+County control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblChildFirstName">
+	<summary>
+lblChildFirstName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.Child_First_Name">
+	<summary>
+Child_First_Name control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblChildLastName">
+	<summary>
+lblChildLastName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.Child_Last_Name">
+	<summary>
+Child_Last_Name control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblChildDOB">
+	<summary>
+lblChildDOB control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblMMDDYYYY">
+	<summary>
+lblMMDDYYYY control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.Child_DOB">
+	<summary>
+Child_DOB control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblChildSex">
+	<summary>
+lblChildSex control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblChildMF">
+	<summary>
+lblChildMF control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.Child_Sex">
+	<summary>
+Child_Sex control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblParentFirstName">
+	<summary>
+lblParentFirstName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.Parent_First_Name">
+	<summary>
+Parent_First_Name control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblParentLastName">
+	<summary>
+lblParentLastName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.Parent_Last_Name">
+	<summary>
+Parent_Last_Name control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.lblDescription">
+	<summary>
+lblDescription control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.Description">
+	<summary>
+Description control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebDynamicXml.AddRecord.btnSend">
+	<summary>
+btnSend control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:WebDynamicXml.xmlConvertReadWrite.GetXMLString(System.Data.DataTable)">
+	<summary>
+ One Row Table. Assign DataSet name like XML, add your table, write to XML string.
+ </summary>
+	<param name="dtOneRow"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WebDynamicXml.xmlConvertReadWrite.GetXMLString(System.Data.DataSet)">
+	<summary>
+ XML string from DataSet. Multiply Tables, Records...
+ </summary>
+	<param name="ds"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WebDynamicXml.xmlConvertReadWrite.GetDataSetFromXml(System.String)">
+	<summary>
+ Read XML file to DataSet
+ </summary>
+	<param name="strXml"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:WebDynamicXml.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:WebDynamicXml.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:WebDynamicXml.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:WebDynamicXml.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:WebDynamicXml.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:WebDynamicXml.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WebDynamicXml.ReadValidateControls.GetXMLStringFromAllTextBoxes(System.Web.UI.WebControls.Panel@,System.String@)">
+	<summary>
+ Build XML from ALL TexBox Controls on the Panel ...
+ </summary>
+	<param name="pnl"></param>
+	<param name="strErros"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

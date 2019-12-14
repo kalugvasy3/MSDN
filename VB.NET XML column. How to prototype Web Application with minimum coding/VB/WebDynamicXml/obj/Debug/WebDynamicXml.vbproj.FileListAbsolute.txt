@@ -1,0 +1,9 @@
+C:\AspNetSandBox\WebDynamicXml\WebDynamicXml\bin\WebDynamicXml.dll.config
+C:\AspNetSandBox\WebDynamicXml\WebDynamicXml\bin\WebDynamicXml.dll
+C:\AspNetSandBox\WebDynamicXml\WebDynamicXml\bin\WebDynamicXml.pdb
+C:\AspNetSandBox\WebDynamicXml\WebDynamicXml\bin\WebDynamicXml.xml
+C:\AspNetSandBox\WebDynamicXml\WebDynamicXml\obj\Debug\WebDynamicXml.Resources.resources
+C:\AspNetSandBox\WebDynamicXml\WebDynamicXml\obj\Debug\WebDynamicXml.vbproj.GenerateResource.Cache
+C:\AspNetSandBox\WebDynamicXml\WebDynamicXml\obj\Debug\WebDynamicXml.dll
+C:\AspNetSandBox\WebDynamicXml\WebDynamicXml\obj\Debug\WebDynamicXml.xml
+C:\AspNetSandBox\WebDynamicXml\WebDynamicXml\obj\Debug\WebDynamicXml.pdb
