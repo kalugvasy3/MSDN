@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DataCommonFsharp", "DataCommonFsharp\DataCommonFsharp.fsproj", "{ADC9D77C-F324-4274-8D9E-3552B7C726CE}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsharpObjXAMLLibrary", "FsharpObjXAMLLibrary\FsharpObjXAMLLibrary.fsproj", "{2C0C5484-2575-4CDC-8369-024AAC28B6F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADC9D77C-F324-4274-8D9E-3552B7C726CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC9D77C-F324-4274-8D9E-3552B7C726CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC9D77C-F324-4274-8D9E-3552B7C726CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC9D77C-F324-4274-8D9E-3552B7C726CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0C5484-2575-4CDC-8369-024AAC28B6F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0C5484-2575-4CDC-8369-024AAC28B6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0C5484-2575-4CDC-8369-024AAC28B6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0C5484-2575-4CDC-8369-024AAC28B6F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,32 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+
+             x:Name="DataCommonFsharp" 
+    
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800" >
+
+    <Grid x:Name="gridMain" RenderTransformOrigin="0.0,0.0" MinWidth="600" MinHeight="400">
+        <TextBox x:Name="txtSQL"  TextWrapping="Wrap" Text="Insert/Edit SQL" Margin="10,63,10,27"  IsManipulationEnabled="True" IsInactiveSelectionHighlightEnabled="True" AcceptsReturn="True"   />
+        <TextBox x:Name="txtConnectionString" Height="23" Margin="10,8,136,0" TextWrapping="Wrap" Text="Connection String" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboProvider" Margin="10,36,370,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnOleDbHelper" Content="OleDb Helper" HorizontalAlignment="Right" Margin="0,36,10,0" VerticalAlignment="Top" Width="121" IsCancel="True" IsEnabled="False"/>
+        <Button x:Name="btnRUN" Content="RUN SQL" HorizontalAlignment="Right" Margin="0,36,136,0" VerticalAlignment="Top" Width="121" IsCancel="True"/>
+        <CheckBox x:Name="chkSpell" Content="Spell Check" HorizontalAlignment="Right" Margin="0,39,271,0" VerticalAlignment="Top" Width="94"/>
+        <Button x:Name="btnTest" Content="Test" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="121" IsCancel="True" ToolTip="Test Connection String."/>
+        <Slider x:Name="slider" Margin="10,0" VerticalAlignment="Bottom" Height="23" Maximum="200" Value="100" SmallChange="1" LargeChange="10" Minimum="50"/>
+
+
+
+    </Grid>
+
+    <UserControl.LayoutTransform>
+        <ScaleTransform x:Name="scaleXY" ScaleX="1.0" ScaleY="1.0" />
+    </UserControl.LayoutTransform>
+
+</UserControl>
+
+

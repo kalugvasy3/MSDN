@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FsharpObjXAMLLibrary</name></assembly>
+<members>
+<member name="M:DataCommonFsharp.Utilities.op_Dynamic``1(System.Object,System.String)">
+<summary>
+ Use this implementation of the dynamic binding operator
+ to bind to Xaml components in code-behind, see example below
+</summary>
+</member>
+</members>
+</doc>

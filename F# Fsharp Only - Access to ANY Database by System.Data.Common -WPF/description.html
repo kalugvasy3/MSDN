@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Header,0:HeaderFooterSprite,0:Header.NonMtps;/Areas/Centers/Themes/StandardDevCenter/Content:0&amp;amp;v=D051540662D994D8842C2D71427E5FFB" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Footer,0:HeaderFooterSprite,0:Footer.NonMtps,1:NewFooterSock,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;v=B296DC89199ECF6E28A0D94C3246485C" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>F# Fsharp Only - Access to ANY Database by System.Data.Common -WPF</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>F# Fsharp Only - Access to ANY Database by System.Data.Common -WPF</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            SQL, WPF, XAML, .NET Framework, F#, Fsharp, VS 2015, System.Data.Com<wbr />mon
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            SQL, F#, Fsharp, System.Data.Com<wbr />mon
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Phone, Data, Xbox, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">12/27/2015</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p><em><em>Access to ANY Data Base by&nbsp;<a title="Auto generated link to System.Data.Common" class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Data.Common.aspx" >System.Data.Common</a>&nbsp; - F# (Fsharp) only. &nbsp;</em></em></p>
+<h1>Description</h1>
+<p><em>WPF F# (F sharp only ) complex solution with MAIN project and USER library . All only F# &#43; XAML (no partition class, No third party dll's). Example show how to use User Control inside another User Control. How to build Window Application...</em></p>
+<p><em>How to Access to DataBase by System.Data.Common.</em></p>
+<p><strong><em>How to Events,member, WPF F# only, Data.Common, OleDb, ODBC...&nbsp;&nbsp;</em></strong></p>
+<p>I built a snippet for prospective developers. In fact how to easily get a connection to a database using&nbsp;<a title="Auto generated link to System.Data.Common" class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Data.Common.aspx" >System.Data.Common</a>&nbsp;.&nbsp;
+ This approach allow you to have connection to Data Base using only one class in my example &nbsp; DataCommonFsharp.fs</p>
+<p>One application/edit &ndash; ALL DataBase.&nbsp;</p>
+<p>Run application &hellip; choose provider (ComboBox includes all providers which installed on your PC).</p>
+<p><em>&nbsp; &nbsp;</em></p>
+<p><img id="146494" src="description/DC1.png" alt="" width="520" height="410"></p>
+<p>&nbsp;</p>
+<p><span>If you select &ldquo;OleDB&rdquo; you can use [OleDb Helper] for bring all OleDb providers which was installed on your PC.</span></p>
+<p>&nbsp;</p>
+<p><span><img id="146495" src="description/DC2.png" alt="" width="600" height="350"></span></p>
+<p>&nbsp;</p>
+<p>[Test] - allow you to test connection string - if needed ... For Run SQL just [RUN SQL]</p>
+<p>&nbsp;</p>
+<p><img id="146496" src="description/DC3.png" alt="" width="600" height="300"></p>
+<p>&nbsp;</p>
+<p>Use slider for adjust window(s) size - it allow you adjust size between 50...200%</p>
+<p>&nbsp;</p>
+<p><span><img id="146497" src="description/DC4.png" alt="" width="600" height="400"><br>
+</span></p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>XAML</span><span>F#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">xaml</span><span class="hidden">fsharp</span>
+<pre class="hidden">&lt;UserControl
+             xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+             xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+             xmlns:mc=&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot; 
+             xmlns:d=&quot;http://schemas.microsoft.com/expression/blend/2008&quot; 
+
+             x:Name=&quot;DataCommonFsharp&quot; 
+    
+             mc:Ignorable=&quot;d&quot; 
+             d:DesignHeight=&quot;600&quot; d:DesignWidth=&quot;800&quot; &gt;
+
+    &lt;Grid x:Name=&quot;gridMain&quot; RenderTransformOrigin=&quot;0.0,0.0&quot; MinWidth=&quot;600&quot; MinHeight=&quot;400&quot;&gt;
+        &lt;TextBox x:Name=&quot;txtSQL&quot;  TextWrapping=&quot;Wrap&quot; Text=&quot;Insert/Edit SQL&quot; Margin=&quot;10,63,10,27&quot;  IsManipulationEnabled=&quot;True&quot; IsInactiveSelectionHighlightEnabled=&quot;True&quot; AcceptsReturn=&quot;True&quot;   /&gt;
+        &lt;TextBox x:Name=&quot;txtConnectionString&quot; Height=&quot;23&quot; Margin=&quot;10,8,136,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;Connection String&quot; VerticalAlignment=&quot;Top&quot;/&gt;
+        &lt;ComboBox x:Name=&quot;comboProvider&quot; Margin=&quot;10,36,370,0&quot; VerticalAlignment=&quot;Top&quot;/&gt;
+        &lt;Button x:Name=&quot;btnOleDbHelper&quot; Content=&quot;OleDb Helper&quot; HorizontalAlignment=&quot;Right&quot; Margin=&quot;0,36,10,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;121&quot; IsCancel=&quot;True&quot; IsEnabled=&quot;False&quot;/&gt;
+        &lt;Button x:Name=&quot;btnRUN&quot; Content=&quot;RUN SQL&quot; HorizontalAlignment=&quot;Right&quot; Margin=&quot;0,36,136,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;121&quot; IsCancel=&quot;True&quot;/&gt;
+        &lt;CheckBox x:Name=&quot;chkSpell&quot; Content=&quot;Spell Check&quot; HorizontalAlignment=&quot;Right&quot; Margin=&quot;0,39,271,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;94&quot;/&gt;
+        &lt;Button x:Name=&quot;btnTest&quot; Content=&quot;Test&quot; HorizontalAlignment=&quot;Right&quot; Margin=&quot;0,10,10,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;121&quot; IsCancel=&quot;True&quot; ToolTip=&quot;Test Connection String.&quot;/&gt;
+        &lt;Slider x:Name=&quot;slider&quot; Margin=&quot;10,0&quot; VerticalAlignment=&quot;Bottom&quot; Height=&quot;23&quot; Maximum=&quot;200&quot; Value=&quot;100&quot; SmallChange=&quot;1&quot; LargeChange=&quot;10&quot; Minimum=&quot;50&quot;/&gt;
+
+
+
+    &lt;/Grid&gt;
+
+    &lt;UserControl.LayoutTransform&gt;
+        &lt;ScaleTransform x:Name=&quot;scaleXY&quot; ScaleX=&quot;1.0&quot; ScaleY=&quot;1.0&quot; /&gt;
+    &lt;/UserControl.LayoutTransform&gt;
+
+&lt;/UserControl&gt;
+
+</pre>
+<pre class="hidden">namespace DataCommonFsharp
+
+open System
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Collections.Generic.aspx"  title="Auto generated link to System.Collections.Generic">System.Collections.Generic</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Collections.ObjectModel.aspx"  title="Auto generated link to System.Collections.ObjectModel">System.Collections.ObjectModel</a>
+
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Linq.aspx"  title="Auto generated link to System.Linq">System.Linq</a>
+open System.Net
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Windows.aspx"  title="Auto generated link to System.Windows">System.Windows</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Windows.Controls.aspx"  title="Auto generated link to System.Windows.Controls">System.Windows.Controls</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Windows.Documents.aspx"  title="Auto generated link to System.Windows.Documents">System.Windows.Documents</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Windows.Input.aspx"  title="Auto generated link to System.Windows.Input">System.Windows.Input</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Windows.Media.aspx"  title="Auto generated link to System.Windows.Media">System.Windows.Media</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Windows.Media.Imaging.aspx"  title="Auto generated link to System.Windows.Media.Imaging">System.Windows.Media.Imaging</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Windows.Media.Animation.aspx"  title="Auto generated link to System.Windows.Media.Animation">System.Windows.Media.Animation</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Windows.Shapes.aspx"  title="Auto generated link to System.Windows.Shapes">System.Windows.Shapes</a>
+
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Windows.Threading.aspx"  title="Auto generated link to System.Windows.Threading">System.Windows.Threading</a>
+
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Data.aspx"  title="Auto generated link to System.Data">System.Data</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Text.aspx"  title="Auto generated link to System.Text">System.Text</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.IO.aspx"  title="Auto generated link to System.IO">System.IO</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Windows.Markup.aspx"  title="Auto generated link to System.Windows.Markup">System.Windows.Markup</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Xaml.aspx"  title="Auto generated link to System.Xaml">System.Xaml</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Reflection.aspx"  title="Auto generated link to System.Reflection">System.Reflection</a>
+
+open Utilities
+open DataCommonFsharp 
+
+
+type DataCommonFsharp() as this =
+    inherit UserControl()
+
+ // XAML file properties -&gt; &quot;EmbeddedResource&quot;
+
+    let mySr = new StreamReader(Assembly.Load(&quot;FsharpObjXAMLLibrary&quot;).GetManifestResourceStream(&quot;DataCommonFsharp.xaml&quot;))   // XAML - MUST be Embedded Resource 
+    do this.Content &lt;- XamlReader.Load(mySr.BaseStream):?&gt; UserControl  // Load XAML
+
+// OR  Change XAML file properties to &quot;Resource&quot; and uncomment below (comment out above)
+
+// // XAML file properties -&gt; Resource 
+//    let resource = new Uri(&quot;/FsharpObjXAMLLibrary;component/DataCommonFsharp.xaml&quot;,System.UriKind.Relative)
+//    do  &lt;- Application.LoadComponent(resource) :?&gt; UserControl   // Cast to UserControl 
+
+    let mutable txtSQL : TextBox = this.Content?txtSQL
+    let mutable txtConnectionString : TextBox = this.Content?txtConnectionString
+    let mutable comboProvider : ComboBox = this.Content?comboProvider
+    let mutable btnOleDbHelper : Button = this.Content?btnOleDbHelper
+    let mutable btnRUN : Button = this.Content?btnRUN
+    let mutable chkSpell : CheckBox = this.Content?chkSpell
+    let mutable btnTest : Button = this.Content?btnTest
+    
+    let mutable scaleXY : ScaleTransform = this.Content?scaleXY
+    let mutable slider : Slider = this.Content?slider
+    
+    let mutable sh : ShowData = new ShowData() 
+
+    let dc = new DataCommon() 
+
+    do btnOleDbHelper.ToolTip &lt;- &quot;Show OleDb data providers which installed on YOUR PC.&quot;
+    do comboProvider.ToolTip &lt;- &quot;Show ALL data providers which installed on YOUR PC.&quot;
+
+    // Init combo box providers
+     
+    do comboProvider.DisplayMemberPath &lt;- &quot;Name&quot;
+    do comboProvider.SelectedValuePath &lt;- &quot;InvariantName&quot;
+    do comboProvider.ItemsSource &lt;- (dc.GetAllProviders()).DefaultView;
+
+    let runDS() = dc.GetDataSet(comboProvider.SelectedValue, txtConnectionString.Text, new StringBuilder(txtSQL.Text) )
+
+    let showData(ds:DataSet) = async {
+                              do sh &lt;- new ShowData()  
+                              do sh.ChangedScale(slider.Value)
+                              do sh.Owner &lt;- Application.Current.MainWindow  // window be on top of all other windows 
+                              do sh.Show() 
+                              if dc.StrError = &quot;&quot; then do sh.InitGrid(ds)
+                                                  else do sh.InitGridError(dc.StrError) 
+                            }
+
+    let comboSelected() = let s = comboProvider.SelectedValue.ToString()
+                          if s.IndexOf(&quot;OleDb&quot;) &gt;= 0 then do btnOleDbHelper.IsEnabled &lt;- true
+                                                     else do btnOleDbHelper.IsEnabled &lt;- false
+
+    let testConnection() = async {
+                                   do sh &lt;- new ShowData()
+                                   do sh.ChangedScale(slider.Value)
+                                   do sh.Owner &lt;- Application.Current.MainWindow  // window be on top of all other windows 
+                                   do sh.Show() 
+                                   if dc.TestConnection(comboProvider.SelectedValue, txtConnectionString.Text) 
+                                       then do sh.InitGridError(&quot;Connection String - OK&quot;)
+                                       else do sh.InitGridError(dc.StrError)
+                                   ignore()
+                             }
+    let changedScale() = do scaleXY.ScaleX &lt;- slider.Value / 100.0
+                         do scaleXY.ScaleY &lt;- slider.Value / 100.0
+                         do sh.ChangedScale(slider.Value)
+
+    do slider.ValueChanged.Add(fun _ -&gt; changedScale()) 
+
+    do this.Unloaded.Add(fun _ -&gt; dc.CloseConnection())
+
+    do comboProvider.SelectionChanged.Add(fun _ -&gt;  comboSelected())
+
+    do chkSpell.Checked.Add(fun _ -&gt; do txtSQL.SpellCheck.IsEnabled &lt;- true )
+    do chkSpell.Unchecked.Add(fun _ -&gt; do txtSQL.SpellCheck.IsEnabled &lt;- false )
+
+    do btnTest.Click.Add(fun _ -&gt;  Async.StartImmediate(testConnection())) 
+    do btnRUN.Click.Add(fun _ -&gt;  Async.StartImmediate(showData(runDS()))) 
+    do btnOleDbHelper.Click.Add(fun _ -&gt; Async.StartImmediate(showData(dc.GetAllOldbProviders())))</pre>
+<div class="preview">
+<pre class="xaml"><span class="xaml__tag_start">&lt;UserControl</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__attr_name">xmlns</span>=<span class="xaml__attr_value">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__keyword">xmlns</span>:<span class="xaml__attr_name">x</span>=<span class="xaml__attr_value">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__keyword">xmlns</span>:<span class="xaml__attr_name">mc</span>=<span class="xaml__attr_value">&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__keyword">xmlns</span>:<span class="xaml__attr_name">d</span>=<span class="xaml__attr_value">&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span>&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;DataCommonFsharp&quot;</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mc:<span class="xaml__attr_name">Ignorable</span>=<span class="xaml__attr_value">&quot;d&quot;</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d:<span class="xaml__attr_name">DesignHeight</span>=<span class="xaml__attr_value">&quot;600&quot;</span>&nbsp;d:<span class="xaml__attr_name">DesignWidth</span>=<span class="xaml__attr_value">&quot;800&quot;</span>&nbsp;<span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Grid</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;gridMain&quot;</span>&nbsp;<span class="xaml__attr_name">RenderTransformOrigin</span>=<span class="xaml__attr_value">&quot;0.0,0.0&quot;</span>&nbsp;<span class="xaml__attr_name">MinWidth</span>=<span class="xaml__attr_value">&quot;600&quot;</span>&nbsp;<span class="xaml__attr_name">MinHeight</span>=<span class="xaml__attr_value">&quot;400&quot;</span><span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;TextBox</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;txtSQL&quot;</span>&nbsp;&nbsp;<span class="xaml__attr_name">TextWrapping</span>=<span class="xaml__attr_value">&quot;Wrap&quot;</span>&nbsp;<span class="xaml__attr_name">Text</span>=<span class="xaml__attr_value">&quot;Insert/Edit&nbsp;SQL&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;10,63,10,27&quot;</span>&nbsp;&nbsp;<span class="xaml__attr_name">IsManipulationEnabled</span>=<span class="xaml__attr_value">&quot;True&quot;</span>&nbsp;<span class="xaml__attr_name">IsInactiveSelectionHighlightEnabled</span>=<span class="xaml__attr_value">&quot;True&quot;</span>&nbsp;<span class="xaml__attr_name">AcceptsReturn</span>=<span class="xaml__attr_value">&quot;True&quot;</span>&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;TextBox</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;txtConnectionString&quot;</span>&nbsp;<span class="xaml__attr_name">Height</span>=<span class="xaml__attr_value">&quot;23&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;10,8,136,0&quot;</span>&nbsp;<span class="xaml__attr_name">TextWrapping</span>=<span class="xaml__attr_value">&quot;Wrap&quot;</span>&nbsp;<span class="xaml__attr_name">Text</span>=<span class="xaml__attr_value">&quot;Connection&nbsp;String&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Top&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;ComboBox</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;comboProvider&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;10,36,370,0&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Top&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Button</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;btnOleDbHelper&quot;</span>&nbsp;<span class="xaml__attr_name">Content</span>=<span class="xaml__attr_value">&quot;OleDb&nbsp;Helper&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Right&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;0,36,10,0&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Top&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;121&quot;</span>&nbsp;<span class="xaml__attr_name">IsCancel</span>=<span class="xaml__attr_value">&quot;True&quot;</span>&nbsp;<span class="xaml__attr_name">IsEnabled</span>=<span class="xaml__attr_value">&quot;False&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Button</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;btnRUN&quot;</span>&nbsp;<span class="xaml__attr_name">Content</span>=<span class="xaml__attr_value">&quot;RUN&nbsp;SQL&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Right&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;0,36,136,0&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Top&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;121&quot;</span>&nbsp;<span class="xaml__attr_name">IsCancel</span>=<span class="xaml__attr_value">&quot;True&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;CheckBox</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;chkSpell&quot;</span>&nbsp;<span class="xaml__attr_name">Content</span>=<span class="xaml__attr_value">&quot;Spell&nbsp;Check&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Right&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;0,39,271,0&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Top&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;94&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Button</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;btnTest&quot;</span>&nbsp;<span class="xaml__attr_name">Content</span>=<span class="xaml__attr_value">&quot;Test&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Right&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;0,10,10,0&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Top&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;121&quot;</span>&nbsp;<span class="xaml__attr_name">IsCancel</span>=<span class="xaml__attr_value">&quot;True&quot;</span>&nbsp;<span class="xaml__attr_name">ToolTip</span>=<span class="xaml__attr_value">&quot;Test&nbsp;Connection&nbsp;String.&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Slider</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;slider&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;10,0&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Bottom&quot;</span>&nbsp;<span class="xaml__attr_name">Height</span>=<span class="xaml__attr_value">&quot;23&quot;</span>&nbsp;<span class="xaml__attr_name">Maximum</span>=<span class="xaml__attr_value">&quot;200&quot;</span>&nbsp;<span class="xaml__attr_name">Value</span>=<span class="xaml__attr_value">&quot;100&quot;</span>&nbsp;<span class="xaml__attr_name">SmallChange</span>=<span class="xaml__attr_value">&quot;1&quot;</span>&nbsp;<span class="xaml__attr_name">LargeChange</span>=<span class="xaml__attr_value">&quot;10&quot;</span>&nbsp;<span class="xaml__attr_name">Minimum</span>=<span class="xaml__attr_value">&quot;50&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_end">&lt;/Grid&gt;</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;UserControl</span>.LayoutTransform<span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;ScaleTransform</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;scaleXY&quot;</span>&nbsp;<span class="xaml__attr_name">ScaleX</span>=<span class="xaml__attr_value">&quot;1.0&quot;</span>&nbsp;<span class="xaml__attr_name">ScaleY</span>=<span class="xaml__attr_value">&quot;1.0&quot;</span>&nbsp;<span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/UserControl.LayoutTransform&gt;&nbsp;
+&nbsp;
+<span class="xaml__tag_end">&lt;/UserControl&gt;</span>&nbsp;
+&nbsp;
+</pre>
+</div>
+</div>
+</div>
+<h1><span style="font-size:2em">More Information</span></h1>
+<pre>All OleDb providers ...</pre>
+<pre>&nbsp;<a title="Auto generated link to System.Data.OleDb.OleDbDataReader" class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Data.OleDb.OleDbDataReader.aspx" >System.Data.OleDb.OleDbDataReader</a> reader = <a title="Auto generated link to System.Data.OleDb.OleDbEnumerator.GetEnumerator" class="libraryLink" href="https://code.msdn.microsoft.com/Fsharp-Only-Access-to-ANY-721ea954/https://msdn.microsoft.com/en-US/library/System.Data.OleDb.OleDbEnumerator.GetEnumerator.aspx" >System.Data.OleDb.OleDbEnumerator.GetEnumerator</a>(Type.GetTypeFromProgID(&quot;MSDAENUM&quot;));&nbsp;&nbsp;</pre>
+<p><span style="font-size:x-small">This application also show &quot;How To&quot; load XAML file to code ...</span></p>
+<p><span style="font-size:x-small"><span style="font-size:xx-small">&nbsp;// XAML file properties -&gt; &quot;EmbeddedResource&quot;</span><br>
+<span style="font-size:xx-small">&nbsp; &nbsp; let mySr = new StreamReader(Assembly.Load(&quot;FsharpObjXAMLLibrary&quot;).GetManifestResourceStream(&quot;DataCommonFsharp.xaml&quot;)) &nbsp; // XAML - MUST be Embedded Resource&nbsp;&nbsp; &nbsp; do this.Content &lt;- XamlReader.Load(mySr.BaseStream):?&gt;
+ UserControl &nbsp;// Load XAML</span><br>
+<span style="font-size:xx-small">// OR &nbsp;Change XAML file properties to &quot;Resource&quot; and uncomment below (comment out above)</span><br>
+<span style="font-size:xx-small">// // XAML file properties -&gt; Resource&nbsp;// &nbsp; &nbsp;let resource = new Uri(&quot;/FsharpObjXAMLLibrary;component/DataCommonFsharp.xaml&quot;,System.UriKind.Relative)// &nbsp; &nbsp;do &nbsp;&lt;- Application.LoadComponent(resource)
+ :?&gt; UserControl &nbsp; // Cast to UserControl&nbsp;</span><br>
+</span></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
