@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="ExplainCompression.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="600" d:DesignWidth="1024" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+
+    <Grid x:Name="LayoutRoot" Background="White" Width="1024" Height="600">
+        <Rectangle x:Name="rSend" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="128" Margin="54,32,0,0" Stroke="Black" VerticalAlignment="Top" Width="128" Unloaded="WebCamDefault_Unloaded" />
+
+        <Rectangle x:Name="rS3" Fill="#FFF4F4F5" Margin="323,32,0,0" Stroke="Black"  Height="128" Width="128" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" HorizontalAlignment="Left">
+            <Rectangle.Projection>
+                <PlaneProjection RotationX="25.4" RotationY="56.5" RotationZ="-42.6"/>
+            </Rectangle.Projection>
+        </Rectangle>
+        <Rectangle x:Name="rS2" Fill="#FFF4F4F5" Margin="277,32,0,0" Stroke="Black" Height="128" Width="128" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" HorizontalAlignment="Left">
+            <Rectangle.Projection>
+                <PlaneProjection RotationX="25.4" RotationY="56.5" RotationZ="-42.6"/>
+            </Rectangle.Projection>
+        </Rectangle>
+        <Rectangle x:Name="rS1" Fill="#FFF4F4F5" Margin="230,32,0,0" Stroke="Black" Height="128" Width="128" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" HorizontalAlignment="Left">
+            <Rectangle.Projection>
+                <PlaneProjection RotationX="25.4" RotationY="56.5" RotationZ="-42.6"/>
+            </Rectangle.Projection>
+        </Rectangle>
+        <Rectangle x:Name="rS0" Fill="#FFF4F4F5" Margin="184,32,0,0" Stroke="Black" Height="128" Width="128" VerticalAlignment="Top" d:LayoutOverrides="Height" HorizontalAlignment="Left">
+            <Rectangle.Projection>
+                <PlaneProjection RotationX="25.4" RotationY="56.5" RotationZ="-42.6"/>
+            </Rectangle.Projection>
+        </Rectangle>
+
+        <Rectangle x:Name="rSendCombine" Fill="#FFF4F4F5" Margin="459,32,0,0" Stroke="Black" Height="128" VerticalAlignment="Top" HorizontalAlignment="Left" Width="512"/>
+        <Button x:Name="btnSend" Content="Start Sending" HorizontalAlignment="Left" Height="21" Margin="54,223,0,0" VerticalAlignment="Top" Width="128" ClickMode="Release" Click="btnSend_Click" />
+
+        <Rectangle x:Name="rReceive" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="128" Margin="53,0,0,32" Stroke="Black" VerticalAlignment="Bottom" Width="128" MouseWheel="rReceive_MouseWheel">
+            <Rectangle.RenderTransform>
+                <CompositeTransform x:Name="scaleHaar" ScaleX="1.0" ScaleY="1.0" />
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <Rectangle x:Name="rRecieveCombine" Fill="#FFF4F4F5" Margin="459,0,0,32" Stroke="Black" Height="128" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="512"/>
+        <Button x:Name="btnRecieve" Content="Start Receiving" HorizontalAlignment="Left" Height="21" Margin="54,0,0,236" VerticalAlignment="Bottom" Width="128" ClickMode="Release" Click="btnRecieve_Click" />
+        <Rectangle Fill="#FFF4F4F5" Height="128" HorizontalAlignment="Left" Margin="459,166,0,0" Name="rSendHaar" Stroke="Black" VerticalAlignment="Top" Width="512" />
+        <Rectangle Fill="#FFF4F4F5" Height="128" HorizontalAlignment="Left" Margin="459,0,0,166" Name="rRecieveHaar" Stroke="Black" VerticalAlignment="Bottom" Width="512" />
+        <sdk:Label Height="18" HorizontalAlignment="Left" Margin="285,266,0,0" Name="lblSize" VerticalAlignment="Top" Width="151" Content=" ARC" />
+        <sdk:Label Content="DELTA" Height="18" HorizontalAlignment="Left" Margin="285,242,0,0" Name="lblDelta" VerticalAlignment="Top" Width="151" />
+        <sdk:Label Height="17" HorizontalAlignment="Left" Margin="285,417,0,0" Name="lblDeltaR" VerticalAlignment="Top" Width="120" Content="DELTA" />
+        <RadioButton Content="Haar" Height="16" HorizontalAlignment="Left" Margin="285,198,0,0" Name="rbH" VerticalAlignment="Top" GroupName="W" IsChecked="True" />
+        <RadioButton Content="Daubechies" Height="16" HorizontalAlignment="Left" Margin="285,220,0,0" Name="rbD" VerticalAlignment="Top" GroupName="W" />
+    </Grid>
+</UserControl>
