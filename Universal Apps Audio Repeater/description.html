@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="https://assets.onestore.ms/cdnfiles/onestorerolling-1612-12000/shell/v3/scss/shellnoresponsive.min.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Header,0:sprite;/Areas/Epx/Themes/Windows/Content:0&amp;amp;v=5A8F2C7924508E93B220C779E83AA378" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfHeader.css?v=636183226100754713" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=BD7685882DB97CEEAF714E22F6547CFE" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfFooter.css?v=636183226100754713" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Universal Apps Audio Repeater</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/4e6e720b-ff60-4c06-9403-1a2750df59d1Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Universal Apps Audio Repeater</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, XAML, Windows 10, Audio Recorder, Audio Repeater
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            MemoryStream, MediaCapture, MediaEncodingPr<wbr />ofile, IRandomAccessSt<wbr />ream, StreamingCaptur<wbr />eMode, MediaCategory
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Phone, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">1/14/2017</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/Universal-Apps-Audio-e8371edf">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p><em><span>&quot;Universal Apps Audio Repeater&quot; &nbsp;- example how to continuously repeat sound from microphone.&nbsp;</span></em><span>&nbsp;</span></p>
+<p><em><span>This application using idea from my </span></em><em><span>previous</span></em> example, but implementation
+<em><span>&nbsp;</span></em><em><span>different.</span></em><span>&nbsp;</span></p>
+<p><em><span>https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594 &nbsp;</span></em><span>&nbsp;</span></p>
+<p>If you need to have the example for MediaCapture, MediaEncodingProfile, MediaElement, MemoryStream, IRandomAccessStream and how to play sound in the same time when you recording, please use this sample &hellip;</p>
+<p>&nbsp;</p>
+<h1><span>Building the Sample</span></h1>
+<p><em>This application working well on Local Machine. Its also work on Windows Phone, but Windows Phone does not have processor speed ... it will be noise...</em></p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p>Run this application on Local PC (best if you use the headphone)&nbsp; -&nbsp; your &ldquo;HardToHear&rdquo; friends can talk with you &hellip;You can modify this application as you wish &hellip; it just example &hellip;If you still using Windows 8.1 please
+ use my previous example &hellip; it will be working and on Windows Phone &hellip;&nbsp;<em>https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594 &nbsp;</em></p>
+<p>&nbsp;</p>
+<p><img id="150184" src="https://code.msdn.microsoft.com/windowsapps/site/view/file/150184/1/HardToHear.jpg" alt="" width="450" height="215"></p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder">
+<div class="title"><span>XAML</span><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">xaml</span><span class="hidden">csharp</span>
+<pre class="hidden">&lt;Page 
+
+
+    x:Class=&quot;UniversalAudioRepeater.MainPage&quot;
+    xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+    xmlns:local=&quot;using:UniversalAudioRepeater&quot;
+    xmlns:d=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;
+    xmlns:mc=&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;
+    mc:Ignorable=&quot;d&quot; &gt;
+
+    &lt;Grid CornerRadius=&quot;7&quot;&gt;
+
+        &lt;Grid.Background&gt;
+            &lt;ImageBrush ImageSource=&quot;Assets/HardToHear.jpg&quot;/&gt;
+        &lt;/Grid.Background&gt;
+        &lt;Button x:Name=&quot;btnStart&quot; Content=&quot;Start&quot; HorizontalAlignment=&quot;Center&quot;  VerticalAlignment=&quot;Center&quot; Height=&quot;56&quot; Width=&quot;96&quot; FontSize=&quot;29.333&quot; RenderTransformOrigin=&quot;0.5,0.5&quot; FontFamily=&quot;Viner Hand ITC&quot; Foreground=&quot;#FF4E6EC5&quot; BorderBrush=&quot;#FF6B9BE0&quot; BorderThickness=&quot;1&quot; Click=&quot;btnStart_Click&quot; Padding=&quot;8,1,8,4&quot;&gt;
+            &lt;Button.Background&gt;
+                &lt;ImageBrush Stretch=&quot;Fill&quot; ImageSource=&quot;Assets/HardToHear.jpg&quot;/&gt;
+            &lt;/Button.Background&gt;
+        &lt;/Button&gt;
+        &lt;Button x:Name=&quot;btnStop&quot; Content=&quot;Stop&quot; HorizontalAlignment=&quot;Center&quot;  VerticalAlignment=&quot;Center&quot; Height=&quot;56&quot; Width=&quot;96&quot; FontSize=&quot;29.333&quot; RenderTransformOrigin=&quot;0.5,0.5&quot; FontFamily=&quot;Viner Hand ITC&quot; Foreground=&quot;#FF4E6EC5&quot; BorderBrush=&quot;#FF6B9BE0&quot; BorderThickness=&quot;1&quot; Padding=&quot;8,1,8,4&quot; Visibility=&quot;Collapsed&quot; Click=&quot;btnStop_Click&quot;&gt;
+            &lt;Button.Background&gt;
+                &lt;ImageBrush Stretch=&quot;Fill&quot; ImageSource=&quot;Assets/HardToHear.jpg&quot;/&gt;
+            &lt;/Button.Background&gt;
+        &lt;/Button&gt;
+        &lt;TextBlock x:Name=&quot;textBlock&quot; TextAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Center&quot; Margin=&quot;182,20,172,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;STARTING&quot; VerticalAlignment=&quot;Top&quot; FontFamily=&quot;Viner Hand ITC&quot; FontSize=&quot;24&quot; Foreground=&quot;#FF19E404&quot; Width=&quot;286&quot;/&gt;
+
+    &lt;/Grid&gt;
+&lt;/Page&gt;
+</pre>
+<pre class="hidden">using System;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Universal-Apps-Audio-e8371edf/https://msdn.microsoft.com/en-US/library/System.IO.aspx"  title="Auto generated link to System.IO">System.IO</a>;
+using Windows.Graphics.Display;
+using Windows.Media.MediaProperties;
+using Windows.Storage.Streams;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Universal-Apps-Audio-e8371edf/https://msdn.microsoft.com/en-US/library/System.Threading.Tasks.aspx"  title="Auto generated link to System.Threading.Tasks">System.Threading.Tasks</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Universal-Apps-Audio-e8371edf/https://msdn.microsoft.com/en-US/library/System.Threading.aspx"  title="Auto generated link to System.Threading">System.Threading</a>;
+
+
+namespace UniversalAudioRepeater
+{
+    /// &lt;summary&gt;
+    /// Universal Audio Repeater ... 
+    /// &lt;/summary&gt;
+    public sealed partial class MainPage : Page
+    {
+        public MainPage()
+        {
+            this.InitializeComponent();
+            DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape;
+            textBlock.Visibility = Visibility.Collapsed;
+        }
+
+
+        private Windows.Media.Capture.MediaCapture mediaCaptureAudioPrimery;
+        private MediaEncodingProfile recordProfile = null;
+        private MediaElement playbackElementPrimery = new MediaElement();
+        private bool blnStart = false;
+
+        private MemoryStream msIRAS0 = new MemoryStream();
+        private MemoryStream msIRAS1 = new MemoryStream();
+        private IRandomAccessStream streamIRAS0;
+        private IRandomAccessStream streamIRAS1;
+
+
+        // You can play with this Delay ...
+        private int intDelay = 200;  // Record Time in millesecond...
+        // Short time - increase repetet noise ...
+        // Long time - create echo ...
+        // I think 200ms is optimum ...
+
+        // If you use headphones - best time will be 500..1000ms ... 
+
+
+        private async void btnStart_Click(object sender, RoutedEventArgs e)
+        {
+
+            blnStart = true;
+            btnStart.Visibility = Visibility.Collapsed;
+            btnStop.Visibility = Visibility.Visible;
+
+            textBlock.Visibility = Visibility.Visible;
+
+            mediaCaptureAudioPrimery = new Windows.Media.Capture.MediaCapture();
+
+            var settings = new Windows.Media.Capture.MediaCaptureInitializationSettings();
+            settings.StreamingCaptureMode = Windows.Media.Capture.StreamingCaptureMode.Audio;
+            settings.MediaCategory = Windows.Media.Capture.MediaCategory.Other;
+            settings.AudioProcessing = Windows.Media.AudioProcessing.Default; // Use only Default
+
+            await mediaCaptureAudioPrimery.InitializeAsync(settings);
+            recordProfile = MediaEncodingProfile.CreateWav(Windows.Media.MediaProperties.AudioEncodingQuality.Low);
+
+
+            while (blnStart)  // Repeate untile stop ...
+            {
+                try
+                {
+                    msIRAS0 = new MemoryStream();                       
+                    streamIRAS0 = msIRAS0.AsRandomAccessStream();       // New Stream ...
+                    await mediaCaptureAudioPrimery.StartRecordToStreamAsync(recordProfile, streamIRAS0); // write audio in first stream ...
+                    await Task.Delay(intDelay);
+                    await mediaCaptureAudioPrimery.StopRecordAsync();   // Stop first stream
+                    await PlayThreadMethod(streamIRAS0);                // Play from first stream
+
+                    msIRAS1 = new MemoryStream();
+                    streamIRAS1 = msIRAS0.AsRandomAccessStream();       // Second Stream ...
+                    await mediaCaptureAudioPrimery.StartRecordToStreamAsync(recordProfile, streamIRAS1);  // sweetch stream ... to second stream ...
+                    await Task.Delay(intDelay);
+                    await mediaCaptureAudioPrimery.StopRecordAsync();
+                    await PlayThreadMethod(streamIRAS1);                // Play Second Streem
+
+                }
+                catch (Exception ex)
+                {
+                    Stop();
+                }
+            }
+            
+        }
+
+        private void Stop()
+        {
+            blnStart = false;
+            btnStart.Visibility = Visibility.Visible;
+            btnStop.Visibility = Visibility.Collapsed;
+            textBlock.Visibility = Visibility.Collapsed;
+        }
+
+        private void btnStop_Click(object sender, RoutedEventArgs e)
+        {
+            Stop();
+        }
+
+
+        // Playback Stream ...
+
+        private async Task PlayThreadMethod(object o)
+        {
+            var cts = new CancellationTokenSource();
+            IRandomAccessStream IRAS = (IRandomAccessStream)o;
+
+            var tStart = await Task.Factory.StartNew(() =&gt;
+                    Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal,
+                    () =&gt;
+                    {
+                        playbackElementPrimery.AutoPlay = true;
+                        IRAS.Seek(0);
+                        playbackElementPrimery.SetSource(IRAS, &quot;Wav&quot;);
+                        playbackElementPrimery.Play();
+                    }), cts.Token);
+        }
+
+
+    }
+}
+</pre>
+<div class="preview">
+<pre class="xaml"><span class="xaml__tag_start">&lt;Page</span>&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;x:<span class="xaml__attr_name">Class</span>=<span class="xaml__attr_value">&quot;UniversalAudioRepeater.MainPage&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__attr_name">xmlns</span>=<span class="xaml__attr_value">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__keyword">xmlns</span>:<span class="xaml__attr_name">x</span>=<span class="xaml__attr_value">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__keyword">xmlns</span>:<span class="xaml__attr_name">local</span>=<span class="xaml__attr_value">&quot;using:UniversalAudioRepeater&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__keyword">xmlns</span>:<span class="xaml__attr_name">d</span>=<span class="xaml__attr_value">&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__keyword">xmlns</span>:<span class="xaml__attr_name">mc</span>=<span class="xaml__attr_value">&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;mc:<span class="xaml__attr_name">Ignorable</span>=<span class="xaml__attr_value">&quot;d&quot;</span>&nbsp;<span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Grid</span>&nbsp;<span class="xaml__attr_name">CornerRadius</span>=<span class="xaml__attr_value">&quot;7&quot;</span><span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Grid</span>.Background<span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;ImageBrush</span>&nbsp;<span class="xaml__attr_name">ImageSource</span>=<span class="xaml__attr_value">&quot;Assets/HardToHear.jpg&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Grid.Background&gt;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Button</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;btnStart&quot;</span>&nbsp;<span class="xaml__attr_name">Content</span>=<span class="xaml__attr_value">&quot;Start&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Center&quot;</span>&nbsp;&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Center&quot;</span>&nbsp;<span class="xaml__attr_name">Height</span>=<span class="xaml__attr_value">&quot;56&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;96&quot;</span>&nbsp;<span class="xaml__attr_name">FontSize</span>=<span class="xaml__attr_value">&quot;29.333&quot;</span>&nbsp;<span class="xaml__attr_name">RenderTransformOrigin</span>=<span class="xaml__attr_value">&quot;0.5,0.5&quot;</span>&nbsp;<span class="xaml__attr_name">FontFamily</span>=<span class="xaml__attr_value">&quot;Viner&nbsp;Hand&nbsp;ITC&quot;</span>&nbsp;<span class="xaml__attr_name">Foreground</span>=<span class="xaml__attr_value">&quot;#FF4E6EC5&quot;</span>&nbsp;<span class="xaml__attr_name">BorderBrush</span>=<span class="xaml__attr_value">&quot;#FF6B9BE0&quot;</span>&nbsp;<span class="xaml__attr_name">BorderThickness</span>=<span class="xaml__attr_value">&quot;1&quot;</span>&nbsp;<span class="xaml__attr_name">Click</span>=<span class="xaml__attr_value">&quot;btnStart_Click&quot;</span>&nbsp;<span class="xaml__attr_name">Padding</span>=<span class="xaml__attr_value">&quot;8,1,8,4&quot;</span><span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Button</span>.Background<span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;ImageBrush</span>&nbsp;<span class="xaml__attr_name">Stretch</span>=<span class="xaml__attr_value">&quot;Fill&quot;</span>&nbsp;<span class="xaml__attr_name">ImageSource</span>=<span class="xaml__attr_value">&quot;Assets/HardToHear.jpg&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Button.Background&gt;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_end">&lt;/Button&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Button</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;btnStop&quot;</span>&nbsp;<span class="xaml__attr_name">Content</span>=<span class="xaml__attr_value">&quot;Stop&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Center&quot;</span>&nbsp;&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Center&quot;</span>&nbsp;<span class="xaml__attr_name">Height</span>=<span class="xaml__attr_value">&quot;56&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;96&quot;</span>&nbsp;<span class="xaml__attr_name">FontSize</span>=<span class="xaml__attr_value">&quot;29.333&quot;</span>&nbsp;<span class="xaml__attr_name">RenderTransformOrigin</span>=<span class="xaml__attr_value">&quot;0.5,0.5&quot;</span>&nbsp;<span class="xaml__attr_name">FontFamily</span>=<span class="xaml__attr_value">&quot;Viner&nbsp;Hand&nbsp;ITC&quot;</span>&nbsp;<span class="xaml__attr_name">Foreground</span>=<span class="xaml__attr_value">&quot;#FF4E6EC5&quot;</span>&nbsp;<span class="xaml__attr_name">BorderBrush</span>=<span class="xaml__attr_value">&quot;#FF6B9BE0&quot;</span>&nbsp;<span class="xaml__attr_name">BorderThickness</span>=<span class="xaml__attr_value">&quot;1&quot;</span>&nbsp;<span class="xaml__attr_name">Padding</span>=<span class="xaml__attr_value">&quot;8,1,8,4&quot;</span>&nbsp;<span class="xaml__attr_name">Visibility</span>=<span class="xaml__attr_value">&quot;Collapsed&quot;</span>&nbsp;<span class="xaml__attr_name">Click</span>=<span class="xaml__attr_value">&quot;btnStop_Click&quot;</span><span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Button</span>.Background<span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;ImageBrush</span>&nbsp;<span class="xaml__attr_name">Stretch</span>=<span class="xaml__attr_value">&quot;Fill&quot;</span>&nbsp;<span class="xaml__attr_name">ImageSource</span>=<span class="xaml__attr_value">&quot;Assets/HardToHear.jpg&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Button.Background&gt;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_end">&lt;/Button&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;TextBlock</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;textBlock&quot;</span>&nbsp;<span class="xaml__attr_name">TextAlignment</span>=<span class="xaml__attr_value">&quot;Center&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Center&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;182,20,172,0&quot;</span>&nbsp;<span class="xaml__attr_name">TextWrapping</span>=<span class="xaml__attr_value">&quot;Wrap&quot;</span>&nbsp;<span class="xaml__attr_name">Text</span>=<span class="xaml__attr_value">&quot;STARTING&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Top&quot;</span>&nbsp;<span class="xaml__attr_name">FontFamily</span>=<span class="xaml__attr_value">&quot;Viner&nbsp;Hand&nbsp;ITC&quot;</span>&nbsp;<span class="xaml__attr_name">FontSize</span>=<span class="xaml__attr_value">&quot;24&quot;</span>&nbsp;<span class="xaml__attr_name">Foreground</span>=<span class="xaml__attr_value">&quot;#FF19E404&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;286&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_end">&lt;/Grid&gt;</span>&nbsp;
+<span class="xaml__tag_end">&lt;/Page&gt;</span>&nbsp;
+</pre>
+</div>
+</div>
+</div>
+<h1><span>Source Code Files</span></h1>
+<p><span>msIRAS0 = new MemoryStream();</span></p>
+<p>streamIRAS0 = msIRAS0.AsRandomAccessStream(); &nbsp; &nbsp; &nbsp; // New Stream ...&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>await mediaCaptureAudioPrimery.StartRecordToStreamAsync(recordProfile, streamIRAS0); // write audio in first stream ...&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>await Task.Delay(intDelay);&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>await mediaCaptureAudioPrimery.StopRecordAsync(); &nbsp; // Stop first stream&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>await PlayThreadMethod(streamIRAS0); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Play from first stream</p>
+<h1>More Information</h1>
+<p>See also&nbsp;<em>https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594 &nbsp;</em></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
