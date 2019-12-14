@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WCFhostVBnet", "WCFhostVBnet\WCFhostVBnet.vbproj", "{3710FC94-04CE-40B1-9E88-BF041B1373AE}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Web_Consuming_WebService", "Web_Consuming_WebService\Web_Consuming_WebService.vbproj", "{0BE6DEA9-6C6A-4291-AB03-758F618EBD8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3710FC94-04CE-40B1-9E88-BF041B1373AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3710FC94-04CE-40B1-9E88-BF041B1373AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3710FC94-04CE-40B1-9E88-BF041B1373AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3710FC94-04CE-40B1-9E88-BF041B1373AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BE6DEA9-6C6A-4291-AB03-758F618EBD8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BE6DEA9-6C6A-4291-AB03-758F618EBD8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BE6DEA9-6C6A-4291-AB03-758F618EBD8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BE6DEA9-6C6A-4291-AB03-758F618EBD8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

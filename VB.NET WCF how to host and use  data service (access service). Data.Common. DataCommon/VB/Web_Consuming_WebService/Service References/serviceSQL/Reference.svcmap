@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7fe5f2b9-41a7-425f-93be-e2506725ceee" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/WindowsServiceSQL" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SqlServiceContract.wsdl" MetadataType="Wsdl" ID="6c709383-5525-4b78-b8c8-324ed06266b8" SourceId="1" SourceUrl="http://localhost:8080/WindowsServiceSQL?wsdl" />
+    <MetadataFile FileName="WindowsServiceSQL.xsd" MetadataType="Schema" ID="e26ad0ce-eb3d-4f1f-a331-e9f9c0c40c4c" SourceId="1" SourceUrl="http://localhost:8080/WindowsServiceSQL?xsd=xsd1" />
+    <MetadataFile FileName="WindowsServiceSQL1.xsd" MetadataType="Schema" ID="fda0c8d7-824f-444d-866a-cdff2a214b89" SourceId="1" SourceUrl="http://localhost:8080/WindowsServiceSQL?xsd=xsd3" />
+    <MetadataFile FileName="WindowsServiceSQL2.xsd" MetadataType="Schema" ID="a1ffbf69-c10d-4422-a070-93bab21c3f0a" SourceId="1" SourceUrl="http://localhost:8080/WindowsServiceSQL?xsd=xsd2" />
+    <MetadataFile FileName="WindowsServiceSQL3.xsd" MetadataType="Schema" ID="cb0c9c31-788d-4215-908d-17e98b03bd6e" SourceId="1" SourceUrl="http://localhost:8080/WindowsServiceSQL?xsd=xsd4" />
+    <MetadataFile FileName="WindowsServiceSQL.disco" MetadataType="Disco" ID="a270ac92-5d6c-4591-9a0d-d933ad976155" SourceId="1" SourceUrl="http://localhost:8080/WindowsServiceSQL?disco" />
+    <MetadataFile FileName="WindowsServiceSQL4.xsd" MetadataType="Schema" ID="ca65ae14-88ad-46bb-ae14-d5797041cc8f" SourceId="1" SourceUrl="http://localhost:8080/WindowsServiceSQL?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

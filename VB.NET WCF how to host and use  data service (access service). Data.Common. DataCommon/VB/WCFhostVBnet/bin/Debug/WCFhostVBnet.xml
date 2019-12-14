@@ -1,0 +1,117 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WCFhostVBnet
+</name>
+</assembly>
+<members>
+<member name="M:WCFhostVBnet.Application.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="M:WCFhostVBnet.Application.Main">
+	<summary>
+Application Entry Point.
+</summary>
+</member><member name="T:WCFhostVBnet.Application">
+	<summary>
+Application
+</summary>
+</member><member name="M:WCFhostVBnet.MainWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:WCFhostVBnet.MainWindow">
+	<summary>
+MainWindow
+</summary>
+</member><member name="M:WCFhostVBnet.SqlServiceContract.ExecuteSqlNonQuery(WCFhostVBnet.SqlDataIn)">
+	<summary>
+ ExecuteSqlNonQuery - input SqlCommand, Command Type, Dictionary
+ You MUST use DataContract for In/Out data
+ </summary>
+	<param name="root"></param>
+	<returns></returns>
+</member><member name="M:WCFhostVBnet.SqlServiceContract.GetDataSet(WCFhostVBnet.SqlDataIn)">
+	<summary>
+ Get Data Set - input SqlCommand, Command Type, Dictionary
+ You MUST use DataContract for In/Out data
+ </summary>
+	<param name="root"></param>
+	<returns></returns>
+</member><member name="M:WCFhostVBnet.SqlServiceContract.ServiceOK">
+	<summary>
+ ServiceOk for test Service itself - must return always OK
+ </summary>
+	<returns></returns>
+</member><member name="P:WCFhostVBnet.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:WCFhostVBnet.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:WCFhostVBnet.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:WCFhostVBnet.DataCommon.commandDB">
+	<summary>
+ When you read - you create Connection and Command - return DBCommand (provider will be bring from web.config)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WCFhostVBnet.DataCommon.ExecuteSqlNonQuery(System.Data.Common.DbCommand,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object},System.String@)">
+	<summary>
+  Just send DBCommand, see "ReadOnly Property commandDB As DbCommand" , other optional parameters ....
+ </summary>
+	<param name="cmd"></param>
+	<param name="comType"></param>
+	<param name="parameters"></param>
+	<param name="strError"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WCFhostVBnet.DataCommon.GetDataSet(System.Data.Common.DbCommand,System.Data.CommandType,System.Collections.Generic.Dictionary{System.String,System.Object},System.String@,System.Int32@)">
+	<summary>
+ Just send DBCommand, see "ReadOnly Property commandDB As DbCommand" , other optional parameters ....
+ </summary>
+	<param name="cmd"></param>
+	<param name="comType"></param>
+	<param name="parameters"></param>
+	<param name="strError"></param>
+	<param name="intEffected"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:WCFhostVBnet.My.MyWpfExtension.Application">
+	<summary>
+ Returns the application object for the running application
+ </summary>
+</member><member name="P:WCFhostVBnet.My.MyWpfExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:WCFhostVBnet.My.MyWpfExtension.User">
+	<summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member><member name="P:WCFhostVBnet.My.MyWpfExtension.Log">
+	<summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member><member name="P:WCFhostVBnet.My.MyWpfExtension.Windows">
+	<summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member><member name="T:WCFhostVBnet.My.MyWpfExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

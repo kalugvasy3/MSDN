@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Header,0:sprite;/Areas/Epx/Themes/Windows/Content:0&amp;amp;v=4F5402B66D5F37C68DD5EDCAE30537E4" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" href="https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.20.0/css/uhf-west-european-default.min.css" type="text/css" media="all" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfHeader.css?v=636256489216568222" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=D1CA83465C3F9438AACDE4F9A361020D" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfFooter.css?v=636256489216197928" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>WCF how to host and use  data service (access service). Data.Common. DataCommon.</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/cd8336d4-ea22-4677-919e-7db9f3d5fa33Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>WCF how to host and use  data service (access service). Data.Common. DataCommon.</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            WCF, WPF, WCF Data Services, VB.Net
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            WCF, WPF, WCF Data Services, WCF Service
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Phone, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">4/10/2017</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/WCF-How-To-Host-and-25a23ce3">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1 style="white-space:normal">Introduction</h1>
+<p style="white-space:normal">For example, you need to have an access from Mainframe to any different DataBase.</p>
+<p style="white-space:normal">Just run WPF which hosts universal access to any database (DataCommon).&nbsp;</p>
+<p style="white-space:normal">Replace computer name with your computer name (both project) and run...</p>
+<p style="white-space:normal">&nbsp;</p>
+<p style="white-space:normal"><em>You can use this sample as a template for build your application.</em></p>
+<p style="white-space:normal"><em>WPF VB.net &nbsp;host web service which was consuming by the web application.</em></p>
+<p style="white-space:normal">Open Solution - both projects&nbsp;are starting project</p>
+<p style="white-space:normal"><img id="172035" src="https://code.msdn.microsoft.com/windowsapps/site/view/file/172035/1/WCF_Project.PNG" alt="" width="262" height="344"></p>
+<p style="white-space:normal">&nbsp;</p>
+<p style="white-space:normal"><em>Select [start] on windows application ... make sure you&nbsp;</em></p>
+<h1 style="white-space:normal"><img id="172036" src="description/WCF_service.PNG" alt="" width="217" height="169"></h1>
+<p style="white-space:normal">&nbsp;</p>
+<p style="white-space:normal">On web page add your SQL code and RUN. (Or you can RUN schema SQL for MS SQL or DB2)</p>
+<p style="white-space:normal">&nbsp;</p>
+<p style="white-space:normal"><img id="172037" src="description/WCF_web.PNG" alt="" width="297" height="228"></p>
+<p style="white-space:normal">&nbsp;</p>
+<p style="white-space:normal">&nbsp;</p>
+<div class="scriptcode" style="white-space:normal">
+<div class="pluginEditHolder">
+<div class="title"><span>Visual Basic</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">vb</span>
+<pre class="hidden">Imports System
+Imports <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WCF-How-To-Host-and-25a23ce3/https://msdn.microsoft.com/en-US/library/System.ServiceModel.aspx"  title="Auto generated link to System.ServiceModel">System.ServiceModel</a>
+Imports <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WCF-How-To-Host-and-25a23ce3/https://msdn.microsoft.com/en-US/library/System.Runtime.Serialization.aspx"  title="Auto generated link to System.Runtime.Serialization">System.Runtime.Serialization</a>
+Imports <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WCF-How-To-Host-and-25a23ce3/https://msdn.microsoft.com/en-US/library/System.Runtime.InteropServices.aspx"  title="Auto generated link to System.Runtime.InteropServices">System.Runtime.InteropServices</a>
+Imports <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WCF-How-To-Host-and-25a23ce3/https://msdn.microsoft.com/en-US/library/System.Data.aspx"  title="Auto generated link to System.Data">System.Data</a>
+Imports <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/WCF-How-To-Host-and-25a23ce3/https://msdn.microsoft.com/en-US/library/System.Text.aspx"  title="Auto generated link to System.Text">System.Text</a>
+Imports WCFhostVBnet.DataCommon
+Imports WCFhostVBnet
+
+'See this links
+'https://msdn.microsoft.com/en-us/library/ms733811(v=vs.110).aspx
+'https://msdn.microsoft.com/en-us/library/ms733127(v=vs.110).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-1
+'https://msdn.microsoft.com/en-us/library/system.runtime.serialization.datacontractattribute(v=vs.110).aspx
+
+
+&lt;DataContract()&gt;
+Public Class SqlDataIn
+    &lt;DataMember()&gt; Public SqlText As String = &quot;&quot;
+    &lt;DataMember()&gt; Public SqlType As String = &quot;&quot;    ' &quot;Proc&quot; or (&quot;Text&quot; or &quot;&quot;) (default &quot;Text&quot;)
+    &lt;DataMember()&gt; Public SqlParam As Dictionary(Of String, Object) = Nothing
+    ' Add here additional DataMember
+End Class
+
+&lt;DataContract()&gt;
+Public Class SqlDataOut
+    &lt;DataMember()&gt; Public DataSetOut As DataSet = Nothing
+    &lt;DataMember()&gt; Public strError As String = &quot;&quot;
+    &lt;DataMember()&gt; Public intOut As Integer = 0
+    ' Add here additional DataMember
+End Class
+
+&lt;ServiceContract()&gt;
+Public Interface ISqlServiceContract
+
+    &lt;OperationContract()&gt;
+    Function GetDataSet(ByVal root As SqlDataIn) As SqlDataOut
+
+    &lt;OperationContract()&gt;
+    Function ExecuteSqlNonQuery(ByVal root As SqlDataIn) As SqlDataOut
+    &lt;OperationContract()&gt;
+    Function ServiceOK() As String
+
+    ' Add here additional OperationContract
+
+End Interface
+
+
+Public Class SqlServiceContract
+    Implements ISqlServiceContract
+    ''' &lt;summary&gt;
+    ''' ExecuteSqlNonQuery - input SqlCommand, Command Type, Dictionary
+    ''' You MUST use DataContract for In/Out data
+    ''' &lt;/summary&gt;
+    ''' &lt;param name=&quot;root&quot;&gt;&lt;/param&gt;
+    ''' &lt;returns&gt;&lt;/returns&gt;
+
+    Public Function ExecuteSqlNonQuery(root As SqlDataIn) As SqlDataOut Implements ISqlServiceContract.ExecuteSqlNonQuery
+        Dim strError As String = &quot;&quot;
+        Dim sqlData As SqlDataOut = New SqlDataOut
+
+        Dim dc As DataCommon = New DataCommon()
+        Dim com As Common.DbCommand = dc.commandDB
+        com.CommandText = root.SqlText
+
+        Dim ct As CommandType = IIf(root.SqlType.ToUpper = &quot;PROC&quot;, CommandType.StoredProcedure, CommandType.Text)
+
+        Dim intOut As Integer = dc.ExecuteSqlNonQuery(com, ct, root.SqlParam, strError)
+        sqlData.intOut = intOut
+        sqlData.DataSetOut = Nothing
+        sqlData.strError = strError
+
+        Return sqlData
+    End Function
+
+    ''' &lt;summary&gt;
+    ''' Get Data Set - input SqlCommand, Command Type, Dictionary
+    ''' You MUST use DataContract for In/Out data
+    ''' &lt;/summary&gt;
+    ''' &lt;param name=&quot;root&quot;&gt;&lt;/param&gt;
+    ''' &lt;returns&gt;&lt;/returns&gt;
+    Public Function GetDataSet(root As SqlDataIn) As SqlDataOut Implements ISqlServiceContract.GetDataSet
+        Dim strError As String = &quot;&quot;
+        Dim sqlData As SqlDataOut = New SqlDataOut
+
+        Dim dc As DataCommon = New DataCommon()
+        Dim com As Common.DbCommand = dc.commandDB
+        com.CommandText = root.SqlText
+
+        Dim ct As CommandType = IIf(root.SqlType.ToUpper() = &quot;PROC&quot;, CommandType.StoredProcedure, CommandType.Text)
+
+        Dim ds As DataSet = dc.GetDataSet(com, ct, root.SqlParam, strError)
+
+        sqlData.intOut = 0
+        sqlData.DataSetOut = ds
+        sqlData.strError = strError
+
+        Return sqlData
+
+    End Function
+
+
+    ''' &lt;summary&gt;
+    ''' ServiceOk for test Service itself - must return always OK
+    ''' &lt;/summary&gt;
+    ''' &lt;returns&gt;&lt;/returns&gt;
+    Public Function ServiceOK() As String Implements ISqlServiceContract.ServiceOK
+        Return &quot;OK&quot;
+    End Function
+
+
+End Class
+</pre>
+<div class="preview">
+<pre class="vb"><span class="visualBasic__keyword">Imports</span>&nbsp;System&nbsp;
+<span class="visualBasic__keyword">Imports</span>&nbsp;System.ServiceModel&nbsp;
+<span class="visualBasic__keyword">Imports</span>&nbsp;System.Runtime.Serialization&nbsp;
+<span class="visualBasic__keyword">Imports</span>&nbsp;System.Runtime.InteropServices&nbsp;
+<span class="visualBasic__keyword">Imports</span>&nbsp;System.Data&nbsp;
+<span class="visualBasic__keyword">Imports</span>&nbsp;System.Text&nbsp;
+<span class="visualBasic__keyword">Imports</span>&nbsp;WCFhostVBnet.DataCommon&nbsp;
+<span class="visualBasic__keyword">Imports</span>&nbsp;WCFhostVBnet&nbsp;
+&nbsp;
+<span class="visualBasic__com">'See&nbsp;this&nbsp;links</span>&nbsp;
+<span class="visualBasic__com">'https://msdn.microsoft.com/en-us/library/ms733811(v=vs.110).aspx</span>&nbsp;
+<span class="visualBasic__com">'https://msdn.microsoft.com/en-us/library/ms733127(v=vs.110).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-1</span>&nbsp;
+<span class="visualBasic__com">'https://msdn.microsoft.com/en-us/library/system.runtime.serialization.datacontractattribute(v=vs.110).aspx</span>&nbsp;
+&nbsp;
+&nbsp;
+&lt;DataContract()&gt;&nbsp;
+<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">Class</span>&nbsp;SqlDataIn&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;DataMember()&gt;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;SqlText&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;=&nbsp;<span class="visualBasic__string">&quot;&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;DataMember()&gt;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;SqlType&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;=&nbsp;<span class="visualBasic__string">&quot;&quot;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&quot;Proc&quot;&nbsp;or&nbsp;(&quot;Text&quot;&nbsp;or&nbsp;&quot;&quot;)&nbsp;(default&nbsp;&quot;Text&quot;)</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;DataMember()&gt;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;SqlParam&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;Dictionary(<span class="visualBasic__keyword">Of</span>&nbsp;<span class="visualBasic__keyword">String</span>,&nbsp;<span class="visualBasic__keyword">Object</span>)&nbsp;=&nbsp;<span class="visualBasic__keyword">Nothing</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;Add&nbsp;here&nbsp;additional&nbsp;DataMember</span>&nbsp;
+<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Class</span>&nbsp;
+&nbsp;
+&lt;DataContract()&gt;&nbsp;
+<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">Class</span>&nbsp;SqlDataOut&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;DataMember()&gt;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;DataSetOut&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;DataSet&nbsp;=&nbsp;<span class="visualBasic__keyword">Nothing</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;DataMember()&gt;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;strError&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;=&nbsp;<span class="visualBasic__string">&quot;&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;DataMember()&gt;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;intOut&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">Integer</span>&nbsp;=&nbsp;<span class="visualBasic__number">0</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;Add&nbsp;here&nbsp;additional&nbsp;DataMember</span>&nbsp;
+<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Class</span>&nbsp;
+&nbsp;
+&lt;ServiceContract()&gt;&nbsp;
+<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">Interface</span>&nbsp;ISqlServiceContract&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;OperationContract()&gt;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Function</span>&nbsp;GetDataSet(<span class="visualBasic__keyword">ByVal</span>&nbsp;root&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;SqlDataIn)&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;SqlDataOut&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;OperationContract()&gt;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Function</span>&nbsp;ExecuteSqlNonQuery(<span class="visualBasic__keyword">ByVal</span>&nbsp;root&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;SqlDataIn)&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;SqlDataOut&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;OperationContract()&gt;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Function</span>&nbsp;ServiceOK()&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;Add&nbsp;here&nbsp;additional&nbsp;OperationContract</span>&nbsp;
+&nbsp;
+<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Interface</span>&nbsp;
+&nbsp;
+&nbsp;
+<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">Class</span>&nbsp;SqlServiceContract&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Implements</span>&nbsp;ISqlServiceContract&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;&lt;summary&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;ExecuteSqlNonQuery&nbsp;-&nbsp;input&nbsp;SqlCommand,&nbsp;Command&nbsp;Type,&nbsp;Dictionary</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;You&nbsp;MUST&nbsp;use&nbsp;DataContract&nbsp;for&nbsp;In/Out&nbsp;data</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;&lt;/summary&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;&lt;param&nbsp;name=&quot;root&quot;&gt;&lt;/param&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;&lt;returns&gt;&lt;/returns&gt;</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">Function</span>&nbsp;ExecuteSqlNonQuery(root&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;SqlDataIn)&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;SqlDataOut&nbsp;<span class="visualBasic__keyword">Implements</span>&nbsp;ISqlServiceContract.ExecuteSqlNonQuery&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;strError&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;=&nbsp;<span class="visualBasic__string">&quot;&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;sqlData&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;SqlDataOut&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;SqlDataOut&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;dc&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;DataCommon&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;DataCommon()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;com&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;Common.DbCommand&nbsp;=&nbsp;dc.commandDB&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;com.CommandText&nbsp;=&nbsp;root.SqlText&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;ct&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;CommandType&nbsp;=&nbsp;IIf(root.SqlType.ToUpper&nbsp;=&nbsp;<span class="visualBasic__string">&quot;PROC&quot;</span>,&nbsp;CommandType.StoredProcedure,&nbsp;CommandType.Text)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;intOut&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">Integer</span>&nbsp;=&nbsp;dc.ExecuteSqlNonQuery(com,&nbsp;ct,&nbsp;root.SqlParam,&nbsp;strError)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sqlData.intOut&nbsp;=&nbsp;intOut&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sqlData.DataSetOut&nbsp;=&nbsp;<span class="visualBasic__keyword">Nothing</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sqlData.strError&nbsp;=&nbsp;strError&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Return</span>&nbsp;sqlData&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Function</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;&lt;summary&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;Get&nbsp;Data&nbsp;Set&nbsp;-&nbsp;input&nbsp;SqlCommand,&nbsp;Command&nbsp;Type,&nbsp;Dictionary</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;You&nbsp;MUST&nbsp;use&nbsp;DataContract&nbsp;for&nbsp;In/Out&nbsp;data</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;&lt;/summary&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;&lt;param&nbsp;name=&quot;root&quot;&gt;&lt;/param&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;&lt;returns&gt;&lt;/returns&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">Function</span>&nbsp;GetDataSet(root&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;SqlDataIn)&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;SqlDataOut&nbsp;<span class="visualBasic__keyword">Implements</span>&nbsp;ISqlServiceContract.GetDataSet&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;strError&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;=&nbsp;<span class="visualBasic__string">&quot;&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;sqlData&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;SqlDataOut&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;SqlDataOut&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;dc&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;DataCommon&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;DataCommon()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;com&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;Common.DbCommand&nbsp;=&nbsp;dc.commandDB&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;com.CommandText&nbsp;=&nbsp;root.SqlText&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;ct&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;CommandType&nbsp;=&nbsp;IIf(root.SqlType.ToUpper()&nbsp;=&nbsp;<span class="visualBasic__string">&quot;PROC&quot;</span>,&nbsp;CommandType.StoredProcedure,&nbsp;CommandType.Text)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;ds&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;DataSet&nbsp;=&nbsp;dc.GetDataSet(com,&nbsp;ct,&nbsp;root.SqlParam,&nbsp;strError)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sqlData.intOut&nbsp;=&nbsp;<span class="visualBasic__number">0</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sqlData.DataSetOut&nbsp;=&nbsp;ds&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sqlData.strError&nbsp;=&nbsp;strError&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Return</span>&nbsp;sqlData&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Function</span>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;&lt;summary&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;ServiceOk&nbsp;for&nbsp;test&nbsp;Service&nbsp;itself&nbsp;-&nbsp;must&nbsp;return&nbsp;always&nbsp;OK</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;&lt;/summary&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'''&nbsp;&lt;returns&gt;&lt;/returns&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">Function</span>&nbsp;ServiceOK()&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;<span class="visualBasic__keyword">Implements</span>&nbsp;ISqlServiceContract.ServiceOK&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Return</span>&nbsp;<span class="visualBasic__string">&quot;OK&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Function</span>&nbsp;
+&nbsp;
+&nbsp;
+<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Class</span>&nbsp;
+</pre>
+</div>
+</div>
+</div>
+<pre style="white-space:normal">To create a basic data contract for a class or structure<br>1.Declare that the type has a data contract by applying the DataContractAttribute attribute to the class. Note that all public types, including those without attributes, are serializable. The DataContractSerializer infers a data contract if the DataContractAttribute attribute is absent. For more information, see, see Serializable Types.<br><br>2.Define the members (properties, fields, or events) that are serialized by applying the DataMemberAttribute attribute to each member. These members are called data members. By default, all public types are serializable. For more information, see, see Serializable Types.<br><br></pre>
+<ul style="white-space:normal">
+</ul>
+<h1 style="white-space:normal">More Information</h1>
+<p style="white-space:normal"><em>https://msdn.microsoft.com/en-us/library/ms733811(v=vs.110).aspx</em></p>
+<p style="white-space:normal"><em>https://msdn.microsoft.com/en-us/library/ms733127(v=vs.110).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-1</em></p>
+<p style="white-space:normal"><em>https://msdn.microsoft.com/en-us/library/system.runtime.serialization.datacontractattribute(v=vs.110).aspx</em></p>
+<p style="white-space:normal"><em><br>
+</em></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

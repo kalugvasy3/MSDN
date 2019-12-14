@@ -1,0 +1,9 @@
+C:\Users\kalugv\Desktop\MSDN\WCFVBnet\Web_Consuming_WebService\bin\Web_Consuming_WebService.dll.config
+C:\Users\kalugv\Desktop\MSDN\WCFVBnet\Web_Consuming_WebService\bin\Web_Consuming_WebService.dll
+C:\Users\kalugv\Desktop\MSDN\WCFVBnet\Web_Consuming_WebService\bin\Web_Consuming_WebService.pdb
+C:\Users\kalugv\Desktop\MSDN\WCFVBnet\Web_Consuming_WebService\bin\Web_Consuming_WebService.xml
+C:\Users\kalugv\Desktop\MSDN\WCFVBnet\Web_Consuming_WebService\obj\Debug\Web_Consuming_WebService.Resources.resources
+C:\Users\kalugv\Desktop\MSDN\WCFVBnet\Web_Consuming_WebService\obj\Debug\Web_Consuming_WebService.vbproj.GenerateResource.Cache
+C:\Users\kalugv\Desktop\MSDN\WCFVBnet\Web_Consuming_WebService\obj\Debug\Web_Consuming_WebService.dll
+C:\Users\kalugv\Desktop\MSDN\WCFVBnet\Web_Consuming_WebService\obj\Debug\Web_Consuming_WebService.xml
+C:\Users\kalugv\Desktop\MSDN\WCFVBnet\Web_Consuming_WebService\obj\Debug\Web_Consuming_WebService.pdb
