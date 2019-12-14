@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Header,0:sprite;/Areas/Epx/Themes/Windows/Content:0&amp;amp;v=E423CB334CA748D904C9CEBACA65C2D5" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfHeader.css?v=636347051150549853" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" href="https://statics-uhf-wus.akamaized.net/en-us/shell/_scrf/css/themes=default/f4-9de3da/ac-f766a6/8b-cd888b/4e-9d4969/93-518fbe/14-4bc847/1a-c40efe?ver=1.0.6413.8775" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=0C45E19979C9671A73787E066A9E3815" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfFooter.css?v=636347051150549853" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>How to create pdf or excel file from “rdlc”  SSRS report and download it</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/d0513fff-2f5b-43f1-ba4e-d5dad7c7dc65Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>How to create pdf or excel file from “rdlc”  SSRS report and download it</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            VB.Net, SSRS, RDLC
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            SSRS, PDF, SSRS RDLC
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Phone, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">7/31/2017</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/How-to-create-pdf-or-excel-13e6a9c8">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>How to create pdf or excel file from &ldquo;rdlc&rdquo; &nbsp;SSRS report and download it and show on the same page.</p>
+<p>How to attach this file to an email.</p>
+<p>(without using intermediate &nbsp;place)</p>
+<h1>Description</h1>
+<p>On the first page insert your real email and click on the button ...&nbsp;</p>
+<p><img id="176338" src="description/112.png" alt="" width="404" height="114"></p>
+<p>Your SSRS rdlc report will be opened&nbsp;in the different window like a pdf file.&nbsp;</p>
+<p>If you add to (see the code) -&gt; &nbsp;&quot;<strong>Dim &nbsp;mailClient As New SmtpClient(&quot;xxxx.YYYY.zzzz&quot;)&quot;</strong> &nbsp;correct mail client you will receive an email with attached same file.</p>
+<p>You also will see your report in a new window like a pdf file.</p>
+<p>Here you can find code which shows&nbsp;how to download pdf or excel file from your rdlc report.</p>
+<p>&nbsp;</p>
+<p><img id="176340" src="description/webChild.png" alt="" width="450" height="370"></p>
+<p>&nbsp;</p>
+<h1>Building the Sample</h1>
+<p>In Visual Studio Ultimate 2013:</p>
+<ol>
+<li>Start Visual 2013 and from the menu, select&nbsp;<strong>File &gt; Open &gt; Project/Solution</strong>.
+</li><li>Browse to the directory that contains the unzipped sample files. Double-click the Visual Studio Solution (.sln) file.
+</li><li>From the menu, select&nbsp;<strong>Build &gt; Build Solution</strong>. </li></ol>
+<p>To run the sample in the Visual Studio debugger, from the menu select&nbsp;<strong>Debug &gt; Start Debugging</strong>. To run the sample in Visual Studio 2013 Ultimate without debugging, from the menu select&nbsp;<strong>Debug &gt; Start Without Debugging</strong>.&nbsp;</p>
+<p>To run the sample in the Visual Studio debugger, from the menu select&nbsp;<strong>Debug &gt; Start Debugging</strong>. To run the sample in Visual Studio 2013 Ultimate without debugging, from the menu select&nbsp;<strong>Debug &gt; Start Without Debugging</strong>.&nbsp;</p>
+<p>&nbsp;</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
