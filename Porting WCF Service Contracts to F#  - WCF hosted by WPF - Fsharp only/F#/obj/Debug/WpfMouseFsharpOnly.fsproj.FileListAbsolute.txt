@@ -1,0 +1,8 @@
+D:\Azure\Workspaces\web-for-you\WpfMouseFsharpOnly\WpfMouseFsharpOnly\bin\Debug\WpfMouseFsharpOnly.exe.config
+D:\Azure\Workspaces\web-for-you\WpfMouseFsharpOnly\WpfMouseFsharpOnly\bin\Debug\WpfMouseFsharpOnly.XML
+D:\Azure\Workspaces\web-for-you\WpfMouseFsharpOnly\WpfMouseFsharpOnly\bin\Debug\WpfMouseFsharpOnly.exe
+D:\Azure\Workspaces\web-for-you\WpfMouseFsharpOnly\WpfMouseFsharpOnly\bin\Debug\WpfMouseFsharpOnly.pdb
+D:\Azure\Workspaces\web-for-you\WpfMouseFsharpOnly\WpfMouseFsharpOnly\bin\Debug\FSharp.Core.dll
+D:\Azure\Workspaces\web-for-you\WpfMouseFsharpOnly\WpfMouseFsharpOnly\bin\Debug\FSharp.Core.xml
+D:\Azure\Workspaces\web-for-you\WpfMouseFsharpOnly\WpfMouseFsharpOnly\obj\Debug\WpfMouseFsharpOnly.exe
+D:\Azure\Workspaces\web-for-you\WpfMouseFsharpOnly\WpfMouseFsharpOnly\obj\Debug\WpfMouseFsharpOnly.pdb
