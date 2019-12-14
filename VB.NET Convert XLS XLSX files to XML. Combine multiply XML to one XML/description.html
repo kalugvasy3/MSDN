@@ -1,0 +1,915 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="https://assets.onestore.ms/cdnfiles/onestorerolling-1505-17001/shell/v1_1/scss/shell.min.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Header,0:sprite;/Areas/Epx/Themes/Windows/Content:0&amp;amp;v=EB5F31EE49CCE4257A3126352A056A3B" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfHeader.css?v=635662848277456002" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:LinkList,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=45A87884A979704526CFB9E67AEF5F87" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Convert XLS, XLSX files to XML. Combine multiply XML to one XML.</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/8b58ad02-272a-42cd-bc34-8a0ed58abaefBrand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Convert XLS, XLSX files to XML. Combine multiply XML to one XML.</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Excel, Windows Forms, XML, VB.Net, Excel 2010
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            vb, Excel, Windows Forms, XML, Excel 2010
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">5/18/2015</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p><em>This simple Windows Form application help view/combine multiply XML files in one file.</em></p>
+<p><em>It help convert XLS/XLSX to XML file ...</em></p>
+<h1><img id="137857" src="description/OpenXML.PNG" alt="" width="370" height="160"></h1>
+<h1><span>Building the Sample</span></h1>
+<p><em>Download and install ... first ... Microsoft Access Database Engine</em></p>
+<p><em>http://www.microsoft.com/en-us/download/details.aspx?id=13255 &nbsp; &nbsp; &nbsp;
+</em></p>
+<p><em>http://www.microsoft.com/en-us/download/confirmation.aspx?id=23734&nbsp;</em></p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p><em>For export Ecel files application uses Jet.OLEDB and ACE.OLEDB providers...</em></p>
+<p>MyConnection = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Data.OleDb.OleDbConnection.aspx"  title="Auto generated link to System.Data.OleDb.OleDbConnection">System.Data.OleDb.OleDbConnection</a>(&quot;provider=Microsoft.Jet.OLEDB.4.0;Data Source=&quot; &#43; pathString(0) &#43; &quot;;Extended Properties=Excel 8.0;&quot;)</p>
+<p>MyConnection = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Data.OleDb.OleDbConnection.aspx"  title="Auto generated link to System.Data.OleDb.OleDbConnection">System.Data.OleDb.OleDbConnection</a>(&quot;provider=Microsoft.ACE.OLEDB.12.0;Data Source=&quot; &#43; pathString(0) &#43; &quot;;Extended Properties=&quot;&quot;Excel 12.0 Xml;HDR=YES;&quot;&quot; &quot;)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; End If<em>&nbsp;</em></p>
+<p>&nbsp;</p>
+<p>http://www.microsoft.com/en-us/download/details.aspx?id=13255</p>
+<p>This download will install a set of components that can be used to facilitate transfer of data between 2010 Microsoft Office System files and non-Microsoft Office applications.</p>
+<p><em>http://www.microsoft.com/en-us/download/confirmation.aspx?id=23734&nbsp;</em></p>
+<p><em>&nbsp;</em><span style="font-size:x-small">2007 Office System Driver: Data Connectivity Components&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>Visual Basic</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">vb</span>
+<pre class="hidden">Option Strict On
+Option Explicit On
+
+Imports <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.IO.aspx"  title="Auto generated link to System.IO">System.IO</a>
+Imports <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Text.aspx"  title="Auto generated link to System.Text">System.Text</a>
+Imports <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Xml.aspx"  title="Auto generated link to System.Xml">System.Xml</a>
+Imports <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Net.aspx"  title="Auto generated link to System.Net">System.Net</a>
+Imports <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Data.aspx"  title="Auto generated link to System.Data">System.Data</a>
+Imports Excel = <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/Microsoft.Office.Interop.Excel.aspx"  title="Auto generated link to Microsoft.Office.Interop.Excel">Microsoft.Office.Interop.Excel</a>
+
+
+
+Public Class ConvertXLXxToXml
+
+    Inherits <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.Form.aspx"  title="Auto generated link to System.Windows.Forms.Form">System.Windows.Forms.Form</a>
+
+#Region &quot; Windows Form Designer generated code &quot;
+
+    Public Sub New()
+        MyBase.New()
+
+        'This call is required by the Windows Form Designer.
+        InitializeComponent()
+
+        'Add any initialization after the InitializeComponent() call
+
+    End Sub
+
+    'Form overrides dispose to clean up the component list.
+    Protected Overloads Overrides Sub Dispose(ByVal disposing As Boolean)
+        If disposing Then
+            If Not (components Is Nothing) Then
+                components.Dispose()
+            End If
+        End If
+        MyBase.Dispose(disposing)
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.ComponentModel.IContainer.aspx"  title="Auto generated link to System.ComponentModel.IContainer">System.ComponentModel.IContainer</a>
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    Public WithEvents btnOpenFile As <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.Button.aspx"  title="Auto generated link to System.Windows.Forms.Button">System.Windows.Forms.Button</a>
+    Public WithEvents DG As <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.DataGrid.aspx"  title="Auto generated link to System.Windows.Forms.DataGrid">System.Windows.Forms.DataGrid</a>
+    Friend WithEvents PrgBar As <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.ProgressBar.aspx"  title="Auto generated link to System.Windows.Forms.ProgressBar">System.Windows.Forms.ProgressBar</a>
+    Friend WithEvents OpenXMLFileDialog As <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.OpenFileDialog.aspx"  title="Auto generated link to System.Windows.Forms.OpenFileDialog">System.Windows.Forms.OpenFileDialog</a>
+    Friend WithEvents rbXml As <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.RadioButton.aspx"  title="Auto generated link to System.Windows.Forms.RadioButton">System.Windows.Forms.RadioButton</a>
+    Friend WithEvents rbExcel As <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.RadioButton.aspx"  title="Auto generated link to System.Windows.Forms.RadioButton">System.Windows.Forms.RadioButton</a>
+    Public WithEvents btnSaveAsXML As <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.Button.aspx"  title="Auto generated link to System.Windows.Forms.Button">System.Windows.Forms.Button</a>
+    Friend WithEvents SaveTxtFileDialog As <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.SaveFileDialog.aspx"  title="Auto generated link to System.Windows.Forms.SaveFileDialog">System.Windows.Forms.SaveFileDialog</a>
+
+    &lt;System.Diagnostics.DebuggerStepThrough()&gt; Private Sub InitializeComponent()
+        Me.btnOpenFile = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.Button.aspx"  title="Auto generated link to System.Windows.Forms.Button">System.Windows.Forms.Button</a>()
+        Me.OpenXMLFileDialog = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.OpenFileDialog.aspx"  title="Auto generated link to System.Windows.Forms.OpenFileDialog">System.Windows.Forms.OpenFileDialog</a>()
+        Me.SaveTxtFileDialog = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.SaveFileDialog.aspx"  title="Auto generated link to System.Windows.Forms.SaveFileDialog">System.Windows.Forms.SaveFileDialog</a>()
+        Me.DG = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.DataGrid.aspx"  title="Auto generated link to System.Windows.Forms.DataGrid">System.Windows.Forms.DataGrid</a>()
+        Me.PrgBar = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.ProgressBar.aspx"  title="Auto generated link to System.Windows.Forms.ProgressBar">System.Windows.Forms.ProgressBar</a>()
+        Me.rbXml = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.RadioButton.aspx"  title="Auto generated link to System.Windows.Forms.RadioButton">System.Windows.Forms.RadioButton</a>()
+        Me.rbExcel = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.RadioButton.aspx"  title="Auto generated link to System.Windows.Forms.RadioButton">System.Windows.Forms.RadioButton</a>()
+        Me.btnSaveAsXML = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.Button.aspx"  title="Auto generated link to System.Windows.Forms.Button">System.Windows.Forms.Button</a>()
+        CType(Me.DG, <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.ComponentModel.ISupportInitialize.aspx"  title="Auto generated link to System.ComponentModel.ISupportInitialize">System.ComponentModel.ISupportInitialize</a>).BeginInit()
+        Me.SuspendLayout()
+        '
+        'btnOpenFile
+        '
+        Me.btnOpenFile.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.AnchorStyles.aspx"  title="Auto generated link to System.Windows.Forms.AnchorStyles">System.Windows.Forms.AnchorStyles</a>)
+        Me.btnOpenFile.Location = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Point.aspx"  title="Auto generated link to System.Drawing.Point">System.Drawing.Point</a>(12, 312)
+        Me.btnOpenFile.Name = &quot;btnOpenFile&quot;
+        Me.btnOpenFile.Size = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(173, 23)
+        Me.btnOpenFile.TabIndex = 0
+        Me.btnOpenFile.Text = &quot;Open/Find  ... file&quot;
+        '
+        'OpenXMLFileDialog
+        '
+        Me.OpenXMLFileDialog.Filter = &quot;Xml files (*.xml)|*.xml| XLS files (*.xls)|*.xls&quot;
+        Me.OpenXMLFileDialog.Multiselect = True
+        '
+        'SaveTxtFileDialog
+        '
+        Me.SaveTxtFileDialog.DefaultExt = &quot;txt&quot;
+        '
+        'DG
+        '
+        Me.DG.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.AnchorStyles.aspx"  title="Auto generated link to System.Windows.Forms.AnchorStyles">System.Windows.Forms.AnchorStyles</a>)
+        Me.DG.CaptionText = &quot;XML&quot;
+        Me.DG.DataMember = &quot;&quot;
+        Me.DG.HeaderForeColor = <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.SystemColors.ControlText.aspx"  title="Auto generated link to System.Drawing.SystemColors.ControlText">System.Drawing.SystemColors.ControlText</a>
+        Me.DG.Location = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Point.aspx"  title="Auto generated link to System.Drawing.Point">System.Drawing.Point</a>(4, -6)
+        Me.DG.Name = &quot;DG&quot;
+        Me.DG.ReadOnly = True
+        Me.DG.RowHeaderWidth = 0
+        Me.DG.Size = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(755, 312)
+        Me.DG.TabIndex = 1
+        '
+        'PrgBar
+        '
+        Me.PrgBar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.AnchorStyles.aspx"  title="Auto generated link to System.Windows.Forms.AnchorStyles">System.Windows.Forms.AnchorStyles</a>)
+        Me.PrgBar.Location = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Point.aspx"  title="Auto generated link to System.Drawing.Point">System.Drawing.Point</a>(4, 346)
+        Me.PrgBar.Name = &quot;PrgBar&quot;
+        Me.PrgBar.Size = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(755, 16)
+        Me.PrgBar.Step = 5
+        Me.PrgBar.TabIndex = 4
+        '
+        'rbXml
+        '
+        Me.rbXml.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.AnchorStyles.aspx"  title="Auto generated link to System.Windows.Forms.AnchorStyles">System.Windows.Forms.AnchorStyles</a>)
+        Me.rbXml.AutoSize = True
+        Me.rbXml.Checked = True
+        Me.rbXml.Location = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Point.aspx"  title="Auto generated link to System.Drawing.Point">System.Drawing.Point</a>(211, 317)
+        Me.rbXml.Name = &quot;rbXml&quot;
+        Me.rbXml.Size = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(42, 17)
+        Me.rbXml.TabIndex = 5
+        Me.rbXml.TabStop = True
+        Me.rbXml.Text = &quot;Xml&quot;
+        Me.rbXml.UseVisualStyleBackColor = True
+        '
+        'rbExcel
+        '
+        Me.rbExcel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.AnchorStyles.aspx"  title="Auto generated link to System.Windows.Forms.AnchorStyles">System.Windows.Forms.AnchorStyles</a>)
+        Me.rbExcel.AutoSize = True
+        Me.rbExcel.Location = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Point.aspx"  title="Auto generated link to System.Drawing.Point">System.Drawing.Point</a>(274, 317)
+        Me.rbExcel.Name = &quot;rbExcel&quot;
+        Me.rbExcel.Size = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(51, 17)
+        Me.rbExcel.TabIndex = 6
+        Me.rbExcel.Text = &quot;Excel&quot;
+        Me.rbExcel.UseVisualStyleBackColor = True
+        '
+        'btnSaveAsXML
+        '
+        Me.btnSaveAsXML.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.AnchorStyles.aspx"  title="Auto generated link to System.Windows.Forms.AnchorStyles">System.Windows.Forms.AnchorStyles</a>)
+        Me.btnSaveAsXML.Enabled = False
+        Me.btnSaveAsXML.Location = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Point.aspx"  title="Auto generated link to System.Drawing.Point">System.Drawing.Point</a>(414, 311)
+        Me.btnSaveAsXML.Name = &quot;btnSaveAsXML&quot;
+        Me.btnSaveAsXML.Size = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(173, 23)
+        Me.btnSaveAsXML.TabIndex = 8
+        Me.btnSaveAsXML.Text = &quot;Save As XML&quot;
+        '
+        'XmlOpenAsDS
+        '
+        Me.AutoScaleBaseSize = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(5, 13)
+        Me.ClientSize = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(763, 360)
+        Me.Controls.Add(Me.btnSaveAsXML)
+        Me.Controls.Add(Me.rbExcel)
+        Me.Controls.Add(Me.rbXml)
+        Me.Controls.Add(Me.PrgBar)
+        Me.Controls.Add(Me.DG)
+        Me.Controls.Add(Me.btnOpenFile)
+        Me.MinimumSize = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(750, 333)
+        Me.Name = &quot;XmlOpenAsDS&quot;
+        Me.Text = &quot;XML Open&quot;
+        CType(Me.DG, <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.ComponentModel.ISupportInitialize.aspx"  title="Auto generated link to System.ComponentModel.ISupportInitialize">System.ComponentModel.ISupportInitialize</a>).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+
+#End Region
+
+    Dim DtSt As DataSet
+    Dim DtStGr As DataSet
+    Dim pathString As String()
+    Dim strTxtName As String = &quot;&quot;
+
+    Dim findData As FileStream
+
+
+    Private Sub btnOpenFile_Click(ByVal sender As <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Object.aspx"  title="Auto generated link to System.Object">System.Object</a>, ByVal e As <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.EventArgs.aspx"  title="Auto generated link to System.EventArgs">System.EventArgs</a>) Handles btnOpenFile.Click
+
+        Me.OpenXMLFileDialog.FileName = &quot;&quot;
+
+        If rbXml.Checked Then
+
+            Me.OpenXMLFileDialog.Filter = &quot;XML|*.xml&quot;
+            Me.OpenXMLFileDialog.Multiselect = True
+            openFileXml()
+
+        Else
+            'Me.OpenXMLFileDialog.Filter = &quot;XLS|*.xls&quot;
+            Me.OpenXMLFileDialog.Filter = &quot;XLS files (*.xls)|*.xls|XLSX files (*.xlsx)|*.xlsx&quot;
+            Me.OpenXMLFileDialog.Multiselect = False
+            openFileXlsXlsx()
+
+        End If
+
+
+    End Sub
+
+    Private Sub openFileXml()
+
+
+        'OPEN DIALOG (choose XML - file)
+
+        If OpenXMLFileDialog.ShowDialog() = DialogResult.Cancel Or OpenXMLFileDialog.FileName = &quot;&quot; Then
+            DG.DataSource = Nothing
+            btnSaveAsXML.Enabled = False
+            Exit Sub
+        End If
+
+        btnSaveAsXML.Enabled = True
+        pathString = OpenXMLFileDialog.FileNames
+
+        Dim pathXls As String
+
+        DtStGr = New DataSet
+
+        For Each pathXls In pathString
+            DtSt = New DataSet
+            xmlLoad(pathXls)
+            DtStGr.Merge(DtSt)
+
+        Next
+        DtStGr.DataSetName = &quot;xml&quot;
+        DtStGr.AcceptChanges()
+
+        Dim tstyle As New DataGridTableStyle
+        tstyle.AllowSorting = True
+        tstyle.RowHeaderWidth = 0
+
+        DG.TableStyles.Add(tstyle)
+
+        DG.NavigateBack()  ' If need to re-open new file it help does not lose navigation control
+        DG.NavigateBack()
+        DG.DataSource = DtStGr
+
+    End Sub
+
+
+    Private Sub openFileXlsXlsx()
+
+        If OpenXMLFileDialog.ShowDialog() = DialogResult.Cancel Or OpenXMLFileDialog.FileName = &quot;&quot; Then
+            DG.DataSource = Nothing
+            btnSaveAsXML.Enabled = False
+            Exit Sub
+        End If
+
+        btnSaveAsXML.Enabled = True
+        pathString = OpenXMLFileDialog.FileNames
+        Dim extention As String = Path.GetExtension(pathString(0))
+        Dim nameFile As String = Path.GetFileNameWithoutExtension(pathString(0))
+
+        Dim MyConnection As <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Data.OleDb.OleDbConnection.aspx"  title="Auto generated link to System.Data.OleDb.OleDbConnection">System.Data.OleDb.OleDbConnection</a> = Nothing
+        Dim MyCommand As <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Data.OleDb.OleDbDataAdapter.aspx"  title="Auto generated link to System.Data.OleDb.OleDbDataAdapter">System.Data.OleDb.OleDbDataAdapter</a>
+
+        Try
+
+            If extention = &quot;.xls&quot; Then
+                MyConnection = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Data.OleDb.OleDbConnection.aspx"  title="Auto generated link to System.Data.OleDb.OleDbConnection">System.Data.OleDb.OleDbConnection</a>(&quot;provider=Microsoft.Jet.OLEDB.4.0;Data Source=&quot; &#43; pathString(0) &#43; &quot;;Extended Properties=Excel 8.0;&quot;)
+            Else
+                MyConnection = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Data.OleDb.OleDbConnection.aspx"  title="Auto generated link to System.Data.OleDb.OleDbConnection">System.Data.OleDb.OleDbConnection</a>(&quot;provider=Microsoft.ACE.OLEDB.12.0;Data Source=&quot; &#43; pathString(0) &#43; &quot;;Extended Properties=&quot;&quot;Excel 12.0 Xml;HDR=YES;&quot;&quot; &quot;)
+            End If
+
+            MyCommand = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Data.OleDb.OleDbDataAdapter.aspx"  title="Auto generated link to System.Data.OleDb.OleDbDataAdapter">System.Data.OleDb.OleDbDataAdapter</a>(&quot;select * from [Sheet1$]&quot;, MyConnection)
+            MyCommand.TableMappings.Add(nameFile, nameFile)
+
+            DtStGr = New <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Data.DataSet.aspx"  title="Auto generated link to System.Data.DataSet">System.Data.DataSet</a>()
+            DtStGr.DataSetName = &quot;xml&quot;
+            DG.CaptionText = pathString(0)
+
+            MyCommand.Fill(DtStGr)
+
+            DtStGr.Tables(0).TableName = nameFile
+
+            DtStGr.AcceptChanges()
+            MyConnection.Close()
+
+            Dim tstyle As New DataGridTableStyle
+            tstyle.AllowSorting = True
+            tstyle.RowHeaderWidth = 0
+
+            DG.TableStyles.Add(tstyle)
+
+            DG.NavigateBack()  ' If need to re-open new file it help does not lose navigation control
+            DG.NavigateBack()
+            DG.DataSource = DtStGr
+
+        Catch ex As Exception
+            'Microsoft Access Database Engine 2010 Redistributable (x32) 
+            Dim strM As String = &quot;Please Install two Packages (for open Excel):&quot; &#43; vbNewLine
+            strM &#43;= &quot;http://www.microsoft.com/en-us/download/details.aspx?id=13255&quot; &#43; vbNewLine
+            strM &#43;= &quot;http://www.microsoft.com/en-us/download/confirmation.aspx?id=23734 &quot;
+
+            MessageBox.Show(strM, &quot;ConvertXLXxToXml&quot;, MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+        Finally
+            MyConnection.Close()
+        End Try
+    End Sub
+
+
+    Private Sub xmlLoad(ByVal pathXML As String)
+        Dim strPathName As String
+
+        Try
+            findData = New FileStream(pathXML, FileMode.Open, FileAccess.Read, FileShare.ReadWrite)
+            DtSt.ReadXml(findData)
+            findData.Close()
+
+            strPathName = CStr(pathXML.Split(&quot;\&quot;c).GetValue(pathXML.Split(&quot;\&quot;c).Length - 1))
+            'strTxtName = CStr(strPathName.Split(&quot;.&quot;c).GetValue(0)) &#43; &quot;.txt&quot;
+
+        Catch
+            'MessageBox.Show(&quot;Please check File/s : &quot;&quot;&quot; &amp; pathXML &amp; &quot;&quot;&quot; AND &quot;&quot;&quot; &amp; strPathName &amp; &quot;&quot;&quot;&quot;, &quot;XML_GED&quot;, MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+
+    End Sub
+
+    Private Sub btnSaveAsXML_Click(sender As Object, e As EventArgs) Handles btnSaveAsXML.Click
+        Dim myStream As Stream
+        Dim saveFileDialog As New SaveFileDialog()
+
+        saveFileDialog.Filter = &quot;XML files (*.xml)|*.xml&quot;
+        saveFileDialog.FilterIndex = 1
+        saveFileDialog.RestoreDirectory = True
+
+        If saveFileDialog.ShowDialog() = DialogResult.OK Then
+            myStream = saveFileDialog.OpenFile()
+            If (myStream IsNot Nothing) Then
+                DtStGr.WriteXml(myStream)
+                myStream.Close()
+            End If
+        End If
+
+    End Sub
+
+
+
+    '' How to create XmlDocument 
+
+    'Private Function WriteTo_H(ByVal XMLdata As XmlDocument) As Integer
+    '    Dim sw As StreamWriter
+
+    '    Dim intNumbFiles As Integer = XMLdata.GetElementsByTagName(&quot;XMLDocument&quot;).Count
+    '    Dim intTmp As Integer = 0
+
+    '    For intTmp = 0 To intNumbFiles - 1
+    '        Dim strName As String = XMLdata.GetElementsByTagName(&quot;Name&quot;).Item(intTmp).InnerText
+    '        If File.Exists(strName) Then
+    '            File.Delete(strName)
+    '        End If
+    '        sw = File.CreateText(strName)
+
+    '        sw.Write(&quot;&lt;?xml version=&quot;&quot;1.0&quot;&quot; encoding=&quot;&quot;utf-8&quot;&quot; ?&gt; &quot;)  '&lt;-- preambul
+    '        sw.Write(XMLdata.GetElementsByTagName(&quot;XMLDocument&quot;).Item(intTmp).InnerXml)
+    '        sw.Close()
+    '    Next
+    '    Return intNumbFiles
+    'End Function
+
+
+
+End Class</pre>
+<div class="preview">
+<pre class="vb"><span class="visualBasic__keyword">Option</span>&nbsp;Strict&nbsp;<span class="visualBasic__keyword">On</span>&nbsp;
+<span class="visualBasic__keyword">Option</span>&nbsp;Explicit&nbsp;<span class="visualBasic__keyword">On</span>&nbsp;
+&nbsp;
+<span class="visualBasic__keyword">Imports</span>&nbsp;System.IO&nbsp;
+<span class="visualBasic__keyword">Imports</span>&nbsp;System.Text&nbsp;
+<span class="visualBasic__keyword">Imports</span>&nbsp;System.Xml&nbsp;
+<span class="visualBasic__keyword">Imports</span>&nbsp;System.Net&nbsp;
+<span class="visualBasic__keyword">Imports</span>&nbsp;System.Data&nbsp;
+<span class="visualBasic__keyword">Imports</span>&nbsp;Excel&nbsp;=&nbsp;Microsoft.Office.Interop.Excel&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">Class</span>&nbsp;ConvertXLXxToXml&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Inherits</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.Form.aspx"  title="Auto generated link to System.Windows.Forms.Form">System.Windows.Forms.Form</a><span class="visualBasic__preproc">&nbsp;
+&nbsp;
+#Region&nbsp;&quot;&nbsp;Windows&nbsp;Form&nbsp;Designer&nbsp;generated&nbsp;code</span>&nbsp;&quot;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;<span class="visualBasic__keyword">New</span>()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">MyBase</span>.<span class="visualBasic__keyword">New</span>()&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'This&nbsp;call&nbsp;is&nbsp;required&nbsp;by&nbsp;the&nbsp;Windows&nbsp;Form&nbsp;Designer.</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InitializeComponent()&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'Add&nbsp;any&nbsp;initialization&nbsp;after&nbsp;the&nbsp;InitializeComponent()&nbsp;call</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'Form&nbsp;overrides&nbsp;dispose&nbsp;to&nbsp;clean&nbsp;up&nbsp;the&nbsp;component&nbsp;list.</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Protected</span>&nbsp;<span class="visualBasic__keyword">Overloads</span>&nbsp;<span class="visualBasic__keyword">Overrides</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;Dispose(<span class="visualBasic__keyword">ByVal</span>&nbsp;disposing&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">Boolean</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;disposing&nbsp;<span class="visualBasic__keyword">Then</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;<span class="visualBasic__keyword">Not</span>&nbsp;(components&nbsp;<span class="visualBasic__keyword">Is</span>&nbsp;<span class="visualBasic__keyword">Nothing</span>)&nbsp;<span class="visualBasic__keyword">Then</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;components.Dispose()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">MyBase</span>.Dispose(disposing)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'Required&nbsp;by&nbsp;the&nbsp;Windows&nbsp;Form&nbsp;Designer</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Private</span>&nbsp;components&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;System.ComponentModel.IContainer&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'NOTE:&nbsp;The&nbsp;following&nbsp;procedure&nbsp;is&nbsp;required&nbsp;by&nbsp;the&nbsp;Windows&nbsp;Form&nbsp;Designer</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'It&nbsp;can&nbsp;be&nbsp;modified&nbsp;using&nbsp;the&nbsp;Windows&nbsp;Form&nbsp;Designer.&nbsp;&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'Do&nbsp;not&nbsp;modify&nbsp;it&nbsp;using&nbsp;the&nbsp;code&nbsp;editor.</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">WithEvents</span>&nbsp;btnOpenFile&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;System.Windows.Forms.Button&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">WithEvents</span>&nbsp;DG&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;System.Windows.Forms.DataGrid&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Friend</span>&nbsp;<span class="visualBasic__keyword">WithEvents</span>&nbsp;PrgBar&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;System.Windows.Forms.ProgressBar&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Friend</span>&nbsp;<span class="visualBasic__keyword">WithEvents</span>&nbsp;OpenXMLFileDialog&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;System.Windows.Forms.OpenFileDialog&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Friend</span>&nbsp;<span class="visualBasic__keyword">WithEvents</span>&nbsp;rbXml&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;System.Windows.Forms.RadioButton&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Friend</span>&nbsp;<span class="visualBasic__keyword">WithEvents</span>&nbsp;rbExcel&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;System.Windows.Forms.RadioButton&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Public</span>&nbsp;<span class="visualBasic__keyword">WithEvents</span>&nbsp;btnSaveAsXML&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;System.Windows.Forms.Button&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Friend</span>&nbsp;<span class="visualBasic__keyword">WithEvents</span>&nbsp;SaveTxtFileDialog&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;System.Windows.Forms.SaveFileDialog&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;System.Diagnostics.DebuggerStepThrough()&gt;&nbsp;<span class="visualBasic__keyword">Private</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;InitializeComponent()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnOpenFile&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.Button.aspx"  title="Auto generated link to System.Windows.Forms.Button">System.Windows.Forms.Button</a>()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.OpenXMLFileDialog&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.OpenFileDialog.aspx"  title="Auto generated link to System.Windows.Forms.OpenFileDialog">System.Windows.Forms.OpenFileDialog</a>()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.SaveTxtFileDialog&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.SaveFileDialog.aspx"  title="Auto generated link to System.Windows.Forms.SaveFileDialog">System.Windows.Forms.SaveFileDialog</a>()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.DG&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.DataGrid.aspx"  title="Auto generated link to System.Windows.Forms.DataGrid">System.Windows.Forms.DataGrid</a>()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.PrgBar&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.ProgressBar.aspx"  title="Auto generated link to System.Windows.Forms.ProgressBar">System.Windows.Forms.ProgressBar</a>()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbXml&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.RadioButton.aspx"  title="Auto generated link to System.Windows.Forms.RadioButton">System.Windows.Forms.RadioButton</a>()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbExcel&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.RadioButton.aspx"  title="Auto generated link to System.Windows.Forms.RadioButton">System.Windows.Forms.RadioButton</a>()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnSaveAsXML&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.Button.aspx"  title="Auto generated link to System.Windows.Forms.Button">System.Windows.Forms.Button</a>()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">CType</span>(<span class="visualBasic__keyword">Me</span>.DG,&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.ComponentModel.ISupportInitialize.aspx"  title="Auto generated link to System.ComponentModel.ISupportInitialize">System.ComponentModel.ISupportInitialize</a>).BeginInit()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.SuspendLayout()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'btnOpenFile</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnOpenFile.Anchor&nbsp;=&nbsp;<span class="visualBasic__keyword">CType</span>((System.Windows.Forms.AnchorStyles.Bottom&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;System.Windows.Forms.AnchorStyles.Left),&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.AnchorStyles.aspx"  title="Auto generated link to System.Windows.Forms.AnchorStyles">System.Windows.Forms.AnchorStyles</a>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnOpenFile.Location&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Point.aspx"  title="Auto generated link to System.Drawing.Point">System.Drawing.Point</a>(<span class="visualBasic__number">12</span>,&nbsp;<span class="visualBasic__number">312</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnOpenFile.Name&nbsp;=&nbsp;<span class="visualBasic__string">&quot;btnOpenFile&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnOpenFile.Size&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(<span class="visualBasic__number">173</span>,&nbsp;<span class="visualBasic__number">23</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnOpenFile.TabIndex&nbsp;=&nbsp;<span class="visualBasic__number">0</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnOpenFile.Text&nbsp;=&nbsp;<span class="visualBasic__string">&quot;Open/Find&nbsp;&nbsp;...&nbsp;file&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'OpenXMLFileDialog</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.OpenXMLFileDialog.Filter&nbsp;=&nbsp;<span class="visualBasic__string">&quot;Xml&nbsp;files&nbsp;(*.xml)|*.xml|&nbsp;XLS&nbsp;files&nbsp;(*.xls)|*.xls&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.OpenXMLFileDialog.Multiselect&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'SaveTxtFileDialog</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.SaveTxtFileDialog.DefaultExt&nbsp;=&nbsp;<span class="visualBasic__string">&quot;txt&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'DG</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.DG.Anchor&nbsp;=&nbsp;<span class="visualBasic__keyword">CType</span>((((System.Windows.Forms.AnchorStyles.Top&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;System.Windows.Forms.AnchorStyles.Bottom)&nbsp;_&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;System.Windows.Forms.AnchorStyles.Left)&nbsp;_&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;System.Windows.Forms.AnchorStyles.Right),&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.AnchorStyles.aspx"  title="Auto generated link to System.Windows.Forms.AnchorStyles">System.Windows.Forms.AnchorStyles</a>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.DG.CaptionText&nbsp;=&nbsp;<span class="visualBasic__string">&quot;XML&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.DG.DataMember&nbsp;=&nbsp;<span class="visualBasic__string">&quot;&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.DG.HeaderForeColor&nbsp;=&nbsp;System.Drawing.SystemColors.ControlText&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.DG.Location&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Point.aspx"  title="Auto generated link to System.Drawing.Point">System.Drawing.Point</a>(<span class="visualBasic__number">4</span>,&nbsp;-<span class="visualBasic__number">6</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.DG.Name&nbsp;=&nbsp;<span class="visualBasic__string">&quot;DG&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.DG.<span class="visualBasic__keyword">ReadOnly</span>&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.DG.RowHeaderWidth&nbsp;=&nbsp;<span class="visualBasic__number">0</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.DG.Size&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(<span class="visualBasic__number">755</span>,&nbsp;<span class="visualBasic__number">312</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.DG.TabIndex&nbsp;=&nbsp;<span class="visualBasic__number">1</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'PrgBar</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.PrgBar.Anchor&nbsp;=&nbsp;<span class="visualBasic__keyword">CType</span>(((System.Windows.Forms.AnchorStyles.Bottom&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;System.Windows.Forms.AnchorStyles.Left)&nbsp;_&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;System.Windows.Forms.AnchorStyles.Right),&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.AnchorStyles.aspx"  title="Auto generated link to System.Windows.Forms.AnchorStyles">System.Windows.Forms.AnchorStyles</a>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.PrgBar.Location&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Point.aspx"  title="Auto generated link to System.Drawing.Point">System.Drawing.Point</a>(<span class="visualBasic__number">4</span>,&nbsp;<span class="visualBasic__number">346</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.PrgBar.Name&nbsp;=&nbsp;<span class="visualBasic__string">&quot;PrgBar&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.PrgBar.Size&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(<span class="visualBasic__number">755</span>,&nbsp;<span class="visualBasic__number">16</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.PrgBar.<span class="visualBasic__keyword">Step</span>&nbsp;=&nbsp;<span class="visualBasic__number">5</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.PrgBar.TabIndex&nbsp;=&nbsp;<span class="visualBasic__number">4</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'rbXml</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbXml.Anchor&nbsp;=&nbsp;<span class="visualBasic__keyword">CType</span>((System.Windows.Forms.AnchorStyles.Bottom&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;System.Windows.Forms.AnchorStyles.Left),&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.AnchorStyles.aspx"  title="Auto generated link to System.Windows.Forms.AnchorStyles">System.Windows.Forms.AnchorStyles</a>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbXml.AutoSize&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbXml.Checked&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbXml.Location&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Point.aspx"  title="Auto generated link to System.Drawing.Point">System.Drawing.Point</a>(<span class="visualBasic__number">211</span>,&nbsp;<span class="visualBasic__number">317</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbXml.Name&nbsp;=&nbsp;<span class="visualBasic__string">&quot;rbXml&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbXml.Size&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(<span class="visualBasic__number">42</span>,&nbsp;<span class="visualBasic__number">17</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbXml.TabIndex&nbsp;=&nbsp;<span class="visualBasic__number">5</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbXml.TabStop&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbXml.Text&nbsp;=&nbsp;<span class="visualBasic__string">&quot;Xml&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbXml.UseVisualStyleBackColor&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'rbExcel</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbExcel.Anchor&nbsp;=&nbsp;<span class="visualBasic__keyword">CType</span>((System.Windows.Forms.AnchorStyles.Bottom&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;System.Windows.Forms.AnchorStyles.Left),&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.AnchorStyles.aspx"  title="Auto generated link to System.Windows.Forms.AnchorStyles">System.Windows.Forms.AnchorStyles</a>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbExcel.AutoSize&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbExcel.Location&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Point.aspx"  title="Auto generated link to System.Drawing.Point">System.Drawing.Point</a>(<span class="visualBasic__number">274</span>,&nbsp;<span class="visualBasic__number">317</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbExcel.Name&nbsp;=&nbsp;<span class="visualBasic__string">&quot;rbExcel&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbExcel.Size&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(<span class="visualBasic__number">51</span>,&nbsp;<span class="visualBasic__number">17</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbExcel.TabIndex&nbsp;=&nbsp;<span class="visualBasic__number">6</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbExcel.Text&nbsp;=&nbsp;<span class="visualBasic__string">&quot;Excel&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.rbExcel.UseVisualStyleBackColor&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'btnSaveAsXML</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnSaveAsXML.Anchor&nbsp;=&nbsp;<span class="visualBasic__keyword">CType</span>((System.Windows.Forms.AnchorStyles.Bottom&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;System.Windows.Forms.AnchorStyles.Left),&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Windows.Forms.AnchorStyles.aspx"  title="Auto generated link to System.Windows.Forms.AnchorStyles">System.Windows.Forms.AnchorStyles</a>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnSaveAsXML.Enabled&nbsp;=&nbsp;<span class="visualBasic__keyword">False</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnSaveAsXML.Location&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Point.aspx"  title="Auto generated link to System.Drawing.Point">System.Drawing.Point</a>(<span class="visualBasic__number">414</span>,&nbsp;<span class="visualBasic__number">311</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnSaveAsXML.Name&nbsp;=&nbsp;<span class="visualBasic__string">&quot;btnSaveAsXML&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnSaveAsXML.Size&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(<span class="visualBasic__number">173</span>,&nbsp;<span class="visualBasic__number">23</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnSaveAsXML.TabIndex&nbsp;=&nbsp;<span class="visualBasic__number">8</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.btnSaveAsXML.Text&nbsp;=&nbsp;<span class="visualBasic__string">&quot;Save&nbsp;As&nbsp;XML&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'XmlOpenAsDS</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.AutoScaleBaseSize&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(<span class="visualBasic__number">5</span>,&nbsp;<span class="visualBasic__number">13</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.ClientSize&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(<span class="visualBasic__number">763</span>,&nbsp;<span class="visualBasic__number">360</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.Controls.Add(<span class="visualBasic__keyword">Me</span>.btnSaveAsXML)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.Controls.Add(<span class="visualBasic__keyword">Me</span>.rbExcel)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.Controls.Add(<span class="visualBasic__keyword">Me</span>.rbXml)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.Controls.Add(<span class="visualBasic__keyword">Me</span>.PrgBar)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.Controls.Add(<span class="visualBasic__keyword">Me</span>.DG)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.Controls.Add(<span class="visualBasic__keyword">Me</span>.btnOpenFile)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.MinimumSize&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Drawing.Size.aspx"  title="Auto generated link to System.Drawing.Size">System.Drawing.Size</a>(<span class="visualBasic__number">750</span>,&nbsp;<span class="visualBasic__number">333</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.Name&nbsp;=&nbsp;<span class="visualBasic__string">&quot;XmlOpenAsDS&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.Text&nbsp;=&nbsp;<span class="visualBasic__string">&quot;XML&nbsp;Open&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">CType</span>(<span class="visualBasic__keyword">Me</span>.DG,&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.ComponentModel.ISupportInitialize.aspx"  title="Auto generated link to System.ComponentModel.ISupportInitialize">System.ComponentModel.ISupportInitialize</a>).EndInit()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.ResumeLayout(<span class="visualBasic__keyword">False</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.PerformLayout()&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Sub</span><span class="visualBasic__preproc">&nbsp;
+&nbsp;
+#End&nbsp;Region</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;DtSt&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;DataSet&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;DtStGr&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;DataSet&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;pathString&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;strTxtName&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;=&nbsp;<span class="visualBasic__string">&quot;&quot;</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;findData&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;FileStream&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Private</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;btnOpenFile_Click(<span class="visualBasic__keyword">ByVal</span>&nbsp;sender&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;System.<span class="visualBasic__keyword">Object</span>,&nbsp;<span class="visualBasic__keyword">ByVal</span>&nbsp;e&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.EventArgs.aspx"  title="Auto generated link to System.EventArgs">System.EventArgs</a>)&nbsp;<span class="visualBasic__keyword">Handles</span>&nbsp;btnOpenFile.Click&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.OpenXMLFileDialog.FileName&nbsp;=&nbsp;<span class="visualBasic__string">&quot;&quot;</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;rbXml.Checked&nbsp;<span class="visualBasic__keyword">Then</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.OpenXMLFileDialog.Filter&nbsp;=&nbsp;<span class="visualBasic__string">&quot;XML|*.xml&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.OpenXMLFileDialog.Multiselect&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;openFileXml()&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Else</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'Me.OpenXMLFileDialog.Filter&nbsp;=&nbsp;&quot;XLS|*.xls&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.OpenXMLFileDialog.Filter&nbsp;=&nbsp;<span class="visualBasic__string">&quot;XLS&nbsp;files&nbsp;(*.xls)|*.xls|XLSX&nbsp;files&nbsp;(*.xlsx)|*.xlsx&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Me</span>.OpenXMLFileDialog.Multiselect&nbsp;=&nbsp;<span class="visualBasic__keyword">False</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;openFileXlsXlsx()&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Private</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;openFileXml()&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'OPEN&nbsp;DIALOG&nbsp;(choose&nbsp;XML&nbsp;-&nbsp;file)</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;OpenXMLFileDialog.ShowDialog()&nbsp;=&nbsp;DialogResult.Cancel&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;OpenXMLFileDialog.FileName&nbsp;=&nbsp;<span class="visualBasic__string">&quot;&quot;</span>&nbsp;<span class="visualBasic__keyword">Then</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DG.DataSource&nbsp;=&nbsp;<span class="visualBasic__keyword">Nothing</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btnSaveAsXML.Enabled&nbsp;=&nbsp;<span class="visualBasic__keyword">False</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Exit</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btnSaveAsXML.Enabled&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pathString&nbsp;=&nbsp;OpenXMLFileDialog.FileNames&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;pathXls&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DtStGr&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;DataSet&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">For</span>&nbsp;<span class="visualBasic__keyword">Each</span>&nbsp;pathXls&nbsp;<span class="visualBasic__keyword">In</span>&nbsp;pathString&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DtSt&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;DataSet&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xmlLoad(pathXls)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DtStGr.Merge(DtSt)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Next</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DtStGr.DataSetName&nbsp;=&nbsp;<span class="visualBasic__string">&quot;xml&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DtStGr.AcceptChanges()&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;tstyle&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;DataGridTableStyle&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tstyle.AllowSorting&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tstyle.RowHeaderWidth&nbsp;=&nbsp;<span class="visualBasic__number">0</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DG.TableStyles.Add(tstyle)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DG.NavigateBack()&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;If&nbsp;need&nbsp;to&nbsp;re-open&nbsp;new&nbsp;file&nbsp;it&nbsp;help&nbsp;does&nbsp;not&nbsp;lose&nbsp;navigation&nbsp;control</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DG.NavigateBack()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DG.DataSource&nbsp;=&nbsp;DtStGr&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Private</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;openFileXlsXlsx()&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;OpenXMLFileDialog.ShowDialog()&nbsp;=&nbsp;DialogResult.Cancel&nbsp;<span class="visualBasic__keyword">Or</span>&nbsp;OpenXMLFileDialog.FileName&nbsp;=&nbsp;<span class="visualBasic__string">&quot;&quot;</span>&nbsp;<span class="visualBasic__keyword">Then</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DG.DataSource&nbsp;=&nbsp;<span class="visualBasic__keyword">Nothing</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btnSaveAsXML.Enabled&nbsp;=&nbsp;<span class="visualBasic__keyword">False</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Exit</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btnSaveAsXML.Enabled&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pathString&nbsp;=&nbsp;OpenXMLFileDialog.FileNames&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;extention&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;=&nbsp;Path.GetExtension(pathString(<span class="visualBasic__number">0</span>))&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;nameFile&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;=&nbsp;Path.GetFileNameWithoutExtension(pathString(<span class="visualBasic__number">0</span>))&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;MyConnection&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;System.Data.OleDb.OleDbConnection&nbsp;=&nbsp;<span class="visualBasic__keyword">Nothing</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;MyCommand&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;System.Data.OleDb.OleDbDataAdapter&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Try</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;extention&nbsp;=&nbsp;<span class="visualBasic__string">&quot;.xls&quot;</span>&nbsp;<span class="visualBasic__keyword">Then</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyConnection&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Data.OleDb.OleDbConnection.aspx"  title="Auto generated link to System.Data.OleDb.OleDbConnection">System.Data.OleDb.OleDbConnection</a>(<span class="visualBasic__string">&quot;provider=Microsoft.Jet.OLEDB.4.0;Data&nbsp;Source=&quot;</span>&nbsp;&#43;&nbsp;pathString(<span class="visualBasic__number">0</span>)&nbsp;&#43;&nbsp;<span class="visualBasic__string">&quot;;Extended&nbsp;Properties=Excel&nbsp;8.0;&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Else</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyConnection&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Data.OleDb.OleDbConnection.aspx"  title="Auto generated link to System.Data.OleDb.OleDbConnection">System.Data.OleDb.OleDbConnection</a>(<span class="visualBasic__string">&quot;provider=Microsoft.ACE.OLEDB.12.0;Data&nbsp;Source=&quot;</span>&nbsp;&#43;&nbsp;pathString(<span class="visualBasic__number">0</span>)&nbsp;&#43;&nbsp;<span class="visualBasic__string">&quot;;Extended&nbsp;Properties=&quot;</span><span class="visualBasic__string">&quot;Excel&nbsp;12.0&nbsp;Xml;HDR=YES;&quot;</span><span class="visualBasic__string">&quot;&nbsp;&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyCommand&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Data.OleDb.OleDbDataAdapter.aspx"  title="Auto generated link to System.Data.OleDb.OleDbDataAdapter">System.Data.OleDb.OleDbDataAdapter</a>(<span class="visualBasic__string">&quot;select&nbsp;*&nbsp;from&nbsp;[Sheet1$]&quot;</span>,&nbsp;MyConnection)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyCommand.TableMappings.Add(nameFile,&nbsp;nameFile)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DtStGr&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://code.msdn.microsoft.com/windowsapps/Convert-XLS-XLSX-files-to-202b9a64/https://msdn.microsoft.com/en-US/library/System.Data.DataSet.aspx"  title="Auto generated link to System.Data.DataSet">System.Data.DataSet</a>()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DtStGr.DataSetName&nbsp;=&nbsp;<span class="visualBasic__string">&quot;xml&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DG.CaptionText&nbsp;=&nbsp;pathString(<span class="visualBasic__number">0</span>)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyCommand.Fill(DtStGr)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DtStGr.Tables(<span class="visualBasic__number">0</span>).TableName&nbsp;=&nbsp;nameFile&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DtStGr.AcceptChanges()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyConnection.Close()&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;tstyle&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;DataGridTableStyle&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tstyle.AllowSorting&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tstyle.RowHeaderWidth&nbsp;=&nbsp;<span class="visualBasic__number">0</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DG.TableStyles.Add(tstyle)&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DG.NavigateBack()&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;If&nbsp;need&nbsp;to&nbsp;re-open&nbsp;new&nbsp;file&nbsp;it&nbsp;help&nbsp;does&nbsp;not&nbsp;lose&nbsp;navigation&nbsp;control</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DG.NavigateBack()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DG.DataSource&nbsp;=&nbsp;DtStGr&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Catch</span>&nbsp;ex&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;Exception&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'Microsoft&nbsp;Access&nbsp;Database&nbsp;Engine&nbsp;2010&nbsp;Redistributable&nbsp;(x32)&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;strM&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;=&nbsp;<span class="visualBasic__string">&quot;Please&nbsp;Install&nbsp;two&nbsp;Packages&nbsp;(for&nbsp;open&nbsp;Excel):&quot;</span>&nbsp;&#43;&nbsp;vbNewLine&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strM&nbsp;&#43;=&nbsp;<span class="visualBasic__string">&quot;http://www.microsoft.com/en-us/download/details.aspx?id=13255&quot;</span>&nbsp;&#43;&nbsp;vbNewLine&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strM&nbsp;&#43;=&nbsp;<span class="visualBasic__string">&quot;http://www.microsoft.com/en-us/download/confirmation.aspx?id=23734&nbsp;&quot;</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MessageBox.Show(strM,&nbsp;<span class="visualBasic__string">&quot;ConvertXLXxToXml&quot;</span>,&nbsp;MessageBoxButtons.OK,&nbsp;MessageBoxIcon.Asterisk)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Finally</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyConnection.Close()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Try</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Private</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;xmlLoad(<span class="visualBasic__keyword">ByVal</span>&nbsp;pathXML&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;strPathName&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">String</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Try</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;findData&nbsp;=&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;FileStream(pathXML,&nbsp;FileMode.Open,&nbsp;FileAccess.Read,&nbsp;FileShare.ReadWrite)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DtSt.ReadXml(findData)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;findData.Close()&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strPathName&nbsp;=&nbsp;<span class="visualBasic__keyword">CStr</span>(pathXML.Split(<span class="visualBasic__string">&quot;\&quot;c).GetValue(pathXML.Split(&quot;</span>\&quot;c).Length&nbsp;-&nbsp;<span class="visualBasic__number">1</span>))&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'strTxtName&nbsp;=&nbsp;CStr(strPathName.Split(&quot;.&quot;c).GetValue(0))&nbsp;&#43;&nbsp;&quot;.txt&quot;</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Catch</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'MessageBox.Show(&quot;Please&nbsp;check&nbsp;File/s&nbsp;:&nbsp;&quot;&quot;&quot;&nbsp;&amp;&nbsp;pathXML&nbsp;&amp;&nbsp;&quot;&quot;&quot;&nbsp;AND&nbsp;&quot;&quot;&quot;&nbsp;&amp;&nbsp;strPathName&nbsp;&amp;&nbsp;&quot;&quot;&quot;&quot;,&nbsp;&quot;XML_GED&quot;,&nbsp;MessageBoxButtons.OK,&nbsp;MessageBoxIcon.Error)</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Try</span>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Private</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;btnSaveAsXML_Click(sender&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">Object</span>,&nbsp;e&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;EventArgs)&nbsp;<span class="visualBasic__keyword">Handles</span>&nbsp;btnSaveAsXML.Click&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;myStream&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;Stream&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">Dim</span>&nbsp;saveFileDialog&nbsp;<span class="visualBasic__keyword">As</span>&nbsp;<span class="visualBasic__keyword">New</span>&nbsp;SaveFileDialog()&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;saveFileDialog.Filter&nbsp;=&nbsp;<span class="visualBasic__string">&quot;XML&nbsp;files&nbsp;(*.xml)|*.xml&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;saveFileDialog.FilterIndex&nbsp;=&nbsp;<span class="visualBasic__number">1</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;saveFileDialog.RestoreDirectory&nbsp;=&nbsp;<span class="visualBasic__keyword">True</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;saveFileDialog.ShowDialog()&nbsp;=&nbsp;DialogResult.OK&nbsp;<span class="visualBasic__keyword">Then</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myStream&nbsp;=&nbsp;saveFileDialog.OpenFile()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;(myStream&nbsp;<span class="visualBasic__keyword">IsNot</span>&nbsp;<span class="visualBasic__keyword">Nothing</span>)&nbsp;<span class="visualBasic__keyword">Then</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DtStGr.WriteXml(myStream)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myStream.Close()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">If</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Sub</span>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">''&nbsp;How&nbsp;to&nbsp;create&nbsp;XmlDocument&nbsp;</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'Private&nbsp;Function&nbsp;WriteTo_H(ByVal&nbsp;XMLdata&nbsp;As&nbsp;XmlDocument)&nbsp;As&nbsp;Integer</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;Dim&nbsp;sw&nbsp;As&nbsp;StreamWriter</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;Dim&nbsp;intNumbFiles&nbsp;As&nbsp;Integer&nbsp;=&nbsp;XMLdata.GetElementsByTagName(&quot;XMLDocument&quot;).Count</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;Dim&nbsp;intTmp&nbsp;As&nbsp;Integer&nbsp;=&nbsp;0</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;For&nbsp;intTmp&nbsp;=&nbsp;0&nbsp;To&nbsp;intNumbFiles&nbsp;-&nbsp;1</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dim&nbsp;strName&nbsp;As&nbsp;String&nbsp;=&nbsp;XMLdata.GetElementsByTagName(&quot;Name&quot;).Item(intTmp).InnerText</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;File.Exists(strName)&nbsp;Then</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File.Delete(strName)</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End&nbsp;If</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw&nbsp;=&nbsp;File.CreateText(strName)</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Write(&quot;&lt;?xml&nbsp;version=&quot;&quot;1.0&quot;&quot;&nbsp;encoding=&quot;&quot;utf-8&quot;&quot;&nbsp;?&gt;&nbsp;&quot;)&nbsp;&nbsp;'&lt;--&nbsp;preambul</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Write(XMLdata.GetElementsByTagName(&quot;XMLDocument&quot;).Item(intTmp).InnerXml)</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw.Close()</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;Next</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'&nbsp;&nbsp;&nbsp;&nbsp;Return&nbsp;intNumbFiles</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="visualBasic__com">'End&nbsp;Function</span>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<span class="visualBasic__keyword">End</span>&nbsp;<span class="visualBasic__keyword">Class</span></pre>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
