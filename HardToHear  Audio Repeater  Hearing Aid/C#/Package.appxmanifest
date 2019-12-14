@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+  <Identity Name="61155anotherpart.HardToHear" Publisher="CN=37DA83AC-1FEF-4481-B37F-5BA0D3AFC5FC" Version="1.0.0.1" />
+  <mp:PhoneIdentity PhoneProductId="3962f334-c7fe-4754-a367-58903483051e" PhonePublisherId="5ec581c7-b761-4158-a5e1-8cf299a39d0e" />
+  <Properties>
+    <DisplayName>HardToHear</DisplayName>
+    <PublisherDisplayName>AnotherPart</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="x3962f334yc7fey4754ya367y58903483051ex" Executable="AGHost.exe" EntryPoint="MainPage.xaml">
+      <m3:VisualElements DisplayName="HardToHear" Square150x150Logo="Assets\SquareTile150x150.png" Square44x44Logo="Assets\Logo44_44.png" Description="Hard To Hear - this version of program helps hearing-impaired person. The program further enhances sound for hearing-impaired person.  Run the program. Connect headphones. Press the start button. Put the phone on the table and talk." ForegroundText="light" BackgroundColor="#464646">
+        <m3:DefaultTile Square71x71Logo="Assets\SquareTile71x71.png">
+        </m3:DefaultTile>
+        <m3:SplashScreen Image="Assets\Splashscreen_744_360.png" />
+      </m3:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <DeviceCapability Name="microphone" />
+  </Capabilities>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>AgHostSvcs.dll</Path>
+        <ActivatableClass ActivatableClassId="AgHost.BackgroundTask" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+</Package>

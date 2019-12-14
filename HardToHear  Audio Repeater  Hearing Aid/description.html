@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="https://assets.onestore.ms/cdnfiles/onestorerolling-1603-16000/shell/v3/scss/shellnoresponsive.min.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://msdn.microsoft.com/Combined.css?resources=0:Header,0:sprite;/Areas/Epx/Themes/Windows/Content:0&amp;amp;v=7671ED4E2900C9BA5BE716DAE297BCE1" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://msdn.microsoft.com/Areas/Epx/Themes/Windows/Content/UhfHeader.css?v=635935999443863299" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://msdn.microsoft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=CBE3E593A346890F9F2226E42ECC35DD" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://msdn.microsoft.com/Areas/Epx/Themes/Windows/Content/UhfFooter.css?v=635935999443863299" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>HardToHear / Audio Repeater / Hearing Aid</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/891bbedb-36c1-48b1-b8e4-06c2f52a326fBrand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>HardToHear / Audio Repeater / Hearing Aid</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, Windows Phone 8
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            C#, Windows Phone, How to, Audio and video, Silverlight 8.1
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Phone
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">3/27/2016</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p><span style="font-size:small"><span style="font-family:Calibri; font-size:small"><em>How to continuously repeat sound - hearing aid on
+</em><em>Windows Phone 8.1 .</em></span></span></p>
+<p><span style="font-size:small"><span style="font-family:Calibri; font-size:small"><em>Please also see example for Windows 10&nbsp;</em></span></span></p>
+<p><span style="font-size:small"><span style="font-family:Calibri; font-size:small"><span style="font-family:Calibri; font-size:x-small"><em>https://code.msdn.microsoft.com/windowsapps/Universal-Apps-Audio-e8371edf</em></span></span></span></p>
+<p><span style="font-family:'Times New Roman'">&nbsp;</span></p>
+<h1><span>Building the Sample</span></h1>
+<p><span style="font-size:small"><em>Just bring solution, build and deploy on your Windows Phone 8.1</em></span></p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p><em><span style="color:black; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;"><span style="font-size:small">Record sound in 200ms buffer and repeat it on speaker. Very helpful if need to talk, take conversation with hard to&nbsp;hear people.&nbsp;&nbsp;&nbsp;</span></span></em></p>
+<p>&nbsp;</p>
+<p><em><span style="color:black; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;"><span style="font-size:small">You can download this application from Windows Phon Store (8.1) - HardToHear ...<br>
+</span></span></em></p>
+<p><span style="font-family:Times New Roman; font-size:small"><em>&nbsp;</em></span></p>
+<p><span style="color:#008000; font-family:Consolas; font-size:x-small">&nbsp;</span></p>
+<p><span style="font-family:Times New Roman; font-size:small">&nbsp;</span></p>
+<p style="margin:0in 0in 0pt"><span style="background:white; font-family:Consolas; font-size:9.5pt">// Timer to simulate the XNA Framework game loop (Microphone is from the XNA Framework)..</span></p>
+<p><span style="font-family:Times New Roman; font-size:small">&nbsp;</span><span style="background:white; font-family:Consolas; font-size:9.5pt">// Event handler for getting audio data when the buffer is full</span><span style="font-family:Consolas; font-size:9.5pt">.</span></p>
+<p><span style="font-family:Times New Roman; font-size:small">&nbsp;</span><span style="background:white; font-family:Consolas; font-size:9.5pt">// Updates the XNA FrameworkDispatcher.</span></p>
+<p><span style="font-family:Times New Roman; font-size:small">&nbsp;</span><span style="background:white; font-family:Consolas; font-size:9.5pt">// The Microphone.BufferReady event handler.Gets the audio data from the microphone and stores it in a buffer,then
+ writes that buffer to a stream for later playback.</span></p>
+<p><span style="font-family:Times New Roman; font-size:small">&nbsp;</span><span style="background:white; font-family:Consolas; font-size:9.5pt">// Retrieve audio data</span><span style="font-family:Consolas; font-size:9.5pt">.</span></p>
+<p><span style="font-family:Times New Roman; font-size:small">&nbsp;</span><span style="background:white; font-family:Consolas; font-size:9.5pt">// Play audio using SoundEffectInstance</span></p>
+<p><span style="font-family:Times New Roman; font-size:small">&nbsp;</span><span style="background:white; font-family:Consolas; font-size:9.5pt">// Prevent go to sleep</span><span style="font-family:Consolas; font-size:9.5pt">.</span></p>
+<p><span style="font-family:Times New Roman; font-size:small">&nbsp;</span><span style="background:white; font-family:Consolas; font-size:9.5pt">// Get audio data in 200ms chunks &ndash; optimum</span><span style="font-family:Consolas; font-size:9.5pt">.</span></p>
+<p><span style="background:white; font-family:Consolas; font-size:9.5pt">// Start recording</span><span style="font-family:Consolas; font-size:9.5pt">.</span></p>
+<p>&nbsp;</p>
+<h1>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">using</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ System;</span></span></p>
+<span style="font-family:Consolas; font-size:x-small">&nbsp;</span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">&nbsp;</span></span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">using</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594/https://msdn.microsoft.com/en-US/library/System.IO.aspx"  title="Auto generated link to System.IO">System.IO</a>;</span></span></p>
+<span style="font-family:Consolas; font-size:x-small">&nbsp;</span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">&nbsp;</span></span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">using</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594/https://msdn.microsoft.com/en-US/library/System.Threading.aspx"  title="Auto generated link to System.Threading">System.Threading</a>;</span></span></p>
+<span style="font-family:Consolas; font-size:x-small">&nbsp;</span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">&nbsp;</span></span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">using</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594/https://msdn.microsoft.com/en-US/library/System.Windows.Media.aspx"  title="Auto generated link to System.Windows.Media">System.Windows.Media</a>;</span></span></p>
+<span style="font-family:Consolas; font-size:x-small">&nbsp;</span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">&nbsp;</span></span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">using</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594/https://msdn.microsoft.com/en-US/library/System.Windows.Media.Imaging.aspx"  title="Auto generated link to System.Windows.Media.Imaging">System.Windows.Media.Imaging</a>;</span></span></p>
+<span style="font-family:Consolas; font-size:x-small">&nbsp;</span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">&nbsp;</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">using</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594/https://msdn.microsoft.com/en-US/library/System.Windows.Threading.aspx"  title="Auto generated link to System.Windows.Threading">System.Windows.Threading</a>;</span></span></p>
+<span style="font-family:Consolas; font-size:x-small">&nbsp;</span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">&nbsp;</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">using</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ Windows.System.Display;</span></span></p>
+<span style="font-family:Consolas; font-size:x-small">&nbsp;</span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">&nbsp;</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">using</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594/https://msdn.microsoft.com/en-US/library/Microsoft.Phone.Controls.aspx"  title="Auto generated link to Microsoft.Phone.Controls">Microsoft.Phone.Controls</a>;</span></span></p>
+<span style="font-family:Consolas; font-size:x-small">&nbsp;</span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">&nbsp;</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">using</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594/https://msdn.microsoft.com/en-US/library/Microsoft.Phone.Shell.aspx"  title="Auto generated link to Microsoft.Phone.Shell">Microsoft.Phone.Shell</a>;</span></span></p>
+<span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">&nbsp;</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">using</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594/https://msdn.microsoft.com/en-US/library/Microsoft.Xna.Framework.aspx"  title="Auto generated link to Microsoft.Xna.Framework">Microsoft.Xna.Framework</a>;</span></span></p>
+<span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">&nbsp;</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">using</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594/https://msdn.microsoft.com/en-US/library/Microsoft.Xna.Framework.Audio.aspx"  title="Auto generated link to Microsoft.Xna.Framework.Audio">Microsoft.Xna.Framework.Audio</a>;</span></span></p>
+<span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">&nbsp;</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">using</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/HarToHear-Audio-Repeater-876e9594/https://msdn.microsoft.com/en-US/library/Microsoft.Phone.BackgroundAudio.aspx"  title="Auto generated link to Microsoft.Phone.BackgroundAudio">Microsoft.Phone.BackgroundAudio</a>;</span></span></p>
+<span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">&nbsp;</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">namespace</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ HardToHear</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">public</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">partial</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">class</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">MainPage</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ : </span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">PhoneApplicationPage</span></span></span></p>
+<span style="color:#2b91af; font-family:Consolas; font-size:x-small"></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">private</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">Microphone</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ microphone = </span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">Microphone</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">.Default;
+</span></span><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// Object representing the physical
+ microphone on the device</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span><span style="font-family:Consolas; font-size:x-small">&nbsp;</span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">private</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">[]
+ buffer; </span></span><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// Dynamic buffer to retrieve
+ audio data from the microphone</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span><span style="font-family:Consolas; font-size:x-small">&nbsp;</span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">private</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">[]
+ bufferPlay;</span></span></p>
+<p><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// private MemoryStream stream = new MemoryStream();
+ // Stores the audio data for later playback</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span><span style="font-family:Consolas; font-size:x-small">&nbsp;</span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">private</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">SoundEffectInstance</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ soundInstance; </span></span><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// Used to play back
+ audio</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">private</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">bool</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ soundIsStarted = </span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">false</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">;
+</span></span><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// Flag to monitor the state of sound
+ playback</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">private</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">int</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ intBufferDuration; </span></span><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// keep BufferDuration
+ length.</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">private</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">DisplayRequest</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ drDisplayRequest;</span></span></p>
+<p><span style="color:#808080; font-family:Consolas; font-size:x-small"><span style="color:#808080; font-family:Consolas; font-size:x-small"><span style="color:#808080; font-family:Consolas; font-size:x-small">///</span></span></span><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">
+</span></span></span><span style="color:#808080; font-family:Consolas; font-size:x-small"><span style="color:#808080; font-family:Consolas; font-size:x-small"><span style="color:#808080; font-family:Consolas; font-size:x-small">&lt;summary&gt;</span></span></span></p>
+<span style="color:#808080; font-family:Consolas; font-size:x-small"></span>
+<p><span style="color:#808080; font-family:Consolas; font-size:x-small"><span style="color:#808080; font-family:Consolas; font-size:x-small"><span style="color:#808080; font-family:Consolas; font-size:x-small">///</span></span></span><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">
+ Constructor </span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span>
+<p><span style="color:#808080; font-family:Consolas; font-size:x-small"><span style="color:#808080; font-family:Consolas; font-size:x-small"><span style="color:#808080; font-family:Consolas; font-size:x-small">///</span></span></span><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">
+</span></span></span><span style="color:#808080; font-family:Consolas; font-size:x-small"><span style="color:#808080; font-family:Consolas; font-size:x-small"><span style="color:#808080; font-family:Consolas; font-size:x-small">&lt;/summary&gt;</span></span></span></p>
+<span style="color:#808080; font-family:Consolas; font-size:x-small"></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">public</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ MainPage()</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+<p>InitializeComponent();</p>
+</span></span>
+<p><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// Timer to simulate the XNA Framework game loop
+ (Microphone is from the XNA Framework)..</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span>
+<p><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">DispatcherTimer</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ dt = </span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">new</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">DispatcherTimer</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">();</span></span></p>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">dt.Interval =
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">TimeSpan</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">.FromMilliseconds(33);
+</span></span><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// 1/0.033 - at 30fps, which is the
+ standard rendering rate.</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">dt.Tick &#43;=
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">new</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">EventHandler</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">(XNA_Dispetcher);</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>dt.Start();</p>
+</span></span>
+<p><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// Event handler for getting audio data when the
+ buffer is full</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">microphone.BufferReady &#43;=
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">new</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">EventHandler</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">&lt;</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">EventArgs</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">&gt;(microphone_BufferReady);</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>}</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">void</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ XNA_Dispetcher(</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">object</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ sender, </span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">EventArgs</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ e)</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+</span></span>
+<p><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">FrameworkDispatcher</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">.Update();
+</span></span><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// Updates the XNA FrameworkDispatcher
+ ...</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>}</p>
+<p>&nbsp;</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">void</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ microphone_BufferReady(</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">object</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ sender, </span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">EventArgs</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ e) </span></span><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// The Microphone.BufferReady event
+ handler.Gets the audio data from the microphone and stores it in a buffer,then writes that buffer to a stream for later playback.</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+</span></span>
+<p><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// Retrieve audio data</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>microphone.GetData(buffer);</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">if</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ (chk2x.IsChecked == </span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">true</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">)
+</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">for</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ (</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">int</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ i = 0; i &lt; intBufferDuration; i&#43;&#43;) { bufferPlay[i] = (</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">)(buffer[i]
+ &lt;&lt; 1); }</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>}</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">else</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+</span></span>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">bufferPlay = (</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">[])buffer.Clone();</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>}</p>
+</span></span>
+<p><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">Thread</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ soundThread = </span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">new</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">Thread</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">(</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">new</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">ThreadStart</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">(playSound));</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>soundThread.Start();</p>
+<p>}</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">private</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">void</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ playSound()</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+</span></span>
+<p><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// Play audio using SoundEffectInstance
+</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span>
+<p><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">SoundEffect</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ sound = </span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">new</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">SoundEffect</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">(bufferPlay,
+ microphone.SampleRate, </span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">AudioChannels</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">.Mono);</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>soundInstance = sound.CreateInstance();</p>
+<p>soundInstance.Play();</p>
+<p>}</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">private</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">void</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ btnStartStop_Click(</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">object</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ sender, System.Windows.</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">RoutedEventArgs</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ e)</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">if</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ (microphone.State == </span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">MicrophoneState</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">.Started)</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+<p>microphone.Stop();</p>
+<p>}</p>
+<p>&nbsp;</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">if</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ (soundIsStarted == </span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">false</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">)</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+</span></span>
+<p><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">//prevent go to sleep</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">drDisplayRequest =
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">new</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">DisplayRequest</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">();</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>drDisplayRequest.RequestActive();</p>
+</span></span>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">soundIsStarted =
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">true</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">;</span></span></p>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">btnStartStop.Content =
+</span></span><span style="color:#a31515; font-family:Consolas; font-size:x-small"><span style="color:#a31515; font-family:Consolas; font-size:x-small"><span style="color:#a31515; font-family:Consolas; font-size:x-small">&quot;STOP&quot;</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">;</span></span></p>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">btnStartStop.Foreground =
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">new</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">SolidColorBrush</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">(System.Windows.Media.</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">Color</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">.FromArgb((</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">)255,
+ (</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">)255,
+ (</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">)0,
+ (</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">)0));</span></span></p>
+<p><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// Get audio data in 200ms chunks - optimum</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">microphone.BufferDuration =
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">TimeSpan</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">.FromMilliseconds(200);</span></span></p>
+<p><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">// Allocate memory to hold the audio data</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>intBufferDuration = microphone.GetSampleSizeInBytes(microphone.BufferDuration);</p>
+</span></span>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">buffer =
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">new</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">[intBufferDuration];</span></span></p>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">bufferPlay =
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">new</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">[intBufferDuration];</span></span></p>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">microphone.Start();</span></span><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small"><span style="color:#008000; font-family:Consolas; font-size:x-small">//
+ Start recording</span></span></span></p>
+<span style="color:#008000; font-family:Consolas; font-size:x-small"></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>}</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">else</span></span></span></p>
+<span style="color:#0000ff; font-family:Consolas; font-size:x-small"></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+<p>stopSound();</p>
+<p>};</p>
+<p>}</p>
+<p>&nbsp;</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">private</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">void</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ stopSound()</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+</span></span>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">btnStartStop.Content =
+</span></span><span style="color:#a31515; font-family:Consolas; font-size:x-small"><span style="color:#a31515; font-family:Consolas; font-size:x-small"><span style="color:#a31515; font-family:Consolas; font-size:x-small">&quot;START&quot;</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">;</span></span></p>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">btnStartStop.Foreground =
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">new</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">SolidColorBrush</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">(System.Windows.Media.</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">Color</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">.FromArgb((</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">)255,
+ (</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">)0,
+ (</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">)255,
+ (</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">byte</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">)0));</span></span></p>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">soundIsStarted =
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">false</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">;</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>drDisplayRequest.RequestRelease();</p>
+<p>microphone.Stop();</p>
+<p>soundInstance.Stop();</p>
+<p>}</p>
+<p>&nbsp;</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">private</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">void</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ mainPage_Unloaded(</span></span><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">object</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ sender, System.Windows.</span></span><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small"><span style="color:#2b91af; font-family:Consolas; font-size:x-small">RoutedEventArgs</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ e)</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>{</p>
+</span></span>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">try</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ { microphone.Stop(); }</span></span></p>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">catch</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ { };</span></span></p>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">try</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ { soundInstance.Stop(); }</span></span></p>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">catch</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ { };</span></span></p>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">try</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ { drDisplayRequest.RequestRelease(); }</span></span></p>
+<p><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small"><span style="color:#0000ff; font-family:Consolas; font-size:x-small">catch</span></span></span><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+ { };</span></span></p>
+<span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">
+<p>}</p>
+<p>&nbsp;</p>
+<p>}</p>
+<p>}</p>
+</span></span></h1>
+<div class="mcePaste" id="_mcePaste" style="left:-10000px; top:0px; width:1px; height:1px; overflow:hidden">
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
