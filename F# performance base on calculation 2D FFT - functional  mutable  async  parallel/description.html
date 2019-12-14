@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Header,0:sprite;/Areas/Epx/Themes/Windows/Content:0&amp;amp;v=1A54B23EC8B3BF3177D12079B3A89EE5" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" href="https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.19.2/css/uhf-west-european-default.min.css" type="text/css" media="all" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfHeader.css?v=636239085424989733" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=20594166ED8B64F47B0B1FC6935FEA4F" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfFooter.css?v=636239085424677241" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>F# performance base on calculation 2D FFT - functional, mutable, async, parallel</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/45b979cd-40c5-4368-bc78-e42a668eee11Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>F# performance base on calculation 2D FFT - functional, mutable, async, parallel</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Asynchronous Programming, WPF, F#, Parallel Programming, Image Processing, Fast Fourier Transforms
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Performance, Image manipulation, How to Fsharp
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Phone, Xbox, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">3/10/2017</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/F-performance-base-on-6ce43db6">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p><strong><span>If you install VS2017 resently &nbsp;</span></strong><span>- please remove and add
+<span>again reference</span>&nbsp; FSharp.Core -&gt; p<span>roject</span> start working again.</span></p>
+<p><span>(project uses F# 4.1 - VS 2017)<br>
+</span></p>
+<p><em>Comparison performance base FFT.</em></p>
+<p><em>FFT functional async &nbsp;vs. FFT &nbsp;functional parallel</em></p>
+<p><em>FFT mutable async vs FFT mutable parallel</em></p>
+<p><em>FFT Math async vs. FFT Math parallel&nbsp;</em></p>
+<p>&nbsp;</p>
+<p><em>F sharp&nbsp;mutable parallel&nbsp;has same performance like Math.Parallel written by C&#43;&#43;&nbsp;</em></p>
+<p>&nbsp;</p>
+<p><img id="168050" src="https://code.msdn.microsoft.com/windowsapps/site/view/file/168050/1/PerformSourceSq.PNG" alt="" width="250" height="250"><em>&nbsp;</em><em><img id="168052" src="https://code.msdn.microsoft.com/windowsapps/site/view/file/168052/1/PerformGirlS.PNG" alt="" width="250" height="250"></em></p>
+<p>&nbsp;</p>
+<p><em><img id="168053" src="https://code.msdn.microsoft.com/windowsapps/site/view/file/168053/1/PerformSq.PNG" alt=""></em></p>
+<p>&nbsp;</p>
+<p><img id="168054" src="https://code.msdn.microsoft.com/windowsapps/site/view/file/168054/1/PerformGirl.PNG" alt=""></p>
+<p>&nbsp;</p>
+<p><em><br>
+</em></p>
+<h1><span>Building the Sample</span></h1>
+<p><em>Visual Studio 2015.</em></p>
+<p><em>Bring the project, build (it automatically&nbsp;downloads MathNet.Numeric&nbsp;packages ).</em></p>
+<p><em>Run. Choose an image and Run for each case ...</em></p>
+<p>&nbsp;</p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p><em>The goal of this project to understand where/how/why need to use F# ... &nbsp;</em></p>
+<p><em>In order to perform FFT (Fast Fourier Transform) instead of the much slower DFT (Discrete Fourier Transfer), the image must be transformed so that the width and height are an integer power of 2. This can be achieved in one of two ways, scale the image
+ up to the nearest integer power of 2 or zero pad to the nearest integer power of 2. The second option was chosen here to facilitate comparisons with the original. The resulting image is 512 x 512 pixels.</em></p>
+<p>&quot;Image on background&quot; to Gray - FFT2 (forward) - (shift/swap if needed) FFT2 (backward) - Gray Image</p>
+<p><em>2 dimensional Fourier transforms simply involve a number of 1-dimensional Fourier transforms. More precisely, a 2-dimensional transform is achieved by first transforming each row, replacing each row with its transform and then transforming each column,
+ replacing each column with its transform. Thus a 2D transform of a 1K by 1K image requires 2K 1D transforms. This follows directly from the definition of the Fourier transform of a continuous variable or the discrete Fourier transform of a discrete system.&nbsp;</em></p>
+<h1><span>Source Code Files</span></h1>
+<ul>
+<li><em>The interface was written in C#.</em> </li><li><em>Logic was written by F#</em> </li><li><em>If you write application for WPF just &nbsp;build everything &nbsp;only with F#</em>
+</li></ul>
+<h1>More Information</h1>
+<p><a href="https://code.msdn.microsoft.com/windowsapps/F-performance-base-on-6ce43db6/https://code.msdn.microsoft.com/windowsapps/2-Two-Dimensional-FFT-WPF-b9cdad74">https://code.msdn.microsoft.com/windowsapps/F-performance-base-on-6ce43db6/https://code.msdn.microsoft.com/windowsapps/2-Two-Dimensional-FFT-WPF-b9cdad74</a></p>
+<p><em>&nbsp;</em></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
