@@ -1,0 +1,7 @@
+D:\Azure\Workspaces\FFT\obj\Debug\FFTsimple.exe
+D:\Azure\Workspaces\FFT\obj\Debug\FFTsimple.pdb
+D:\Azure\Workspaces\FFT\bin\Debug\FFTsimple.exe
+D:\Azure\Workspaces\FFT\bin\Debug\FFTsimple.pdb
+D:\Azure\Workspaces\FFT\obj\Debug\FFT.csprojResolveAssemblyReference.cache
+C:\Users\Vasily\Desktop\FFT\obj\Debug\FFTsimple.exe
+C:\Users\Vasily\Desktop\FFT\obj\Debug\FFTsimple.pdb
