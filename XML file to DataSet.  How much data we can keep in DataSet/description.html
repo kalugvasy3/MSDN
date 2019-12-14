@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/Header.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/sprite.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="/Areas/Epx/Themes/Windows/Content/UhfHeader.css" data-do-not-move="true" />
+<link rel="stylesheet" href="https://statics-uhf-wus.akamaized.net/west-european/shell/_scrf/css/themes=default.device=uplevel_web_pc/21-ecd6ef/6a-459940/9d-005998/14-a4dc48/e0-030d39/4b-120352/5a-621a2e?ver=2.0" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=87A5826B6B2FBDD0B40F33292727EB82" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfFooter.css?v=636529352686451906" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>XML file to DataSet.  How much data we can keep in DataSet?</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/681c3a99-f404-4c2a-8f03-dd800bce01ccBrand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>XML file to DataSet.  How much data we can keep in DataSet?</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            WPF, XML to DataSet, OSM map
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            C#, XML to DataSet
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Phone, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">2/4/2018</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>How much data we&nbsp;can keep in&nbsp;DataSet?</p>
+<p>You need to analyze XML file, for example, OSM data (OpenStreetMap) .</p>
+<p>When you start working with the big XML file, &nbsp;first question &ndash; can I read it iinto DataSet?</p>
+<p><span style="font-size:2em">Building the Sample</span></p>
+<p>When I started work with&nbsp;&nbsp;OSM map &nbsp;<a href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://www.openstreetmap.org/export#map=8/37.866/-92.361">https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://www.openstreetmap.org/export#map=8/37.866/-92.361</a></p>
+<p>I&nbsp;downloaded XML file about 2Gb.</p>
+<p>I needed to load it into&nbsp;DataSet or DataBase &hellip;</p>
+<p>I built this simple application to receiving an answer, is it possiable read it into DataSet?.</p>
+<p>You can do yourself with this simple application.</p>
+<p>Download sample, open with VisualStudio, build and Run (NOT ADMIN mode)</p>
+<p>&nbsp;</p>
+<p>Simple answer we can read some megabyte file, maybe some hundreds megabytes file but it will be impossible read gigabytes file &hellip;</p>
+<p>You need to load it directly into DataBase, but it will be a different story.</p>
+<p>If you need to review extrimly BIG file you can use my working application located</p>
+<p>here&nbsp;</p>
+<p><a href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227">https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227</a>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p><em><img id="185321" src="description/XML0.png" alt="" width="371" height="290">&nbsp;</em></p>
+<p><img id="185322" src="description/XML1.png" alt="" width="425" height="290"></p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">using System;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Collections.Generic.aspx"  title="Auto generated link to System.Collections.Generic">System.Collections.Generic</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Data.aspx"  title="Auto generated link to System.Data">System.Data</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.IO.aspx"  title="Auto generated link to System.IO">System.IO</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Linq.aspx"  title="Auto generated link to System.Linq">System.Linq</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Text.aspx"  title="Auto generated link to System.Text">System.Text</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Threading.Tasks.aspx"  title="Auto generated link to System.Threading.Tasks">System.Threading.Tasks</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.aspx"  title="Auto generated link to System.Windows">System.Windows</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Controls.aspx"  title="Auto generated link to System.Windows.Controls">System.Windows.Controls</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Data.aspx"  title="Auto generated link to System.Windows.Data">System.Windows.Data</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Documents.aspx"  title="Auto generated link to System.Windows.Documents">System.Windows.Documents</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Input.aspx"  title="Auto generated link to System.Windows.Input">System.Windows.Input</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Media.aspx"  title="Auto generated link to System.Windows.Media">System.Windows.Media</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Media.Imaging.aspx"  title="Auto generated link to System.Windows.Media.Imaging">System.Windows.Media.Imaging</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Navigation.aspx"  title="Auto generated link to System.Windows.Navigation">System.Windows.Navigation</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Shapes.aspx"  title="Auto generated link to System.Windows.Shapes">System.Windows.Shapes</a>;
+
+namespace XMLtoDataSet
+{
+    /// &lt;summary&gt;
+    /// Interaction logic for MainWindow.xaml
+    /// &lt;/summary&gt;
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private DataSet dS = new DataSet();
+        private string strErr = &quot;&quot;;
+
+        /// &lt;summary&gt;
+        /// Open file and read to DataSet
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;files&quot;&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+
+        private string openFiles(String[] files)
+        {
+            if (files.Length == 0 || files.Length &gt; 1) { return &quot;Please Drop only one File !&quot;; }   //;
+            FileInfo fileTmp = new FileInfo(files[0]);
+
+            if (fileTmp.Extension.ToUpper() == &quot;.XML&quot;)
+            {
+                Dispatcher.Invoke(new Action(() =&gt;
+                        {
+                            using (StreamReader sr = new StreamReader(files[0]))
+                            {
+                                try
+                                {
+                                    dS.ReadXml(sr);
+                                }
+                                catch (Exception ex)
+                                {
+                                    strErr = ex.Message;
+                                }
+                            }
+                        }
+                ));
+            }
+            else
+            {
+                return &quot;Please Drop Only XML file!&quot;;
+            }
+
+            return strErr;
+        }
+
+
+        private string ShowResult()
+        {
+            if (dS.Tables.Count == 0) return &quot;Zero tables&quot;;
+
+            grdResult.Children.Clear();  // Clear Previuse Result
+            TabControl tc = new TabControl();
+
+            try
+            {
+                foreach (DataTable t in dS.Tables)
+                {
+                    TabItem ti = new TabItem();
+                    ti.Name = t.TableName;
+                    ti.Header = t.TableName;
+                    DataGrid dg = new DataGrid();
+                    DataView dv = new DataView(t);
+                    dg.ItemsSource = dv;
+
+                    ti.Content = dg;
+                    tc.Items.Add(ti);
+
+                }
+                    grdResult.Children.Add(tc);
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+
+            return &quot;&quot;;
+        }
+
+
+        private void Grid_Drop(object sender, DragEventArgs e)
+        {       
+            IDataObject data = e.Data;
+            String[] files = (String[])data.GetData(DataFormats.FileDrop);
+
+            strErr = &quot;&quot;;
+            string str = openFiles(files);
+
+            lblNotAdmin.Visibility = Visibility.Collapsed;
+            if (str == &quot;&quot;)
+            {
+                str = ShowResult();
+            } 
+            MessageBox.Show(str == &quot;&quot; ? &quot;OK&quot; : str);
+        }
+    }
+}
+</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">using</span>&nbsp;System;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Collections.Generic.aspx"  title="Auto generated link to System.Collections.Generic">System.Collections.Generic</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Data.aspx"  title="Auto generated link to System.Data">System.Data</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.IO.aspx"  title="Auto generated link to System.IO">System.IO</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Linq.aspx"  title="Auto generated link to System.Linq">System.Linq</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Text.aspx"  title="Auto generated link to System.Text">System.Text</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Threading.Tasks.aspx"  title="Auto generated link to System.Threading.Tasks">System.Threading.Tasks</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.aspx"  title="Auto generated link to System.Windows">System.Windows</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Controls.aspx"  title="Auto generated link to System.Windows.Controls">System.Windows.Controls</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Data.aspx"  title="Auto generated link to System.Windows.Data">System.Windows.Data</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Documents.aspx"  title="Auto generated link to System.Windows.Documents">System.Windows.Documents</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Input.aspx"  title="Auto generated link to System.Windows.Input">System.Windows.Input</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Media.aspx"  title="Auto generated link to System.Windows.Media">System.Windows.Media</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Media.Imaging.aspx"  title="Auto generated link to System.Windows.Media.Imaging">System.Windows.Media.Imaging</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Navigation.aspx"  title="Auto generated link to System.Windows.Navigation">System.Windows.Navigation</a>;&nbsp;
+<span class="cs__keyword">using</span>&nbsp;<a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://msdn.microsoft.com/en-US/library/System.Windows.Shapes.aspx"  title="Auto generated link to System.Windows.Shapes">System.Windows.Shapes</a>;&nbsp;
+&nbsp;
+<span class="cs__keyword">namespace</span>&nbsp;XMLtoDataSet&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;&lt;summary&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;Interaction&nbsp;logic&nbsp;for&nbsp;MainWindow.xaml</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;&lt;/summary&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;partial&nbsp;<span class="cs__keyword">class</span>&nbsp;MainWindow&nbsp;:&nbsp;Window&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;MainWindow()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InitializeComponent();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;DataSet&nbsp;dS&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;DataSet();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">string</span>&nbsp;strErr&nbsp;=&nbsp;<span class="cs__string">&quot;&quot;</span>;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;&lt;summary&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;Open&nbsp;file&nbsp;and&nbsp;read&nbsp;to&nbsp;DataSet</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;&lt;/summary&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;&lt;param&nbsp;name=&quot;files&quot;&gt;&lt;/param&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;&lt;returns&gt;&lt;/returns&gt;</span>&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">string</span>&nbsp;openFiles(String[]&nbsp;files)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(files.Length&nbsp;==&nbsp;<span class="cs__number">0</span>&nbsp;||&nbsp;files.Length&nbsp;&gt;&nbsp;<span class="cs__number">1</span>)&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;<span class="cs__string">&quot;Please&nbsp;Drop&nbsp;only&nbsp;one&nbsp;File&nbsp;!&quot;</span>;&nbsp;}&nbsp;&nbsp;&nbsp;<span class="cs__com">//;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FileInfo&nbsp;fileTmp&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;FileInfo(files[<span class="cs__number">0</span>]);&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(fileTmp.Extension.ToUpper()&nbsp;==&nbsp;<span class="cs__string">&quot;.XML&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dispatcher.Invoke(<span class="cs__keyword">new</span>&nbsp;Action(()&nbsp;=&gt;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">using</span>&nbsp;(StreamReader&nbsp;sr&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;StreamReader(files[<span class="cs__number">0</span>]))&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">try</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dS.ReadXml(sr);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">catch</span>&nbsp;(Exception&nbsp;ex)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strErr&nbsp;=&nbsp;ex.Message;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;));&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;<span class="cs__string">&quot;Please&nbsp;Drop&nbsp;Only&nbsp;XML&nbsp;file!&quot;</span>;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;strErr;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">string</span>&nbsp;ShowResult()&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(dS.Tables.Count&nbsp;==&nbsp;<span class="cs__number">0</span>)&nbsp;<span class="cs__keyword">return</span>&nbsp;<span class="cs__string">&quot;Zero&nbsp;tables&quot;</span>;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grdResult.Children.Clear();&nbsp;&nbsp;<span class="cs__com">//&nbsp;Clear&nbsp;Previuse&nbsp;Result</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TabControl&nbsp;tc&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;TabControl();&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">try</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">foreach</span>&nbsp;(DataTable&nbsp;t&nbsp;<span class="cs__keyword">in</span>&nbsp;dS.Tables)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TabItem&nbsp;ti&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;TabItem();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ti.Name&nbsp;=&nbsp;t.TableName;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ti.Header&nbsp;=&nbsp;t.TableName;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DataGrid&nbsp;dg&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;DataGrid();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DataView&nbsp;dv&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;DataView(t);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dg.ItemsSource&nbsp;=&nbsp;dv;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ti.Content&nbsp;=&nbsp;dg;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tc.Items.Add(ti);&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grdResult.Children.Add(tc);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">catch</span>&nbsp;(Exception&nbsp;ex)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;ex.Message;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;<span class="cs__string">&quot;&quot;</span>;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">void</span>&nbsp;Grid_Drop(<span class="cs__keyword">object</span>&nbsp;sender,&nbsp;DragEventArgs&nbsp;e)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IDataObject&nbsp;data&nbsp;=&nbsp;e.Data;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String[]&nbsp;files&nbsp;=&nbsp;(String[])data.GetData(DataFormats.FileDrop);&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strErr&nbsp;=&nbsp;<span class="cs__string">&quot;&quot;</span>;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">string</span>&nbsp;str&nbsp;=&nbsp;openFiles(files);&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lblNotAdmin.Visibility&nbsp;=&nbsp;Visibility.Collapsed;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(str&nbsp;==&nbsp;<span class="cs__string">&quot;&quot;</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str&nbsp;=&nbsp;ShowResult();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MessageBox.Show(str&nbsp;==&nbsp;<span class="cs__string">&quot;&quot;</span>&nbsp;?&nbsp;<span class="cs__string">&quot;OK&quot;</span>&nbsp;:&nbsp;str);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+}&nbsp;
+</pre>
+</div>
+</div>
+</div>
+<h1><span>Source Code Files</span></h1>
+<p><strong><em>OpenStreetMap</em></strong><em>, the project that creates and distributes&nbsp;</em><a href="http://www.openstreetmap.org/copyright"><em>free</em></a><em>&nbsp;geographic data for the world. We started it because most maps you think of as free
+ actually have legal or technical restrictions on their use, holding back people from using them in creative, productive, or unexpected ways.</em></p>
+<ul>
+</ul>
+<h1>More Information</h1>
+<p><em>For analiz big file you can use&nbsp;</em><a href="https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227">https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/XML-file-to-DataSet-How-4d91e8e9/https://code.msdn.microsoft.com/windowsapps/Big-Huge-file-viewer-It-is-55bc7227</a></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
