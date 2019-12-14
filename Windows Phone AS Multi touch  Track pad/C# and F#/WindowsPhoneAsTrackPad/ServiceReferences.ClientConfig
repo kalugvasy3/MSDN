@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IMouseEvent" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost/WindowsPhoneMouseService"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IMouseEvent"
+                contract="WindowsPhoneMouseService.IMouseEvent" name="BasicHttpBinding_IMouseEvent" />
+        </client>
+    </system.serviceModel>
+</configuration>

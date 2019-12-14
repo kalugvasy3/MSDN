@@ -1,0 +1,8 @@
+D:\Azure\MyMSDN\WindowsAsTrackPad\WpfAsMouseHostService\bin\Release\WCFhostByWpfFsharpOnly.exe.config
+D:\Azure\MyMSDN\WindowsAsTrackPad\WpfAsMouseHostService\bin\Release\WpfMouseFsharpOnly.XML
+D:\Azure\MyMSDN\WindowsAsTrackPad\WpfAsMouseHostService\bin\Release\WCFhostByWpfFsharpOnly.exe
+D:\Azure\MyMSDN\WindowsAsTrackPad\WpfAsMouseHostService\bin\Release\WCFhostByWpfFsharpOnly.pdb
+D:\Azure\MyMSDN\WindowsAsTrackPad\WpfAsMouseHostService\bin\Release\FSharp.Core.dll
+D:\Azure\MyMSDN\WindowsAsTrackPad\WpfAsMouseHostService\bin\Release\FSharp.Core.xml
+D:\Azure\MyMSDN\WindowsAsTrackPad\WpfAsMouseHostService\obj\Release\WCFhostByWpfFsharpOnly.exe
+D:\Azure\MyMSDN\WindowsAsTrackPad\WpfAsMouseHostService\obj\Release\WCFhostByWpfFsharpOnly.pdb

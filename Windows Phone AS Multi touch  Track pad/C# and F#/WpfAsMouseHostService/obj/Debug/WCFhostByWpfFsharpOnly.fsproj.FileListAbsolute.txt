@@ -1,0 +1,16 @@
+C:\Users\Vasily\Desktop\WCFhostByWpfFsharpOnly\bin\Debug\WpfMouseFsharpOnly.XML
+C:\Users\Vasily\Desktop\WCFhostByWpfFsharpOnly\bin\Debug\FSharp.Core.dll
+C:\Users\Vasily\Desktop\WCFhostByWpfFsharpOnly\bin\Debug\FSharp.Core.xml
+C:\Users\Vasily\Desktop\WCFhostByWpfFsharpOnly\bin\Debug\WCFhostByWpfFsharpOnly.exe.config
+C:\Users\Vasily\Desktop\WCFhostByWpfFsharpOnly\bin\Debug\WCFhostByWpfFsharpOnly.exe
+C:\Users\Vasily\Desktop\WCFhostByWpfFsharpOnly\bin\Debug\WCFhostByWpfFsharpOnly.pdb
+C:\Users\Vasily\Desktop\WCFhostByWpfFsharpOnly\obj\Debug\WCFhostByWpfFsharpOnly.exe
+C:\Users\Vasily\Desktop\WCFhostByWpfFsharpOnly\obj\Debug\WCFhostByWpfFsharpOnly.pdb
+D:\Azure\MyMSDN\WCFhostByWpfFsharpOnly\bin\Debug\WCFhostByWpfFsharpOnly.exe.config
+D:\Azure\MyMSDN\WCFhostByWpfFsharpOnly\bin\Debug\WpfMouseFsharpOnly.XML
+D:\Azure\MyMSDN\WCFhostByWpfFsharpOnly\bin\Debug\WCFhostByWpfFsharpOnly.exe
+D:\Azure\MyMSDN\WCFhostByWpfFsharpOnly\bin\Debug\WCFhostByWpfFsharpOnly.pdb
+D:\Azure\MyMSDN\WCFhostByWpfFsharpOnly\bin\Debug\FSharp.Core.dll
+D:\Azure\MyMSDN\WCFhostByWpfFsharpOnly\bin\Debug\FSharp.Core.xml
+D:\Azure\MyMSDN\WCFhostByWpfFsharpOnly\obj\Debug\WCFhostByWpfFsharpOnly.exe
+D:\Azure\MyMSDN\WCFhostByWpfFsharpOnly\obj\Debug\WCFhostByWpfFsharpOnly.pdb

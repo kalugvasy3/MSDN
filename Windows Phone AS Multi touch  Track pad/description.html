@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="https://assets.onestore.ms/cdnfiles/onestorerolling-1512-09001/shell/v3/scss/shellnoresponsive.min.css" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Header,0:sprite;/Areas/Epx/Themes/Windows/Content:0&amp;amp;v=8FF2445498218766ABDEC3B63F78DCA8" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfHeader.css?v=635880500713208636" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:sprite,0:Footer,1:ImageSprite,2:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/WindowsApps/Content:1,/Areas/Epx/Themes/Base/Content:2&amp;amp;v=F8A712D24A22ABF58D3572C892079718" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Areas/Epx/Themes/Windows/Content/UhfFooter.css?v=635880500713052375" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Windows Phone AS Multi touch  Track pad ....</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/9157f2d3-d55e-4a25-96c9-23899b117d4bBrand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowsapps/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowsapps/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Windows Phone AS Multi touch  Track pad ....</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            WCF, WPF, multitouch, Windows Phone, multi-touch track-pad, trackpad
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            WCF, multitouch, F#, Windows Phone, multi-touch track-pad
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Phone, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">1/13/2016</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MIT</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>Realized idea how to use windows phone as trackpad .</p>
+<p>WCF &ndash; Mouse hosted service was realized with WPF &nbsp;F# - &nbsp;project &ldquo;WpfMouseHostService&rdquo;</p>
+<p>&quot;Windows Phone&quot; project is &nbsp;&ldquo;WindowsPhoneAsTrackpad&rdquo;</p>
+<h1><span>Building the Sample</span></h1>
+<p><em>Bring solution and Run as Administrator.</em></p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p>RUN &nbsp;first project&nbsp;&nbsp;&ldquo;WpfMouseHostService&rdquo; (You can separate this solution on two independent solutions ) &nbsp; and [start]&nbsp;</p>
+<p>[Start] hosted sevice.</p>
+<p>So as this project control mouse you must deploy second project on device.</p>
+<p>Before RUN windows project you MUST forward (use router) port 8187 to your PC (you can change it).</p>
+<p><img id="147292" src="description/Router.PNG" alt="" width="400" height="70"></p>
+<p>&nbsp;</p>
+<p>Before RUN (deploy) windows phone project please replace &nbsp;in string URL&nbsp;</p>
+<p>to your computer descktop NAME (You can find it in Control Panel -&gt; System ...) or run host service application and&nbsp;</p>
+<p><img id="147294" src="description/host.PNG" alt="" width="201" height="165"></p>
+<p>&nbsp;</p>
+<p>And replace below name on your name ... line 174 MainPage.xml.cs</p>
+<p><img id="147296" src="description/WP.PNG" alt="" width="300" height="90"></p>
+<p>Now You can deploy WP application on your phone and use it.</p>
+<p>When you run project&nbsp;</p>
+<p><em>&nbsp; &nbsp;<img id="147297" src="description/TP.PNG" alt="" width="240" height="400"></em></p>
+<p>&nbsp;</p>
+<p><em><span>This project support </span></em><em><span>multitouch </span></em><em><span>&nbsp;points.</span></em><span>&nbsp;</span></p>
+<p><em><span>one - move cursor</span></em><span>&nbsp;</span></p>
+<p><em><span>two - wheel</span></em><span>&nbsp;</span></p>
+<p><em><span>three - left pressed an move ...</span></em><span>&nbsp;</span></p>
+<p><em><span>All &nbsp;</span></em><em><span>multitouch</span></em><em><span> logic was realizes by&nbsp;TouchPointCollection class.</span></em><span>&nbsp;</span></p>
+<p><em><span>DO NOT USE &nbsp;hold, </span></em><em><span>click</span></em><em><span>,
+</span></em><em><span>DoubleClick</span></em><em><span>, tap events ...</span></em></p>
+<p><em><span>Good luck</span></em><em><span>.</span></em></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>XAML</span><span>F#</span><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">xaml</span><span class="hidden">fsharp</span><span class="hidden">csharp</span>
+<pre class="hidden">&lt;UserControl
+        xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+        xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+        xmlns:mc=&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot; 
+        xmlns:d=&quot;http://schemas.microsoft.com/expression/blend/2008&quot; 
+        
+         Height=&quot;130&quot; Width=&quot;200.0&quot; &gt;
+
+    &lt;Grid x:Name=&quot;grid&quot; Focusable=&quot;True&quot;  Background=&quot;#FFF0ECEC&quot; &gt;
+        &lt;Button x:Name=&quot;btnStart&quot; Content=&quot;Start&quot; HorizontalAlignment=&quot;Center&quot;  VerticalAlignment=&quot;Center&quot; Width=&quot;76&quot; Background=&quot;#FFDEDDDD&quot; Margin=&quot;62,48,62,62&quot; /&gt;
+        &lt;Button x:Name=&quot;btnStop&quot; Content=&quot;Stop&quot; HorizontalAlignment=&quot;Center&quot;  VerticalAlignment=&quot;Center&quot; Width=&quot;76&quot; Background=&quot;#FFDEDDDD&quot; Margin=&quot;62,68,62,42&quot;/&gt;
+        &lt;Label x:Name=&quot;lblMachineName&quot; Content=&quot;Desktop Name&quot; VerticalAlignment=&quot;Top&quot; HorizontalAlignment=&quot;Center&quot;/&gt;
+    &lt;/Grid&gt;
+
+&lt;/UserControl&gt;</pre>
+<pre class="hidden">namespace WCFhostByWpfFsharpOnly
+
+open System
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.ServiceModel.aspx"  title="Auto generated link to System.ServiceModel">System.ServiceModel</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.ServiceModel.Description.aspx"  title="Auto generated link to System.ServiceModel.Description">System.ServiceModel.Description</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Windows.Controls.aspx"  title="Auto generated link to System.Windows.Controls">System.Windows.Controls</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.IO.aspx"  title="Auto generated link to System.IO">System.IO</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Windows.Markup.aspx"  title="Auto generated link to System.Windows.Markup">System.Windows.Markup</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Reflection.aspx"  title="Auto generated link to System.Reflection">System.Reflection</a>
+open Utilities
+open Microsoft.FSharp.Control
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Windows.aspx"  title="Auto generated link to System.Windows">System.Windows</a>
+open <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Windows.Input.aspx"  title="Auto generated link to System.Windows.Input">System.Windows.Input</a>
+
+
+type  WpfMouse()  as this = 
+    inherit UserControl()
+    // XAML - MUST be Embedded Resource
+    let mySr = new StreamReader(Assembly.Load(&quot;WCFhostByWpfFsharpOnly&quot;).GetManifestResourceStream(&quot;WpfMouse.xaml&quot;))
+    do this.Content &lt;- XamlReader.Load(mySr.BaseStream):?&gt; UserControl 
+
+    let mutable btnStart : Button  = this.Content?btnStart
+    let mutable btnStop : Button  = this.Content?btnStop
+    let mutable lblMachineName : Label = this.Content?lblMachineName
+
+    let mutable host : ServiceHost = null 
+    let startServer() =
+        let baseAddress = new Uri(&quot;http://localhost:8187/WindowsPhoneMouseService&quot;)   //8187  WindowsPhoneMouseService - will be used in WindowsPhone Project
+        do host &lt;- new ServiceHost(typeof&lt;MouseEvent&gt;,  [|baseAddress|])
+        do host.Description.Behaviors.Add(new ServiceMetadataBehavior(HttpGetEnabled = true))
+        do host.AddServiceEndpoint(typeof&lt;IMouseEvent&gt;, new BasicHttpBinding(),  baseAddress) |&gt; ignore
+       
+        try
+           do host.Open()
+           do btnStart.IsEnabled &lt;- false
+        with
+           | _ -&gt; MessageBox.Show(&quot;You Must Run Application as Administrator.&quot;) |&gt; ignore
+ 
+    do lblMachineName.Content &lt;- <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Environment.MachineName.aspx"  title="Auto generated link to System.Environment.MachineName">System.Environment.MachineName</a> &#43; &quot; port 8187&quot;
+
+    do btnStart.Click.Add(fun _ -&gt; do startServer())
+    do btnStop.Click.Add(fun _ -&gt; if not (isNull host) &amp;&amp; not btnStart.IsEnabled  then  do host.Close()  // host MUST be opened !
+                                  do Environment.Exit(0))
+
+
+////  For TEST only by Keys ... Comment out if needed - ALL BELOW...
+////  See also one line in App.fs (see App.fs)
+//
+//    let MOUSEEVENTF_ABSOLUTE  = 0x8000 
+//    let MOUSEEVENTF_LEFTDOWN = 0x0002
+//    let MOUSEEVENTF_LEFTUP = 0x0004
+//    let MOUSEEVENTF_MIDDLEDOWN = 0x0020
+//    let MOUSEEVENTF_MIDDLEUP = 0x0040
+//    let MOUSEEVENTF_MOVE = 0x0001
+//    let MOUSEEVENTF_RIGHTDOWN = 0x0008
+//    let MOUSEEVENTF_RIGHTUP = 0x0010
+//    let MOUSEEVENTF_XDOWN = 0x0080
+//    let MOUSEEVENTF_XUP = 0x0100
+//    let MOUSEEVENTF_WHEEL = 0x0800
+//    let MOUSEEVENTF_HWHEEL = 0x01000
+//
+//    let moveCusore(direction : string) =
+//        let mutable x = 0
+//        let mutable y = 0
+//        let mutable action = 0
+//
+//        match direction with
+//        | &quot;Up&quot; -&gt;    action &lt;-  MOUSEEVENTF_MOVE 
+//                     y &lt;- -3
+//                     x &lt;- 0 
+//                     Imported.mouse_event(action,  x,  y,  0, 0);
+//
+//        | &quot;Down&quot; -&gt;  action &lt;-  MOUSEEVENTF_MOVE 
+//                     y &lt;- &#43;3
+//                     x &lt;- 0
+//                     Imported.mouse_event( action,  x,  y,  0, 0);
+//
+//        | &quot;Left&quot; -&gt;  action &lt;-  MOUSEEVENTF_MOVE 
+//                     y &lt;- 0
+//                     x &lt;- -3 
+//                     Imported.mouse_event( action,  x,  y,  0, 0);
+//
+//        | &quot;Right&quot; -&gt; action &lt;-  MOUSEEVENTF_MOVE 
+//                     y &lt;- 0
+//                     x &lt;- &#43;3 
+//                     Imported.mouse_event( action,  x,  y,  0, 0);
+//    
+//        | &quot;L&quot; -&gt;  Imported.mouse_event( MOUSEEVENTF_LEFTDOWN ,  0,  0,  0, 0)
+//                  <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Threading.Thread.Sleep.aspx"  title="Auto generated link to System.Threading.Thread.Sleep">System.Threading.Thread.Sleep</a>(100)
+//                  Imported.mouse_event( MOUSEEVENTF_LEFTUP,  0,  0,  0, 0)
+//  
+//        | &quot;R&quot; -&gt;  Imported.mouse_event( MOUSEEVENTF_RIGHTDOWN,  0,  0,  0, 0)
+//                  <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Threading.Thread.Sleep.aspx"  title="Auto generated link to System.Threading.Thread.Sleep">System.Threading.Thread.Sleep</a>(100)
+//                  Imported.mouse_event( MOUSEEVENTF_RIGHTUP,  0,  0,  0, 0)
+//
+//        | _ -&gt; ignore() 
+//
+//    
+//    let keyDown (e : KeyEventArgs) =
+//       do e.Handled &lt;- true
+//       match e.Key with
+//       | Key.Down -&gt; moveCusore(&quot;Down&quot;)
+//       | Key.Up   -&gt; moveCusore(&quot;Up&quot;)
+//       | Key.Left -&gt; moveCusore(&quot;Left&quot;)
+//       | Key.Right-&gt; moveCusore(&quot;Right&quot;)
+//       | Key.L    -&gt; moveCusore(&quot;L&quot;)
+//       | Key.R    -&gt; moveCusore(&quot;R&quot;)
+//       | _        -&gt; ignore()
+//
+//  
+//    member x.UserKeyDown(e : KeyEventArgs) = keyDown (e)
+
+
+
+
+
+
+</pre>
+<pre class="hidden">using System;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Collections.Generic.aspx"  title="Auto generated link to System.Collections.Generic">System.Collections.Generic</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Linq.aspx"  title="Auto generated link to System.Linq">System.Linq</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Net.aspx"  title="Auto generated link to System.Net">System.Net</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Windows.aspx"  title="Auto generated link to System.Windows">System.Windows</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Windows.Controls.aspx"  title="Auto generated link to System.Windows.Controls">System.Windows.Controls</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Windows.Navigation.aspx"  title="Auto generated link to System.Windows.Navigation">System.Windows.Navigation</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Threading.aspx"  title="Auto generated link to System.Threading">System.Threading</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/Microsoft.Phone.Controls.aspx"  title="Auto generated link to Microsoft.Phone.Controls">Microsoft.Phone.Controls</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/Microsoft.Phone.Shell.aspx"  title="Auto generated link to Microsoft.Phone.Shell">Microsoft.Phone.Shell</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.Windows.Input.aspx"  title="Auto generated link to System.Windows.Input">System.Windows.Input</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.ServiceModel.aspx"  title="Auto generated link to System.ServiceModel">System.ServiceModel</a>;
+using <a class="libraryLink" href="https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://code.msdn.microsoft.com/windowsapps/Windows-Phone-AS-Multi-79914e97/https://msdn.microsoft.com/en-US/library/System.ServiceModel.Description.aspx"  title="Auto generated link to System.ServiceModel.Description">System.ServiceModel.Description</a>;
+
+
+
+using Windows.Web.Http;
+
+
+namespace TrackPadSilverlight
+
+{
+    public partial class MainPage : PhoneApplicationPage
+    {
+
+        Int32 MOUSEEVENTF_ABSOLUTE = 0x8000;
+        Int32 MOUSEEVENTF_LEFTDOWN = 0x0002;
+        Int32 MOUSEEVENTF_LEFTUP = 0x0004;
+        Int32 MOUSEEVENTF_MIDDLEDOWN = 0x0020;
+        Int32 MOUSEEVENTF_MIDDLEUP = 0x0040;
+        Int32 MOUSEEVENTF_MOVE = 0x0001;
+        Int32 MOUSEEVENTF_RIGHTDOWN = 0x0008;
+        Int32 MOUSEEVENTF_RIGHTUP = 0x0010;
+        Int32 MOUSEEVENTF_XDOWN = 0x0080;
+        Int32 MOUSEEVENTF_XUP = 0x0100;
+        Int32 MOUSEEVENTF_WHEEL = 0x0800;
+        Int32 MOUSEEVENTF_HWHEEL = 0x01000;
+
+        // Common Values
+
+        Point lastTouchedPoint0 = new Point(0, 0);
+        WindowsPhoneMouseService.MouseEventClient mClient;
+
+        public MainPage()
+        {
+            InitializeComponent();
+            Touch.FrameReported &#43;= Touch_FrameReported;
+        }
+
+        private double deltaX = 0.0;
+        private double deltaY = 0.0;
+        private bool blnWas2or3 = false;
+
+
+        void Touch_FrameReported(object sender, TouchFrameEventArgs e)
+        {
+            TouchPointCollection touchPoints = e.GetTouchPoints(rectPad);
+
+
+
+            if (touchPoints.Count == 1 &amp;&amp; blnWas2or3==false)
+            {
+
+                if (touchPoints[0].Position.Y &gt; rectPad.ActualHeight - 55)
+                {
+
+                    if (touchPoints[0].Position.X &lt; this.ActualWidth * 0.5)
+                    {
+                        txtTap.Text = &quot;  Left Button Click.&quot;;
+
+                        if (touchPoints[0].Action == TouchAction.Down)
+                        {
+                            mClient.MouseMoveTupleAsync(MOUSEEVENTF_LEFTDOWN.ToString(), &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;);
+                        }
+
+                        if (touchPoints[0].Action == TouchAction.Up)
+                        {
+                            mClient.MouseMoveTupleAsync(MOUSEEVENTF_LEFTUP.ToString(), &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;);
+                        }
+                    }
+                    else
+                    {
+                        txtTap.Text = &quot;  Right Button Click.&quot;;
+
+                        if (touchPoints[0].Action == TouchAction.Down)
+                        {
+                            mClient.MouseMoveTupleAsync(MOUSEEVENTF_RIGHTDOWN.ToString(), &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;);
+                        }
+
+                        if (touchPoints[0].Action == TouchAction.Up)
+                        {
+                            mClient.MouseMoveTupleAsync(MOUSEEVENTF_RIGHTUP.ToString(), &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;);
+                        }
+                    }
+                }
+
+                else
+
+                {
+                    deltaX = (touchPoints[0].Position.X - lastTouchedPoint0.X);
+                    deltaY = (touchPoints[0].Position.Y - lastTouchedPoint0.Y);
+
+
+                    mClient.MouseMoveTupleAsync(MOUSEEVENTF_MOVE.ToString(), ((Int32)deltaX).ToString(), ((Int32)deltaY).ToString(), &quot;0&quot;, &quot;0&quot;);
+                    txtTap.Text = &quot;  MOUSE MOVE&quot;;
+
+                    if (touchPoints[0].Action == TouchAction.Up)
+                    {
+                        mClient.MouseMoveTupleAsync(MOUSEEVENTF_LEFTUP.ToString(), &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;);
+                    }
+                }
+
+                lastTouchedPoint0 = touchPoints[0].Position;
+
+            }
+            else if (touchPoints.Count == 2)
+            {
+                deltaX = touchPoints[0].Position.X - (touchPoints[1].Position.X);
+                blnWas2or3 = true;
+
+                if (Math.Abs(deltaX) &lt; 200)   // WHEEL
+                {
+                    deltaY = (touchPoints[0].Position.Y - lastTouchedPoint0.Y) * 3.0; // 3.0 increase speed ...if needed 
+                    mClient.MouseMoveTupleAsync(MOUSEEVENTF_WHEEL.ToString(), &quot;0&quot;, &quot;0&quot;, ((Int32)deltaY).ToString(), &quot;0&quot;);
+                    lastTouchedPoint0 = touchPoints[0].Position;
+                }
+
+                lastTouchedPoint0 = touchPoints[0].Position;
+            }
+
+            else if (touchPoints.Count == 3)
+
+            {
+
+                deltaX = (touchPoints[0].Position.X - lastTouchedPoint0.X);
+                deltaY = (touchPoints[0].Position.Y - lastTouchedPoint0.Y);
+                blnWas2or3 = true;
+
+                mClient.MouseMoveTupleAsync((MOUSEEVENTF_MOVE | MOUSEEVENTF_LEFTDOWN).ToString(), ((Int32)deltaX).ToString(), ((Int32)deltaY).ToString(), &quot;0&quot;, &quot;0&quot;);
+                txtTap.Text = &quot;  MOUSE MOVE&quot;;
+
+                if (touchPoints[0].Action == TouchAction.Up)
+                {
+                    mClient.MouseMoveTupleAsync((MOUSEEVENTF_LEFTUP).ToString(), &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;);
+                    txtTap.Text = &quot;&quot;;
+                }
+
+                lastTouchedPoint0 = touchPoints[0].Position;
+            }
+        }
+
+        private void rectPad_ManipulationStarted(object sender, ManipulationStartedEventArgs e)
+        {
+            lastTouchedPoint0 = new Point(e.ManipulationOrigin.X, e.ManipulationOrigin.Y);
+            blnWas2or3 = false;
+        }
+
+        private void rectPad_ManipulationDelta(object sender, ManipulationDeltaEventArgs e)
+        {
+            //use Touch_FrameReported instead 
+        }
+        private void rectPad_ManipulationCompleted(object sender, ManipulationCompletedEventArgs e)
+        {
+            //use Touch_FrameReported instead 
+        }
+
+        // LOADED 
+        private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                // MUST INSERT YOUR DESKTOP NAME 
+                // YOU MUST FORWARD PORT (see router setting to this DESKTOP)
+                String url = &quot;http://desktop-6727b93:8187/WindowsPhoneMouseService&quot;;
+
+                EndpointAddress address = new EndpointAddress(url);
+                BasicHttpBinding binding = new BasicHttpBinding();
+
+                //FOR EMULATOR  use this -&gt;
+                //mClient = new WindowsPhoneMouseService.MouseEventClient();
+
+                //FOR DEVICE use this -&gt;
+                mClient = new WindowsPhoneMouseService.MouseEventClient(binding, address);
+                mClient.OpenAsync();
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        // UNLOADED 
+        private void PhoneApplicationPage_Unloaded(object sender, RoutedEventArgs e)
+        {
+            mClient.CloseAsync();
+        }
+
+    }
+}</pre>
+<div class="preview">
+<pre class="xaml"><span class="xaml__tag_start">&lt;UserControl</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__attr_name">xmlns</span>=<span class="xaml__attr_value">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__keyword">xmlns</span>:<span class="xaml__attr_name">x</span>=<span class="xaml__attr_value">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__keyword">xmlns</span>:<span class="xaml__attr_name">mc</span>=<span class="xaml__attr_value">&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__keyword">xmlns</span>:<span class="xaml__attr_name">d</span>=<span class="xaml__attr_value">&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__attr_name">Height</span>=<span class="xaml__attr_value">&quot;130&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;200.0&quot;</span>&nbsp;<span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Grid</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;grid&quot;</span>&nbsp;<span class="xaml__attr_name">Focusable</span>=<span class="xaml__attr_value">&quot;True&quot;</span>&nbsp;&nbsp;<span class="xaml__attr_name">Background</span>=<span class="xaml__attr_value">&quot;#FFF0ECEC&quot;</span>&nbsp;<span class="xaml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Button</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;btnStart&quot;</span>&nbsp;<span class="xaml__attr_name">Content</span>=<span class="xaml__attr_value">&quot;Start&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Center&quot;</span>&nbsp;&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Center&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;76&quot;</span>&nbsp;<span class="xaml__attr_name">Background</span>=<span class="xaml__attr_value">&quot;#FFDEDDDD&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;62,48,62,62&quot;</span>&nbsp;<span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Button</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;btnStop&quot;</span>&nbsp;<span class="xaml__attr_name">Content</span>=<span class="xaml__attr_value">&quot;Stop&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Center&quot;</span>&nbsp;&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Center&quot;</span>&nbsp;<span class="xaml__attr_name">Width</span>=<span class="xaml__attr_value">&quot;76&quot;</span>&nbsp;<span class="xaml__attr_name">Background</span>=<span class="xaml__attr_value">&quot;#FFDEDDDD&quot;</span>&nbsp;<span class="xaml__attr_name">Margin</span>=<span class="xaml__attr_value">&quot;62,68,62,42&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_start">&lt;Label</span>&nbsp;x:<span class="xaml__attr_name">Name</span>=<span class="xaml__attr_value">&quot;lblMachineName&quot;</span>&nbsp;<span class="xaml__attr_name">Content</span>=<span class="xaml__attr_value">&quot;Desktop&nbsp;Name&quot;</span>&nbsp;<span class="xaml__attr_name">VerticalAlignment</span>=<span class="xaml__attr_value">&quot;Top&quot;</span>&nbsp;<span class="xaml__attr_name">HorizontalAlignment</span>=<span class="xaml__attr_value">&quot;Center&quot;</span><span class="xaml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xaml__tag_end">&lt;/Grid&gt;</span>&nbsp;
+&nbsp;
+<span class="xaml__tag_end">&lt;/UserControl&gt;</span></pre>
+</div>
+</div>
+</div>
+<h1><span>Source Code Files</span></h1>
+<ul>
+<li><em>source code file name #1 - summary for this source code file.</em> </li><li><em><em>source code file name #2 - summary for this source code file.</em></em>
+</li></ul>
+<h1>More Information</h1>
+<p><em>For more information on X, see ...?</em></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
