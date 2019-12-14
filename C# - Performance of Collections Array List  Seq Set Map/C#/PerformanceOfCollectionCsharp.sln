@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceOfCollectionCsharp", "PerformanceOfCollectionCsharp\PerformanceOfCollectionCsharp.csproj", "{F1753046-5BEC-4CD9-BA0E-00783F9C0496}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1753046-5BEC-4CD9-BA0E-00783F9C0496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1753046-5BEC-4CD9-BA0E-00783F9C0496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1753046-5BEC-4CD9-BA0E-00783F9C0496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1753046-5BEC-4CD9-BA0E-00783F9C0496}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A46C14DB-41BC-41F8-BB79-FC96DBA31267}
+	EndGlobalSection
+EndGlobal
